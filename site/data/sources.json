@@ -6,7 +6,7 @@
       "shortName": "RES opportunities",
       "url": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "description": "Specialist entomology jobs, placements and community opportunities, including some research degrees.",
-      "label": "Discovery checks configured · adverts reviewed before publication",
+      "label": "Discovery checks configured \u00b7 adverts reviewed before publication",
       "mode": "res-headings",
       "enabled": true,
       "curatedIndex": true
@@ -16,7 +16,7 @@
       "name": "RES research opportunities",
       "url": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
       "description": "Doctoral projects and other research opportunities. Check linked adverts for funding and current dates.",
-      "label": "Discovery checks configured · adverts reviewed before publication",
+      "label": "Discovery checks configured \u00b7 adverts reviewed before publication",
       "mode": "res-headings",
       "enabled": true,
       "curatedIndex": true,
@@ -24,19 +24,66 @@
     },
     {
       "id": "environmentjob",
-      "name": "environmentjob",
+      "name": "environmentjob \u00b7 paid jobs",
       "url": "https://environmentjob.co.uk/",
-      "description": "Ecology, biological recording, biodiversity and field experience. Search records officer, species identification, habitat survey and graduate ecologist.",
-      "label": "Search directly · selected adverts reviewed",
-      "mode": "manual",
-      "enabled": false
+      "description": "Official RSS feed of environmental vacancies. Ecology, biological recording, biodiversity and field roles are screened for relevance before publication.",
+      "label": "RSS discovery configured \u00b7 adverts reviewed before publication",
+      "mode": "rss",
+      "enabled": true,
+      "shortName": "environmentjob",
+      "fetchUrl": "https://environmentjob.co.uk/jobs.rss",
+      "defaultType": "job",
+      "accessNotes": "The public jobs page advertises this RSS feed. Feed paths are permitted by the checked robots rules with a one-second crawl delay. Read brief feed metadata for screening and links; do not reproduce full advert bodies. HTML page/show_all query pagination is disallowed and is not used.",
+      "permissionUrl": "https://environmentjob.co.uk/terms"
+    },
+    {
+      "id": "environmentjob-volunteering",
+      "name": "environmentjob \u00b7 volunteering",
+      "shortName": "Volunteering RSS",
+      "url": "https://environmentjob.co.uk/volunteering",
+      "fetchUrl": "https://environmentjob.co.uk/volunteering.rss",
+      "description": "Official volunteering feed. Screen wildlife surveys, recording, conservation placements and practical field experience; unrelated governance and fundraising calls are excluded.",
+      "label": "RSS discovery configured \u00b7 adverts reviewed before publication",
+      "mode": "rss",
+      "enabled": true,
+      "defaultType": "volunteering",
+      "accessNotes": "The public volunteering page explicitly advertises this RSS feed. Observe the one-second robots crawl delay. Use brief discovery metadata and links only; dates, costs and eligibility require review. Do not use disallowed HTML page/show_all pagination.",
+      "permissionUrl": "https://environmentjob.co.uk/terms"
+    },
+    {
+      "id": "bath-jobs",
+      "name": "University of Bath opportunities",
+      "shortName": "Bath RSS",
+      "url": "https://www.bath.ac.uk/jobs/",
+      "fetchUrl": "https://www.bath.ac.uk/jobs/rss/rss.aspx",
+      "description": "Official university vacancies feed covering research, studentships and technical roles. Broad university recruitment is screened for a substantive biological or ecological connection.",
+      "label": "RSS discovery configured \u00b7 relevance and eligibility reviewed",
+      "mode": "rss",
+      "enabled": true,
+      "defaultType": "job",
+      "accessNotes": "The university explicitly offers public RSS subscriptions. Robots rules permit this feed for the board agent. Terms limit use to personal and non-commercial purposes; collect minimal discovery metadata and links for the educational review queue, without republishing full RSS descriptions.",
+      "permissionUrl": "https://www.bath.ac.uk/jobs/Terms"
+    },
+    {
+      "id": "harper-adams-jobs",
+      "name": "Harper Adams opportunities",
+      "shortName": "Harper Adams RSS",
+      "url": "https://jobs.harper-adams.ac.uk/",
+      "fetchUrl": "https://jobs.harper-adams.ac.uk/RSS/rss.aspx",
+      "description": "Official Harper Adams vacancies and studentships. Relevant crop, insect, plant-health and ecological research adverts are reviewed; staff-only and general research-application calls are excluded.",
+      "label": "RSS discovery configured \u00b7 relevance and eligibility reviewed",
+      "mode": "rss",
+      "enabled": true,
+      "defaultType": "job",
+      "accessNotes": "The university explicitly offers public RSS subscriptions. The general robots rules permit this feed; named republishing bots have separate restrictions. Use minimal discovery metadata and links for educational review. Terms specify personal/non-commercial use; full-description republication is not authorised by this configuration.",
+      "permissionUrl": "https://jobs.harper-adams.ac.uk/Terms"
     },
     {
       "id": "findaphd",
       "name": "FindAPhD",
       "url": "https://www.findaphd.com/phds/?Keywords=entomology",
       "description": "Doctoral projects across insect science, IPM and biological recording. Search identification, taxonomy, biodiversity monitoring and ecological data.",
-      "label": "Search directly · check funding and eligibility",
+      "label": "Search directly \u00b7 check funding and eligibility",
       "mode": "manual",
       "enabled": false,
       "searches": [
@@ -60,7 +107,8 @@
           "label": "Biodiversity monitoring",
           "url": "https://www.findaphd.com/phds/?Keywords=biodiversity+monitoring"
         }
-      ]
+      ],
+      "accessNotes": "A usable permitted discovery endpoint has not been established. Query search routes have robots restrictions and tested public directory/sitemap requests returned HTTP 403. Keep curated searches available for manual checks."
     },
     {
       "id": "google",
@@ -68,7 +116,7 @@
       "shortName": "Google",
       "url": "https://www.google.com/search?q=entomology+OR+%22integrated+pest+management%22+OR+biodiversity+jobs+UK",
       "description": "Search entomology, integrated pest management and biological recording. Follow focused searches, then verify the original advert.",
-      "label": "External search · no automatic Google feed",
+      "label": "External search \u00b7 no automatic Google feed",
       "mode": "manual",
       "enabled": false,
       "searches": [
@@ -92,24 +140,26 @@
           "label": "Species & habitat surveys",
           "url": "https://www.google.com/search?q=%28%22botanical+survey%22+OR+%22species+identification%22+OR+%22UKHab%22+OR+%22habitat+survey%22%29+%28graduate+OR+assistant+OR+technician+OR+volunteer%29+UK"
         }
-      ]
+      ],
+      "accessNotes": "External search links only. No automatic Google Jobs retrieval feed is connected; Google Indexing API is for publisher notifications, not retrieving job results."
     },
     {
       "id": "jobs-ac-uk",
       "name": "jobs.ac.uk",
       "url": "https://www.jobs.ac.uk/",
       "description": "University research, technical roles and studentships. Search entomology, plant health or ecology.",
-      "label": "Search directly · no live feed connected",
+      "label": "Search directly \u00b7 no live feed connected",
       "mode": "manual",
-      "enabled": false
+      "enabled": false,
+      "accessNotes": "A historical RSS guide exists, but robots access returned HTTP 403 and no current working feed was established. Keep direct searches available; do not bypass access restrictions."
     },
     {
       "id": "beewalk",
       "name": "BeeWalk & field volunteering",
       "shortName": "BeeWalk",
       "url": "https://www.bumblebeeconservation.org/what-we-do/our-projects/current-projects/trust-led-projects/beewalk/",
-      "description": "Build identification and recording skills through the Bumblebee Conservation Trust’s national monitoring scheme.",
-      "label": "Direct provider · seasonal fieldwork",
+      "description": "Build identification and recording skills through the Bumblebee Conservation Trust\u2019s national monitoring scheme.",
+      "label": "Direct provider \u00b7 seasonal fieldwork",
       "mode": "manual",
       "enabled": false
     },
@@ -118,7 +168,7 @@
       "name": "Forest Research",
       "url": "https://www.forestresearch.gov.uk/about-us/careers/",
       "description": "Tree health, pathology, ecological monitoring and research support roles. Check the required laboratory or field skills.",
-      "label": "Direct employer · selected adverts reviewed",
+      "label": "Direct employer \u00b7 selected adverts reviewed",
       "mode": "manual",
       "enabled": false
     },
@@ -127,7 +177,7 @@
       "name": "MorePeople",
       "url": "https://www.morepeople.co.uk/",
       "description": "Commercial horticulture, crop advice and agricultural research roles. Search IPM, biocontrol, technical advisor and crop trials.",
-      "label": "Recruiter · selected adverts reviewed",
+      "label": "Recruiter \u00b7 selected adverts reviewed",
       "mode": "manual",
       "enabled": false
     },
@@ -136,7 +186,7 @@
       "name": "Gradcracker",
       "url": "https://www.gradcracker.com/",
       "description": "Graduate recruitment, including applied ecology and biodiversity. Many schemes recruit a year ahead; check the start date.",
-      "label": "Graduate schemes · selected adverts reviewed",
+      "label": "Graduate schemes \u00b7 selected adverts reviewed",
       "mode": "manual",
       "enabled": false
     },
@@ -145,7 +195,7 @@
       "name": "Riverfly Partnership",
       "url": "https://www.riverflies.org/become-a-monitor",
       "description": "Aquatic-invertebrate monitoring, local training and practical identification experience. Contact a hub to check local availability.",
-      "label": "Direct provider · ongoing volunteering",
+      "label": "Direct provider \u00b7 ongoing volunteering",
       "mode": "manual",
       "enabled": false
     },
@@ -155,7 +205,7 @@
       "shortName": "UKBMS",
       "url": "https://ukbms.org/wider-countryside-butterfly-survey",
       "description": "Standardised butterfly surveys and biological recording. Register interest now and check dates for the next field season.",
-      "label": "Direct provider · seasonal volunteering",
+      "label": "Direct provider \u00b7 seasonal volunteering",
       "mode": "manual",
       "enabled": false
     },
@@ -164,7 +214,7 @@
       "name": "Hutchinsons",
       "url": "https://www.hutchinsons.co.uk/about-us/careers/",
       "description": "Crop advice, plant health and agronomy roles. Review experience requirements and check whether traineeships are currently available.",
-      "label": "Direct employer · selected adverts reviewed",
+      "label": "Direct employer \u00b7 selected adverts reviewed",
       "mode": "manual",
       "enabled": false
     },
@@ -173,17 +223,19 @@
       "name": "CIEEM Jobs & Opportunities",
       "url": "https://cieem.net/ecology-and-environmental-management-jobs/",
       "description": "Ecological consultancy, habitat surveys, biodiversity and graduate opportunities. Check seniority and identification requirements.",
-      "label": "Professional body · search directly",
+      "label": "Search directly \u00b7 permission needed for automatic collection",
       "linkLabel": "Browse vacancies",
       "mode": "manual",
-      "enabled": false
+      "enabled": false,
+      "accessNotes": "CIEEM terms section 2.3 requires prior written permission to include site content in another public or private electronic retrieval service. Keep manual links until permission is established; robots availability alone does not establish reuse permission.",
+      "permissionUrl": "https://cieem.net/terms-of-use/"
     },
     {
       "id": "fsc-volunteering",
       "name": "Field Studies Council",
       "url": "https://www.field-studies-council.org/jobs-at-field-studies-council/volunteering-with-field-studies-council/",
       "description": "Field-centre and nature-reserve volunteering. Look for roles offering wildlife monitoring, species recording or survey experience.",
-      "label": "Direct provider · check local roles",
+      "label": "Direct provider \u00b7 check local roles",
       "linkLabel": "Explore volunteering",
       "mode": "manual",
       "enabled": false
@@ -193,7 +245,7 @@
       "name": "NBN recording schemes",
       "url": "https://nbn.org.uk/tools-and-resources/useful-websites/database-of-wildlife-surveys-and-recording-schemes/",
       "description": "Find surveys for plants, fungi, invertebrates and other wildlife. Confirm training, survey seasons and current participation with each organiser.",
-      "label": "Recording-scheme directory · not an advert feed",
+      "label": "Recording-scheme directory \u00b7 not an advert feed",
       "linkLabel": "Find a recording scheme",
       "mode": "manual",
       "enabled": false
@@ -203,7 +255,7 @@
       "name": "Local records centres",
       "url": "https://www.alerc.org.uk/lerc-finder.html",
       "description": "Find a local environmental records centre and follow its vacancies, volunteering and recording activities. A centre listing does not mean it is recruiting.",
-      "label": "Records-centre directory · not an advert feed",
+      "label": "Records-centre directory \u00b7 not an advert feed",
       "linkLabel": "Find a records centre",
       "mode": "manual",
       "enabled": false
@@ -418,6 +470,18 @@
       "vector database",
       "pestle analysis"
     ],
-    "notes": "Keywords discover candidates; every candidate needs review. Core subjects cover insect science, integrated pest/weed/disease management and biological recording across taxa, including identification, habitat surveys and biodiversity data. Course tags indicate a skills connection, not eligibility. Related fields include broader agronomy and molecular research. GIS, records, data, NVC and BNG require biological context. Exclude generic sustainability administration, fundraising and unrelated corporate roles. Preserve degree and experience requirements. Automatic discovery currently covers RES only; all additional source directories and search links require manual checks."
+    "notes": "Keywords discover candidates; every candidate needs review. Core subjects cover insect science, integrated pest/weed/disease management and biological recording across taxa, including identification, habitat surveys and biodiversity data. Course tags indicate a skills connection, not eligibility. Related fields include broader agronomy and molecular research. GIS, records, data, NVC and BNG require biological context. Exclude generic sustainability administration, fundraising and unrelated corporate roles. Preserve degree and experience requirements. Automatic discovery is configured for the two RES indices and official environmentjob jobs/volunteering, Bath and Harper Adams RSS feeds. All remaining directories and search links require manual checks. Feed publication dates are not deadlines; discovery does not confirm that an advert remains open.",
+    "excludedTitlePatterns": [
+      "\\b(?:human resources|HR|talent acquisition|payroll)\\b",
+      "\\bpeople\\s+(?:director|manager|partner|officer|administrator)\\b",
+      "\\b(?:fundrais(?:er|ers|ing)|philanthrop\\w*|individual giving|donor relations)\\b",
+      "\\btrustees?\\b",
+      "\\b(?:staff|employees?|internal candidates?|internal applicants?)\\s+only\\b",
+      "\\b(?:research office manager|research administrator|research administration|research grants? (?:officer|manager|administrator))\\b",
+      "\\bpre[- ]award\\s+(?:development|grants?)\\s+(?:officer|manager)\\b",
+      "^\\s*self[- ]funded\\s+research degree\\s*[-\u2013:]",
+      "^\\s*(?:general\\s+)?(?:research degree|postgraduate research)\\s+(?:programmes?|opportunities|applications)\\b"
+    ],
+    "excludedTitleNotes": "Apply these patterns to titles only, before relevance scoring. They exclude non-subject HR/fundraising/governance posts, internal-only calls, research administration and generic degree-application notices. They intentionally retain research technicians, scientific project managers, public engagement, biological-recording and topic-specific self-funded projects for relevance review."
   }
 }

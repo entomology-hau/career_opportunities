@@ -44,8 +44,43 @@ function renderCard(item,now){
   const localToday=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(now));
   if(item.deadline===localToday) deadline='Closes today'+(item.deadlineTime?' · '+item.deadlineTime+' UK':'');
   const linkNeedsCheck=healthData?.links?.some(x=>x.id===item.id && x.status==='needs-check');
+  const contentChanged=healthData?.links?.some(x=>x.id===item.id && x.contentChanged===true);
   const details=[['Pay / funding',item.compensation],['Eligibility',item.eligibility],['Course interest',(item.courses||[]).map(c=>COURSES[c]).join(' · ')],['Experience',item.careerLevel],['Contract',item.contract],['Deadline',item.deadlineLabel],['Note',item.notes]].filter(x=>x[1]);
-  return `<article class="card" data-id="${escapeHTML(item.id)}"><div class="card-top"><div class="badge-stack"><span class="badge ${escapeHTML(item.type)}">${TYPES[item.type]}</span>${item.relevanceTier==='Related field'?'<span class="badge related">Related field</span>':''}</div><span class="deadline ${urgent?'urgent':''}">${escapeHTML(deadline)}</span></div><h3><a href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(item.title)}</a></h3><p class="organisation">${escapeHTML(item.organisation)}</p><p class="location-line">${escapeHTML(item.location)} · ${escapeHTML(item.workplace)}</p>${linkNeedsCheck?'<p class="link-warning">Link needs checking · last source request was unsuccessful</p>':''}<p class="funding-line">${escapeHTML(item.compensation)}</p><p class="summary">${escapeHTML(item.summary)}</p>${item.fitReason?`<p class="fit-reason"><strong>Relevance:</strong> ${escapeHTML(item.fitReason)}</p>`:''}<div class="tags">${item.tags.slice(0,4).map(t=>`<span class="tag">${escapeHTML(t)}</span>`).join('')}</div><details class="details"><summary>Eligibility &amp; details${/Experienced|Specialist|Professional|experience required/.test(item.careerLevel)?' · experience required':''}</summary><dl>${details.map(([k,v])=>`<dt>${escapeHTML(k)}</dt><dd>${escapeHTML(v)}</dd>`).join('')}</dl></details><div class="card-bottom"><div class="source-meta">Via ${escapeHTML(item.source)}<br>Reviewed ${dateText(item.lastChecked)}</div><a class="advert-link" href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="View advert: ${escapeHTML(item.title)} (opens in a new tab)">View advert</a></div></article>`;
+  return `<article class="card" data-id="${escapeHTML(item.id)}"><div class="card-top"><div class="badge-stack"><span class="badge ${escapeHTML(item.type)}">${TYPES[item.type]}</span>${item.relevanceTier==='Related field'?'<span class="badge related">Related field</span>':''}</div><span class="deadline ${urgent?'urgent':''}">${escapeHTML(deadline)}</span></div><h3><a href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(item.title)}</a></h3><p class="organisation">${escapeHTML(item.organisation)}</p><p class="location-line">${escapeHTML(item.location)} · ${escapeHTML(item.workplace)}</p>${linkNeedsCheck?'<p class="link-warning">Link needs checking · last source request was unsuccessful</p>':''}${contentChanged?'<p class="link-warning">Source page changed · review of the current details is pending</p>':''}<p class="funding-line">${escapeHTML(item.compensation)}</p><p class="summary">${escapeHTML(item.summary)}</p>${item.fitReason?`<p class="fit-reason"><strong>Relevance:</strong> ${escapeHTML(item.fitReason)}</p>`:''}<div class="tags">${item.tags.slice(0,4).map(t=>`<span class="tag">${escapeHTML(t)}</span>`).join('')}</div><details class="details"><summary>Eligibility &amp; details${/Experienced|Specialist|Professional|experience required/.test(item.careerLevel)?' · experience required':''}</summary><dl>${details.map(([k,v])=>`<dt>${escapeHTML(k)}</dt><dd>${escapeHTML(v)}</dd>`).join('')}</dl></details><div class="card-bottom"><div class="source-meta">Via ${escapeHTML(item.source)}<br>Reviewed ${dateText(item.lastChecked)}</div><a class="advert-link" href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="View advert: ${escapeHTML(item.title)} (opens in a new tab)">View advert</a></div></article>`;
+}
+const isCollector=source=>source.enabled===true && ['rss','res-headings'].includes(source.mode);
+const validDate=value=>typeof value==='string' && Number.isFinite(Date.parse(value));
+const checkStale=(value,now)=>!validDate(value) || now-Date.parse(value)>2*day;
+function collectionSummary(health,sources=[],now=Date.now()){
+  const enabled=sources.filter(isCollector),checks=health?.sources||[];
+  if(!health || !validDate(health.lastRun))return {warning:true,text:'Source-check status is unavailable. Browse the original sources for current adverts.'};
+  const working=enabled.filter(s=>checks.some(c=>c.id===s.id && c.status==='ok')).length;
+  const queued=Number.isSafeInteger(health.pendingCandidates)&&health.pendingCandidates>=0?health.pendingCandidates:null;
+  let text=`${working} of ${enabled.length} collectors working at the last check (${dateText(health.lastRun)}).`;
+  if(queued!==null)text+=` ${queued} ${queued===1?'candidate awaits':'candidates await'} editorial review.`;
+  const stale=checkStale(health.lastRun,now),failed=enabled.length>0&&working===0,partial=working<enabled.length;
+  if(stale)text+=' Source checks are over 48 hours old; browse the sources for newer adverts.';
+  else if(failed)text+=' Automatic discovery is unavailable; browse the sources directly.';
+  else if(partial)text+=' Some sources could not be collected; browse them directly.';
+  else if(!enabled.length)text+=' New opportunities are found through assisted searches.';
+  return {warning:stale||partial||['partial','failed'].includes(health.discoveryStatus),text};
+}
+function sourceCheckSummary(source,health,now=Date.now()){
+  if(!isCollector(source))return {warning:false,text:'Assisted search · browse this source directly'};
+  const kind=source.mode==='rss'?'Automated feed':'Automated index';
+  const check=health?.sources?.find(c=>c.id===source.id);
+  if(!check || !validDate(check.lastAttempt))return {warning:true,text:`${kind} · awaiting a source check`};
+  const date=dateText(check.lastAttempt);
+  if(check.status!=='ok')return {warning:true,text:`${kind} · collection needs checking (${date}); browse directly`};
+  if(checkStale(check.lastAttempt,now))return {warning:true,text:`${kind} · last check ${date}; over 48 hours old`};
+  const entries=Number.isSafeInteger(check.entriesFound)&&check.entriesFound>=0?` · ${check.entriesFound} entries checked`:'';
+  return {warning:false,text:`${kind}${entries} · checked ${date}`};
+}
+function renderHealth(now=Date.now()){
+  const summary=collectionSummary(healthData,sourceData?.sources,now);
+  if($('collection-summary').textContent!==summary.text)$('collection-summary').textContent=summary.text;
+  $('collection-status').classList.toggle('warning',summary.warning);
+  $('check-status').textContent=healthData&&validDate(healthData.lastRun)?`Last automated check: ${dateText(healthData.lastRun)}. ${healthData.summary||summary.text} Editorial review dates remain separate.`:'Automated source-check status is unavailable. Editorial review dates are shown on each advert.';
 }
 function persistState(state){
   const params=new URLSearchParams();
@@ -67,6 +102,7 @@ function render(){
   const lastReview=database.opportunities.map(x=>x.lastChecked).sort().at(-1);
   $('freshness').textContent=lastReview?`Most recent editorial review: ${dateText(lastReview)}. ${ageDays(lastReview,now)>7?'Some listings may need rechecking.':'Check the advert before applying.'}`:'No reviewed adverts yet.';
   $('freshness').classList.toggle('stale',!lastReview||ageDays(lastReview,now)>7);
+  renderHealth(now);
   persistState(state);
 }
 function filtersChanged(){currentPage=1;render();}
@@ -80,7 +116,7 @@ function restore(){
   const page=Number(p.get('page'));currentPage=Number.isSafeInteger(page)&&page>0?page:1;
 }
 function renderSources(){
-  $('source-cards').innerHTML=sourceData.sources.filter(s=>s.showOnBoard!==false).map(s=>`<article class="source-card"><h3>${escapeHTML(s.name)}</h3><p>${escapeHTML(s.description)}</p><a href="${safeURL(s.searchUrl||s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.linkLabel||`Search ${s.shortName||s.name}`)}</a>${s.searches?.length?`<div class="source-searches">${s.searches.map(x=>`<a href="${safeURL(x.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(x.label)}</a>`).join('')}</div>`:''}<span class="source-mode">${escapeHTML(s.label)}</span></article>`).join('');
+  $('source-cards').innerHTML=sourceData.sources.filter(s=>s.showOnBoard!==false).map(s=>{const check=sourceCheckSummary(s,healthData);return `<article class="source-card"><h3>${escapeHTML(s.name)}</h3><p>${escapeHTML(s.description)}</p><a href="${safeURL(s.searchUrl||s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(s.linkLabel||`Search ${s.shortName||s.name}`)}</a>${s.searches?.length?`<div class="source-searches">${s.searches.map(x=>`<a href="${safeURL(x.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(x.label)}</a>`).join('')}</div>`:''}<span class="source-mode">${escapeHTML(s.label)}</span><span class="source-check ${check.warning?'warning':''}">${escapeHTML(check.text)}</span></article>`;}).join('');
   $('keyword-groups').innerHTML=sourceData.keywordGroups.map(g=>`<div class="keyword-group"><h3>${escapeHTML(g.name)}</h3><p>${g.terms.map(escapeHTML).join(' · ')}</p>${g.usefulness?`<p class="keyword-assessment">${escapeHTML(g.usefulness)}</p>`:''}</div>`).join('');
 }
 async function load(){
@@ -93,8 +129,8 @@ async function load(){
     $('search').addEventListener('input',filtersChanged);for(const el of document.querySelectorAll('select,input[type=checkbox]'))el.addEventListener('change',filtersChanged);
     $('previous-page').addEventListener('click',()=>changePage(-1));$('next-page').addEventListener('click',()=>changePage(1));
     $('reset').addEventListener('click',reset);$('empty-reset').addEventListener('click',reset);$('board-tab').addEventListener('click',()=>{$('results').focus();$('results').scrollIntoView({block:'start'});});
-    document.addEventListener('visibilitychange',()=>{if(!document.hidden)render()});setInterval(render,60000);
-    try{const response=await fetch('data/health.json');if(!response.ok)throw Error();const health=await response.json();healthData=health;render();$('check-status').textContent=health.lastRun?`Last automated check: ${dateText(health.lastRun)}. ${health.summary}`:'Automated source checks have not run yet. The board currently uses individually reviewed adverts.';}catch{$('check-status').textContent='Automated source-check status is unavailable. Editorial review dates are shown on each advert.';}
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden){render();renderSources();}});setInterval(()=>{render();renderSources();},60000);
+    try{const response=await fetch('data/health.json');if(!response.ok)throw Error();healthData=await response.json();render();renderSources();}catch{healthData=null;renderHealth();renderSources();}
   }catch(error){$('load-error').hidden=false;$('result-count').textContent='Opportunities unavailable';$('cards').innerHTML='';$('freshness').textContent='';if(sourceData)renderSources();}
 }
 load();

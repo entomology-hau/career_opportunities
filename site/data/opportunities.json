@@ -1158,6 +1158,116 @@
       "courses": [
         "biological-recording"
       ]
+    },
+    {
+      "id": "crawley-biodiversity-project-officer-2026",
+      "title": "Biodiversity Project Officer",
+      "organisation": "Crawley Borough Council",
+      "type": "job",
+      "location": "Crawley, West Sussex",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "Hybrid",
+      "deadline": "2026-10-18",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "18 October 2026; may close early",
+      "status": "open",
+      "funding": "Paid",
+      "compensation": "£40,446–£43,346 per year",
+      "eligibility": "Relevant degree or equivalent experience; practical BNG metrics, ecological survey, reporting, stakeholder and environmental project experience required. Must travel independently around the borough; occasional evening/weekend work. Visa sponsorship is not stated.",
+      "careerLevel": "Professional experience required",
+      "contract": "37 hours/week; two-year fixed term, potentially extended subject to funding",
+      "summary": "Develop habitat banks and biodiversity management plans, commission or conduct ecological surveys, and coordinate nature recovery with council teams and local partners.",
+      "tags": [
+        "Biodiversity net gain",
+        "Ecological surveys",
+        "Habitat management",
+        "Nature recovery"
+      ],
+      "url": "https://crawley.gov.uk/council-information/jobs-and-careers/current-vacancies/biodiversity-project-officer-0",
+      "source": "Crawley Borough Council",
+      "sourceUrl": "https://environmentjob.co.uk/jobs/111796-biodiversity-project-officer",
+      "lastChecked": "2026-09-30",
+      "dateBasis": "Council advert PX28 specifies 18 October 2026 and possible early closure; no closing time is stated.",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Ecology & conservation",
+        "Taxonomy & biodiversity recording",
+        "Monitoring & environmental risk"
+      ],
+      "firstSeen": "2026-09-30",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111796-biodiversity-project-officer",
+        "https://crawley.gov.uk/council-information/jobs-and-careers/current-vacancies/biodiversity-project-officer-0"
+      ],
+      "deadlineAt": "2026-10-19T00:00:00+01:00",
+      "relevanceTier": "Core subject",
+      "fitReason": "Applies ecological survey and biodiversity assessment skills; most suitable for students with relevant prior professional experience.",
+      "searchKeywords": [
+        "biodiversity",
+        "ecological surveys",
+        "habitat management",
+        "biodiversity net gain"
+      ],
+      "courses": [
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "tcv-biodiversity-action-volunteer-officer-2026",
+      "title": "Biodiversity Action Projects Volunteer Officer",
+      "organisation": "The Conservation Volunteers (TCV)",
+      "type": "volunteering",
+      "location": "Alloa, Glasgow, Lochshore (Kilbirnie) or Edinburgh",
+      "country": "United Kingdom",
+      "region": "Scotland",
+      "workplace": "Field based",
+      "deadline": null,
+      "deadlineLabel": "No deadline stated — confirm availability",
+      "status": "open-no-deadline",
+      "funding": "Unpaid",
+      "compensation": "Unpaid volunteering; reasonable travel expenses, training, tools and protective equipment provided",
+      "eligibility": "No qualifications or previous conservation volunteering experience required. Enthusiasm, reliability, teamwork and confidence with different age groups expected. Driving licence desirable. Role specifies a Level 1 Disclosure Scotland check; TCV also describes reference/safeguarding checks. Visa eligibility is not stated.",
+      "careerLevel": "No previous experience required",
+      "contract": "Minimum commitment of 1–2 days/week for at least six months; days can be flexible",
+      "summary": "Help organise volunteer conservation work, including pollinator meadows, habitat restoration and species monitoring, with supervision and practical training.",
+      "tags": [
+        "Volunteering",
+        "Pollinator habitats",
+        "Species monitoring",
+        "Citizen science",
+        "Conservation skills"
+      ],
+      "url": "https://www2.tcv.org.uk/cgi-bin/volunteer/key_vol_vacancy?id=381",
+      "source": "The Conservation Volunteers",
+      "sourceUrl": "https://environmentjob.co.uk/volunteering/111342-biodiversity-action-projects-volunteer-officer",
+      "lastChecked": "2026-09-30",
+      "dateBasis": "TCV advert gives no deadline; environmentjob also states that none is specified.",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Ecology & conservation",
+        "Pollination & beneficial insects",
+        "Taxonomy & biodiversity recording"
+      ],
+      "firstSeen": "2026-09-30",
+      "provenance": [
+        "https://environmentjob.co.uk/volunteering/111342-biodiversity-action-projects-volunteer-officer",
+        "https://www2.tcv.org.uk/cgi-bin/volunteer/key_vol_vacancy?id=381"
+      ],
+      "deadlineAt": null,
+      "relevanceTier": "Core subject",
+      "fitReason": "Builds field conservation, pollinator habitat and biodiversity monitoring experience alongside study where location and time commitment permit.",
+      "searchKeywords": [
+        "biodiversity",
+        "pollinators",
+        "species monitoring",
+        "citizen science",
+        "volunteering"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
     }
   ]
 }

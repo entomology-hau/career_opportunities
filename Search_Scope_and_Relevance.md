@@ -34,7 +34,9 @@ The “Relevance” filter separates direct connections to at least one of Entom
 
 ## Keeping the searches useful
 
-Broader terms are now in the keyword configuration, visible on the page, and included in focused Google and FindAPhD search links. The new employer/provider source cards support direct checks. Broad search terms do **not** imply new automated integrations: the current automatic discovery adapter still covers the RES indices; other sources require review or a future verified integration.
+Broader terms are in the keyword configuration, visible on the page, and included in focused Google and FindAPhD search links. Automatic discovery now covers the repaired RES jobs/PhD indices and the official environmentjob jobs/volunteering, Bath and Harper Adams RSS feeds. The other employer/provider cards support manual checks. Google and FindAPhD remain assisted searches, so the board does not claim exhaustive coverage.
+
+RSS screening checks both titles and short descriptions. Direct insect/IPM/recording matches are prioritised for review; broad ecology, biodiversity and GIS matches are marked as needing context. HR, fundraising, trusteeships, research administration and internal-only calls are excluded by title. A senior ecological role may still be relevant to a career pathway, so seniority is assessed and shown rather than silently treated as graduate eligibility.
 
 Review weekly, confirm on original adverts, and retain source and check dates. A current search result is not sufficient evidence of an open vacancy; old snapshots can persist.
 
@@ -51,5 +53,13 @@ The [Biological Recording course](https://www.harper-adams.ac.uk/courses/postgra
 Thirteen of the 22 stored adverts have a Biological Recording connection; twelve are within their deadline on 30 September, following the NHM digitisation advert's closure. Course mapping is an editorial assessment of the existing summaries, not a new verification of the advert; original `lastChecked` dates are preserved.
 
 Tetra Tech, PBA, United Utilities and the Newcastle landscape-survey PhD are now core Biological Recording routes. The microbial eDNA project remains a related field because of its specialist molecular focus and entry prerequisites. Crop-advice, insect-rearing and IPM decision-support roles are not automatically labelled Biological Recording.
+
+## Collection repair and review — 30 September 2026
+
+The repaired collectors parsed 301 source entries in the final live run: RES jobs 24, RES PhDs 9, environmentjob jobs 189 and volunteering 44, Bath 31 and Harper Adams 4. All six collectors worked. The first discovery pass added 61 candidates to the existing queue. These are possible leads, not 61 approved opportunities; broad biodiversity matches still require relevance, eligibility and deadline checks.
+
+Two were verified on their original employer/provider adverts and added: Crawley Borough Council's Biodiversity Project Officer and TCV's Biodiversity Action Projects Volunteer Officer. The council role requires prior professional ecological experience. The volunteering role requires no prior qualifications or experience, but its Scottish locations and substantial time commitment must work for the student. Both make a clear Biological Recording connection; the TCV projects also include pollinator habitats.
+
+The board now stores 24 reviewed adverts, of which 23 are within their deadlines on 30 September. Sixty candidates remain pending. Two assistant ecologist leads were held back because salary/deadline details conflicted or full employer eligibility details were unavailable. Wider coverage is useful only when those differences are checked.
 
 Additional manual sources: [CIEEM vacancies](https://cieem.net/ecology-and-environmental-management-jobs/), [Field Studies Council volunteering](https://www.field-studies-council.org/jobs-at-field-studies-council/volunteering-with-field-studies-council/), [NBN recording-scheme directory](https://nbn.org.uk/tools-and-resources/useful-websites/database-of-wildlife-surveys-and-recording-schemes/) and [ALERC records-centre finder](https://www.alerc.org.uk/lerc-finder.html). The last two are directories, not vacancy feeds. Check individual providers and current participation before adding an advert.
