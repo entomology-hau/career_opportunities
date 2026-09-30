@@ -12,8 +12,10 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
+    outputs:
+      stale: ${{ steps.persist.outputs.stale }}
     permissions:
       contents: write
       pages: read
@@ -29,22 +31,35 @@ jobs:
           node tests/test_board.cjs
       - name: Discover candidates and check existing links
         run: python scripts/refresh.py
-      - name: Preserve check results and review queue
+      - name: Create review digest
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data/health.json site/data/opportunities.json data/review-queue.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Check opportunity sources and update review queue"
-            git push
-          fi
+          python scripts/review.py digest --output review-digest.md
+          cat review-digest.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Preserve review evidence for this run
+        uses: actions/upload-artifact@v7
+        with:
+          name: opportunity-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            review-digest.md
+            data/review-queue.json
+            site/data/health.json
+          if-no-files-found: error
+          retention-days: 30
+      # A newer human push normally queues a fresh run. Keep this run's evidence
+      # above, then skip its publication if main moved; never overwrite that push.
+      - name: Preserve check results and review queue
+        id: persist
+        run: python scripts/persist_checks.py
       - uses: actions/configure-pages@v5
+        if: steps.persist.outputs.stale == 'false'
       - uses: actions/upload-pages-artifact@v4
+        if: steps.persist.outputs.stale == 'false'
         with:
           path: site
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build
+    if: needs.build.outputs.stale == 'false'
     permissions:
       pages: write
       id-token: write
