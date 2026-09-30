@@ -1,169 +1,169 @@
 {
-  "lastRun": "2026-09-30T10:49:11.500724+00:00",
+  "lastRun": "2026-09-30T13:40:16.153516+00:00",
   "sources": [
     {
       "id": "res-jobs",
       "status": "unavailable",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
       "message": "No candidate headings found; check source format"
     },
     {
       "id": "res-phds",
       "status": "unavailable",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
       "message": "No candidate headings found; check source format"
     }
   ],
   "links": [
     {
       "id": "lincoln-pest-networks-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "f634010e375778adf31a9408e6591ac177e6b4424c8da827e3d67d64e8cf6656"
+      "contentHash": "7b0ae16e4b7cd7a79ad64b759a46edc40a013aad51bf779fcbddf66deacf4f31"
     },
     {
       "id": "hutton-peatlands-pollinators-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "ba881faf663d50b11fed500115ac22f73413f564c48e239b6b961a60a38cb376"
+      "contentHash": "b29212bd8cefbecab279b279926b1877f95317b21dc00a55ce75d8bba801aec0"
     },
     {
       "id": "leeds-black-soldier-fly-b12-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
       "contentHash": "f2d745c153326c70820afc90dab0385196a958596100a955bbde22133b3040a3"
     },
     {
       "id": "nhm-dissco-digitiser-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
       "status": "past-deadline"
     },
     {
       "id": "rspb-woodland-scientist-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "a83afc4b4546b9dc01f077ffb49ebb82296c3b79e1e66cb5299412250604d8c6"
+      "contentHash": "2a52f1500b665dfdea375a45a5a6e77e9952450398d8a93a01c54fbc2f1f5e21"
     },
     {
       "id": "butterfly-grassland-officer-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "c857cdee922832e29fe7bcb003fbe75bf0ef7454de47d76491cda98bd66b6415"
+      "contentHash": "e07ff307bf07fc54da74ce6d8aeb22c4f5ac859105ca58fc2e6c5660cc5fcbf5"
     },
     {
       "id": "wildfish-smartrivers-analysts",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "5600503d8717e1b638b1ab161acc69d190e70eb5a5caf04c08c0977fc4a28d00"
+      "contentHash": "332cad8f2de88fbf829e95fdd679eca06d784db21398aaa308964fe9e3d9c167"
     },
     {
       "id": "monteverde-insect-internship",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
       "contentHash": "087ab2d03e192d9193d4bc39a928415e02bcd2d99c06cefc915596f8f5419383"
     },
     {
       "id": "beewalk-volunteer",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "3450c00d170e848567f36dd32f19e8cfbf33af726e7faefba149ac6cfe58bde2"
+      "contentHash": "fbaf9f4a7da5786a64605ab33acc9e86530d9303e272349bbb0de0c7d1a0dc72"
     },
     {
       "id": "kcl-fly-facility-technician-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
       "status": "needs-check",
       "message": "robots.txt unavailable; skipped conservatively"
     },
     {
       "id": "morepeople-horticulture-ipm-advisor-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "e79f953f148e39a4d98f99a3a8a14859b1c80974de987bc12bc4b471ac7278b8"
+      "contentHash": "818891f809ceff54ad69d38a6da3335a78f5dc8dad751b4b45a8ef0a5577d495"
     },
     {
       "id": "forest-research-scientist-pathology-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "42e5a6dce73994b4e30cda1cc1e91bed5239ddcb3362b7dc5ff293a855c29f74"
+      "contentHash": "750056b4a7d0e715180ee9dc29c11adcbb8d95f20adf5e5981576829025e6147"
     },
     {
       "id": "utrecht-plant-microbiome-pathogen-phd-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "7bd82f7eb45c038639320c206a6c762254c998ab6cadf4f51636bffd6f2a3680"
+      "contentHash": "34aba07b157b1feb5e5eca64a44d328670ae562b7deff2ed978fa4dd0b407bfb"
     },
     {
       "id": "pepsico-agricultural-science-technician-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "6e4288345bc00a9ba0b7078b752dd12eb64514d35a795771b29eec9755800ef0"
+      "contentHash": "0e2acb56559c6f37ece666108e14265ad34dac48368a8b8c7c72e15e23cfaeae"
     },
     {
       "id": "hutchinsons-horticultural-agronomist-eastanglia-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
       "contentHash": "34a046dedb039cccacf21abac45e9f45547d0aa5f438b97eab29a5db3c3b1d20"
     },
     {
       "id": "tetra-tech-graduate-ecologist-2027",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "7fb46800b65458df52b2fcdc5395d745280bd0d653847d04c8744b0ef4dc23cf"
+      "contentHash": "d3a3379809e4ccc68acefdcbbc922aefe077a0f004818a3c659c91be8913856c"
     },
     {
       "id": "pba-graduate-assistant-ecologist-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
       "status": "needs-check",
       "message": "robots.txt unavailable; skipped conservatively"
     },
     {
       "id": "united-utilities-graduate-ecologist-2027",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "f549753e8baefb4be838c9bff83cdc51fd50dfb8a34ca47e9f0b313d84e8b15f"
+      "contentHash": "812a424e82505e580c5f3bd4c979a8d59c22eaadf295b19558df03d819c599d5"
     },
     {
       "id": "newcastle-agroforestry-wildlife-connectivity-2026",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "99880c72b9f70aa0d94f9f9285fdad10c63a5f6ee0a49fd80c76b02a3cd0c24d"
+      "contentHash": "9eee868eebc5151e76f6ba5f3bbd3c46322783df2fd1a7f051bc87ab91066ad1"
     },
     {
       "id": "riverfly-volunteer-monitor",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "3c4254e91c6cfd10c8f6695e935269681f1dfca431183f65fe33e13bf4bacddd"
+      "contentHash": "46f958dfecc6efe52077c8c594a244bededf65467509720ee142a75284b5e7c1"
     },
     {
       "id": "ukbms-wider-countryside-volunteer",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "5be571abad565073c0ac85ce58acd5fd9eb0374b632b4876521dd832b570ace5"
+      "contentHash": "6fb1cafa3b700f5d4dbae2ed413f0ad03102f8ed1248b515d46235dd786a7eb9"
     },
     {
       "id": "crg-mountain-lakes-edna-2027",
-      "lastAttempt": "2026-09-30T10:49:11.500724+00:00",
+      "lastAttempt": "2026-09-30T13:40:16.153516+00:00",
+      "lastSucceeded": "2026-09-30T13:40:16.153516+00:00",
       "status": "reachable",
-      "lastSucceeded": "2026-09-30T10:49:11.500724+00:00",
-      "contentHash": "244f2156442c898fcc871dfad9ce56f6f4d6c9f21985f76aebb962fdec82a249"
+      "contentHash": "2aa1a7a4c9661c33028761b4dd221cd05fdeed26677ab872c7df4b365b22095c"
     }
   ],
   "summary": "0 of 2 discovery sources reached; 2 advert links need checking. New adverts require editorial review."
