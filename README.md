@@ -1,6 +1,6 @@
 # Entomology, IPM & Biological Recording opportunities
 
-A static opportunities board for Harper Adams MSc Entomology, MSc Integrated Pest Management and Biological Recording students. The design follows the postgraduate induction slides with navy/blue accents and Montserrat typography, with readable light and dark themes. The banner uses the supplied transparent HAU logo on a navy header that stays the same in light and dark mode. All three course links are prefixed “MSc / PgD / PgC”.
+A static opportunities board for Harper Adams MSc Entomology, MSc Integrated Pest Management and Biological Recording students.
 
 ## What it is
 
