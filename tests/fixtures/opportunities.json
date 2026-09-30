@@ -1,0 +1,1163 @@
+{
+  "schemaVersion": 1,
+  "timezone": "Europe/London",
+  "opportunities": [
+    {
+      "id": "lincoln-pest-networks-2026",
+      "title": "Optimal pest detection networks for robust management decisions",
+      "organisation": "University of Lincoln · SUSTAIN CDT / BBRO",
+      "type": "phd",
+      "location": "Lincoln; research time with BBRO in Norwich",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "On site",
+      "deadline": "2026-10-16",
+      "deadlineTime": "12:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "16 October 2026, 12 noon UK time",
+      "status": "open",
+      "funding": "Funded",
+      "compensation": "Tuition fees plus tax-free UKRI-rate stipend; £3,000 annual research training support",
+      "eligibility": "UK students only; relevant 2:1 or Master's in computer science, AI, operations research, population ecology or pest management.",
+      "careerLevel": "Graduate / postgraduate",
+      "summary": "Develop pest and beneficial-insect monitoring networks for sugar beet using GIS, optimisation and AI, then test decision tools with BBRO.",
+      "tags": [
+        "Integrated pest management",
+        "Agricultural entomology",
+        "Data science",
+        "Insect monitoring"
+      ],
+      "url": "https://www.findaphd.com/phds/project/optimal-pest-detection-networks-for-robust-management-decisions/?p198653=",
+      "source": "FindAPhD",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Advert deadline explicitly stated",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Crop protection & IPM",
+        "Monitoring & environmental risk"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+        "https://www.findaphd.com/phds/project/optimal-pest-detection-networks-for-robust-management-decisions/?p198653="
+      ],
+      "deadlineAt": "2026-10-16T12:00:00+01:00",
+      "relevanceTier": "Core subject",
+      "fitReason": "Direct IPM research combining pest and beneficial-insect monitoring with spatial analysis and management decisions.",
+      "searchKeywords": [
+        "IPM",
+        "integrated pest management",
+        "crop protection"
+      ],
+      "courses": [
+        "entomology",
+        "ipm"
+      ]
+    },
+    {
+      "id": "hutton-peatlands-pollinators-2026",
+      "title": "Peatlands, plants, and pollinators: an informatics approach to protecting natural capital",
+      "organisation": "The James Hutton Institute / University of Plymouth / Butterfly Conservation",
+      "type": "phd",
+      "location": "Dundee and Scottish peatland field sites",
+      "country": "United Kingdom",
+      "region": "Scotland",
+      "workplace": "Field and laboratory",
+      "deadline": "2026-10-23",
+      "deadlineLabel": "23 October 2026",
+      "status": "open",
+      "funding": "Competition funded",
+      "compensation": "3.5-year funded studentship; stipend amount not stated on checked advert",
+      "eligibility": "Advert requires relevant 2:1 BSc, UK citizenship and full clean driving licence.",
+      "careerLevel": "Graduate / postgraduate",
+      "summary": "Combine population genetics, drone imagery and landscape analysis to study Large Heath butterflies and their plant resources across Scottish peatlands.",
+      "tags": [
+        "Insect conservation",
+        "Pollinators",
+        "Population genetics",
+        "GIS"
+      ],
+      "url": "https://www.findaphd.com/phds/project/peatlands-plants-and-pollinators-an-informatics-approach-to-protecting-natural-capital/?p198700=",
+      "source": "FindAPhD",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Advert deadline explicitly stated",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Ecology & conservation",
+        "Pollination & beneficial insects",
+        "Monitoring & environmental risk"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+        "https://www.findaphd.com/phds/project/peatlands-plants-and-pollinators-an-informatics-approach-to-protecting-natural-capital/?p198700="
+      ],
+      "deadlineAt": "2026-10-24T00:00:00+01:00",
+      "relevanceTier": "Core subject",
+      "fitReason": "Combines butterfly conservation, population genetics and landscape analysis; useful for an ecological research pathway.",
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "leeds-black-soldier-fly-b12-2026",
+      "title": "Closing the Vitamin B12 Gap with Insects",
+      "organisation": "University of Leeds · NAPIC",
+      "type": "phd",
+      "location": "Leeds",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "On site",
+      "deadline": "2026-09-30",
+      "deadlineLabel": "30 September 2026",
+      "status": "open",
+      "funding": "Funded (home-fee level)",
+      "compensation": "UK tuition fees and £21,805 annual stipend (2026/27), for 3.5 years",
+      "eligibility": "Open to UK and international applicants. International students must cover the difference between UK and international tuition fees. Project starts 1 February 2027.",
+      "careerLevel": "Graduate / postgraduate",
+      "summary": "Optimise vitamin B12 production in black soldier fly larvae and investigate its availability following digestion, with applications in food and feed.",
+      "tags": [
+        "Insect rearing",
+        "Insects as food and feed",
+        "Applied entomology"
+      ],
+      "url": "https://phd.leeds.ac.uk/project/2451-napic-closing-the-vitamin-b12-gap-with-insects-optimised-black-soldier-fly-larvae-and-digestive-bioavailability",
+      "source": "University of Leeds",
+      "sourceUrl": "https://www.findaphd.com/phds/project/napic-closing-the-vitamin-b12-gap-with-insects-optimised-black-soldier-fly-larvae-and-digestive-bioavailability/?p195292=",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "University deadline explicitly stated",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.findaphd.com/phds/project/napic-closing-the-vitamin-b12-gap-with-insects-optimised-black-soldier-fly-larvae-and-digestive-bioavailability/?p195292=",
+        "https://phd.leeds.ac.uk/project/2451-napic-closing-the-vitamin-b12-gap-with-insects-optimised-black-soldier-fly-larvae-and-digestive-bioavailability"
+      ],
+      "deadlineAt": "2026-10-01T00:00:00+01:00",
+      "relevanceTier": "Core subject",
+      "fitReason": "Applies insect-rearing and experimental skills to food and feed research.",
+      "searchKeywords": [],
+      "courses": [
+        "entomology"
+      ]
+    },
+    {
+      "id": "nhm-dissco-digitiser-2026",
+      "title": "DiSSCo UK Digitiser",
+      "organisation": "Natural History Museum",
+      "type": "job",
+      "location": "South Kensington, London",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "On site",
+      "deadline": "2026-09-29",
+      "deadlineTime": "23:59",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "29 September 2026, 23:59",
+      "status": "open",
+      "funding": "Paid",
+      "compensation": "£32,459 per annum",
+      "eligibility": "Applicants must already have the right to work in the UK; museum sponsorship unavailable.",
+      "careerLevel": "Early career",
+      "contract": "36 hours per week; fixed term until 31 March 2028",
+      "summary": "Capture images and specimen data from entomology or botany collections to support the national digitisation of natural science collections.",
+      "tags": [
+        "Museum collections",
+        "Taxonomy",
+        "Biodiversity data"
+      ],
+      "url": "https://jobs.nhm.ac.uk/Job/JobDetail?JobId=945",
+      "source": "Natural History Museum",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Employer closing date and time explicitly stated",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Taxonomy & biodiversity recording"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+        "https://jobs.nhm.ac.uk/Job/JobDetail?JobId=945"
+      ],
+      "deadlineAt": "2026-09-29T23:59:00+01:00",
+      "relevanceTier": "Core subject",
+      "fitReason": "An early-career route into natural-history collections, specimen data and digitisation; some work may be botanical.",
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "rspb-woodland-scientist-2026",
+      "title": "Conservation Scientist (Broadleaved Woodland)",
+      "organisation": "RSPB",
+      "type": "job",
+      "location": "Home based in England, with fieldwork across southern England",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "Hybrid",
+      "deadline": "2026-10-07",
+      "deadlineLabel": "7 October 2026",
+      "status": "open",
+      "funding": "Paid",
+      "compensation": "£40,381–£43,112 per annum",
+      "eligibility": "PhD or equivalent professional research experience; invertebrate sampling and identification experience; UK-valid driving licence.",
+      "careerLevel": "Experienced / PhD or equivalent",
+      "contract": "Full time; 30-month fixed-term contract, October 2026–March 2029",
+      "summary": "Lead research on whether restoring woodland hydrology benefits invertebrates and habitat resources for Lesser Spotted Woodpeckers.",
+      "tags": [
+        "Invertebrate ecology",
+        "Conservation",
+        "Field ecology",
+        "Data analysis"
+      ],
+      "url": "https://environmentjob.co.uk/jobs/111702-conservation-scientist-broadleaved-woodland",
+      "source": "environmentjob",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Advert deadline explicitly stated",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Ecology & conservation",
+        "Monitoring & environmental risk"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+        "https://environmentjob.co.uk/jobs/111702-conservation-scientist-broadleaved-woodland"
+      ],
+      "deadlineAt": "2026-10-08T00:00:00+01:00",
+      "relevanceTier": "Core subject",
+      "fitReason": "Substantial invertebrate research, but requires a PhD or equivalent research experience; a later-career option for most MSc students.",
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "butterfly-grassland-officer-2026",
+      "title": "Limestone Grassland Landscape Officer",
+      "organisation": "Butterfly Conservation",
+      "type": "job",
+      "location": "Derrygonnelly, County Fermanagh",
+      "country": "United Kingdom",
+      "region": "Northern Ireland",
+      "workplace": "Hybrid",
+      "deadline": "2026-10-12",
+      "deadlineTime": "12:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "12 October 2026, 12 noon",
+      "status": "open",
+      "funding": "Paid",
+      "compensation": "£30,000–£32,666 per annum plus 8% pension contribution",
+      "eligibility": "Applicants must be resident in the UK and have the right to work. Consult the full role specification for experience requirements.",
+      "careerLevel": "Professional",
+      "contract": "37 hours per week; fixed term until 31 July 2029",
+      "summary": "Survey priority butterflies and moths, coordinate limestone grassland management and work with farmers, land managers and volunteers.",
+      "tags": [
+        "Insect conservation",
+        "Lepidoptera",
+        "Habitat management",
+        "GIS"
+      ],
+      "url": "https://environmentjob.co.uk/jobs/111757-limestone-grassland-landscape-officer",
+      "source": "environmentjob",
+      "sourceUrl": "https://butterfly-conservation.org/jobs",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Advert deadline and noon cutoff explicitly stated",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Ecology & conservation",
+        "Taxonomy & biodiversity recording"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://butterfly-conservation.org/jobs",
+        "https://environmentjob.co.uk/jobs/111757-limestone-grassland-landscape-officer"
+      ],
+      "deadlineAt": "2026-10-12T12:00:00+01:00",
+      "relevanceTier": "Core subject",
+      "fitReason": "Uses butterfly and moth survey skills in practical habitat conservation and work with land managers.",
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "wildfish-smartrivers-analysts",
+      "title": "SmartRivers Analysts & Trainers",
+      "organisation": "WildFish",
+      "type": "job",
+      "location": "Across the UK",
+      "country": "United Kingdom",
+      "region": "UK-wide",
+      "workplace": "Field and laboratory",
+      "deadline": null,
+      "deadlineLabel": "No closing date advertised",
+      "status": "open-no-deadline",
+      "funding": "Paid",
+      "compensation": "Competitive day or per-sample rates; amount not stated",
+      "eligibility": "Strong aquatic-invertebrate identification skills; laboratory/workspace and quality-control process for analysis; driving licence and car.",
+      "careerLevel": "Specialist experience required",
+      "contract": "Part-time, freelance, ad hoc work",
+      "summary": "Analyse aquatic-invertebrate samples to species level and/or train community groups in river sampling and identification.",
+      "tags": [
+        "Aquatic invertebrates",
+        "Taxonomy",
+        "Biological recording",
+        "Training"
+      ],
+      "url": "https://environmentjob.co.uk/jobs/111599-smartrivers-analysts-trainers",
+      "source": "environmentjob",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Live advert says closing date not specified; do not label as confirmed rolling recruitment",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Taxonomy & biodiversity recording",
+        "Ecology & conservation"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+        "https://environmentjob.co.uk/jobs/111599-smartrivers-analysts-trainers"
+      ],
+      "deadlineAt": null,
+      "relevanceTier": "Core subject",
+      "fitReason": "A specialist route for students with strong aquatic-invertebrate identification; independent workspace and quality control are required.",
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "monteverde-insect-internship",
+      "title": "Insect education and butterfly-rearing internship",
+      "organisation": "Monteverde Butterfly Gardens",
+      "type": "internship",
+      "secondaryTypes": [
+        "volunteering"
+      ],
+      "location": "Monteverde",
+      "country": "Costa Rica",
+      "region": "International",
+      "workplace": "On site",
+      "deadline": null,
+      "deadlineLabel": "Year-round openings",
+      "status": "rolling",
+      "funding": "Unpaid; board and lodging provided",
+      "compensation": "Accommodation and food provided in return for volunteering; no salary advertised",
+      "eligibility": "No prior entomological experience required; enthusiasm for science education and delivering tours.",
+      "careerLevel": "Entry level",
+      "contract": "10-week placement; five days per week",
+      "summary": "Lead insect and arachnid tours and help with butterfly breeding and garden maintenance in Costa Rica.",
+      "tags": [
+        "Insect rearing",
+        "Science communication",
+        "Lepidoptera",
+        "Environmental education"
+      ],
+      "url": "https://www.monteverdebutterflygardens.com/volunteer",
+      "source": "Monteverde Butterfly Gardens",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Provider explicitly advertises year-round openings",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Insect biology & behaviour",
+        "Ecology & conservation"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+        "https://www.monteverdebutterflygardens.com/volunteer"
+      ],
+      "deadlineAt": null,
+      "relevanceTier": "Core subject",
+      "fitReason": "Develops insect husbandry and science communication; unpaid, with food and accommodation provided.",
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology"
+      ]
+    },
+    {
+      "id": "beewalk-volunteer",
+      "title": "BeeWalk volunteer surveyor",
+      "organisation": "Bumblebee Conservation Trust",
+      "type": "volunteering",
+      "location": "Local routes across Great Britain",
+      "country": "United Kingdom",
+      "region": "Great Britain",
+      "workplace": "Field based",
+      "deadline": null,
+      "deadlineLabel": "Ongoing registration; surveys March–October",
+      "status": "rolling",
+      "funding": "Unpaid",
+      "compensation": "Volunteer citizen-science role",
+      "eligibility": "Basic bumblebee-identification knowledge and a few hours each month; training and guidance available.",
+      "careerLevel": "Entry level",
+      "contract": "Monthly 1–2 km fixed-route surveys in season",
+      "summary": "Build field identification and recording experience by monitoring bumblebees on a local fixed route each month during the survey season.",
+      "tags": [
+        "Pollinators",
+        "Biological recording",
+        "Field ecology",
+        "Citizen science"
+      ],
+      "url": "https://www.bumblebeeconservation.org/what-we-do/our-projects/current-projects/trust-led-projects/beewalk/",
+      "source": "Bumblebee Conservation Trust",
+      "sourceUrl": "https://beewalk.org.uk/",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Provider invites registration for ongoing monitoring scheme",
+      "notes": "BeeWalk registration/data website currently reports temporary data-submission and route-mapping issues; contact scheme if affected.",
+      "reviewStatus": "approved",
+      "subjects": [
+        "Pollination & beneficial insects",
+        "Taxonomy & biodiversity recording"
+      ],
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://beewalk.org.uk/",
+        "https://www.bumblebeeconservation.org/what-we-do/our-projects/current-projects/trust-led-projects/beewalk/"
+      ],
+      "deadlineAt": null,
+      "relevanceTier": "Core subject",
+      "fitReason": "Accessible field identification and repeated biological recording experience alongside study.",
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "kcl-fly-facility-technician-2026",
+      "title": "Technician (Fly Facility + technical support across CDN)",
+      "organisation": "King's College London · Centre for Developmental Neurobiology",
+      "type": "job",
+      "location": "Guy's Campus, London",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "On site",
+      "deadline": "2026-10-09",
+      "deadlineTime": "23:59",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "9 October 2026, 23:59",
+      "status": "open",
+      "funding": "Paid",
+      "compensation": "£34,713–£38,127 per annum, including London weighting",
+      "eligibility": "Level 3 qualification plus relevant scientific/technical experience, or substantial equivalent work-based skills. Further technical and safety criteria apply; check the full person specification.",
+      "careerLevel": "Technical experience required",
+      "contract": "35 hours per week; permanent",
+      "summary": "Support Drosophila research by preparing fly media, maintaining equipment and managing supplies, alongside wider laboratory operations and safety support.",
+      "tags": [
+        "Insect rearing",
+        "Drosophila",
+        "Laboratory research",
+        "Technical support"
+      ],
+      "url": "https://www.kcl.ac.uk/jobs/159585-technician-fly-facility-technical-support-across-cdn",
+      "source": "King's College London",
+      "sourceUrl": "https://www.jobs.ac.uk/job/DTB364/technician-fly-facility-technical-support-across-cdn",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Employer search-indexed advert and jobs.ac.uk agree on 9 October; employer states adverts close at 23:59.",
+      "notes": "The employer may close this advert early.",
+      "reviewStatus": "approved",
+      "firstSeen": "2026-09-29",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "deadlineAt": "2026-10-09T23:59:00+01:00",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DTB364/technician-fly-facility-technical-support-across-cdn",
+        "https://www.kcl.ac.uk/jobs/159585-technician-fly-facility-technical-support-across-cdn"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "A technical route into insect-based laboratory research and husbandry; relevant practical experience is required.",
+      "searchKeywords": [],
+      "courses": [
+        "entomology"
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "region": "England",
+      "status": "open-no-deadline",
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "No closing date advertised",
+      "funding": "Paid",
+      "lastChecked": "2026-09-29",
+      "firstSeen": "2026-09-29",
+      "reviewStatus": "approved",
+      "id": "morepeople-horticulture-ipm-advisor-2026",
+      "title": "Horticulture Technical Sales Advisor",
+      "organisation": "MorePeople · recruiting for a biological crop protection and pollination business",
+      "type": "job",
+      "location": "Home based in England, with travel throughout the UK",
+      "workplace": "Hybrid",
+      "compensation": "Salary dependent on experience, plus company car and bonus",
+      "eligibility": "Commercial horticulture experience or strong understanding of commercial growing, crop health and IPM; full UK driving licence. BASIS/FACTS are desirable, with training support available.",
+      "careerLevel": "Relevant growing / technical experience",
+      "contract": "Home based with regular travel and overnight stays",
+      "summary": "Advise commercial growers on biocontrol, pollination and IPM programmes, diagnose crop problems and develop customer relationships.",
+      "tags": [
+        "Integrated pest management",
+        "Biological control",
+        "Pollination",
+        "Protected crops",
+        "Technical advice"
+      ],
+      "url": "https://www.morepeople.co.uk/job/horticulture-technical-sales-advisor-sw21813-1789118466",
+      "source": "MorePeople",
+      "sourceUrl": "https://www.morepeople.co.uk/job/horticulture-technical-sales-advisor-sw21813-1789118466",
+      "dateBasis": "Recruiter's live advert posted 11 September 2026; applications invited, no closing date stated.",
+      "subjects": [
+        "Crop protection & IPM",
+        "Biological control",
+        "Pollination & beneficial insects"
+      ],
+      "provenance": [
+        "https://www.morepeople.co.uk/job/horticulture-technical-sales-advisor-sw21813-1789118466"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "Direct application of IPM, beneficial-insect knowledge and crop diagnosis; commercial skills also matter.",
+      "searchKeywords": [
+        "IPM",
+        "integrated pest management",
+        "crop protection",
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "ipm"
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "region": "Scotland",
+      "status": "open",
+      "deadline": "2026-10-18",
+      "deadlineAt": "2026-10-19T00:00:00+01:00",
+      "deadlineLabel": "18 October 2026",
+      "funding": "Paid",
+      "lastChecked": "2026-09-29",
+      "firstSeen": "2026-09-29",
+      "reviewStatus": "approved",
+      "id": "forest-research-scientist-pathology-2026",
+      "title": "Scientist – Pathology",
+      "organisation": "Forest Research · Tree Health research group",
+      "type": "job",
+      "location": "Northern Research Station, Roslin, Midlothian",
+      "workplace": "Hybrid",
+      "compensation": "£33,854 per annum",
+      "eligibility": "Relevant plant-science, microbiology or biochemistry degree, or postgraduate plant pathology/microbiology qualification; demonstrated molecular, microscopy and culture skills; UK-valid driving licence. Civil Service nationality rules apply.",
+      "careerLevel": "Graduate with relevant laboratory skills",
+      "summary": "Diagnose tree diseases, support field and laboratory investigations and communicate evidence on pathogen threats and biosecurity.",
+      "tags": [
+        "Plant pathology",
+        "Plant health",
+        "Biosecurity",
+        "Diagnostics",
+        "Forest health"
+      ],
+      "url": "https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi?jcode=2015055",
+      "source": "Forest Research",
+      "sourceUrl": "https://www.forestresearch.gov.uk/about-us/careers/",
+      "dateBasis": "Forest Research current-vacancies page explicitly gives 18 October 2026; employer's indexed LinkedIn advert supplies salary and person specification.",
+      "subjects": [
+        "Crop protection & IPM",
+        "Monitoring & environmental risk"
+      ],
+      "provenance": [
+        "https://www.forestresearch.gov.uk/about-us/careers/",
+        "https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi?jcode=2015055",
+        "https://uk.linkedin.com/jobs/view/scientist-pathology-at-forestry-commission-4471334746"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "Strong IPM route into plant disease diagnosis and biosecurity; needs practical pathology skills.",
+      "searchKeywords": [
+        "IPM",
+        "integrated pest management",
+        "crop protection"
+      ],
+      "courses": [
+        "ipm"
+      ]
+    },
+    {
+      "country": "Netherlands",
+      "region": "International",
+      "status": "open",
+      "deadline": "2026-10-01",
+      "deadlineAt": "2026-10-02T00:00:00+02:00",
+      "deadlineLabel": "1 October 2026",
+      "funding": "Salaried PhD",
+      "lastChecked": "2026-09-29",
+      "firstSeen": "2026-09-29",
+      "reviewStatus": "approved",
+      "id": "utrecht-plant-microbiome-pathogen-phd-2026",
+      "title": "Predictive Plant–Microbiome–Pathogen Interactions",
+      "organisation": "Utrecht University · Plant-Microbe Interactions group",
+      "type": "phd",
+      "location": "Utrecht",
+      "workplace": "On site",
+      "compensation": "€3,204–€4,051 gross per month across years 1–4, plus holiday pay and year-end bonus",
+      "eligibility": "Relevant MSc in plant biology, microbiology, plant pathology, biotechnology, bioinformatics or a related discipline; laboratory or plant experimental experience and English proficiency.",
+      "careerLevel": "MSc graduate",
+      "contract": "36–40 hours per week; initial 18 months, extendable to four years after positive assessment",
+      "summary": "Use potato experiments, soil microbiomes, phenotyping and predictive models to investigate disease resistance and test potentially protective microbes.",
+      "tags": [
+        "Plant pathology",
+        "Biological control",
+        "Plant health",
+        "Microbiome",
+        "Crop protection"
+      ],
+      "url": "https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs/phd-position-on-predictive-plant-microbiome-pathogen-interactions",
+      "source": "Utrecht University",
+      "sourceUrl": "https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs/phd-position-on-predictive-plant-microbiome-pathogen-interactions",
+      "dateBasis": "University advert explicitly states 1 October 2026.",
+      "subjects": [
+        "Crop protection & IPM",
+        "Biological control"
+      ],
+      "provenance": [
+        "https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs/phd-position-on-predictive-plant-microbiome-pathogen-interactions"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "Connects disease management, protective microbes and experimental design; particularly relevant to IPM graduates.",
+      "deadlineTimezone": "Europe/Amsterdam",
+      "searchKeywords": [
+        "IPM",
+        "integrated pest management",
+        "crop protection"
+      ],
+      "courses": [
+        "ipm"
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "region": "England",
+      "status": "open-no-deadline",
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "No closing date advertised",
+      "funding": "Paid",
+      "lastChecked": "2026-09-29",
+      "firstSeen": "2026-09-29",
+      "reviewStatus": "approved",
+      "id": "pepsico-agricultural-science-technician-2026",
+      "title": "Agricultural Science Technician (Crop Technology)",
+      "organisation": "PepsiCo · Global R&D Agricultural Science",
+      "type": "job",
+      "location": "Leicester",
+      "workplace": "Field and laboratory",
+      "compensation": "Salary not stated in the checked advert",
+      "eligibility": "Relevant agriculture, crop/plant science, biology or environmental science qualification or practical experience; experience of trials, field/laboratory research or technical work; driving licence.",
+      "careerLevel": "Graduate / technical experience",
+      "contract": "Full time",
+      "summary": "Support potato and oat trials, crop assessments and sample processing, using sensors, drones, imaging and digital data collection.",
+      "tags": [
+        "Crop trials",
+        "Agronomy",
+        "Field research",
+        "Data collection",
+        "Agricultural technology"
+      ],
+      "url": "https://www.pepsicojobs.com/main/jobs/475142?lang=en-US",
+      "source": "PepsiCo",
+      "sourceUrl": "https://www.pepsicojobs.com/main/jobs/475142?lang=en-US",
+      "dateBasis": "Employer's current search-indexed advert invites applications; matching advert dated 18 September 2026 on Imagine. No closing date stated.",
+      "subjects": [
+        "Crop protection & IPM",
+        "Monitoring & environmental risk"
+      ],
+      "provenance": [
+        "https://www.pepsicojobs.com/main/jobs/475142?lang=en-US",
+        "https://jobs.joinimagine.com/companies/pepsico/jobs/93606697-agricultural-science-technician-crop-technology"
+      ],
+      "relevanceTier": "Related field",
+      "fitReason": "Uses MSc field-trial, experimental and data skills; crop research rather than a dedicated entomology role.",
+      "searchKeywords": [
+        "IPM",
+        "integrated pest management",
+        "crop protection"
+      ],
+      "courses": [
+        "ipm"
+      ]
+    },
+    {
+      "id": "hutchinsons-horticultural-agronomist-eastanglia-2026",
+      "title": "Horticultural Agronomist – Norfolk & Suffolk",
+      "organisation": "Hutchinsons",
+      "type": "job",
+      "country": "United Kingdom",
+      "region": "England",
+      "location": "Norfolk and Suffolk",
+      "workplace": "Field based",
+      "status": "open-no-deadline",
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "No closing date advertised",
+      "funding": "Paid",
+      "compensation": "Competitive salary (amount not stated), company vehicle and ongoing training",
+      "eligibility": "Strong horticultural background, ideally agronomy or crop management experience; BASIS/FACTS qualifications or ambition to obtain them; full UK driving licence and willingness to travel.",
+      "careerLevel": "Relevant horticultural experience",
+      "summary": "Advise growers of soft fruit, top fruit and ornamentals on crop health and management, while building technical and customer relationships.",
+      "tags": [
+        "Agronomy",
+        "Crop protection",
+        "Plant health",
+        "Horticulture",
+        "BASIS",
+        "FACTS"
+      ],
+      "url": "https://www.hutchinsons.co.uk/about-us/careers/horticultural-agronomist-norfolk-suffolk/",
+      "source": "Hutchinsons",
+      "sourceUrl": "https://www.hutchinsons.co.uk/about-us/careers/",
+      "lastChecked": "2026-09-29",
+      "firstSeen": "2026-09-29",
+      "reviewStatus": "approved",
+      "dateBasis": "Fresh employer careers index lists this vacancy and links to live advert/application form; no closing date stated.",
+      "subjects": [
+        "Crop protection & IPM"
+      ],
+      "provenance": [
+        "https://www.hutchinsons.co.uk/about-us/careers/",
+        "https://www.hutchinsons.co.uk/about-us/careers/horticultural-agronomist-norfolk-suffolk/"
+      ],
+      "relevanceTier": "Related field",
+      "fitReason": "Applies crop-health knowledge through practical advice; requires a horticultural background and commercial communication skills.",
+      "searchKeywords": [
+        "IPM",
+        "integrated pest management",
+        "crop protection"
+      ],
+      "courses": [
+        "ipm"
+      ]
+    },
+    {
+      "id": "tetra-tech-graduate-ecologist-2027",
+      "title": "Graduate Ecologist — September 2027 intake",
+      "organisation": "Tetra Tech",
+      "type": "job",
+      "location": "Belfast",
+      "country": "United Kingdom",
+      "region": "Northern Ireland",
+      "workplace": "Hybrid",
+      "deadline": "2026-10-31",
+      "deadlineLabel": "31 October 2026",
+      "deadlineAt": "2026-11-01T00:00:00+00:00",
+      "status": "open",
+      "funding": "Paid",
+      "compensation": "Salary not stated on the employer advert",
+      "eligibility": "Relevant 2:1 degree; CIEEM membership or working towards it; UK driving licence; flexible hours and travel. Security clearance and DBS checks required.",
+      "careerLevel": "Graduate / postgraduate",
+      "contract": "Graduate programme; starts September 2027",
+      "summary": "Assist with habitat and protected-species surveys, ecological data analysis and consultancy reporting, with mentoring and professional development.",
+      "tags": [
+        "Graduate ecology",
+        "Biodiversity",
+        "Ecological consultancy",
+        "Protected species",
+        "Field ecology"
+      ],
+      "subjects": [
+        "Ecology & conservation",
+        "Monitoring & environmental risk"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "A graduate route into species and habitat surveys, data analysis and reporting; directly relevant to Biological Recording, with habitats and vertebrates as the main survey focus.",
+      "url": "https://tetratech.referrals.selectminds.com/tetra-tech-europe/jobs/graduate-ecologist-56612",
+      "source": "Tetra Tech",
+      "sourceUrl": "https://tetratech.referrals.selectminds.com/tetra-tech-europe/jobs/graduate-ecologist-56612",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Employer advert states closing date and September 2027 start",
+      "reviewStatus": "approved",
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://tetratech.referrals.selectminds.com/tetra-tech-europe/jobs/graduate-ecologist-56612"
+      ],
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "pba-graduate-assistant-ecologist-2026",
+      "title": "Graduate / Assistant Ecologist",
+      "organisation": "PBA Applied Ecology",
+      "type": "job",
+      "location": "Giggleswick, North Yorkshire",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "On site and fieldwork",
+      "deadline": "2026-10-04",
+      "deadlineTime": "23:59",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "4 October 2026, 23:59",
+      "deadlineAt": "2026-10-04T23:59:00+01:00",
+      "status": "open",
+      "funding": "Paid",
+      "compensation": "£26,500–£28,000 per annum, depending on experience",
+      "eligibility": "Relevant natural-sciences 2:1 and/or MSc; manual driving licence; able to commute locally. Assistant grade additionally needs 6–12 months' professional ecology experience.",
+      "careerLevel": "Graduate / early career",
+      "contract": "Full time; fixed-term or permanent opportunities",
+      "summary": "Support terrestrial and freshwater surveys, species identification, digital mapping and ecological reports for conservation and development projects.",
+      "tags": [
+        "Graduate ecology",
+        "Biodiversity",
+        "Biological recording",
+        "Freshwater ecology",
+        "GIS",
+        "R"
+      ],
+      "subjects": [
+        "Ecology & conservation",
+        "Taxonomy & biodiversity recording",
+        "Monitoring & environmental risk"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "Direct Biological Recording skills in identification, ecological survey, GIS and R; the graduate grade accepts applicants without professional experience.",
+      "url": "https://www.pba-ecology.co.uk/about-us/recruitment.aspx",
+      "source": "PBA Applied Ecology / environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/jobs/111447-graduate-assistant-ecologist-s",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Employer gives 23:59 cutoff; environmentjob confirms 2026, salary and role requirements",
+      "reviewStatus": "approved",
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.pba-ecology.co.uk/about-us/recruitment.aspx",
+        "https://environmentjob.co.uk/jobs/111447-graduate-assistant-ecologist-s"
+      ],
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "united-utilities-graduate-ecologist-2027",
+      "title": "Graduate Ecologist — September 2027 intake",
+      "organisation": "United Utilities",
+      "type": "job",
+      "location": "Lingley Mere, Warrington; North West field sites",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "Office and fieldwork",
+      "deadline": "2026-10-21",
+      "deadlineLabel": "21 October 2026; may close early",
+      "deadlineAt": "2026-10-22T00:00:00+01:00",
+      "status": "open",
+      "funding": "Paid",
+      "compensation": "£32,250 starting salary plus £2,000 welcome bonus",
+      "eligibility": "Relevant ecology, biology or environmental degree; advert lists 2:1 minimum. UK driving licence or ability to obtain one. No visa sponsorship.",
+      "careerLevel": "Graduate / postgraduate",
+      "contract": "Three-year graduate scheme; starts September 2027",
+      "summary": "Help assess habitats, protected species and biodiversity net gain for water infrastructure, and review ecological reports and mitigation plans.",
+      "tags": [
+        "Graduate ecology",
+        "Biodiversity",
+        "Biodiversity net gain",
+        "Habitat assessment",
+        "Environmental risk"
+      ],
+      "subjects": [
+        "Ecology & conservation",
+        "Monitoring & environmental risk"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "A Biological Recording route into habitat survey, biodiversity assessment and applied ecology, using analytical and communication skills.",
+      "url": "https://www.gradcracker.com/hub/77/united-utilities/graduate-job/83766/graduate-ecologist",
+      "source": "United Utilities on Gradcracker",
+      "sourceUrl": "https://www.gradcracker.com/hub/77/united-utilities/graduate-job/83766/graduate-ecologist",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Employer's Gradcracker advert explicitly states closing and start dates",
+      "notes": "One graduate-role application per recruitment year; deadline may change.",
+      "reviewStatus": "approved",
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.gradcracker.com/hub/77/united-utilities/graduate-job/83766/graduate-ecologist"
+      ],
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "newcastle-agroforestry-wildlife-connectivity-2026",
+      "title": "Wildlife Connectivity Potential of Tree-Based Agricultural Systems",
+      "organisation": "Newcastle University · TROPS lab",
+      "type": "phd",
+      "location": "Newcastle upon Tyne and agricultural field sites",
+      "country": "United Kingdom",
+      "region": "England",
+      "workplace": "Field and laboratory",
+      "deadline": "2026-10-15",
+      "deadlineLabel": "15 October 2026",
+      "deadlineAt": "2026-10-16T00:00:00+01:00",
+      "status": "open",
+      "funding": "Funded (home-fee level)",
+      "compensation": "Home tuition fees and at least £21,805 annual stipend, plus field and laboratory research funds",
+      "eligibility": "Relevant 2:1 degree or equivalent. International applicants may apply but must pay the fee difference above the Home rate; language requirements apply.",
+      "careerLevel": "Graduate / postgraduate",
+      "contract": "3.5-year studentship; spring 2027 start",
+      "summary": "Investigate how trees on farms support wildlife movement using biodiversity surveys, movement data, landscape modelling and remote sensing; eDNA is a possible method.",
+      "tags": [
+        "Biodiversity",
+        "Agroecology",
+        "Agroforestry",
+        "Landscape ecology",
+        "eDNA",
+        "Remote sensing"
+      ],
+      "subjects": [
+        "Ecology & conservation",
+        "Monitoring & environmental risk"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "Combines biodiversity surveys and landscape analysis for Biological Recording with agricultural ecology relevant to IPM and entomology; an insect focus is not guaranteed.",
+      "url": "https://www.findaphd.com/phds/project/phd-studentship-wildlife-connectivity-potential-of-tree-based-agricultural-systems-trops-lab-newcastle-university/?p198692=",
+      "source": "Newcastle University on FindAPhD",
+      "sourceUrl": "https://www.jobs.ac.uk/job/DTA545/phd-studentship-wildlife-connectivity-potential-of-tree-based-agricultural-systems-trops-lab-newcastle-university",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Institution adverts on FindAPhD and jobs.ac.uk agree on 15 October 2026",
+      "notes": "Studentship reference SNES315. The detailed eligibility permits international applications with a fee top-up, despite the platform's UK-only funding label.",
+      "reviewStatus": "approved",
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.findaphd.com/phds/project/phd-studentship-wildlife-connectivity-potential-of-tree-based-agricultural-systems-trops-lab-newcastle-university/?p198692=",
+        "https://www.jobs.ac.uk/job/DTA545/phd-studentship-wildlife-connectivity-potential-of-tree-based-agricultural-systems-trops-lab-newcastle-university"
+      ],
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "ipm",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "riverfly-volunteer-monitor",
+      "title": "Riverfly volunteer monitor",
+      "organisation": "The Riverfly Partnership / Freshwater Biological Association",
+      "type": "volunteering",
+      "location": "Local monitoring groups across the UK",
+      "country": "United Kingdom",
+      "region": "UK-wide",
+      "workplace": "Field based",
+      "deadline": null,
+      "deadlineLabel": "Ongoing enquiries; local training and site availability",
+      "deadlineAt": null,
+      "status": "rolling",
+      "funding": "Unpaid",
+      "compensation": "Volunteer monitoring; ask the local coordinator about equipment and training arrangements",
+      "eligibility": "No previous experience needed. Accredited training is required before monitoring; contact your local hub for availability.",
+      "careerLevel": "Entry level",
+      "contract": "Aim to survey a local river site monthly",
+      "summary": "Sample and count freshwater invertebrates, submit records to a national database and contribute to monitoring river health.",
+      "tags": [
+        "Aquatic invertebrates",
+        "Biological recording",
+        "Ecological monitoring",
+        "Water quality",
+        "Citizen science"
+      ],
+      "subjects": [
+        "Taxonomy & biodiversity recording",
+        "Monitoring & environmental risk",
+        "Ecology & conservation"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "Directly builds aquatic-invertebrate identification and repeatable sampling skills used in ecological monitoring and consultancy.",
+      "url": "https://www.riverflies.org/become-a-monitor",
+      "source": "The Riverfly Partnership",
+      "sourceUrl": "https://www.riverflies.org/get-involved",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Provider actively invites volunteers to contact local coordinators and arrange training",
+      "reviewStatus": "approved",
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.riverflies.org/become-a-monitor",
+        "https://www.riverflies.org/get-involved"
+      ],
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "ukbms-wider-countryside-volunteer",
+      "title": "Wider Countryside Butterfly Survey volunteer",
+      "organisation": "UK Butterfly Monitoring Scheme · Butterfly Conservation / BTO",
+      "type": "volunteering",
+      "location": "Allocated survey squares across the UK",
+      "country": "United Kingdom",
+      "region": "UK-wide",
+      "workplace": "Field based",
+      "deadline": null,
+      "deadlineLabel": "Ongoing registration; main survey season July–August",
+      "deadlineAt": null,
+      "status": "rolling",
+      "funding": "Unpaid",
+      "compensation": "Volunteer citizen-science survey",
+      "eligibility": "Contact a local WCBS Champion for a survey square and follow the scheme's recording guidance; availability varies by area.",
+      "careerLevel": "Entry level",
+      "contract": "Usually 2–4 visits each year",
+      "summary": "Record butterflies along fixed routes in under-recorded habitats, including farmland, woodland and urban green spaces.",
+      "tags": [
+        "Lepidoptera",
+        "Biodiversity",
+        "Biological recording",
+        "Field ecology",
+        "Citizen science"
+      ],
+      "subjects": [
+        "Taxonomy & biodiversity recording",
+        "Ecology & conservation"
+      ],
+      "relevanceTier": "Core subject",
+      "fitReason": "Develops butterfly identification and standardised survey skills with a manageable seasonal commitment alongside study.",
+      "url": "https://ukbms.org/wider-countryside-butterfly-survey",
+      "source": "UK Butterfly Monitoring Scheme",
+      "sourceUrl": "https://ukbms.org/get-involved",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Scheme explicitly says new volunteers are always sought; registration remains open outside the field season",
+      "notes": "The main 2026 survey season has finished; contact the coordinator to prepare for the next season.",
+      "reviewStatus": "approved",
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://ukbms.org/wider-countryside-butterfly-survey",
+        "https://ukbms.org/get-involved"
+      ],
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "entomology",
+        "biological-recording"
+      ]
+    },
+    {
+      "id": "crg-mountain-lakes-edna-2027",
+      "title": "Environmental DNA and biodiversity in mountain lakes",
+      "organisation": "Centre for Genomic Regulation · Hannah Benisty group",
+      "type": "phd",
+      "location": "Barcelona; fieldwork in the Pyrenees",
+      "country": "Spain",
+      "region": "International",
+      "workplace": "Field and laboratory",
+      "deadline": "2026-11-22",
+      "deadlineLabel": "22 November 2026; check call for submission time",
+      "deadlineAt": "2026-11-23T00:00:00+01:00",
+      "status": "open",
+      "funding": "Funded",
+      "compensation": "Funded PhD; financial amount not stated on the checked project advert",
+      "eligibility": "Open to all nationalities; qualifying Bachelor's and Master's or equivalent PhD-entry degree by September 2027, strong academic record and research experience. Confirm subject eligibility and programme restrictions with CRG.",
+      "careerLevel": "Graduate / postgraduate",
+      "summary": "Use environmental DNA from mountain lakes and other samples to investigate biodiversity and ecosystem condition, combining field sampling, sequencing and bioinformatics.",
+      "tags": [
+        "Biodiversity",
+        "eDNA",
+        "Microbial ecology",
+        "Bioinformatics",
+        "Ecological monitoring"
+      ],
+      "subjects": [
+        "Ecology & conservation",
+        "Monitoring & environmental risk"
+      ],
+      "relevanceTier": "Related field",
+      "fitReason": "Useful for students moving into molecular biodiversity monitoring; principally microbial and genomic research, so additional laboratory or bioinformatics experience may be important.",
+      "url": "https://www.findaphd.com/phds/project/studying-environmental-dna-and-biodiversity-in-isolated-mountain-lakes/?p198609=",
+      "source": "CRG on FindAPhD",
+      "sourceUrl": "https://recruitment.crg.eu/content/fellowships/calls/phd-call/crg-international-phd-call-2027",
+      "lastChecked": "2026-09-29",
+      "dateBasis": "Institution's FindAPhD project advert states 22 November 2026; official 2027 application call exists",
+      "notes": "The advert specifies biomedical-sciences qualifications or an equivalent degree permitting PhD entry in Spain. Applicants from entomology/IPM should confirm equivalence before applying.",
+      "reviewStatus": "approved",
+      "firstSeen": "2026-09-29",
+      "provenance": [
+        "https://www.findaphd.com/phds/project/studying-environmental-dna-and-biodiversity-in-isolated-mountain-lakes/?p198609=",
+        "https://recruitment.crg.eu/content/fellowships/calls/phd-call/crg-international-phd-call-2027"
+      ],
+      "deadlineTimezone": "Europe/Madrid",
+      "searchKeywords": [
+        "biodiversity",
+        "biological diversity",
+        "ecology"
+      ],
+      "courses": [
+        "biological-recording"
+      ]
+    }
+  ]
+}

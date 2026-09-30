@@ -1,0 +1,423 @@
+{
+  "sources": [
+    {
+      "id": "res-jobs",
+      "name": "Royal Entomological Society",
+      "shortName": "RES opportunities",
+      "url": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "description": "Specialist entomology jobs, placements and community opportunities, including some research degrees.",
+      "label": "Discovery checks configured · adverts reviewed before publication",
+      "mode": "res-headings",
+      "enabled": true,
+      "curatedIndex": true
+    },
+    {
+      "id": "res-phds",
+      "name": "RES research opportunities",
+      "url": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "description": "Doctoral projects and other research opportunities. Check linked adverts for funding and current dates.",
+      "label": "Discovery checks configured · adverts reviewed before publication",
+      "mode": "res-headings",
+      "enabled": true,
+      "curatedIndex": true,
+      "showOnBoard": false
+    },
+    {
+      "id": "environmentjob",
+      "name": "environmentjob",
+      "url": "https://environmentjob.co.uk/",
+      "description": "Ecology, biological recording, biodiversity and field experience. Search records officer, species identification, habitat survey and graduate ecologist.",
+      "label": "Search directly · selected adverts reviewed",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "findaphd",
+      "name": "FindAPhD",
+      "url": "https://www.findaphd.com/phds/?Keywords=entomology",
+      "description": "Doctoral projects across insect science, IPM and biological recording. Search identification, taxonomy, biodiversity monitoring and ecological data.",
+      "label": "Search directly · check funding and eligibility",
+      "mode": "manual",
+      "enabled": false,
+      "searches": [
+        {
+          "label": "IPM",
+          "url": "https://www.findaphd.com/phds/?Keywords=integrated+pest+management"
+        },
+        {
+          "label": "Biodiversity",
+          "url": "https://www.findaphd.com/phds/?Keywords=biodiversity"
+        },
+        {
+          "label": "Plant health",
+          "url": "https://www.findaphd.com/phds/?Keywords=plant+health"
+        },
+        {
+          "label": "Biological recording",
+          "url": "https://www.findaphd.com/phds/?Keywords=biological+recording"
+        },
+        {
+          "label": "Biodiversity monitoring",
+          "url": "https://www.findaphd.com/phds/?Keywords=biodiversity+monitoring"
+        }
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google job search",
+      "shortName": "Google",
+      "url": "https://www.google.com/search?q=entomology+OR+%22integrated+pest+management%22+OR+biodiversity+jobs+UK",
+      "description": "Search entomology, integrated pest management and biological recording. Follow focused searches, then verify the original advert.",
+      "label": "External search · no automatic Google feed",
+      "mode": "manual",
+      "enabled": false,
+      "searches": [
+        {
+          "label": "IPM & crop protection",
+          "url": "https://www.google.com/search?q=%28%22integrated+pest+management%22+OR+%22crop+protection%22+OR+biocontrol%29+%28job+OR+technician+OR+advisor%29+UK"
+        },
+        {
+          "label": "Biodiversity & ecology",
+          "url": "https://www.google.com/search?q=%28%22biodiversity%22+OR+%22ecological+monitoring%22%29+%28%22graduate%22+OR+%22assistant%22+OR+%22technician%22%29+jobs+UK"
+        },
+        {
+          "label": "Research degrees",
+          "url": "https://www.google.com/search?q=%28entomology+OR+biodiversity+OR+%22plant+health%22%29+%28PhD+OR+MRes+OR+%22MSc+by+Research%22%29+funding"
+        },
+        {
+          "label": "Biological recording",
+          "url": "https://www.google.com/search?q=%28%22biological+recording%22+OR+%22biodiversity+data%22+OR+%22records+centre%22%29+%28job+OR+assistant+OR+officer+OR+volunteer%29+UK"
+        },
+        {
+          "label": "Species & habitat surveys",
+          "url": "https://www.google.com/search?q=%28%22botanical+survey%22+OR+%22species+identification%22+OR+%22UKHab%22+OR+%22habitat+survey%22%29+%28graduate+OR+assistant+OR+technician+OR+volunteer%29+UK"
+        }
+      ]
+    },
+    {
+      "id": "jobs-ac-uk",
+      "name": "jobs.ac.uk",
+      "url": "https://www.jobs.ac.uk/",
+      "description": "University research, technical roles and studentships. Search entomology, plant health or ecology.",
+      "label": "Search directly · no live feed connected",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "beewalk",
+      "name": "BeeWalk & field volunteering",
+      "shortName": "BeeWalk",
+      "url": "https://www.bumblebeeconservation.org/what-we-do/our-projects/current-projects/trust-led-projects/beewalk/",
+      "description": "Build identification and recording skills through the Bumblebee Conservation Trust’s national monitoring scheme.",
+      "label": "Direct provider · seasonal fieldwork",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "forest-research",
+      "name": "Forest Research",
+      "url": "https://www.forestresearch.gov.uk/about-us/careers/",
+      "description": "Tree health, pathology, ecological monitoring and research support roles. Check the required laboratory or field skills.",
+      "label": "Direct employer · selected adverts reviewed",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "morepeople",
+      "name": "MorePeople",
+      "url": "https://www.morepeople.co.uk/",
+      "description": "Commercial horticulture, crop advice and agricultural research roles. Search IPM, biocontrol, technical advisor and crop trials.",
+      "label": "Recruiter · selected adverts reviewed",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "gradcracker",
+      "name": "Gradcracker",
+      "url": "https://www.gradcracker.com/",
+      "description": "Graduate recruitment, including applied ecology and biodiversity. Many schemes recruit a year ahead; check the start date.",
+      "label": "Graduate schemes · selected adverts reviewed",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "riverfly",
+      "name": "Riverfly Partnership",
+      "url": "https://www.riverflies.org/become-a-monitor",
+      "description": "Aquatic-invertebrate monitoring, local training and practical identification experience. Contact a hub to check local availability.",
+      "label": "Direct provider · ongoing volunteering",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "ukbms",
+      "name": "UK Butterfly Monitoring Scheme",
+      "shortName": "UKBMS",
+      "url": "https://ukbms.org/wider-countryside-butterfly-survey",
+      "description": "Standardised butterfly surveys and biological recording. Register interest now and check dates for the next field season.",
+      "label": "Direct provider · seasonal volunteering",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "hutchinsons",
+      "name": "Hutchinsons",
+      "url": "https://www.hutchinsons.co.uk/about-us/careers/",
+      "description": "Crop advice, plant health and agronomy roles. Review experience requirements and check whether traineeships are currently available.",
+      "label": "Direct employer · selected adverts reviewed",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "cieem",
+      "name": "CIEEM Jobs & Opportunities",
+      "url": "https://cieem.net/ecology-and-environmental-management-jobs/",
+      "description": "Ecological consultancy, habitat surveys, biodiversity and graduate opportunities. Check seniority and identification requirements.",
+      "label": "Professional body · search directly",
+      "linkLabel": "Browse vacancies",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "fsc-volunteering",
+      "name": "Field Studies Council",
+      "url": "https://www.field-studies-council.org/jobs-at-field-studies-council/volunteering-with-field-studies-council/",
+      "description": "Field-centre and nature-reserve volunteering. Look for roles offering wildlife monitoring, species recording or survey experience.",
+      "label": "Direct provider · check local roles",
+      "linkLabel": "Explore volunteering",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "nbn-schemes",
+      "name": "NBN recording schemes",
+      "url": "https://nbn.org.uk/tools-and-resources/useful-websites/database-of-wildlife-surveys-and-recording-schemes/",
+      "description": "Find surveys for plants, fungi, invertebrates and other wildlife. Confirm training, survey seasons and current participation with each organiser.",
+      "label": "Recording-scheme directory · not an advert feed",
+      "linkLabel": "Find a recording scheme",
+      "mode": "manual",
+      "enabled": false
+    },
+    {
+      "id": "alerc",
+      "name": "Local records centres",
+      "url": "https://www.alerc.org.uk/lerc-finder.html",
+      "description": "Find a local environmental records centre and follow its vacancies, volunteering and recording activities. A centre listing does not mean it is recruiting.",
+      "label": "Records-centre directory · not an advert feed",
+      "linkLabel": "Find a records centre",
+      "mode": "manual",
+      "enabled": false
+    }
+  ],
+  "keywordGroups": [
+    {
+      "name": "Insect biology & behaviour",
+      "terms": [
+        "entomology",
+        "insect physiology",
+        "insect behaviour",
+        "insect rearing",
+        "chemical ecology",
+        "semiochemicals",
+        "insects as food and feed"
+      ],
+      "usefulness": "Retain as a specialist search. Confirm the research or practical duties and the experience required in the complete advert."
+    },
+    {
+      "name": "Crop protection & IPM",
+      "terms": [
+        "integrated pest management",
+        "IPM",
+        "crop protection",
+        "pest management",
+        "pest surveillance",
+        "plant health",
+        "insecticide resistance",
+        "agronomy",
+        "crop trials",
+        "weed science",
+        "plant pathology"
+      ],
+      "usefulness": "High priority. IPM plus horticulture, technical advisor, plant health or crop trials finds commercial and laboratory routes missed by entomology alone. Broad agronomy roles need a skills check."
+    },
+    {
+      "name": "Biological control",
+      "terms": [
+        "biological control",
+        "biocontrol",
+        "parasitoids",
+        "entomopathogens",
+        "biopesticides",
+        "beneficial arthropods",
+        "microbial biocontrol"
+      ],
+      "usefulness": "High priority when combined with insects, crops, horticulture or plant pathogens. Biological control by itself can return unrelated engineering or biomedical roles."
+    },
+    {
+      "name": "Ecology & conservation",
+      "terms": [
+        "biodiversity",
+        "graduate ecologist",
+        "assistant ecologist",
+        "biodiversity net gain",
+        "nature recovery",
+        "habitat restoration",
+        "agroecology",
+        "agroforestry",
+        "landscape ecology",
+        "freshwater ecology",
+        "invertebrate conservation",
+        "habitat survey",
+        "UKHab",
+        "National Vegetation Classification",
+        "NVC",
+        "BNG",
+        "protected species",
+        "botanical survey",
+        "ecological consultancy"
+      ],
+      "usefulness": "Include substantive species and habitat surveys, UKHab, botanical identification and biodiversity assessment. Biological Recording roles need not involve insects. Broad biodiversity searches still need review; exclude generic sustainability administration and fundraising."
+    },
+    {
+      "name": "Pollination & beneficial insects",
+      "terms": [
+        "pollination",
+        "pollinators",
+        "bee conservation",
+        "apiculture",
+        "agroecology",
+        "ecosystem services"
+      ],
+      "usefulness": "Retain as a specialist search. Confirm the research or practical duties and the experience required in the complete advert."
+    },
+    {
+      "name": "Taxonomy & biodiversity recording",
+      "terms": [
+        "biological recording",
+        "biodiversity monitoring",
+        "invertebrate identification",
+        "taxonomy",
+        "natural history collections",
+        "ecological survey",
+        "species identification",
+        "metabarcoding",
+        "biological records",
+        "biodiversity data",
+        "records centre",
+        "LERC",
+        "botanical identification",
+        "bryophytes",
+        "lichens",
+        "mycology",
+        "specimen digitisation",
+        "record validation"
+      ],
+      "usefulness": "Core Biological Recording coverage across insects, plants, fungi and other wildlife. Seek identification, specimen curation, records validation or biodiversity data duties. Records-centre and volunteer roles can build practical experience; check the survey season."
+    },
+    {
+      "name": "Vectors & veterinary entomology",
+      "terms": [
+        "medical entomology",
+        "veterinary entomology",
+        "vector biology",
+        "mosquito control",
+        "tick ecology",
+        "vector-borne disease"
+      ],
+      "usefulness": "Retain as a specialist search. Confirm the research or practical duties and the experience required in the complete advert."
+    },
+    {
+      "name": "Monitoring & environmental risk",
+      "terms": [
+        "ecological monitoring",
+        "environmental DNA",
+        "eDNA",
+        "ecotoxicology",
+        "ecological statistics",
+        "GIS",
+        "remote sensing",
+        "environmental risk assessment",
+        "field technician",
+        "research technician",
+        "biodiversity monitoring",
+        "species distribution",
+        "ecological data",
+        "QGIS",
+        "iRecord",
+        "NBN Atlas",
+        "citizen science",
+        "ecological modelling"
+      ],
+      "usefulness": "Useful for ecological and crop research, species monitoring and biodiversity data. GIS, data and monitoring alone are too broad: require a biological context. Molecular projects need close checks of laboratory skills and degree requirements."
+    }
+  ],
+  "screening": {
+    "strongPatterns": [
+      "\\bentomolog\\w*\\b",
+      "\\binsects?\\b",
+      "\\binvertebrates?\\b",
+      "\\barthropods?\\b",
+      "\\barachnids?\\b",
+      "\\bintegrated pest management\\b",
+      "\\bcrop protection\\b",
+      "\\bbiological control\\b",
+      "\\bbiocontrol\\b",
+      "\\bparasitoids?\\b",
+      "\\bentomopathogen\\w*\\b",
+      "\\bpollinat\\w*\\b",
+      "\\bbees?\\b",
+      "\\bbumblebees?\\b",
+      "\\bbutterfl(?:y|ies)\\b",
+      "\\bmoths?\\b",
+      "\\bmosquit(?:o|oes|os)\\b",
+      "\\bticks?\\b",
+      "\\bplant health\\b",
+      "\\bbiological recording\\b",
+      "\\bbiodiversity data\\b",
+      "\\bbiological records?\\b",
+      "\\bbotanical (?:surveys?|identification)\\b",
+      "\\bUKHab\\b",
+      "\\bhabitat surveys?\\b",
+      "\\bnatural history collections?\\b",
+      "\\bspecies identification\\b"
+    ],
+    "contextPatterns": [
+      "\\bIPM\\b",
+      "\\becolog\\w*\\b",
+      "\\bbiological recording\\b",
+      "\\bGIS\\b",
+      "\\bweed science\\b",
+      "\\bplant pathology\\b",
+      "\\bagronom\\w*\\b",
+      "\\bchemical ecology\\b",
+      "\\bsystematics\\b",
+      "\\bbiodiversity\\b",
+      "\\bgraduate ecologists?\\b",
+      "\\bassistant ecologists?\\b",
+      "\\becological monitoring\\b",
+      "\\bnature recovery\\b",
+      "\\bhabitat restoration\\b",
+      "\\bagroforestry\\b",
+      "\\b[eE]DNA\\b",
+      "\\bcrop trials?\\b",
+      "\\bLERC\\b",
+      "\\bNVC\\b",
+      "\\bBNG\\b",
+      "\\brecords? (?:officer|centre)\\b",
+      "\\bbryophytes?\\b",
+      "\\blichens?\\b",
+      "\\bmycolog\\w*\\b",
+      "\\bQGIS\\b",
+      "\\biRecord\\b",
+      "\\bNBN Atlas\\b",
+      "\\bcitizen science\\b"
+    ],
+    "excludedPhrases": [
+      "software bugs",
+      "bug bounty",
+      "vector database",
+      "pestle analysis"
+    ],
+    "notes": "Keywords discover candidates; every candidate needs review. Core subjects cover insect science, integrated pest/weed/disease management and biological recording across taxa, including identification, habitat surveys and biodiversity data. Course tags indicate a skills connection, not eligibility. Related fields include broader agronomy and molecular research. GIS, records, data, NVC and BNG require biological context. Exclude generic sustainability administration, fundraising and unrelated corporate roles. Preserve degree and experience requirements. Automatic discovery currently covers RES only; all additional source directories and search links require manual checks."
+  }
+}

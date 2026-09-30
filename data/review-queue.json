@@ -1,0 +1,22 @@
+{
+  "candidates": [
+    {
+      "title": "Write about insect science for EntoBites",
+      "url": "https://entobites.blog/write-for-us/",
+      "reason": "Confirm whether this is an unpaid volunteer role before classifying.",
+      "firstSeen": "2026-09-29"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Developing heat-inducible CRISPR-based genetic control tools for the Mexican fruit fly",
+      "url": "https://www.findaphd.com/phds/project/developing-heat-inducible-crispr-based-genetic-control-tools-for-the-mexican-fruit-fly-anastrepha-ludens/?p197431=",
+      "reason": "Header says year-round, body gives July 2026 interview and August 2026 start. Needs provider confirmation before listing."
+    },
+    {
+      "title": "Developing an optimized pgSIT system to control important agricultural insect pests",
+      "url": "https://www.findaphd.com/phds/project/developing-an-optimized-pgsit-system-to-control-important-agricultural-insect-pests/?p197429=",
+      "reason": "Header says year-round, body gives July/August 2026 interviews. Needs provider confirmation before listing."
+    }
+  ]
+}

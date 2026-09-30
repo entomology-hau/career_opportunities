@@ -1,0 +1,84 @@
+// Fixed advert fixtures keep regression checks independent of live editorial updates.
+// Behaviour checks without browser dependencies.
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const root=path.resolve(__dirname,'..');
+const context={console,URL,URLSearchParams,Intl,Date};vm.createContext(context);
+const script=fs.readFileSync(path.join(root,'site/app.js'),'utf8').replace(/load\(\);\s*$/,'');
+vm.runInContext(script+'\nglobalThis.logic={active,matches,renderCard,safeURL,initTheme,paginate,render,filtersChanged,restore,reset,changePage,setData:value=>{database=value},setPage:value=>{currentPage=value},getPage:()=>currentPage};',context);
+const {active,matches,renderCard,safeURL}=context.logic;
+const allItems=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/opportunities.json'),'utf8')).opportunities;
+const initialIds=['lincoln-pest-networks-2026','hutton-peatlands-pollinators-2026','leeds-black-soldier-fly-b12-2026','nhm-dissco-digitiser-2026','rspb-woodland-scientist-2026','butterfly-grassland-officer-2026','wildfish-smartrivers-analysts','monteverde-insect-internship','beewalk-volunteer','kcl-fly-facility-technician-2026'];
+const items=allItems.filter(x=>initialIds.includes(x.id));
+const now=Date.parse('2026-09-29T15:30:00Z');
+const state={q:'',types:[],subject:'',location:'uk',source:'',closing:false,sort:'deadline'};
+assert.equal(items.filter(x=>matches(x,state,now)).length,9);
+assert.equal(items.filter(x=>matches(x,{...state,types:['phd']},now)).length,3);
+assert(matches(items.find(x=>x.id==='lincoln-pest-networks-2026'),{...state,q:'integrated pest management'},now));
+assert.equal(items.filter(x=>matches(x,{...state,subject:'Crop protection & IPM'},now)).length,1);
+assert.equal(items.filter(x=>matches(x,{...state,types:['mres']},now)).length,0);
+assert.equal(items.filter(x=>matches(x,{...state,location:'international'},now)).length,1);
+assert.equal(items.filter(x=>matches(x,{...state,closing:true},now)).length,5);
+const internship=items.find(x=>x.type==='internship');
+assert(matches(internship,{...state,location:'all',types:['volunteering']},now));
+const lincoln=items.find(x=>x.id==='lincoln-pest-networks-2026');
+assert(active(lincoln,Date.parse('2026-10-16T10:59:00Z')));
+assert(!active(lincoln,Date.parse('2026-10-16T11:00:00Z')));
+assert.equal(items.filter(x=>active(x,Date.parse('2026-10-30T15:30:00Z'))).length,0);
+assert.equal(safeURL('javascript:alert(1)'),'#');
+const hostile={...lincoln,title:'<img src=x onerror=alert(1)>',url:'javascript:alert(1)'};
+const html=renderCard(hostile,now);assert(!html.includes('<img'));assert(!html.includes('href="javascript:'));
+const related=allItems.find(x=>x.id==='crg-mountain-lakes-edna-2027');
+assert(matches(related,{...state,location:'all',q:'biodiversity',relevance:'Related field'},now));
+assert(!matches(related,{...state,relevance:'Core subject'},now));
+const pba=allItems.find(x=>x.id==='pba-graduate-assistant-ecologist-2026');
+assert(matches(pba,{...state,course:'biological-recording',relevance:'Core subject'},now));
+assert(!matches(pba,{...state,course:'ipm'},now));
+assert(matches(pba,{...state,q:'biological recording'},now));
+assert(!matches(lincoln,{...state,course:'biological-recording'},now));
+const advisor=allItems.find(x=>x.id==='morepeople-horticulture-ipm-advisor-2026');
+assert(matches(advisor,{...state,q:'integrated pest management',relevance:'Core subject'},now));
+const sequence=Array.from({length:61},(_,i)=>i);
+for(const size of [10,20,30,40,50]){
+  const pages=Math.ceil(sequence.length/size),seen=[];
+  for(let i=1;i<=pages;i++){
+    const page=context.logic.paginate(sequence,i,size);
+    assert.equal(page.page,i);assert.equal(page.pages,pages);assert(page.items.length<=size);
+    assert.equal(page.start,(i-1)*size+1);assert.equal(page.end,Math.min(i*size,61));seen.push(...page.items);
+  }
+  assert.deepEqual(seen,sequence);
+}
+assert.equal(context.logic.paginate(sequence,999,10).page,7);
+for(const invalid of [-1,0,1.5,Infinity,'oops'])assert.equal(context.logic.paginate(sequence,invalid,10).page,1);
+assert.equal(context.logic.paginate(sequence,1,7).pageSize,10);
+const empty=context.logic.paginate([],9,10);assert.equal(empty.page,1);assert.equal(empty.start,0);assert.equal(empty.end,0);
+// Exercise the actual render/filter/URL wiring with a small DOM stub.
+const elements={};
+const element=id=>elements[id]||=({value:'',checked:false,hidden:false,disabled:false,innerHTML:'',textContent:'',options:[],classList:{toggle(){}},focus(){},scrollIntoView(){}});
+context.document={getElementById:element,querySelectorAll:()=>[]};
+context.Date=class extends Date{static now(){return now;}};
+let savedURL='';context.history={replaceState:(_state,_title,url)=>{savedURL=url}};
+context.location={pathname:'/board/',search:'',hash:''};
+element('location').value='all';element('sort').value='deadline';element('page-size').value='10';
+context.logic.setData({opportunities:allItems});context.logic.setPage(2);context.logic.render();
+assert.equal((element('cards').innerHTML.match(/<article /g)||[]).length,10);
+assert.equal(element('page-info').textContent,'Page 2 of 3');assert(savedURL.includes('page=2'));
+element('course').value='biological-recording';context.logic.filtersChanged();
+assert.equal(context.logic.getPage(),1);assert.equal(element('previous-page').disabled,true);assert(savedURL.includes('course=biological-recording'));
+element('page-size').value='50';context.logic.filtersChanged();assert.equal(element('pagination').hidden,true);
+assert.equal((element('cards').innerHTML.match(/<article /g)||[]).length,13);
+element('search').value='no-such-opportunity';context.logic.filtersChanged();assert.equal(element('empty').hidden,false);assert.equal(element('cards').innerHTML,'');
+context.logic.reset();assert.equal(element('course').value,'');assert.equal(element('search').value,'');assert.equal(context.logic.getPage(),1);
+element('page-size').options=[10,20,30,40,50].map(value=>({value:String(value)}));element('course').options=[{value:'biological-recording'}];
+context.location.search='?course=biological-recording&page-size=20&page=999';context.logic.restore();context.logic.render();
+assert.equal(element('page-size').value,'20');assert.equal(context.logic.getPage(),1);assert.equal(element('pagination').hidden,true);
+let saved=null,clickHandler,pressed;
+context.localStorage={getItem:()=>saved,setItem:(_key,value)=>{saved=value}};
+const rootElement={dataset:{theme:'dark'}},meta={content:''};
+context.document={documentElement:rootElement,getElementById:()=>({setAttribute:(_key,value)=>{pressed=value},addEventListener:(_event,handler)=>{clickHandler=handler}}),querySelector:()=>meta};
+context.logic.initTheme();assert.equal(rootElement.dataset.theme,'light');assert.equal(pressed,'false');
+clickHandler();assert.equal(rootElement.dataset.theme,'dark');assert.equal(saved,'dark');assert.equal(pressed,'true');
+context.logic.initTheme();assert.equal(rootElement.dataset.theme,'dark');
+clickHandler();assert.equal(rootElement.dataset.theme,'light');assert.equal(saved,'light');
+context.localStorage={getItem:()=>{throw Error('Storage disabled')},setItem:()=>{throw Error('Storage disabled')}};
+context.logic.initTheme();clickHandler();assert.equal(rootElement.dataset.theme,'dark');
+console.log('PASS: filters/dates; all three course interests; pagination 10–50, bounds, filter reset and URL state; safe rendering; light/dark themes and storage fallback.');
