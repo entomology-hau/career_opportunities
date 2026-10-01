@@ -18,8 +18,8 @@ Original advert: <https://www.jobs.ac.uk/job/DTB049/postdoctoral-research-associ
 - **Deadline evidence:** deadline is 08/10/26
 - **Source snippet:** Postdoctoral Research Associate – Insect Genetic Rescue University of York in York, England, UK The deadline is 08/10/26
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Limestone Grassland Landscape Officer
 
@@ -34,8 +34,8 @@ Original advert: <https://butterflyconservation.livevacancies.co.uk/>
 - **Deadline evidence:** deadline is 12/10/26
 - **Source snippet:** Limestone Grassland Landscape Officer Butterfly Conservation in Hybrid working, office-based in Derrygonnelly, Co. Fermanagh. Occasional travel across Northern Ireland and cross-border The deadline is 12/10/26
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Senior Digital Learning Officer
 
@@ -50,8 +50,8 @@ Original advert: <https://www.bumblebeeconservation.org/what-we-do/vacancies>
 - **Deadline evidence:** deadline is 12/10/26
 - **Source snippet:** Senior Digital Learning Officer Bumblebee Conservation Trust in Home based in UK The deadline is 12/10/26
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: EntoBites writing opportunity
 
@@ -64,8 +64,8 @@ Original advert: <https://entobites.blog/write-for-us>
 - **Last seen:** 2026-09-30
 - **Source snippet:** EntoBites writing opportunity EntoBites in online Bringing you science, one buzz at a time Interested in science communication? Join us\! We are EntoBites, a team of entomology researchers passionate about communicating insect science. As part of the ScienceBites collective, we write articles on cutting-edge research wi
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Insect AI 2025-26 mobility grants
 
@@ -78,8 +78,8 @@ Original advert: <https://insectai.eu/insect-ai-2025-26-mobility-grants-call>
 - **Last seen:** 2026-09-30
 - **Source snippet:** Insect AI 2025-26 mobility grants InsectAI
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Insect Neuroscientist
 
@@ -92,8 +92,8 @@ Original advert: <https://www.swarm-biotactics.com/career/insect-neuroscientist>
 - **Last seen:** 2026-09-30
 - **Source snippet:** Insect Neuroscientist SWARM Biotactics in Kassel, Germany
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Limestone Grassland Project Manager
 
@@ -107,8 +107,8 @@ Original advert: <https://environmentjob.co.uk/jobs/111756-limestone-grassland-p
 - **Last seen:** 2026-09-30
 - **Source snippet:** Butterfly Conservation, Derrygonnelly, County Fermanagh, Northern Ireland (hybrid), £34,000 - £37,000 pa, plus 8% pension contribution. The successful candidate will oversee the delivery of Butterfly Conservation’s Limestone Grassland project through the PeacePlus Nature partnership, a priority landscape and species pr
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Postdoctoral Research Associate
 
@@ -124,8 +124,8 @@ Original advert: <https://www.jobs.ac.uk/job/DSW899/postdoctoral-research-associ
 - **Deadline evidence:** deadline is 30/09/26
 - **Source snippet:** Postdoctoral Research Associate University of Edinburgh in Edinburgh, Scotland, UK The deadline is 30/09/26
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Postdoctoral Research Associate: Gene Editing
 
@@ -141,8 +141,8 @@ Original advert: <https://www.jobs.ac.uk/job/DSV227/postdoctoral-research-associ
 - **Deadline evidence:** deadline is 02/10/26
 - **Source snippet:** Postdoctoral Research Associate: Gene Editing University of York in York, England, UK The deadline is 02/10/26
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Research Associate: Neuroscience
 
@@ -157,8 +157,8 @@ Original advert: <https://jobsite.sheffield.ac.uk/job/Research-Associate-Neurosc
 - **Deadline evidence:** deadline is 05/10/26
 - **Source snippet:** Research Associate: Neuroscience University of Sheffield in Sheffield, Enfland, UK The deadline is 05/10/26
 
-- [ ] Reviewed the original advert
-- [ ] Confirmed classification, funding, eligibility and deadline
+- [x] Reviewed the original advert
+- [x] Confirmed classification, funding, eligibility and deadline
 
 ## New: Research Associate: Neuroscience (2 Posts)
 
