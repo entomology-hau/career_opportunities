@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advert review | Applied Ecology opportunities</title>
+  <meta name="description" content="Owner review portal for the Harper Adams Applied Ecology opportunities board.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#eaf1fa">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <a class="skip" href="#admin-main">Skip to advert review</a>
+  <header class="masthead"><div class="masthead-inner">
+    <div class="identity"><a class="logo-link" href="https://www.harper-adams.ac.uk/"><img class="hau-logo" src="assets/harper-adams-logo.png" alt="Harper Adams University" width="773" height="252"></a><span class="university">APPLIED ECOLOGY POSTGRADUATE COMMUNITY</span></div>
+    <nav class="admin-nav" aria-label="Board navigation"><a class="board-link" href="https://entomology-hau.github.io/career_opportunities/">View opportunities</a></nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a8 8 0 0 1-11-11 9 9 0 1 0 11 11Z"/></svg><span>Dark mode</span></button>
+  </div></header>
+  <main id="admin-main" class="admin-main" tabindex="-1">
+    <section class="admin-intro" aria-labelledby="admin-title"><p class="eyebrow">OWNER PORTAL</p><h1 id="admin-title">Advert review</h1><p>Approve or reject opportunities that need a closer relevance check. Direct keyword matches continue to appear automatically.</p></section>
+    <div id="admin-alert" class="admin-alert" role="status" aria-live="polite" hidden></div>
+    <section id="signed-out" class="admin-panel" aria-labelledby="sign-in-title">
+      <h2 id="sign-in-title">Owner sign-in</h2><p id="sign-in-copy">Checking sign-in availability…</p>
+      <a id="sign-in-link" class="admin-primary" hidden>Sign in with GitHub</a>
+      <p class="admin-small">Only authorised board maintainers can make decisions. The public opportunities board is available without signing in.</p>
+    </section>
+    <section id="admin-workspace" hidden aria-labelledby="queue-title">
+      <div class="admin-account"><div><strong id="signed-in-user"></strong><span id="admin-repository"></span></div><button id="sign-out" class="admin-secondary" type="button">Sign out</button></div>
+      <div class="queue-toolbar"><div><h2 id="queue-title">Needs a decision</h2><p id="queue-count" aria-live="polite">Loading pending adverts…</p></div><button id="reload-queue" class="admin-secondary" type="button">Reload queue</button></div>
+      <label class="field-label" for="queue-search">Search pending adverts</label><input id="queue-search" type="search" placeholder="Title, source or relevance" autocomplete="off">
+      <div id="queue-cards" class="queue-cards"></div>
+      <div id="queue-empty" class="admin-panel queue-empty" hidden><h3>No pending adverts</h3><p id="queue-empty-copy">There are no adverts awaiting a decision.</p></div>
+      <details class="decision-history"><summary>Recent decisions</summary><ul id="history-list"></ul></details>
+    </section>
+    <noscript><p class="notice">Enable JavaScript to use owner sign-in and review adverts. You can still <a href="https://entomology-hau.github.io/career_opportunities/">browse opportunities</a>.</p></noscript>
+  </main>
+  <footer><strong>Entomology, IPM &amp; Biological Recording opportunities</strong><p>Approved decisions are saved to GitHub. Publication follows the site update; a saved decision does not mean the advert is already live.</p><a class="board-link" href="https://entomology-hau.github.io/career_opportunities/">Back to the public board</a></footer>
+</body>
+</html>

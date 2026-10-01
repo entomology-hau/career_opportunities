@@ -17,5 +17,6 @@ html=html.replace('</body>','<script>'+bootstrap+'\n'+js.replace('</script','<\\
 logo=base64.b64encode((site/'assets/harper-adams-logo.png').read_bytes()).decode()
 html=html.replace('src="assets/harper-adams-logo.png"','src="data:image/png;base64,'+logo+'"')
 html=html.replace(' | Opportunities</title>',' | Opportunities preview</title>')
+html=html.replace('href="admin.html"','href="Entomology_Admin_Preview.html"')
 output=Path(sys.argv[1]) if len(sys.argv)>1 else root.parent/'Entomology_Opportunities_Preview.html'
 output.write_text(html);print(output)

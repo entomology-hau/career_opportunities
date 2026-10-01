@@ -1,5 +1,5 @@
 'use strict';
-const TYPES = {job:'Paid job',phd:'PhD',mres:'MRes',internship:'Internship',volunteering:'Volunteering'};
+const TYPES = {job:'Paid job',phd:'PhD',mres:'MRes',internship:'Internship',volunteering:'Volunteering',other:'Other opportunity'};
 const COURSES = {entomology:'Entomology',ipm:'Integrated Pest Management','biological-recording':'Biological Recording'};
 const PAGE_SIZES = [10,20,30,40,50];
 let currentPage = 1;
@@ -18,17 +18,19 @@ function initTheme(){
   $('theme-toggle').addEventListener('click',()=>{theme=document.documentElement.dataset.theme==='dark'?'light':'dark';apply(theme);try{localStorage.setItem('entomology-theme',theme);}catch{}});
 }
 function active(item, now=Date.now()) {
-  return item.reviewStatus === 'approved' && !['closed','withdrawn'].includes(item.status) && ageDays(item.lastChecked,now) <= 30 && (!item.deadlineAt || new Date(item.deadlineAt).getTime() > now);
+  return ['approved','automatic'].includes(item.reviewStatus) && !['closed','withdrawn','expired'].includes(item.status) && ageDays(item.lastSeen||item.lastChecked,now) <= 30 && (!item.deadlineAt || new Date(item.deadlineAt).getTime() > now);
 }
+const countrySupplied=item=>typeof item.country==='string' && item.country.trim()!=='' && !/^(unknown|not supplied|not specified|unspecified)$/i.test(item.country.trim());
 function locationMatch(item, value) {
-  return value === 'all' || (value === 'uk' && item.country === 'United Kingdom') || (value === 'international' && item.country !== 'United Kingdom') || (value === 'remote' && /remote|hybrid/i.test(item.workplace));
+  const specified=countrySupplied(item);
+  return value === 'all' || (value === 'uk' && (!specified || item.country === 'United Kingdom')) || (value === 'international' && specified && item.country !== 'United Kingdom') || (value === 'remote' && /remote|hybrid/i.test(item.workplace||''));
 }
 function selectedTypes(){return [...document.querySelectorAll('[name=type]:checked')].map(x=>x.value)}
 function getState(){return {q:$('search').value.trim().toLowerCase(),course:$('course').value,relevance:$('relevance').value,types:selectedTypes(),subject:$('subject').value,location:$('location').value,source:$('source').value,closing:$('closing').checked,sort:$('sort').value,pageSize:Number($('page-size').value)}}
 function matches(item,state,now){
   const words=state.q.split(/\s+/).filter(Boolean);
-  const text=[item.title,item.organisation,item.summary,item.location,item.country,item.compensation,item.fitReason||'',item.searchKeywords?.join(' ')||'',...(item.courses||[]).map(c=>COURSES[c]),...item.tags,...item.subjects].join(' ').toLowerCase();
-  return active(item,now) && words.every(w=>text.includes(w)) && (!state.types.length || [item.type,...(item.secondaryTypes||[])].some(t=>state.types.includes(t))) && (!state.subject || item.subjects.includes(state.subject)) && (!state.course || (item.courses||[]).includes(state.course)) && (!state.relevance || item.relevanceTier===state.relevance) && locationMatch(item,state.location) && (!state.source || item.source===state.source) && (!state.closing || (item.deadlineAt && new Date(item.deadlineAt).getTime() <= now+14*day));
+  const text=[item.title,item.organisation,item.summary,item.location,item.country,item.compensation,item.fitReason||'',item.searchKeywords?.join(' ')||'',...(item.courses||[]).map(c=>COURSES[c]),...(item.tags||[]),...(item.subjects||[])].join(' ').toLowerCase();
+  return active(item,now) && words.every(w=>text.includes(w)) && (!state.types.length || [item.type,...(item.secondaryTypes||[])].some(t=>state.types.includes(t))) && (!state.subject || (item.subjects||[]).includes(state.subject)) && (!state.course || (item.courses||[]).includes(state.course)) && (!state.relevance || item.relevanceTier===state.relevance) && locationMatch(item,state.location) && (!state.source || item.source===state.source) && (!state.closing || (item.deadlineAt && new Date(item.deadlineAt).getTime() <= now+14*day));
 }
 function paginate(items,page=1,pageSize=10){
   const size=PAGE_SIZES.includes(Number(pageSize))?Number(pageSize):10;
@@ -37,16 +39,27 @@ function paginate(items,page=1,pageSize=10){
   const start=(selected-1)*size;
   return {items:items.slice(start,start+size),page:selected,pages,pageSize:size,total,start:total?start+1:0,end:Math.min(start+size,total)};
 }
+const detailValue=value=>typeof value==='string' && !/^(?:not (?:supplied|stated|specified|extracted|available)|unknown|check (?:the )?(?:original )?advert|see (?:the )?(?:original )?advert)/i.test(value.trim())?value.trim():'';
+function reportURL(item){
+  const url=new URL('https://github.com/entomology-hau/career_opportunities/issues/new');
+  const id=String(item.id||'').replace(/[\r\n]/g,' ');
+  url.search=new URLSearchParams({title:`[Advert report] ${item.title||'Opportunity'}`,body:`Advert ID: ${id}\nAdvert URL: ${safeURL(item.url)}\n\nReason (tick one):\n- [ ] Irrelevant\n- [ ] Closed/expired\n- [ ] Incorrect details\n- [ ] Other\n\nDetails:\n`}).toString();
+  return url.href;
+}
 function renderCard(item,now){
-  let deadline=item.deadlineLabel;
+  const automatic=item.reviewStatus==='automatic',type=TYPES[item.type]?item.type:'other';
+  let deadline=item.deadlineLabel||'Deadline not supplied';
   const remaining=item.deadlineAt ? new Date(item.deadlineAt)-now : null;
   const urgent=remaining!==null && remaining<=7*day;
   const localToday=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(now));
   if(item.deadline===localToday) deadline='Closes today'+(item.deadlineTime?' · '+item.deadlineTime+' UK':'');
   const linkNeedsCheck=healthData?.links?.some(x=>x.id===item.id && x.status==='needs-check');
   const contentChanged=healthData?.links?.some(x=>x.id===item.id && x.contentChanged===true);
-  const details=[['Pay / funding',item.compensation],['Eligibility',item.eligibility],['Course interest',(item.courses||[]).map(c=>COURSES[c]).join(' · ')],['Experience',item.careerLevel],['Contract',item.contract],['Deadline',item.deadlineLabel],['Note',item.notes]].filter(x=>x[1]);
-  return `<article class="card" data-id="${escapeHTML(item.id)}"><div class="card-top"><div class="badge-stack"><span class="badge ${escapeHTML(item.type)}">${TYPES[item.type]}</span>${item.relevanceTier==='Related field'?'<span class="badge related">Related field</span>':''}</div><span class="deadline ${urgent?'urgent':''}">${escapeHTML(deadline)}</span></div><h3><a href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(item.title)}</a></h3><p class="organisation">${escapeHTML(item.organisation)}</p><p class="location-line">${escapeHTML(item.location)} · ${escapeHTML(item.workplace)}</p>${linkNeedsCheck?'<p class="link-warning">Link needs checking · last source request was unsuccessful</p>':''}${contentChanged?'<p class="link-warning">Source page changed · review of the current details is pending</p>':''}<p class="funding-line">${escapeHTML(item.compensation)}</p><p class="summary">${escapeHTML(item.summary)}</p>${item.fitReason?`<p class="fit-reason"><strong>Relevance:</strong> ${escapeHTML(item.fitReason)}</p>`:''}<div class="tags">${item.tags.slice(0,4).map(t=>`<span class="tag">${escapeHTML(t)}</span>`).join('')}</div><details class="details"><summary>Eligibility &amp; details${/Experienced|Specialist|Professional|experience required/.test(item.careerLevel)?' · experience required':''}</summary><dl>${details.map(([k,v])=>`<dt>${escapeHTML(k)}</dt><dd>${escapeHTML(v)}</dd>`).join('')}</dl></details><div class="card-bottom"><div class="source-meta">Via ${escapeHTML(item.source)}<br>Reviewed ${dateText(item.lastChecked)}</div><a class="advert-link" href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="View advert: ${escapeHTML(item.title)} (opens in a new tab)">View advert</a></div></article>`;
+  const pay=automatic?detailValue(item.compensation):item.compensation,eligibility=automatic?detailValue(item.eligibility):item.eligibility;
+  const location=detailValue(item.location)||'Location not supplied — check advert',workplace=detailValue(item.workplace);
+  const details=[['Pay / funding',pay],['Eligibility',eligibility],[automatic?'Course interest (keyword match)':'Course interest',(item.courses||[]).map(c=>COURSES[c]).join(' · ')],['Experience',detailValue(item.careerLevel)],['Contract',detailValue(item.contract)],['Deadline',item.deadlineLabel],['Type',item.classificationInferred?'Type inferred from source':null],['Note',item.notes]].filter(x=>x[1]);
+  const sourceDates=[!automatic&&validDate(item.lastChecked)?`Reviewed ${dateText(item.lastChecked)}`:null,automatic&&validDate(item.firstSeen)?`Collected ${dateText(item.firstSeen)}`:null,validDate(item.lastSeen)?`Listed at source ${dateText(item.lastSeen)}`:null].filter(Boolean);
+  return `<article class="card" data-id="${escapeHTML(item.id)}"><div class="card-top"><div class="badge-stack"><span class="badge ${escapeHTML(type)}">${TYPES[type]}</span>${item.relevanceTier==='Related field'?'<span class="badge related">Related field</span>':''}</div><span class="deadline ${urgent?'urgent':''}">${escapeHTML(deadline)}</span></div>${automatic?'<p class="automatic-note">Automatic source match</p>':''}<h3><a href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(item.title)}</a></h3>${detailValue(item.organisation)?`<p class="organisation">${escapeHTML(item.organisation)}</p>`:''}<p class="location-line">${escapeHTML(location)}${workplace?` · ${escapeHTML(workplace)}`:''}</p>${linkNeedsCheck?'<p class="link-warning">Link needs checking · last source request was unsuccessful</p>':''}${contentChanged?'<p class="link-warning">Source page changed · confirm the current details</p>':''}${pay?`<p class="funding-line">${escapeHTML(pay)}</p>`:''}${item.summary?`<p class="summary">${escapeHTML(item.summary)}</p>`:''}${item.fitReason?`<p class="fit-reason"><strong>Relevance:</strong> ${escapeHTML(item.fitReason)}</p>`:''}<div class="tags">${(item.tags||[]).slice(0,4).map(t=>`<span class="tag">${escapeHTML(t)}</span>`).join('')}</div><details class="details"><summary>${automatic?'Source details':'Eligibility &amp; details'}${/Experienced|Specialist|Professional|experience required/.test(item.careerLevel||'')?' · experience required':''}</summary>${automatic?'<p class="source-details-note">Follow the original advert for full pay, funding and eligibility details. Subject and course filters indicate keyword matches.</p>':''}<dl>${details.map(([k,v])=>`<dt>${escapeHTML(k)}</dt><dd>${escapeHTML(v)}</dd>`).join('')}</dl></details><div class="card-bottom"><div class="source-meta">Via ${escapeHTML(item.source)}${sourceDates.map(date=>`<br>${escapeHTML(date)}`).join('')}</div><div class="card-actions"><a class="advert-link" href="${safeURL(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="View advert: ${escapeHTML(item.title)} (opens in a new tab)">View advert</a><a class="report-link" href="${escapeHTML(reportURL(item))}" target="_blank" rel="noopener noreferrer" aria-label="Report advert: ${escapeHTML(item.title)} (opens GitHub; sign-in required)">Report advert</a><span class="report-hint">GitHub sign-in required</span></div></div></article>`;
 }
 const isCollector=source=>source.enabled===true && ['rss','res-headings'].includes(source.mode);
 const validDate=value=>typeof value==='string' && Number.isFinite(Date.parse(value));
@@ -57,7 +70,11 @@ function collectionSummary(health,sources=[],now=Date.now()){
   const working=enabled.filter(s=>checks.some(c=>c.id===s.id && c.status==='ok')).length;
   const queued=Number.isSafeInteger(health.pendingCandidates)&&health.pendingCandidates>=0?health.pendingCandidates:null;
   let text=`${working} of ${enabled.length} collectors working at the last check (${dateText(health.lastRun)}).`;
-  if(queued!==null)text+=` ${queued} ${queued===1?'candidate awaits':'candidates await'} editorial review.`;
+  if(['automatic','hybrid'].includes(health.publicationMode)){
+    if(Number.isSafeInteger(health.autoPublished)&&health.autoPublished>=0)text+=` ${health.autoPublished} automatic ${health.autoPublished===1?'listing':'listings'} on the board.`;
+    if(Number.isSafeInteger(health.newPublished)&&health.newPublished>=0)text+=` ${health.newPublished} new ${health.newPublished===1?'listing added':'listings added'} this check.`;
+    if(health.publicationMode==='hybrid'&&queued!==null&&queued>0)text+=` ${queued} ${queued===1?'advert needs':'adverts need'} a closer relevance check.`;
+  }else if(queued!==null)text+=` ${queued} ${queued===1?'candidate awaits':'candidates await'} editorial review.`;
   const stale=checkStale(health.lastRun,now),failed=enabled.length>0&&working===0,partial=working<enabled.length;
   if(stale)text+=' Source checks are over 48 hours old; browse the sources for newer adverts.';
   else if(failed)text+=' Automatic discovery is unavailable; browse the sources directly.';
@@ -80,7 +97,7 @@ function renderHealth(now=Date.now()){
   const summary=collectionSummary(healthData,sourceData?.sources,now);
   if($('collection-summary').textContent!==summary.text)$('collection-summary').textContent=summary.text;
   $('collection-status').classList.toggle('warning',summary.warning);
-  $('check-status').textContent=healthData&&validDate(healthData.lastRun)?`Last automated check: ${dateText(healthData.lastRun)}. ${healthData.summary||summary.text} Editorial review dates remain separate.`:'Automated source-check status is unavailable. Editorial review dates are shown on each advert.';
+  $('check-status').textContent=healthData&&validDate(healthData.lastRun)?`Last automated check: ${dateText(healthData.lastRun)}. ${healthData.summary||summary.text} ${['automatic','hybrid'].includes(healthData.publicationMode)?'Direct source matches appear automatically; uncertain matches go to owner review. Collection dates and editorial review dates are shown separately.':'Editorial review dates remain separate.'}`:'Automated source-check status is unavailable. Collection and editorial dates are shown on each advert.';
 }
 function persistState(state){
   const params=new URLSearchParams();
@@ -92,16 +109,16 @@ function render(){
   if(!database)return;
   const now=Date.now(),state=getState(),all=database.opportunities.filter(x=>active(x,now));
   const filtered=database.opportunities.filter(x=>matches(x,state,now));
-  filtered.sort((a,b)=>state.sort==='title'?a.title.localeCompare(b.title):state.sort==='newest'?b.lastChecked.localeCompare(a.lastChecked)||a.title.localeCompare(b.title):((a.deadlineAt?Date.parse(a.deadlineAt):Infinity)-(b.deadlineAt?Date.parse(b.deadlineAt):Infinity))||a.title.localeCompare(b.title));
+  filtered.sort((a,b)=>state.sort==='title'?a.title.localeCompare(b.title):state.sort==='newest'?(b.lastSeen||b.lastChecked||b.firstSeen||'').localeCompare(a.lastSeen||a.lastChecked||a.firstSeen||'')||a.title.localeCompare(b.title):((a.deadlineAt?Date.parse(a.deadlineAt):Infinity)-(b.deadlineAt?Date.parse(b.deadlineAt):Infinity))||a.title.localeCompare(b.title));
   const page=paginate(filtered,currentPage,state.pageSize);currentPage=page.page;
   $('cards').innerHTML=page.items.map(x=>renderCard(x,now)).join('');$('empty').hidden=filtered.length>0;
-  $('result-count').textContent=`${filtered.length?`Showing ${page.start}–${page.end} of `:''}${filtered.length} ${filtered.length===1?'opportunity':'opportunities'}${state.location==='uk'?' in the UK':state.location==='international'?' outside the UK':state.location==='remote'?' with remote or hybrid work':''}`;
+  $('result-count').textContent=`${filtered.length?`Showing ${page.start}–${page.end} of `:''}${filtered.length} ${filtered.length===1?'opportunity':'opportunities'}${state.location==='uk'?' in the UK or with location unspecified':state.location==='international'?' outside the UK':state.location==='remote'?' with remote or hybrid work':''}`;
   $('pagination').hidden=page.pages<=1;$('previous-page').disabled=currentPage===1;$('next-page').disabled=currentPage===page.pages;$('page-info').textContent=`Page ${currentPage} of ${page.pages}`;
   $('total-count').textContent=all.length;
   for(const [type]of Object.entries(TYPES)){$('count-'+type).textContent=all.filter(x=>locationMatch(x,state.location)&&[x.type,...(x.secondaryTypes||[])].includes(type)).length;}
-  const lastReview=database.opportunities.map(x=>x.lastChecked).sort().at(-1);
-  $('freshness').textContent=lastReview?`Most recent editorial review: ${dateText(lastReview)}. ${ageDays(lastReview,now)>7?'Some listings may need rechecking.':'Check the advert before applying.'}`:'No reviewed adverts yet.';
-  $('freshness').classList.toggle('stale',!lastReview||ageDays(lastReview,now)>7);
+  const lastReview=database.opportunities.filter(x=>x.reviewStatus==='approved').map(x=>x.lastChecked).filter(validDate).sort().at(-1),lastCollection=database.opportunities.map(x=>x.lastSeen).filter(validDate).sort().at(-1);
+  $('freshness').textContent=lastCollection?`Most recent collection: ${dateText(lastCollection)}.${lastReview?` Latest editorial review: ${dateText(lastReview)}.`:''} Check the original advert before applying.`:lastReview?`Most recent editorial review: ${dateText(lastReview)}. ${ageDays(lastReview,now)>7?'Some listings may need rechecking.':'Check the advert before applying.'}`:'No collection dates are available yet. Check the original adverts for current details.';
+  $('freshness').classList.toggle('stale',!(lastCollection||lastReview)||ageDays(lastCollection||lastReview,now)>7);
   renderHealth(now);
   persistState(state);
 }

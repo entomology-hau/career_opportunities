@@ -77,6 +77,7 @@ fieldset{margin:22px 0;padding:0;border:0}legend{margin-bottom:10px}
 .badge{font-size:.75rem;font-weight:700;padding:4px 9px;border-radius:3px;letter-spacing:.025em;display:inline-block;background:var(--badge-bg);color:var(--badge-text)}
 .badge.phd{color:var(--phd-text);background:var(--phd-bg)}.badge.internship{color:var(--intern-text);background:var(--intern-bg)}.badge.volunteering{color:var(--volunteer-text);background:var(--volunteer-bg)}
 .badge.related{background:var(--related-bg);color:var(--related-text);font-weight:500}
+.automatic-note{font-size:.75rem;font-weight:500;color:var(--muted);margin:-3px 0 9px}
 .deadline{font-size:.875rem;font-weight:500;color:var(--muted);text-align:right}.deadline.urgent{color:var(--warning-text)}
 .card h3{font-size:1.18rem;font-weight:700;letter-spacing:-.022em;line-height:1.4;margin:0 0 7px;color:var(--heading)}.card h3 a{color:var(--heading);text-decoration:none}.card h3 a:hover{text-decoration:underline}
 .organisation{font-size:.9rem;font-weight:500;margin:0 0 7px}.location-line{font-size:.875rem;color:var(--muted);margin:0 0 12px}
@@ -85,7 +86,9 @@ fieldset{margin:22px 0;padding:0;border:0}legend{margin-bottom:10px}
 .tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font-size:.75rem;padding:3px 8px;border:1px solid var(--line);border-radius:3px;color:var(--tag-text);background:var(--tag-bg)}
 .details{margin:14px 0 0}.details summary{font-size:.875rem;color:var(--link);cursor:pointer;display:list-item;width:fit-content}
 .details dl{font-size:.875rem;padding:12px 0 0;margin:0;display:grid;grid-template-columns:108px 1fr;gap:7px 13px}.details dt{font-weight:600;color:var(--heading)}.details dd{margin:0;color:var(--muted)}
+.source-details-note{font-size:.8rem;line-height:1.65;color:var(--muted);margin:12px 0 0}
 .card-bottom{display:flex;justify-content:space-between;gap:12px;align-items:center;border-top:1px solid var(--line);margin-top:18px;padding-top:15px}.source-meta{font-size:.75rem;color:var(--muted);line-height:1.7}.source-meta a{color:var(--link)}
+.card-actions{display:flex;flex-direction:column;align-items:flex-end;gap:7px}.report-link{font-size:.75rem;color:var(--link)}.report-hint{font-size:.65rem;color:var(--muted);line-height:1.4}
 .advert-link{font-size:.875rem;font-weight:600;text-decoration:none;padding:9px 14px;border:1px solid var(--control);border-radius:4px;white-space:nowrap;color:var(--heading)}.advert-link:hover{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
 .board-note{font-size:.8rem;color:var(--muted);line-height:1.6;margin:20px 0 0}
 .empty{border:1px dashed var(--control);text-align:center;padding:48px 25px;background:var(--panel);border-radius:5px}.empty-mark{font-size:2.1rem;color:var(--link)}.empty h3{color:var(--heading);font-size:1.1rem}.empty p{color:var(--muted);font-size:1rem;max-width:450px;margin:12px auto 20px}

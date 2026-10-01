@@ -60,6 +60,23 @@ The repaired collectors parsed 301 source entries in the final live run: RES job
 
 Two were verified on their original employer/provider adverts and added: Crawley Borough Council's Biodiversity Project Officer and TCV's Biodiversity Action Projects Volunteer Officer. The council role requires prior professional ecological experience. The volunteering role requires no prior qualifications or experience, but its Scottish locations and substantial time commitment must work for the student. Both make a clear Biological Recording connection; the TCV projects also include pollinator habitats.
 
-The board now stores 24 reviewed adverts, of which 23 are within their deadlines on 30 September. Sixty candidates remain pending. Two assistant ecologist leads were held back because salary/deadline details conflicted or full employer eligibility details were unavailable. Wider coverage is useful only when those differences are checked.
+That review-led version stored 24 reviewed adverts, with 23 within their deadlines on 30 September, and 60 candidates awaiting review. Two assistant ecologist leads were held back because salary/deadline details conflicted or full employer eligibility details were unavailable.
+
+## Automatic publication and community reports — 30 September 2026
+
+The inclusion policy is now relevance to the course suite plus a current source listing. Approval is no longer required. Source-supplied information is preserved; missing salary, eligibility and deadline data remains unspecified. Inferred opportunity/subject/course mappings are labelled. Previously reviewed records keep their genuine review dates.
+
+The fresh collection added 60 automatic records, resulting in 84 stored records and 83 currently visible by date/freshness rules. One earlier GIS lead was no longer present in the feed and was not promoted from the old queue. The six collectors all worked.
+
+Each advert has a Report advert link. Users can flag irrelevant, closed or incorrect listings through a pre-filled GitHub issue. An authorized maintainer applies the remove-advert label to withdraw a listing and exclude its individual URLs from future collection. Reporting does not itself delete a listing, and reports require GitHub sign-in. This lets the board publish broadly and correct marginal matches afterwards.
 
 Additional manual sources: [CIEEM vacancies](https://cieem.net/ecology-and-environmental-management-jobs/), [Field Studies Council volunteering](https://www.field-studies-council.org/jobs-at-field-studies-council/volunteering-with-field-studies-council/), [NBN recording-scheme directory](https://nbn.org.uk/tools-and-resources/useful-websites/database-of-wildlife-surveys-and-recording-schemes/) and [ALERC records-centre finder](https://www.alerc.org.uk/lerc-finder.html). The last two are directories, not vacancy feeds. Check individual providers and current participation before adding an advert.
+
+
+## Signed-in review for unsure matches — 1 October 2026
+
+The current mode is hybrid: specific strong subject matches publish automatically; broad/context-only matches wait for an admin decision. This uses the existing `strongPatterns` and `contextPatterns`, rather than treating every ecology or biodiversity mention as a definite course fit. Missing pay, funding, eligibility, country, type or a closing date alone does not require approval.
+
+The admin portal asks the reviewer to follow the original advert and confirm that it is relevant and active. Approval preserves the reviewed snapshot and records who decided and when. Rejection adds an exclusion. Existing genuine human reviews remain preserved; earlier automatic related-field records are held for this first review pass. Public reporting remains available after publication.
+
+The fresh collection on 1 October contains 29 visible adverts, including 7 direct automatic matches, and 54 pending relevance checks. All six collectors were reachable; existing original-advert link checks were not rerun. This first queue includes the earlier broad matches and is larger than the number expected from a typical daily increment.

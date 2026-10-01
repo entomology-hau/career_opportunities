@@ -1,0 +1,9 @@
+{
+  "name": "hau-opportunities-admin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test-worker.mjs",
+    "deploy": "npx wrangler deploy"
+  }
+}

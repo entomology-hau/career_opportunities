@@ -1,145 +1,21 @@
 {
   "candidates": [
     {
-      "title": "Postdoctoral Research Associate – Insect Genetic Rescue",
-      "url": "https://www.jobs.ac.uk/job/DTB049/postdoctoral-research-associate-insect-genetic-rescue",
-      "evidenceSnippet": "Postdoctoral Research Associate – Insect Genetic Rescue University of York in York, England, UK The deadline is 08/10/26",
-      "deadlineSuggestion": "2026-10-08",
-      "deadlineEvidence": "deadline is 08/10/26",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [
-        "\\binsects?\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "direct",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "Limestone Grassland Landscape Officer",
-      "url": "https://butterflyconservation.livevacancies.co.uk/",
-      "evidenceSnippet": "Limestone Grassland Landscape Officer Butterfly Conservation in Hybrid working, office-based in Derrygonnelly, Co. Fermanagh. Occasional travel across Northern Ireland and cross-border The deadline is 12/10/26",
-      "deadlineSuggestion": "2026-10-12",
-      "deadlineEvidence": "deadline is 12/10/26",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [
-        "\\bbutterfl(?:y|ies)\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "direct",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "Senior Digital Learning Officer",
-      "url": "https://www.bumblebeeconservation.org/what-we-do/vacancies",
-      "evidenceSnippet": "Senior Digital Learning Officer Bumblebee Conservation Trust in Home based in UK The deadline is 12/10/26",
-      "deadlineSuggestion": "2026-10-12",
-      "deadlineEvidence": "deadline is 12/10/26",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [
-        "\\bbumblebees?\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "direct",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "EntoBites writing opportunity",
-      "url": "https://entobites.blog/write-for-us",
-      "evidenceSnippet": "EntoBites writing opportunity EntoBites in online Bringing you science, one buzz at a time Interested in science communication? Join us! We are EntoBites, a team of entomology researchers passionate about communicating insect science. As part of the ScienceBites collective, we write articles on cutting-edge research wi",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [
-        "\\bentomolog\\w*\\b",
-        "\\binsects?\\b",
-        "\\barthropods?\\b",
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "direct",
-      "firstSeen": "2026-09-29",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "Insect AI 2025-26 mobility grants",
-      "url": "https://insectai.eu/insect-ai-2025-26-mobility-grants-call",
-      "evidenceSnippet": "Insect AI 2025-26 mobility grants InsectAI",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [
-        "\\binsects?\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "direct",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "Insect Neuroscientist",
-      "url": "https://www.swarm-biotactics.com/career/insect-neuroscientist",
-      "evidenceSnippet": "Insect Neuroscientist SWARM Biotactics in Kassel, Germany",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [
-        "\\binsects?\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "direct",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "Limestone Grassland Project Manager",
-      "url": "https://environmentjob.co.uk/jobs/111756-limestone-grassland-project-manager",
-      "evidenceSnippet": "Butterfly Conservation, Derrygonnelly, County Fermanagh, Northern Ireland (hybrid), £34,000 - £37,000 pa, plus 8% pension contribution. The successful candidate will oversee the delivery of Butterfly Conservation’s Limestone Grassland project through the PeacePlus Nature partnership, a priority landscape and species pr",
+      "title": "GIS Officer",
+      "url": "https://environmentjob.co.uk/jobs/111628-gis-officer",
+      "evidenceSnippet": "NatureSpace Partnership, Home-based, £32,950 pa + company benefits. This is an exciting opportunity to join our growing team, helping to manage and maintain key biological and environmental geospatial data that underpins the science of what we do. The ideal candidate ...",
       "source": "environmentjob · paid jobs",
       "sourceId": "environmentjob",
       "sourceUrl": "https://environmentjob.co.uk/",
       "matchedPatterns": [
-        "\\bbutterfl(?:y|ies)\\b"
+        "\\bGIS\\b"
       ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "direct",
+      "reason": "Not listed in the latest collection pass. It will publish automatically if an enabled source lists it again.",
+      "reviewStatus": "not-current",
+      "relevanceStrength": "needs-context",
       "suggestedType": "job",
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-09-30",
       "discoveredVia": [
         "environmentjob"
       ]
@@ -147,34 +23,212 @@
     {
       "title": "Postdoctoral Research Associate",
       "url": "https://www.jobs.ac.uk/job/DSW899/postdoctoral-research-associate",
-      "evidenceSnippet": "Postdoctoral Research Associate University of Edinburgh in Edinburgh, Scotland, UK The deadline is 30/09/26",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DSW899/postdoctoral-research-associate"
+      ],
+      "organisation": "University of Edinburgh",
+      "location": "Edinburgh, Scotland, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "compensation": "Not supplied",
+      "funding": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "matchedTerms": [],
+      "matchedPatterns": [],
+      "suggestedType": "job",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "deadlineSuggestion": "2026-09-30",
-      "deadlineEvidence": "deadline is 30/09/26",
+      "deadlineEvidence": "deadline is 30/09/26"
+    },
+    {
+      "title": "Assistant Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111732-assistant-ecologist",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111732-assistant-ecologist"
+      ],
+      "organisation": "Hampshire & Isle of Wight Wildlife Trust",
+      "location": "Curdridge, Southampton",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "compensation": "£24,479 - £25,390 depending on skills and experience",
+      "funding": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "matchedTerms": [
+        "Ecologist",
+        "Ecology",
+        "Assistant Ecologist"
+      ],
+      "matchedPatterns": [],
+      "suggestedType": "job",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication."
+    },
+    {
+      "title": "Keeping it Wild Trainee x9",
+      "url": "https://environmentjob.co.uk/jobs/111704-keeping-it-wild-trainee-x9",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111704-keeping-it-wild-trainee-x9"
+      ],
+      "organisation": "London Wildlife Trust",
+      "location": "London",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "compensation": "£26,936 pa pro rata",
+      "funding": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "matchedTerms": [
+        "nature recovery"
+      ],
+      "matchedPatterns": [],
+      "suggestedType": "job",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication."
+    },
+    {
+      "title": "Senior Ecologist x2",
+      "url": "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2"
+      ],
+      "organisation": "Elton Ecology",
+      "location": "Office-based or hybrid working, with offices in Castle Donington (East Midlands) and Birmingham (West Midlands)",
+      "country": "Not supplied",
+      "workplace": "Hybrid",
+      "compensation": "£47,500 - £55,000 pa",
+      "funding": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "matchedTerms": [
+        "Ecologist",
+        "Ecology"
+      ],
+      "matchedPatterns": [],
+      "suggestedType": "job",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication."
+    },
+    {
+      "title": "Project Delivery Officer",
+      "url": "https://environmentjob.co.uk/jobs/111516-project-delivery-officer",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111516-project-delivery-officer"
+      ],
+      "organisation": "Tyne Rivers Trust",
+      "location": "Corbridge, Northumberland, From",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "compensation": "£35,000 depending on experience",
+      "funding": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "matchedTerms": [
+        "habitat restoration"
+      ],
+      "matchedPatterns": [],
+      "suggestedType": "job",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication."
+    },
+    {
+      "title": "Fee Proposal Writer - Ecological Consultancy",
+      "url": "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy"
+      ],
+      "organisation": "MKA Ecology",
+      "location": "Cambridge",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "compensation": "Competitive salary, dependent on relevant skills and experience",
+      "funding": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "matchedTerms": [
+        "Ecological",
+        "Ecology"
+      ],
+      "matchedPatterns": [],
+      "suggestedType": "job",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication."
+    },
+    {
+      "title": "Postdoctoral Research Associate: Gene Editing",
+      "url": "https://www.jobs.ac.uk/job/DSV227/postdoctoral-research-associate-gene-editing",
+      "organisation": "University of York",
+      "location": "York, England, UK",
+      "country": "United Kingdom",
+      "deadlineSuggestion": "2026-10-02",
+      "deadlineEvidence": "deadline is 02/10/26",
+      "matchedTerms": [],
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
       "suggestedType": "job",
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
       "discoveredVia": [
         "res-jobs"
       ]
     },
     {
-      "title": "Postdoctoral Research Associate: Gene Editing",
-      "url": "https://www.jobs.ac.uk/job/DSV227/postdoctoral-research-associate-gene-editing",
-      "evidenceSnippet": "Postdoctoral Research Associate: Gene Editing University of York in York, England, UK The deadline is 02/10/26",
-      "deadlineSuggestion": "2026-10-02",
-      "deadlineEvidence": "deadline is 02/10/26",
+      "title": "Research Associate: Neuroscience (2 Posts)",
+      "url": "https://www.jobs.ac.uk/job/DSV831/research-associate-neuroscience-2-posts",
+      "organisation": "University of Sheffield",
+      "location": "Sheffield, England, UK",
+      "country": "United Kingdom",
+      "deadlineSuggestion": "2026-10-05",
+      "deadlineEvidence": "deadline is 05/10/26",
+      "matchedTerms": [],
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
       "suggestedType": "job",
@@ -187,35 +241,20 @@
     {
       "title": "Research Associate: Neuroscience",
       "url": "https://jobsite.sheffield.ac.uk/job/Research-Associate-Neuroscience-%282-Posts%29/3131-en_GB",
-      "evidenceSnippet": "Research Associate: Neuroscience University of Sheffield in Sheffield, Enfland, UK The deadline is 05/10/26",
+      "organisation": "University of Sheffield",
+      "location": "Sheffield, Enfland, UK",
+      "country": "United Kingdom",
       "deadlineSuggestion": "2026-10-05",
       "deadlineEvidence": "deadline is 05/10/26",
+      "matchedTerms": [],
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "Research Associate: Neuroscience (2 Posts)",
-      "url": "https://www.jobs.ac.uk/job/DSV831/research-associate-neuroscience-2-posts",
-      "evidenceSnippet": "Research Associate: Neuroscience (2 Posts) University of Sheffield in Sheffield, England, UK The deadline is 05/10/26",
-      "deadlineSuggestion": "2026-10-05",
-      "deadlineEvidence": "deadline is 05/10/26",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
@@ -225,128 +264,20 @@
     {
       "title": "Research Technical Officer",
       "url": "https://www.jobs.ac.uk/job/DTA320/research-technical-officer",
-      "evidenceSnippet": "Research Technical Officer UCL in UCL East campus, London, England UK The deadline is 20/10/26",
+      "organisation": "UCL",
+      "location": "UCL East campus, London, England UK",
+      "country": "United Kingdom",
       "deadlineSuggestion": "2026-10-20",
       "deadlineEvidence": "deadline is 20/10/26",
+      "matchedTerms": [],
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "GW4 BioMed3 MRC DTP – Quantifying the impact of heatwaves on cognition, neuroanatomy, and mitochondrial function",
-      "url": "https://www.findaphd.com/phds/project/funded-project-gw4-biomed3-mrc-dtp-quantifying-the-impact-of-heatwaves-on-cognition-neuroanatomy-and-mitochondrial-function?p198532=",
-      "evidenceSnippet": "GW4 BioMed3 MRC DTP – Quantifying the impact of heatwaves on cognition, neuroanatomy, and mitochondrial function University of Bristol in Bristol, England, UK The deadline is 21/10/26",
-      "deadlineSuggestion": "2026-10-21",
-      "deadlineEvidence": "deadline is 21/10/26",
-      "source": "RES research opportunities",
-      "sourceId": "res-phds",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
-      "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-phds"
-      ]
-    },
-    {
-      "title": "GW4 BioMed3 MRC DTP – Using human genomics, AI and fly disease modelling to study the relationship between sleep and Alzheimer’s disease",
-      "url": "https://www.findaphd.com/phds/project/funded-project-gw4-biomed3-mrc-dtp-using-human-genomics-ai-and-fly-disease-modelling-to-study-the-relationship-between-sleep-and-alzheimer-s-disease?p198523=",
-      "evidenceSnippet": "GW4 BioMed3 MRC DTP – Using human genomics, AI and fly disease modelling to study the relationship between sleep and Alzheimer’s disease University of Bristol in Bristol, England, UK The deadline is 21/10/26",
-      "deadlineSuggestion": "2026-10-21",
-      "deadlineEvidence": "deadline is 21/10/26",
-      "source": "RES research opportunities",
-      "sourceId": "res-phds",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
-      "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-phds"
-      ]
-    },
-    {
-      "title": "Understanding the Principles of Organelle Biogenesis",
-      "url": "https://www.findaphd.com/phds/project/understanding-the-principles-of-organelle-biogenesis?p77807=",
-      "evidenceSnippet": "Understanding the Principles of Organelle Biogenesis University of Oxford in Oxford, England, UK The deadline is 01/12/26",
-      "deadlineSuggestion": "2026-12-01",
-      "deadlineEvidence": "deadline is 01/12/26",
-      "source": "RES research opportunities",
-      "sourceId": "res-phds",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
-      "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-phds"
-      ]
-    },
-    {
-      "title": "Connectomics across sexes, species and states",
-      "url": "https://www.findaphd.com/phds/project/connectomics-across-sexes-species-and-states?p198582=",
-      "evidenceSnippet": "Connectomics across sexes, species and states Medical Research Council (Cambridge) in Cambridge, England, UK The deadline is 08/12/26",
-      "deadlineSuggestion": "2026-12-08",
-      "deadlineEvidence": "deadline is 08/12/26",
-      "source": "RES research opportunities",
-      "sourceId": "res-phds",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
-      "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-phds"
-      ]
-    },
-    {
-      "title": "Effect of activity in neural circuit development",
-      "url": "https://www.findaphd.com/phds/project/effect-of-activity-in-neural-circuit-development?p198576=",
-      "evidenceSnippet": "Effect of activity in neural circuit development Medical Research Council (Cambridge) in Cambridge, England, UK The deadline is 08/12/26",
-      "deadlineSuggestion": "2026-12-08",
-      "deadlineEvidence": "deadline is 08/12/26",
-      "source": "RES research opportunities",
-      "sourceId": "res-phds",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
-      "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-phds"
-      ]
-    },
-    {
-      "title": "A range of roles",
-      "url": "https://www.oxitec.com/en/careers",
-      "evidenceSnippet": "A range of roles Flyttr in UK and International",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
@@ -356,14 +287,18 @@
     {
       "title": "Agricultural Consultant – South West England – Field-based",
       "url": "https://www.linkedin.com/jobs/view/4458749919",
-      "evidenceSnippet": "Agricultural Consultant – South West England – Field-based Bestico in South West England, UK",
+      "organisation": "Bestico",
+      "location": "South West England, UK",
+      "country": "United Kingdom",
+      "matchedTerms": [],
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
+      "suggestedType": "job",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
@@ -371,237 +306,66 @@
       ]
     },
     {
-      "title": "Agroecology Lead",
-      "url": "https://environmentjob.co.uk/jobs/111528-agroecology-lead",
-      "evidenceSnippet": "Wild Oxfordshire, Little Wittenham, Oxfordshire, £41,172 pa. Are you an enthusiastic, organised, and collaborative individual with experience in ecology and agriculture? Do you want to use your skills to lead the development and delivery of Wild Oxfordshire's ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "title": "Scientist",
+      "url": "https://flyttr.bamboohr.com/careers/194",
+      "organisation": "Flyttr",
+      "location": "Edinburgh, Scotland, UK",
+      "country": "United Kingdom",
+      "matchedTerms": [],
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "matchedPatterns": [],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
       "suggestedType": "job",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
-        "environmentjob"
+        "res-jobs"
       ]
     },
     {
       "title": "Agronomy Manager",
       "url": "https://app.occupop.com/shared/job/agronomy-manager-de944/LinkedIn?custom_cv_source=LinkedIn&fields=title%2Ctype%2Clocation%2Csector&src=LinkedInJobSlot&visibility=external",
-      "evidenceSnippet": "Agronomy Manager Keelings in Sandyhill, St Margaret's, Co. Dublin, Ireland",
+      "organisation": "Keelings",
+      "location": "Sandyhill, St Margaret's, Co. Dublin, Ireland",
+      "country": "Ireland",
+      "matchedTerms": [
+        "Agronomy"
+      ],
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "matchedPatterns": [
         "\\bagronom\\w*\\b"
       ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
+      "suggestedType": "job",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
         "res-jobs"
-      ]
-    },
-    {
-      "title": "Assistant Ecologist",
-      "url": "https://environmentjob.co.uk/jobs/111732-assistant-ecologist",
-      "evidenceSnippet": "Hampshire & Isle of Wight Wildlife Trust, Curdridge, Southampton, £24,479 - £25,390 depending on skills and experience. This exciting opportunity is held within Hampshire & Isle of Wight Wildlife Trust’s Ecology team. In order to achieve our ambitions for nature’s recovery, we are looking for an enthusiastic individual",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b",
-        "\\bassistant ecologists?\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Assistant Ecologist",
-      "url": "https://environmentjob.co.uk/jobs/111711-assistant-ecologist",
-      "evidenceSnippet": "Forestry and Land Scotland, Glenbranter, Argyll and Bute, Scotland, £34,026 - £35,656 pa plus 28.97% employer pension contribution. As Assistant Ecologist (Environment Ranger), you’ll play a key role in providing baseline ecological surveys ahead of forestry operations and helping to protect and enhance the natural env",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b",
-        "\\bassistant ecologists?\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Catchment Partnership Officer",
-      "url": "https://environmentjob.co.uk/jobs/111775-catchment-partnership-officer",
-      "evidenceSnippet": "United Utilities, Huntington, Cheshire, £51,233 pa. United Utilities are looking for a Catchment Partnership Officer to join a passionate and experienced catchment team delivering projects that improve water quality, enhance biodiversity, and support ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bbiodiversity\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Dacorum Climate Action Network Coordinator",
-      "url": "https://environmentjob.co.uk/jobs/111773-dacorum-climate-action-network-coordinator",
-      "evidenceSnippet": "Dacorum Borough Council, Hemel Hempstead, Hertfordshire, £45,750 - £48,582 pa (inclusive of London fringe weighting). Dacorum Borough Council declared a Climate and Ecological Emergency (CEE) in 2019 and is committed to supporting a borough-wide response. A key pillar of this work is the development of Dacorum ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Ecologist",
-      "url": "https://environmentjob.co.uk/jobs/111789-ecologist",
-      "evidenceSnippet": "Northumberland County Council, Morpeth, Northumberland, £41,177 - £45,529 pa. We are seeking an experienced Ecologist to join our growing team of five ecologists working within the Council's Planning Service. You will provide specialist advice throughout all stages of the ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Ecologist",
-      "url": "https://environmentjob.co.uk/jobs/111874-ecologist",
-      "evidenceSnippet": "Middle Level Commissioners, March, Cambridgeshire, £33,012 - £38,172 DOE. This is an exciting opportunity to join an influential ecology team, delivering and driving tangible, positive outcomes for nature across Cambridgeshire and Norfolk. If you are looking for the perfect ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Ecologist / Senior Ecologist / Environmental Clerk of Works",
-      "url": "https://environmentjob.co.uk/jobs/111687-ecologist-senior-ecologist-environmental-clerk-of-works",
-      "evidenceSnippet": "Highland Ecology and Development Ltd, Dingwall, Highlands, Competitive salary, dependent on experience. We are looking to expand our team and are interested in hearing from ecologists at all career stages - from recent graduates through to experienced Senior Ecologists. The role will be tailored to your ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Engagement Officer",
-      "url": "https://environmentjob.co.uk/jobs/111733-engagement-officer",
-      "evidenceSnippet": "RECORD, The Biodiversity Information System, Chester, Cheshire, £24,000 pa. The role will be responsible for co-ordinating and delivering RECORD's programme of engagement activities throughout 2027, promoting nature connection through wildlife recording and enabling varied ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bbiodiversity\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Fee Proposal Writer - Ecological Consultancy",
-      "url": "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy",
-      "evidenceSnippet": "MKA Ecology, Cambridge, Competitive salary, dependent on relevant skills and experience. MKA Ecology is looking for a Fee Proposal Writer to support the preparation, coordination and issue of high-quality ecological consultancy fee proposals. The role will focus mainly on the smaller fee ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
-      "discoveredVia": [
-        "environmentjob"
       ]
     },
     {
       "title": "Founder in Residence, Next generation insecticides and pest control",
       "url": "https://apply.workable.com/deep-science-ventures/j/8F18DA9E98",
-      "evidenceSnippet": "Founder in Residence, Next generation insecticides and pest control Deep Science Ventures in full-time, remote",
+      "organisation": "Deep Science Ventures",
+      "location": "full-time, remote",
+      "workplace": "Remote",
+      "matchedTerms": [],
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
+      "suggestedType": "job",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
@@ -609,340 +373,156 @@
       ]
     },
     {
-      "title": "GIS Officer",
-      "url": "https://environmentjob.co.uk/jobs/111729-gis-officer",
-      "evidenceSnippet": "Cheshire Wildlife Trust, Malpas, Cheshire (hybrid working), Starting in the region of £25,526 pa. We’re looking for a skilled GIS Officer to join our Data & Insights team, providing expert spatial analysis, mapping and ecological data support across the whole organisation. You’ll develop and ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b",
-        "\\bGIS\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "title": "A range of roles",
+      "url": "https://www.oxitec.com/en/careers",
+      "organisation": "Flyttr",
+      "location": "UK and International",
+      "country": "United Kingdom",
+      "matchedTerms": [],
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "matchedPatterns": [],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
-      "suggestedType": "job",
+      "suggestedType": "other",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
-        "environmentjob"
+        "res-jobs"
       ]
     },
     {
-      "title": "GIS Officer",
-      "url": "https://environmentjob.co.uk/jobs/111628-gis-officer",
-      "evidenceSnippet": "NatureSpace Partnership, Home-based, £32,950 pa + company benefits. This is an exciting opportunity to join our growing team, helping to manage and maintain key biological and environmental geospatial data that underpins the science of what we do. The ideal candidate ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bGIS\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "title": "GW4 BioMed3 MRC DTP – Using human genomics, AI and fly disease modelling to study the relationship between sleep and Alzheimer’s disease",
+      "url": "https://www.findaphd.com/phds/project/funded-project-gw4-biomed3-mrc-dtp-using-human-genomics-ai-and-fly-disease-modelling-to-study-the-relationship-between-sleep-and-alzheimer-s-disease?p198523=",
+      "organisation": "University of Bristol",
+      "location": "Bristol, England, UK",
+      "country": "United Kingdom",
+      "deadlineSuggestion": "2026-10-21",
+      "deadlineEvidence": "deadline is 21/10/26",
+      "matchedTerms": [],
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "matchedPatterns": [],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Green Infrastructure & Biodiversity Manager",
-      "url": "https://environmentjob.co.uk/jobs/111669-green-infrastructure-biodiversity-manager",
-      "evidenceSnippet": "Remus - part of Fexco Property Services, England (multiple roles available), £38,000 - £42,000 pa. The Green Infrastructure and Biodiversity Manager is an exciting new role requiring a flexible candidate with excellent greenspace, contract management and people skills who will deliver sector ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bbiodiversity\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
+      "suggestedType": "phd",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
-        "environmentjob"
+        "res-phds"
       ]
     },
     {
-      "title": "Habitat Creation Officer",
-      "url": "https://environmentjob.co.uk/jobs/111768-habitat-creation-officer",
-      "evidenceSnippet": "Cheshire Wildlife Trust, Cheshire (hybrid), Senior: £32,522 - £36,304 pa / Principal: £39,040 - £44,689 pa. We’re looking for someone who knows how to turn ambition for nature recovery into action on the ground by working with farmers and landowners to create and restore high biodiversity value woodland and ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bbiodiversity\\b",
-        "\\bnature recovery\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "title": "GW4 BioMed3 MRC DTP – Quantifying the impact of heatwaves on cognition, neuroanatomy, and mitochondrial function",
+      "url": "https://www.findaphd.com/phds/project/funded-project-gw4-biomed3-mrc-dtp-quantifying-the-impact-of-heatwaves-on-cognition-neuroanatomy-and-mitochondrial-function?p198532=",
+      "organisation": "University of Bristol",
+      "location": "Bristol, England, UK",
+      "country": "United Kingdom",
+      "deadlineSuggestion": "2026-10-21",
+      "deadlineEvidence": "deadline is 21/10/26",
+      "matchedTerms": [],
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "matchedPatterns": [],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
-      "suggestedType": "job",
+      "suggestedType": "phd",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
-        "environmentjob"
+        "res-phds"
       ]
     },
     {
-      "title": "Head of Data & Digital",
-      "url": "https://environmentjob.co.uk/jobs/111710-head-of-data-digital",
-      "evidenceSnippet": "National Biodiversity Network Trust, Home-based, £50,000 - £55,000 pa. We are looking for an experienced leader to undertake a newly-created Head of Data & Digital role reporting to the Chief Executive Officer on a full-time fixed-term contract of 24 months. Lead the NBN ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bbiodiversity\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "title": "Understanding the Principles of Organelle Biogenesis",
+      "url": "https://www.findaphd.com/phds/project/understanding-the-principles-of-organelle-biogenesis?p77807=",
+      "organisation": "University of Oxford",
+      "location": "Oxford, England, UK",
+      "country": "United Kingdom",
+      "deadlineSuggestion": "2026-12-01",
+      "deadlineEvidence": "deadline is 01/12/26",
+      "matchedTerms": [],
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "matchedPatterns": [],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
-      "suggestedType": "job",
+      "suggestedType": "phd",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
-        "environmentjob"
+        "res-phds"
       ]
     },
     {
-      "title": "Head of Local Nature Recovery Strategy Delivery Partnership",
-      "url": "https://environmentjob.co.uk/jobs/111831-head-of-local-nature-recovery-strategy-delivery-partnership",
-      "evidenceSnippet": "Durham Wildlife Trust, North East England (Houghton-le-Spring, Tyne and Wear and travel across the LNRS area), £42,744 pa. Across the North East the Mayoral Strategic Authority is taking on responsibility for delivery of LNRS and has put in place two sub regional partnerships to coordinate delivery on the ground. Durha",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bnature recovery\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "title": "Connectomics across sexes, species and states",
+      "url": "https://www.findaphd.com/phds/project/connectomics-across-sexes-species-and-states?p198582=",
+      "organisation": "Medical Research Council (Cambridge)",
+      "location": "Cambridge, England, UK",
+      "country": "United Kingdom",
+      "deadlineSuggestion": "2026-12-08",
+      "deadlineEvidence": "deadline is 08/12/26",
+      "matchedTerms": [],
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "matchedPatterns": [],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
-      "suggestedType": "job",
+      "suggestedType": "phd",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
-        "environmentjob"
+        "res-phds"
       ]
     },
     {
-      "title": "Keeping it Wild Trainee x9",
-      "url": "https://environmentjob.co.uk/jobs/111704-keeping-it-wild-trainee-x9",
-      "evidenceSnippet": "London Wildlife Trust, London, £26,936 pa pro rata. Do you love nature and working outdoors? Are you practically minded and want to learn new skills? Have you thought about a career in nature recovery and conservation? As part of the Keeping it Wild ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bnature recovery\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "title": "Effect of activity in neural circuit development",
+      "url": "https://www.findaphd.com/phds/project/effect-of-activity-in-neural-circuit-development?p198576=",
+      "organisation": "Medical Research Council (Cambridge)",
+      "location": "Cambridge, England, UK",
+      "country": "United Kingdom",
+      "deadlineSuggestion": "2026-12-08",
+      "deadlineEvidence": "deadline is 08/12/26",
+      "matchedTerms": [],
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "matchedPatterns": [],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Landscape Management Officer",
-      "url": "https://environmentjob.co.uk/jobs/111523-landscape-management-officer",
-      "evidenceSnippet": "Thame Town Council, Thame, Oxfordshire, £34,000 pro rata. Are you passionate about nature recovery and excited by the opportunity to shape and deliver a long-term approach to biodiversity at a local level, working with the community to turn ambition into ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bbiodiversity\\b",
-        "\\bnature recovery\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
+      "suggestedType": "phd",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Nature Networks Project Officer",
-      "url": "https://environmentjob.co.uk/jobs/111828-nature-networks-project-officer",
-      "evidenceSnippet": "Forestry England, Pickering, North Yorkshire, £33,854 pa. We’re looking for a Nature Networks Project Officer to lead the development and delivery of Yorkshire District’s Nature Networks project, a key part of Forestry England’s ambitious Biodiversity ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bbiodiversity\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Nature Recovery Officer (Development Programme)",
-      "url": "https://environmentjob.co.uk/jobs/111718-nature-recovery-officer-development-programme",
-      "evidenceSnippet": "Natural England, East and South East England, £28,910 pa. Working on real projects alongside experienced specialists, you'll contribute to nature recovery, sustainable development, protected sites, farm advisory work and place-based delivery, helping create ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bnature recovery\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Nature Recovery Residency 2027",
-      "url": "https://environmentjob.co.uk/volunteering/111813-nature-recovery-residency-2027",
-      "evidenceSnippet": "Ambios, Ashprington, Totnes, Devon, Voluntary. Ambios is offering three voluntary residential places for people who want to build practical experience, develop their skills and immerse themselves in the day-to-day work of restoring nature. ...",
-      "source": "environmentjob · volunteering",
-      "sourceId": "environmentjob-volunteering",
-      "sourceUrl": "https://environmentjob.co.uk/volunteering",
-      "matchedPatterns": [
-        "\\bnature recovery\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "volunteering",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob-volunteering"
-      ]
-    },
-    {
-      "title": "PeacePlus Nature Conservation Scientist (Wader Surveys)",
-      "url": "https://environmentjob.co.uk/jobs/111677-peaceplus-nature-conservation-scientist-wader-surveys",
-      "evidenceSnippet": "RSPB, Northern Ireland, £40,381 - £43,113 pa. Are you passionate about breeding waders and citizen science? The PeacePlus Nature project will be undertaking two national scale breeding wader surveys over 2027 and 2028 with a significant ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bcitizen science\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Principal Consultant - Ecology",
-      "url": "https://environmentjob.co.uk/jobs/111553-principal-consultant-ecology",
-      "evidenceSnippet": "Cura Terrae, Glasgow or the role can operate across both our Edinburgh and Glasgow offices, £47,000 - £57,000 pa. We're looking for an experienced Principal Ecological Consultant to join our Ecology team. This is an exciting opportunity for a technically strong ecologist who enjoys leading projects, mentoring ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Principal Ecologist (Commercial)",
-      "url": "https://environmentjob.co.uk/jobs/111842-principal-ecologist-commercial",
-      "evidenceSnippet": "South Downs National Park Authority, Midhurst, West Sussex, £49,688 - £52,929 pa. Are you an experienced ecological consultant ready to play a prominent role in the South Downs National Park Authority’s mission to accelerate nature recovery across one of England’s most iconic ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b",
-        "\\bnature recovery\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Principal Planning Ecologist",
-      "url": "https://environmentjob.co.uk/jobs/111726-principal-planning-ecologist",
-      "evidenceSnippet": "Cheshire Wildlife Trust, Malpas, Cheshire (hybrid working), Starting in the region of £39,040 pa, plus up to 7.5% employer pension contribution. Cheshire Wildlife Trust is looking for a confident Principal Planning Ecologist to help fight for a Wilder Cheshire. You’ll be the informed ecological voice behind our advocac",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Project Delivery Officer",
-      "url": "https://environmentjob.co.uk/jobs/111516-project-delivery-officer",
-      "evidenceSnippet": "Tyne Rivers Trust, Corbridge, Northumberland, From £35,000 depending on experience. Tyne Rivers Trust is looking for a proactive and enthusiastic Project Delivery Officer to deliver ambitious river and habitat restoration projects that will help make the North East more biodiverse ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bhabitat restoration\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
-      "discoveredVia": [
-        "environmentjob"
+        "res-phds"
       ]
     },
     {
       "title": "Research projects",
       "url": "https://www.thebugfarm.co.uk/about-us/work-with-us",
-      "evidenceSnippet": "Research projects Dr Beynon’s Bug Farm in St Davids, Wales, UK",
+      "organisation": "Dr Beynon’s Bug Farm",
+      "location": "St Davids, Wales, UK",
+      "country": "United Kingdom",
+      "matchedTerms": [],
       "source": "RES research opportunities",
       "sourceId": "res-phds",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
       "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
+      "suggestedType": "other",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-10-01",
       "discoveredVia": [
@@ -951,174 +531,22 @@
       ]
     },
     {
-      "title": "Reserve Warden",
-      "url": "https://environmentjob.co.uk/jobs/111827-reserve-warden",
-      "evidenceSnippet": "WWT, Slimbridge, Gloucestershire, £25,485 pa. This is an exciting opportunity to make a tangible difference at one of the UK's most important wetland sites. No two days are the same. Whether you're overseeing habitat restoration, monitoring ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bhabitat restoration\\b"
+      "title": "Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111874-ecologist",
+      "matchedTerms": [
+        "Ecologist",
+        "ecology"
       ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Restoration Officer",
-      "url": "https://environmentjob.co.uk/jobs/111612-restoration-officer",
-      "evidenceSnippet": "The Ecology Centre, Kinghorn, Fife / Edinburgh, £30,000 pa. As the Restoration Officer, you will work collaboratively with partners, volunteers, stakeholders and community groups as part of the Restoration Forth project, to deliver restoration and connect ...",
+      "organisation": "Middle Level Commissioners",
+      "compensation": "£33,012 - £38,172 DOE",
+      "location": "March, Cambridgeshire",
       "source": "environmentjob · paid jobs",
       "sourceId": "environmentjob",
       "sourceUrl": "https://environmentjob.co.uk/",
       "matchedPatterns": [
         "\\becolog\\w*\\b"
       ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Scientist",
-      "url": "https://flyttr.bamboohr.com/careers/194",
-      "evidenceSnippet": "Scientist Flyttr in Edinburgh, Scotland, UK",
-      "source": "Royal Entomological Society",
-      "sourceId": "res-jobs",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
-      "matchedPatterns": [],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "res-jobs"
-      ]
-    },
-    {
-      "title": "Senior Conservation Officer (12 Month Maternity Cover)",
-      "url": "https://environmentjob.co.uk/jobs/111819-senior-conservation-officer-12-month-maternity-cover",
-      "evidenceSnippet": "Birmingham and Black Country Wildlife Trust, Birmingham, £28,398 - £30,732 pa. Lead the delivery of biodiversity enhancement and habitat creation projects across Birmingham and the Black Country, with a particular focus on freshwater habitats and ecological restoration. You'll ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b",
-        "\\bbiodiversity\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Senior Ecologist",
-      "url": "https://environmentjob.co.uk/jobs/111799-senior-ecologist",
-      "evidenceSnippet": "Atlantic58, Stornoway, Isle of Lewis, Scotland, £35,000 - £40,000 pa dependent on experience. Atlantic58 is seeking an experienced, adaptable, and highly skilled Senior Ecologist to join our growing Ecology Team. This role is designed for someone with ecological expertise across flora, fauna, ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Senior Ecologist",
-      "url": "https://environmentjob.co.uk/jobs/111714-senior-ecologist",
-      "evidenceSnippet": "HalpinRobbins, Devon / Somerset, £35,000 - £40,000 pa. We're looking for an experienced Senior Ecologist with protected species licensing expertise to join our growing consultancy at a pivotal stage of development. If you're a licensed Bat and/or Dormouse ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Senior Ecologist - Didcot/Milton Keynes",
-      "url": "https://environmentjob.co.uk/jobs/111688-senior-ecologist-didcot-milton-keynes",
-      "evidenceSnippet": "BSG Ecology, Didcot, Oxfordshire / Milton Keynes, Buckinghamshire, £35,000 - £45,000 pa. This is a great opportunity to join our well-established and friendly Oxfordshire team, and one of the most successful independent ecological consultancies in the UK. The post will be based with our ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Senior Ecologist x2",
-      "url": "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2",
-      "evidenceSnippet": "Elton Ecology, Office-based or hybrid working, with offices in Castle Donington (East Midlands) and Birmingham (West Midlands), £47,500 - £55,000 pa. This is an opportunity to take ownership of interesting development-led ecology projects while helping shape the technical standards, systems and future direction of an a",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Senior Environmental / Ecological Clerk of Works",
-      "url": "https://environmentjob.co.uk/jobs/111488-senior-environmental-ecological-clerk-of-works",
-      "evidenceSnippet": "Redwing, Across the Highlands and Islands, Scotland, £35,000 - £45,000 pa. We are looking for an experienced and enthusiastic person to work as an EnvCoW and to guide and mentor other ECoW's within the Redwing team on sites across the Highlands and Islands. ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
       "suggestedType": "job",
@@ -1131,56 +559,19 @@
     {
       "title": "Senior Project Manager",
       "url": "https://environmentjob.co.uk/jobs/111869-senior-project-manager",
-      "evidenceSnippet": "EMEC Ecology (a subsidiary of Nottinghamshire Wildlife Trust), Nottingham, £50,000 - £60,000 pa (dependent on experience). We are entering the next stage of EMEC’s development with a refreshed strategy and ambitious plans for the business. This creates a rare opportunity for an experienced Senior Project Manager to joi",
+      "matchedTerms": [
+        "Ecology"
+      ],
+      "organisation": "EMEC Ecology (a subsidiary of Nottinghamshire Wildlife Trust)",
+      "compensation": "£50,000 - £60,000 pa (dependent on experience)",
+      "location": "Nottingham",
       "source": "environmentjob · paid jobs",
       "sourceId": "environmentjob",
       "sourceUrl": "https://environmentjob.co.uk/",
       "matchedPatterns": [
         "\\becolog\\w*\\b"
       ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Smooth Snake Recovery Officer",
-      "url": "https://environmentjob.co.uk/jobs/111743-smooth-snake-recovery-officer",
-      "evidenceSnippet": "Amphibian & Reptile Conservation, Bournemouth, Dorset, £26,000 pa with an employer pension contribution of 8%. The Amphibian and Reptile Conservation Trust (ARC) seeks an ecologist to work on ARC’s exciting new project, “Essential research and translocation for smooth snake recovery.” This project will enhance ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-01",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
-      "title": "Technical Advisor - Research and Biodiversity Monitoring",
-      "url": "https://environmentjob.co.uk/jobs/111728-technical-advisor-research-and-biodiversity-monitoring",
-      "evidenceSnippet": "RSPB, Sierra Leone, with travel in Liberia, £40,381 - £43,113 pa pro rata. The RSPB is seeking an experienced Technical Advisor - Research and Biodiversity Monitoring to provide scientific and technical leadership across biodiversity research, ecological monitoring and ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\becolog\\w*\\b",
-        "\\bbiodiversity\\b",
-        "\\becological monitoring\\b"
-      ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
       "suggestedType": "job",
@@ -1193,14 +584,19 @@
     {
       "title": "Technical Director",
       "url": "https://environmentjob.co.uk/jobs/111848-technical-director",
-      "evidenceSnippet": "Atlantic58, Stornoway, Isle of Lewis, Outer Hebrides, £40,000 - £60,000 pa. The Technical Director will have a senior technical and commercial role with responsibility for strategic management and support for Atlantic58's ecological, social and environmental consultancy and ...",
+      "matchedTerms": [
+        "ecological"
+      ],
+      "organisation": "Atlantic58",
+      "compensation": "£40,000 - £60,000 pa",
+      "location": "Stornoway, Isle of Lewis, Outer Hebrides",
       "source": "environmentjob · paid jobs",
       "sourceId": "environmentjob",
       "sourceUrl": "https://environmentjob.co.uk/",
       "matchedPatterns": [
         "\\becolog\\w*\\b"
       ],
-      "reason": "Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
       "reviewStatus": "pending",
       "relevanceStrength": "needs-context",
       "suggestedType": "job",
@@ -1208,6 +604,769 @@
       "lastSeen": "2026-10-01",
       "discoveredVia": [
         "environmentjob"
+      ]
+    },
+    {
+      "title": "Principal Ecologist (Commercial)",
+      "url": "https://environmentjob.co.uk/jobs/111842-principal-ecologist-commercial",
+      "matchedTerms": [
+        "Ecologist",
+        "ecological",
+        "nature recovery"
+      ],
+      "organisation": "South Downs National Park Authority",
+      "compensation": "£49,688 - £52,929 pa",
+      "location": "Midhurst, West Sussex",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b",
+        "\\bnature recovery\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Catchment Partnership Officer",
+      "url": "https://environmentjob.co.uk/jobs/111775-catchment-partnership-officer",
+      "matchedTerms": [
+        "biodiversity"
+      ],
+      "organisation": "United Utilities",
+      "compensation": "£51,233 pa",
+      "location": "Huntington, Cheshire",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bbiodiversity\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Senior Conservation Officer (12 Month Maternity Cover)",
+      "url": "https://environmentjob.co.uk/jobs/111819-senior-conservation-officer-12-month-maternity-cover",
+      "matchedTerms": [
+        "ecological",
+        "biodiversity"
+      ],
+      "organisation": "Birmingham and Black Country Wildlife Trust",
+      "compensation": "£28,398 - £30,732 pa",
+      "location": "Birmingham",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b",
+        "\\bbiodiversity\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Head of Local Nature Recovery Strategy Delivery Partnership",
+      "url": "https://environmentjob.co.uk/jobs/111831-head-of-local-nature-recovery-strategy-delivery-partnership",
+      "matchedTerms": [
+        "Nature Recovery"
+      ],
+      "organisation": "Durham Wildlife Trust",
+      "compensation": "£42,744 pa",
+      "location": "North East England (Houghton-le-Spring, Tyne and Wear and travel across the LNRS area)",
+      "country": "United Kingdom",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bnature recovery\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Nature Networks Project Officer",
+      "url": "https://environmentjob.co.uk/jobs/111828-nature-networks-project-officer",
+      "matchedTerms": [
+        "Biodiversity"
+      ],
+      "organisation": "Forestry England",
+      "compensation": "£33,854 pa",
+      "location": "Pickering, North Yorkshire",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bbiodiversity\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Reserve Warden",
+      "url": "https://environmentjob.co.uk/jobs/111827-reserve-warden",
+      "matchedTerms": [
+        "habitat restoration"
+      ],
+      "organisation": "WWT",
+      "compensation": "£25,485 pa",
+      "location": "Slimbridge, Gloucestershire",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bhabitat restoration\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Senior Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111799-senior-ecologist",
+      "matchedTerms": [
+        "Ecologist",
+        "Ecology",
+        "ecological"
+      ],
+      "organisation": "Atlantic58",
+      "compensation": "£35,000 - £40,000 pa dependent on experience",
+      "location": "Stornoway, Isle of Lewis, Scotland",
+      "country": "United Kingdom",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111789-ecologist",
+      "matchedTerms": [
+        "Ecologist",
+        "ecologists"
+      ],
+      "organisation": "Northumberland County Council",
+      "compensation": "£41,177 - £45,529 pa",
+      "location": "Morpeth, Northumberland",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Dacorum Climate Action Network Coordinator",
+      "url": "https://environmentjob.co.uk/jobs/111773-dacorum-climate-action-network-coordinator",
+      "matchedTerms": [
+        "Ecological"
+      ],
+      "organisation": "Dacorum Borough Council",
+      "compensation": "£45,750 - £48,582 pa (inclusive of London fringe weighting)",
+      "location": "Hemel Hempstead, Hertfordshire",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Habitat Creation Officer",
+      "url": "https://environmentjob.co.uk/jobs/111768-habitat-creation-officer",
+      "matchedTerms": [
+        "biodiversity",
+        "nature recovery"
+      ],
+      "organisation": "Cheshire Wildlife Trust",
+      "compensation": "£32,522 - £36,304 pa / Principal: £39,040 - £44,689 pa",
+      "location": "Cheshire (hybrid), Senior:",
+      "workplace": "Hybrid",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bbiodiversity\\b",
+        "\\bnature recovery\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Smooth Snake Recovery Officer",
+      "url": "https://environmentjob.co.uk/jobs/111743-smooth-snake-recovery-officer",
+      "matchedTerms": [
+        "ecologist"
+      ],
+      "organisation": "Amphibian & Reptile Conservation",
+      "compensation": "£26,000 pa with an employer pension contribution of 8%",
+      "location": "Bournemouth, Dorset",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Engagement Officer",
+      "url": "https://environmentjob.co.uk/jobs/111733-engagement-officer",
+      "matchedTerms": [
+        "Biodiversity"
+      ],
+      "organisation": "RECORD",
+      "compensation": "£24,000 pa",
+      "location": "The Biodiversity Information System, Chester, Cheshire",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bbiodiversity\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "GIS Officer",
+      "url": "https://environmentjob.co.uk/jobs/111729-gis-officer",
+      "matchedTerms": [
+        "ecological",
+        "GIS"
+      ],
+      "organisation": "Cheshire Wildlife Trust",
+      "compensation": "£25,526 pa",
+      "location": "Malpas, Cheshire (hybrid working), Starting in the region of",
+      "workplace": "Hybrid",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b",
+        "\\bGIS\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Technical Advisor - Research and Biodiversity Monitoring",
+      "url": "https://environmentjob.co.uk/jobs/111728-technical-advisor-research-and-biodiversity-monitoring",
+      "matchedTerms": [
+        "ecological",
+        "Biodiversity",
+        "ecological monitoring"
+      ],
+      "organisation": "RSPB",
+      "compensation": "£40,381 - £43,113 pa pro rata",
+      "location": "Sierra Leone, with travel in Liberia",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b",
+        "\\bbiodiversity\\b",
+        "\\becological monitoring\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Principal Planning Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111726-principal-planning-ecologist",
+      "matchedTerms": [
+        "Ecologist",
+        "ecological"
+      ],
+      "organisation": "Cheshire Wildlife Trust",
+      "compensation": "£39,040 pa, plus up to 7.5% employer pension contribution",
+      "location": "Malpas, Cheshire (hybrid working), Starting in the region of",
+      "workplace": "Hybrid",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Nature Recovery Officer (Development Programme)",
+      "url": "https://environmentjob.co.uk/jobs/111718-nature-recovery-officer-development-programme",
+      "matchedTerms": [
+        "Nature Recovery"
+      ],
+      "organisation": "Natural England",
+      "compensation": "£28,910 pa",
+      "location": "East and South East England",
+      "country": "United Kingdom",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bnature recovery\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Senior Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111714-senior-ecologist",
+      "matchedTerms": [
+        "Ecologist"
+      ],
+      "organisation": "HalpinRobbins",
+      "compensation": "£35,000 - £40,000 pa",
+      "location": "Devon / Somerset",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Assistant Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111711-assistant-ecologist",
+      "matchedTerms": [
+        "Ecologist",
+        "ecological",
+        "Assistant Ecologist"
+      ],
+      "organisation": "Forestry and Land Scotland",
+      "compensation": "£34,026 - £35,656 pa plus 28.97% employer pension contribution",
+      "location": "Glenbranter, Argyll and Bute, Scotland",
+      "country": "United Kingdom",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b",
+        "\\bassistant ecologists?\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Head of Data & Digital",
+      "url": "https://environmentjob.co.uk/jobs/111710-head-of-data-digital",
+      "matchedTerms": [
+        "Biodiversity"
+      ],
+      "organisation": "National Biodiversity Network Trust",
+      "compensation": "£50,000 - £55,000 pa",
+      "location": "Home-based",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bbiodiversity\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Senior Ecologist - Didcot/Milton Keynes",
+      "url": "https://environmentjob.co.uk/jobs/111688-senior-ecologist-didcot-milton-keynes",
+      "matchedTerms": [
+        "Ecologist",
+        "Ecology",
+        "ecological"
+      ],
+      "organisation": "BSG Ecology",
+      "compensation": "£35,000 - £45,000 pa",
+      "location": "Didcot, Oxfordshire / Milton Keynes, Buckinghamshire",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Ecologist / Senior Ecologist / Environmental Clerk of Works",
+      "url": "https://environmentjob.co.uk/jobs/111687-ecologist-senior-ecologist-environmental-clerk-of-works",
+      "matchedTerms": [
+        "Ecologist",
+        "Ecology",
+        "ecologists"
+      ],
+      "organisation": "Highland Ecology and Development Ltd",
+      "compensation": "Competitive salary, dependent on experience",
+      "location": "Dingwall, Highlands",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "PeacePlus Nature Conservation Scientist (Wader Surveys)",
+      "url": "https://environmentjob.co.uk/jobs/111677-peaceplus-nature-conservation-scientist-wader-surveys",
+      "matchedTerms": [
+        "citizen science"
+      ],
+      "organisation": "RSPB",
+      "compensation": "£40,381 - £43,113 pa",
+      "location": "Northern Ireland",
+      "country": "United Kingdom",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bcitizen science\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Green Infrastructure & Biodiversity Manager",
+      "url": "https://environmentjob.co.uk/jobs/111669-green-infrastructure-biodiversity-manager",
+      "matchedTerms": [
+        "Biodiversity"
+      ],
+      "organisation": "Remus - part of Fexco Property Services",
+      "compensation": "£38,000 - £42,000 pa",
+      "location": "England (multiple roles available)",
+      "country": "United Kingdom",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bbiodiversity\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Restoration Officer",
+      "url": "https://environmentjob.co.uk/jobs/111612-restoration-officer",
+      "matchedTerms": [
+        "Ecology"
+      ],
+      "organisation": "The Ecology Centre",
+      "compensation": "£30,000 pa",
+      "location": "Kinghorn, Fife / Edinburgh",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Principal Consultant - Ecology",
+      "url": "https://environmentjob.co.uk/jobs/111553-principal-consultant-ecology",
+      "matchedTerms": [
+        "Ecology",
+        "Ecological",
+        "ecologist"
+      ],
+      "organisation": "Cura Terrae",
+      "compensation": "£47,000 - £57,000 pa",
+      "location": "Glasgow or the role can operate across both our Edinburgh and Glasgow offices",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Landscape Management Officer",
+      "url": "https://environmentjob.co.uk/jobs/111523-landscape-management-officer",
+      "matchedTerms": [
+        "biodiversity",
+        "nature recovery"
+      ],
+      "organisation": "Thame Town Council",
+      "compensation": "£34,000 pro rata",
+      "location": "Thame, Oxfordshire",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bbiodiversity\\b",
+        "\\bnature recovery\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Agroecology Lead",
+      "url": "https://environmentjob.co.uk/jobs/111528-agroecology-lead",
+      "matchedTerms": [
+        "ecology"
+      ],
+      "organisation": "Wild Oxfordshire",
+      "compensation": "£41,172 pa",
+      "location": "Little Wittenham, Oxfordshire",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Senior Environmental / Ecological Clerk of Works",
+      "url": "https://environmentjob.co.uk/jobs/111488-senior-environmental-ecological-clerk-of-works",
+      "matchedTerms": [
+        "Ecological"
+      ],
+      "organisation": "Redwing",
+      "compensation": "£35,000 - £45,000 pa",
+      "location": "Across the Highlands and Islands, Scotland",
+      "country": "United Kingdom",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\becolog\\w*\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
+      "title": "Nature Recovery Residency 2027",
+      "url": "https://environmentjob.co.uk/volunteering/111813-nature-recovery-residency-2027",
+      "matchedTerms": [
+        "Nature Recovery"
+      ],
+      "organisation": "Ambios",
+      "compensation": "Voluntary",
+      "location": "Ashprington, Totnes, Devon",
+      "source": "environmentjob · volunteering",
+      "sourceId": "environmentjob-volunteering",
+      "sourceUrl": "https://environmentjob.co.uk/volunteering",
+      "matchedPatterns": [
+        "\\bnature recovery\\b"
+      ],
+      "reason": "Confirm whether this related-field opportunity is relevant before publication.",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "volunteering",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "discoveredVia": [
+        "environmentjob-volunteering"
       ]
     }
   ],
@@ -1224,20 +1383,6 @@
     }
   ],
   "reviewTasks": [
-    {
-      "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
-      "id": "hutchinsons-horticultural-agronomist-eastanglia-2026",
-      "kind": "changed",
-      "title": "Horticultural Agronomist – Norfolk & Suffolk",
-      "url": "https://www.hutchinsons.co.uk/about-us/careers/horticultural-agronomist-norfolk-suffolk/",
-      "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
-      "reviewStatus": "pending",
-      "detectedAt": "2026-10-01T11:07:29.728543+00:00",
-      "lastSeen": "2026-10-01T11:07:29.728543+00:00",
-      "lastChecked": "2026-09-29",
-      "previousHash": "3724bdb06fee22dd0a19a4ac1685ad0e58da8e764c01d62404f5cbe8f2f94fa9",
-      "currentHash": "e6672e2e1d87d85bdecc80bd6fc5b1d313227a68a61cbf5a1a62629242507a2e"
-    },
     {
       "taskKey": "pepsico-agricultural-science-technician-2026:unreachable",
       "id": "pepsico-agricultural-science-technician-2026",
@@ -1316,5 +1461,6 @@
       "lastChecked": "2026-09-29",
       "evidence": "HTTP Error 403: Forbidden"
     }
-  ]
+  ],
+  "publicationMode": "hybrid"
 }

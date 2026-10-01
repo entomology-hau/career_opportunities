@@ -53,7 +53,8 @@
       "courses": [
         "entomology",
         "ipm"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "hutton-peatlands-pollinators-2026",
@@ -105,7 +106,8 @@
       "courses": [
         "entomology",
         "biological-recording"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "leeds-black-soldier-fly-b12-2026",
@@ -149,7 +151,8 @@
       "searchKeywords": [],
       "courses": [
         "entomology"
-      ]
+      ],
+      "lastSeen": "2026-09-30"
     },
     {
       "id": "nhm-dissco-digitiser-2026",
@@ -253,7 +256,8 @@
       "courses": [
         "entomology",
         "biological-recording"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "butterfly-grassland-officer-2026",
@@ -307,7 +311,8 @@
       "courses": [
         "entomology",
         "biological-recording"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "wildfish-smartrivers-analysts",
@@ -359,7 +364,8 @@
       "courses": [
         "entomology",
         "biological-recording"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "monteverde-insect-internship",
@@ -413,7 +419,8 @@
       ],
       "courses": [
         "entomology"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "beewalk-volunteer",
@@ -515,7 +522,8 @@
       "searchKeywords": [],
       "courses": [
         "entomology"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "country": "United Kingdom",
@@ -887,7 +895,8 @@
       "courses": [
         "entomology",
         "biological-recording"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "united-utilities-graduate-ecologist-2027",
@@ -1211,7 +1220,8 @@
       ],
       "courses": [
         "biological-recording"
-      ]
+      ],
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "tcv-biodiversity-action-volunteer-officer-2026",
@@ -1267,7 +1277,2615 @@
       "courses": [
         "entomology",
         "biological-recording"
-      ]
+      ],
+      "lastSeen": "2026-09-30"
+    },
+    {
+      "id": "auto-af00fba2cc6366e1",
+      "title": "Postdoctoral Research Associate",
+      "url": "https://www.jobs.ac.uk/job/DSW899/postdoctoral-research-associate",
+      "organisation": "University of Edinburgh",
+      "location": "Edinburgh, Scotland, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DSW899/postdoctoral-research-associate"
+      ],
+      "deadline": "2026-09-30",
+      "deadlineAt": "2026-10-01T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-09-30 · source date; confirm closing time",
+      "dateBasis": "deadline is 30/09/26"
+    },
+    {
+      "id": "auto-ab2061fe4b166d33",
+      "title": "Postdoctoral Research Associate: Gene Editing",
+      "url": "https://www.jobs.ac.uk/job/DSV227/postdoctoral-research-associate-gene-editing",
+      "organisation": "University of York",
+      "location": "York, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DSV227/postdoctoral-research-associate-gene-editing"
+      ],
+      "deadline": "2026-10-02",
+      "deadlineAt": "2026-10-03T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-02 · source date; confirm closing time",
+      "dateBasis": "deadline is 02/10/26"
+    },
+    {
+      "id": "auto-5d484c858e860ae9",
+      "title": "Research Associate: Neuroscience (2 Posts)",
+      "url": "https://www.jobs.ac.uk/job/DSV831/research-associate-neuroscience-2-posts",
+      "organisation": "University of Sheffield",
+      "location": "Sheffield, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DSV831/research-associate-neuroscience-2-posts"
+      ],
+      "deadline": "2026-10-05",
+      "deadlineAt": "2026-10-06T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-05 · source date; confirm closing time",
+      "dateBasis": "deadline is 05/10/26"
+    },
+    {
+      "id": "auto-cfd6398fe5e8f964",
+      "title": "Research Associate: Neuroscience",
+      "url": "https://jobsite.sheffield.ac.uk/job/Research-Associate-Neuroscience-%282-Posts%29/3131-en_GB",
+      "organisation": "University of Sheffield",
+      "location": "Sheffield, Enfland, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://jobsite.sheffield.ac.uk/job/Research-Associate-Neuroscience-%282-Posts%29/3131-en_GB"
+      ],
+      "deadline": "2026-10-05",
+      "deadlineAt": "2026-10-06T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-05 · source date; confirm closing time",
+      "dateBasis": "deadline is 05/10/26"
+    },
+    {
+      "id": "auto-7497bd6caba1eaec",
+      "title": "Postdoctoral Research Associate – Insect Genetic Rescue",
+      "url": "https://www.jobs.ac.uk/job/DTB049/postdoctoral-research-associate-insect-genetic-rescue",
+      "organisation": "University of York",
+      "location": "York, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Insect. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Insect"
+      ],
+      "relevanceTier": "Core subject",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DTB049/postdoctoral-research-associate-insect-genetic-rescue"
+      ],
+      "deadline": "2026-10-08",
+      "deadlineAt": "2026-10-09T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-08 · source date; confirm closing time",
+      "dateBasis": "deadline is 08/10/26"
+    },
+    {
+      "id": "auto-c45ef2bc3a7b821f",
+      "title": "Limestone Grassland Landscape Officer",
+      "url": "https://butterflyconservation.livevacancies.co.uk/",
+      "organisation": "Butterfly Conservation",
+      "location": "Hybrid working, office-based in Derrygonnelly, Co. Fermanagh. Occasional travel across Northern Ireland and cross-border",
+      "country": "United Kingdom",
+      "workplace": "Hybrid",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Butterfly. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Butterfly"
+      ],
+      "relevanceTier": "Core subject",
+      "status": "open",
+      "provenance": [
+        "https://butterflyconservation.livevacancies.co.uk/"
+      ],
+      "deadline": "2026-10-12",
+      "deadlineAt": "2026-10-13T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-12 · source date; confirm closing time",
+      "dateBasis": "deadline is 12/10/26"
+    },
+    {
+      "id": "auto-45f0d9085cff5d27",
+      "title": "Senior Digital Learning Officer",
+      "url": "https://www.bumblebeeconservation.org/what-we-do/vacancies",
+      "organisation": "Bumblebee Conservation Trust",
+      "location": "Home based in UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Bumblebee. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Pollination & beneficial insects.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Pollination & beneficial insects"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Bumblebee"
+      ],
+      "relevanceTier": "Core subject",
+      "status": "open",
+      "provenance": [
+        "https://www.bumblebeeconservation.org/what-we-do/vacancies"
+      ],
+      "deadline": "2026-10-12",
+      "deadlineAt": "2026-10-13T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-12 · source date; confirm closing time",
+      "dateBasis": "deadline is 12/10/26"
+    },
+    {
+      "id": "auto-4c4362f625192c91",
+      "title": "Research Technical Officer",
+      "url": "https://www.jobs.ac.uk/job/DTA320/research-technical-officer",
+      "organisation": "UCL",
+      "location": "UCL East campus, London, England UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DTA320/research-technical-officer"
+      ],
+      "deadline": "2026-10-20",
+      "deadlineAt": "2026-10-21T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-20 · source date; confirm closing time",
+      "dateBasis": "deadline is 20/10/26"
+    },
+    {
+      "id": "auto-ae59e5a47a3dec39",
+      "title": "Agricultural Consultant – South West England – Field-based",
+      "url": "https://www.linkedin.com/jobs/view/4458749919",
+      "organisation": "Bestico",
+      "location": "South West England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://www.linkedin.com/jobs/view/4458749919"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-de0b36c30e5b4fdf",
+      "title": "Scientist",
+      "url": "https://flyttr.bamboohr.com/careers/194",
+      "organisation": "Flyttr",
+      "location": "Edinburgh, Scotland, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://flyttr.bamboohr.com/careers/194"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-698e693c1aa142df",
+      "title": "Agronomy Manager",
+      "url": "https://app.occupop.com/shared/job/agronomy-manager-de944/LinkedIn?custom_cv_source=LinkedIn&fields=title%2Ctype%2Clocation%2Csector&src=LinkedInJobSlot&visibility=external",
+      "organisation": "Keelings",
+      "location": "Sandyhill, St Margaret's, Co. Dublin, Ireland",
+      "country": "Ireland",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Agronomy. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Crop protection & IPM.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Crop protection & IPM"
+      ],
+      "courses": [
+        "ipm"
+      ],
+      "tags": [
+        "Agronomy"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://app.occupop.com/shared/job/agronomy-manager-de944/LinkedIn?custom_cv_source=LinkedIn&fields=title%2Ctype%2Clocation%2Csector&src=LinkedInJobSlot&visibility=external"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-c301f84724048ee6",
+      "title": "Founder in Residence, Next generation insecticides and pest control",
+      "url": "https://apply.workable.com/deep-science-ventures/j/8F18DA9E98",
+      "organisation": "Deep Science Ventures",
+      "location": "full-time, remote",
+      "country": "Not supplied",
+      "workplace": "Remote",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://apply.workable.com/deep-science-ventures/j/8F18DA9E98"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-ee49850318f47ddb",
+      "title": "Insect AI 2025-26 mobility grants",
+      "url": "https://insectai.eu/insect-ai-2025-26-mobility-grants-call",
+      "organisation": "InsectAI",
+      "location": "Location not supplied",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "other",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Insect. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Insect"
+      ],
+      "relevanceTier": "Core subject",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://insectai.eu/insect-ai-2025-26-mobility-grants-call"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-07c934db44e41e1e",
+      "title": "Insect Neuroscientist",
+      "url": "https://www.swarm-biotactics.com/career/insect-neuroscientist",
+      "organisation": "SWARM Biotactics",
+      "location": "Kassel, Germany",
+      "country": "Germany",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Insect. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Insect"
+      ],
+      "relevanceTier": "Core subject",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://www.swarm-biotactics.com/career/insect-neuroscientist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-76fb56123c94dcff",
+      "title": "EntoBites writing opportunity",
+      "url": "https://entobites.blog/write-for-us",
+      "organisation": "EntoBites",
+      "location": "online Bringing you science, one buzz at a time Interested in science communication? Join us! We are EntoBites, a team of entomology researchers passionate about communicating insect science. As part of the ScienceBites collective, we write articles on cutting-edge research within entomology, making it accessible to broad audiences. You can explore our fellow sites at sciencebites.org . We’re looking for authors passionate about storytelling and entomology. We publish short articles (around 800 words) on recent research papers, covering all aspects of insect science, from ecology to physiology. Articles on non-insect terrestrial arthropods, such as spiders, are also welcome. Share your insights and help us inspire curiosity about the incredible world of insects! Find us on X, Instagram and Bluesky @EntoBitesComms or email entobites1@gmail.com to find out more",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "other",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: entomology, insect, insects, arthropods. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour, Ecology & conservation.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour",
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "entomology",
+        "insect",
+        "insects",
+        "arthropods"
+      ],
+      "relevanceTier": "Core subject",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://entobites.blog/write-for-us"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-4f462e94e59d94a8",
+      "title": "Research projects",
+      "url": "https://www.thebugfarm.co.uk/about-us/work-with-us",
+      "organisation": "Dr Beynon’s Bug Farm",
+      "location": "St Davids, Wales, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "other",
+      "classificationInferred": true,
+      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://www.thebugfarm.co.uk/about-us/work-with-us"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-e2b1dadc49bc44ce",
+      "title": "A range of roles",
+      "url": "https://www.oxitec.com/en/careers",
+      "organisation": "Flyttr",
+      "location": "UK and International",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "other",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://www.oxitec.com/en/careers"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-a4c707510c96f651",
+      "title": "GW4 BioMed3 MRC DTP – Using human genomics, AI and fly disease modelling to study the relationship between sleep and Alzheimer’s disease",
+      "url": "https://www.findaphd.com/phds/project/funded-project-gw4-biomed3-mrc-dtp-using-human-genomics-ai-and-fly-disease-modelling-to-study-the-relationship-between-sleep-and-alzheimer-s-disease?p198523=",
+      "organisation": "University of Bristol",
+      "location": "Bristol, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "phd",
+      "classificationInferred": true,
+      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Monitoring & environmental risk.",
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Monitoring & environmental risk"
+      ],
+      "courses": [
+        "biological-recording"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.findaphd.com/phds/project/funded-project-gw4-biomed3-mrc-dtp-using-human-genomics-ai-and-fly-disease-modelling-to-study-the-relationship-between-sleep-and-alzheimer-s-disease?p198523="
+      ],
+      "deadline": "2026-10-21",
+      "deadlineAt": "2026-10-22T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-21 · source date; confirm closing time",
+      "dateBasis": "deadline is 21/10/26"
+    },
+    {
+      "id": "auto-19cca34163f0bbfa",
+      "title": "GW4 BioMed3 MRC DTP – Quantifying the impact of heatwaves on cognition, neuroanatomy, and mitochondrial function",
+      "url": "https://www.findaphd.com/phds/project/funded-project-gw4-biomed3-mrc-dtp-quantifying-the-impact-of-heatwaves-on-cognition-neuroanatomy-and-mitochondrial-function?p198532=",
+      "organisation": "University of Bristol",
+      "location": "Bristol, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "phd",
+      "classificationInferred": true,
+      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.findaphd.com/phds/project/funded-project-gw4-biomed3-mrc-dtp-quantifying-the-impact-of-heatwaves-on-cognition-neuroanatomy-and-mitochondrial-function?p198532="
+      ],
+      "deadline": "2026-10-21",
+      "deadlineAt": "2026-10-22T00:00:00+01:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-21 · source date; confirm closing time",
+      "dateBasis": "deadline is 21/10/26"
+    },
+    {
+      "id": "auto-3b8db7f756be2822",
+      "title": "Understanding the Principles of Organelle Biogenesis",
+      "url": "https://www.findaphd.com/phds/project/understanding-the-principles-of-organelle-biogenesis?p77807=",
+      "organisation": "University of Oxford",
+      "location": "Oxford, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "phd",
+      "classificationInferred": true,
+      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.findaphd.com/phds/project/understanding-the-principles-of-organelle-biogenesis?p77807="
+      ],
+      "deadline": "2026-12-01",
+      "deadlineAt": "2026-12-02T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-12-01 · source date; confirm closing time",
+      "dateBasis": "deadline is 01/12/26"
+    },
+    {
+      "id": "auto-804f6a91d0ccb9a5",
+      "title": "Connectomics across sexes, species and states",
+      "url": "https://www.findaphd.com/phds/project/connectomics-across-sexes-species-and-states?p198582=",
+      "organisation": "Medical Research Council (Cambridge)",
+      "location": "Cambridge, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "phd",
+      "classificationInferred": true,
+      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.findaphd.com/phds/project/connectomics-across-sexes-species-and-states?p198582="
+      ],
+      "deadline": "2026-12-08",
+      "deadlineAt": "2026-12-09T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-12-08 · source date; confirm closing time",
+      "dateBasis": "deadline is 08/12/26"
+    },
+    {
+      "id": "auto-eae43b8a4db04775",
+      "title": "Effect of activity in neural circuit development",
+      "url": "https://www.findaphd.com/phds/project/effect-of-activity-in-neural-circuit-development?p198576=",
+      "organisation": "Medical Research Council (Cambridge)",
+      "location": "Cambridge, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "phd",
+      "classificationInferred": true,
+      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.findaphd.com/phds/project/effect-of-activity-in-neural-circuit-development?p198576="
+      ],
+      "deadline": "2026-12-08",
+      "deadlineAt": "2026-12-09T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-12-08 · source date; confirm closing time",
+      "dateBasis": "deadline is 08/12/26"
+    },
+    {
+      "id": "auto-3088327000d231de",
+      "title": "Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111874-ecologist",
+      "organisation": "Middle Level Commissioners",
+      "location": "March, Cambridgeshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£33,012 - £38,172 DOE",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, ecology. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "ecology"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111874-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-bfb78ffc9e4e4d2e",
+      "title": "Senior Project Manager",
+      "url": "https://environmentjob.co.uk/jobs/111869-senior-project-manager",
+      "organisation": "EMEC Ecology (a subsidiary of Nottinghamshire Wildlife Trust)",
+      "location": "Nottingham",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£50,000 - £60,000 pa (dependent on experience)",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecology. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecology"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111869-senior-project-manager"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-27ab91049794c0d7",
+      "title": "Technical Director",
+      "url": "https://environmentjob.co.uk/jobs/111848-technical-director",
+      "organisation": "Atlantic58",
+      "location": "Stornoway, Isle of Lewis, Outer Hebrides",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£40,000 - £60,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: ecological. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "ecological"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111848-technical-director"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-bda14cb7f1459aae",
+      "title": "Principal Ecologist (Commercial)",
+      "url": "https://environmentjob.co.uk/jobs/111842-principal-ecologist-commercial",
+      "organisation": "South Downs National Park Authority",
+      "location": "Midhurst, West Sussex",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£49,688 - £52,929 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, ecological, nature recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "ecological",
+        "nature recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111842-principal-ecologist-commercial"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-109db1332ea500d9",
+      "title": "Catchment Partnership Officer",
+      "url": "https://environmentjob.co.uk/jobs/111775-catchment-partnership-officer",
+      "organisation": "United Utilities",
+      "location": "Huntington, Cheshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£51,233 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111775-catchment-partnership-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-22ff1e382ae6568f",
+      "title": "Senior Conservation Officer (12 Month Maternity Cover)",
+      "url": "https://environmentjob.co.uk/jobs/111819-senior-conservation-officer-12-month-maternity-cover",
+      "organisation": "Birmingham and Black Country Wildlife Trust",
+      "location": "Birmingham",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£28,398 - £30,732 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: ecological, biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "ecological",
+        "biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111819-senior-conservation-officer-12-month-maternity-cover"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-260ef119e15084b5",
+      "title": "Head of Local Nature Recovery Strategy Delivery Partnership",
+      "url": "https://environmentjob.co.uk/jobs/111831-head-of-local-nature-recovery-strategy-delivery-partnership",
+      "organisation": "Durham Wildlife Trust",
+      "location": "North East England (Houghton-le-Spring, Tyne and Wear and travel across the LNRS area)",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£42,744 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Nature Recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Nature Recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111831-head-of-local-nature-recovery-strategy-delivery-partnership"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-1e4e5735d2f3b028",
+      "title": "Nature Networks Project Officer",
+      "url": "https://environmentjob.co.uk/jobs/111828-nature-networks-project-officer",
+      "organisation": "Forestry England",
+      "location": "Pickering, North Yorkshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£33,854 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111828-nature-networks-project-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-349fe5ad7e065e37",
+      "title": "Reserve Warden",
+      "url": "https://environmentjob.co.uk/jobs/111827-reserve-warden",
+      "organisation": "WWT",
+      "location": "Slimbridge, Gloucestershire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£25,485 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: habitat restoration. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "habitat restoration"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111827-reserve-warden"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-11dd4cac5fd433cb",
+      "title": "Senior Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111799-senior-ecologist",
+      "organisation": "Atlantic58",
+      "location": "Stornoway, Isle of Lewis, Scotland",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£35,000 - £40,000 pa dependent on experience",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, Ecology, ecological. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "Ecology",
+        "ecological"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111799-senior-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-0f06704498393152",
+      "title": "Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111789-ecologist",
+      "organisation": "Northumberland County Council",
+      "location": "Morpeth, Northumberland",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£41,177 - £45,529 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, ecologists. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "ecologists"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111789-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-792b39f22908dc83",
+      "title": "Dacorum Climate Action Network Coordinator",
+      "url": "https://environmentjob.co.uk/jobs/111773-dacorum-climate-action-network-coordinator",
+      "organisation": "Dacorum Borough Council",
+      "location": "Hemel Hempstead, Hertfordshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£45,750 - £48,582 pa (inclusive of London fringe weighting)",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecological. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecological"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111773-dacorum-climate-action-network-coordinator"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-6bcc821e68430fef",
+      "title": "Habitat Creation Officer",
+      "url": "https://environmentjob.co.uk/jobs/111768-habitat-creation-officer",
+      "organisation": "Cheshire Wildlife Trust",
+      "location": "Cheshire (hybrid), Senior:",
+      "country": "Not supplied",
+      "workplace": "Hybrid",
+      "funding": "Not supplied",
+      "compensation": "£32,522 - £36,304 pa / Principal: £39,040 - £44,689 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: biodiversity, nature recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "biodiversity",
+        "nature recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111768-habitat-creation-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-89a7447e2593b8cf",
+      "title": "Limestone Grassland Project Manager",
+      "url": "https://environmentjob.co.uk/jobs/111756-limestone-grassland-project-manager",
+      "organisation": "Butterfly Conservation",
+      "location": "Derrygonnelly, County Fermanagh, Northern Ireland (hybrid)",
+      "country": "United Kingdom",
+      "workplace": "Hybrid",
+      "funding": "Not supplied",
+      "compensation": "£34,000 - £37,000 pa, plus 8% pension contribution",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Butterfly. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Butterfly"
+      ],
+      "relevanceTier": "Core subject",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111756-limestone-grassland-project-manager"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-6fcee0fec1386d5e",
+      "title": "Smooth Snake Recovery Officer",
+      "url": "https://environmentjob.co.uk/jobs/111743-smooth-snake-recovery-officer",
+      "organisation": "Amphibian & Reptile Conservation",
+      "location": "Bournemouth, Dorset",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£26,000 pa with an employer pension contribution of 8%",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: ecologist. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "ecologist"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111743-smooth-snake-recovery-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-920d5bae47a84e4b",
+      "title": "Engagement Officer",
+      "url": "https://environmentjob.co.uk/jobs/111733-engagement-officer",
+      "organisation": "RECORD",
+      "location": "The Biodiversity Information System, Chester, Cheshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£24,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111733-engagement-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-cc0e977db076dae6",
+      "title": "Assistant Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111732-assistant-ecologist",
+      "organisation": "Hampshire & Isle of Wight Wildlife Trust",
+      "location": "Curdridge, Southampton",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£24,479 - £25,390 depending on skills and experience",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, Ecology, Assistant Ecologist. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "Ecology",
+        "Assistant Ecologist"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111732-assistant-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-5a0174e4c64ad6d8",
+      "title": "Keeping it Wild Trainee x9",
+      "url": "https://environmentjob.co.uk/jobs/111704-keeping-it-wild-trainee-x9",
+      "organisation": "London Wildlife Trust",
+      "location": "London",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£26,936 pa pro rata",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: nature recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "nature recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111704-keeping-it-wild-trainee-x9"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-43af88a1a9e00281",
+      "title": "GIS Officer",
+      "url": "https://environmentjob.co.uk/jobs/111729-gis-officer",
+      "organisation": "Cheshire Wildlife Trust",
+      "location": "Malpas, Cheshire (hybrid working), Starting in the region of",
+      "country": "Not supplied",
+      "workplace": "Hybrid",
+      "funding": "Not supplied",
+      "compensation": "£25,526 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: ecological, GIS. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation, Monitoring & environmental risk.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation",
+        "Monitoring & environmental risk"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "ecological",
+        "GIS"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111729-gis-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-cf447bb153e970a5",
+      "title": "Technical Advisor - Research and Biodiversity Monitoring",
+      "url": "https://environmentjob.co.uk/jobs/111728-technical-advisor-research-and-biodiversity-monitoring",
+      "organisation": "RSPB",
+      "location": "Sierra Leone, with travel in Liberia",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£40,381 - £43,113 pa pro rata",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: ecological, Biodiversity, ecological monitoring. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation, Taxonomy & biodiversity recording, Monitoring & environmental risk.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation",
+        "Taxonomy & biodiversity recording",
+        "Monitoring & environmental risk"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "ecological",
+        "Biodiversity",
+        "ecological monitoring"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111728-technical-advisor-research-and-biodiversity-monitoring"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-d68bf33ac0b30aa7",
+      "title": "Principal Planning Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111726-principal-planning-ecologist",
+      "organisation": "Cheshire Wildlife Trust",
+      "location": "Malpas, Cheshire (hybrid working), Starting in the region of",
+      "country": "Not supplied",
+      "workplace": "Hybrid",
+      "funding": "Not supplied",
+      "compensation": "£39,040 pa, plus up to 7.5% employer pension contribution",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, ecological. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "ecological"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111726-principal-planning-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-c88713b29c216c72",
+      "title": "Nature Recovery Officer (Development Programme)",
+      "url": "https://environmentjob.co.uk/jobs/111718-nature-recovery-officer-development-programme",
+      "organisation": "Natural England",
+      "location": "East and South East England",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£28,910 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Nature Recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Nature Recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111718-nature-recovery-officer-development-programme"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-ddfc45530724f47a",
+      "title": "Senior Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111714-senior-ecologist",
+      "organisation": "HalpinRobbins",
+      "location": "Devon / Somerset",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£35,000 - £40,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111714-senior-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-3799263ebacf0135",
+      "title": "Assistant Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111711-assistant-ecologist",
+      "organisation": "Forestry and Land Scotland",
+      "location": "Glenbranter, Argyll and Bute, Scotland",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£34,026 - £35,656 pa plus 28.97% employer pension contribution",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, ecological, Assistant Ecologist. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "ecological",
+        "Assistant Ecologist"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111711-assistant-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-78776635f5627062",
+      "title": "Head of Data & Digital",
+      "url": "https://environmentjob.co.uk/jobs/111710-head-of-data-digital",
+      "organisation": "National Biodiversity Network Trust",
+      "location": "Home-based",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£50,000 - £55,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111710-head-of-data-digital"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-94ece175dc72df58",
+      "title": "Senior Ecologist - Didcot/Milton Keynes",
+      "url": "https://environmentjob.co.uk/jobs/111688-senior-ecologist-didcot-milton-keynes",
+      "organisation": "BSG Ecology",
+      "location": "Didcot, Oxfordshire / Milton Keynes, Buckinghamshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£35,000 - £45,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, Ecology, ecological. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "Ecology",
+        "ecological"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111688-senior-ecologist-didcot-milton-keynes"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-9dcfb0328cbcdc2a",
+      "title": "Ecologist / Senior Ecologist / Environmental Clerk of Works",
+      "url": "https://environmentjob.co.uk/jobs/111687-ecologist-senior-ecologist-environmental-clerk-of-works",
+      "organisation": "Highland Ecology and Development Ltd",
+      "location": "Dingwall, Highlands",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Competitive salary, dependent on experience",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, Ecology, ecologists. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "Ecology",
+        "ecologists"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111687-ecologist-senior-ecologist-environmental-clerk-of-works"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-dedf3ad21364e98a",
+      "title": "PeacePlus Nature Conservation Scientist (Wader Surveys)",
+      "url": "https://environmentjob.co.uk/jobs/111677-peaceplus-nature-conservation-scientist-wader-surveys",
+      "organisation": "RSPB",
+      "location": "Northern Ireland",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£40,381 - £43,113 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: citizen science. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation, Monitoring & environmental risk.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation",
+        "Monitoring & environmental risk"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "citizen science"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111677-peaceplus-nature-conservation-scientist-wader-surveys"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-475e6a2105390355",
+      "title": "Green Infrastructure & Biodiversity Manager",
+      "url": "https://environmentjob.co.uk/jobs/111669-green-infrastructure-biodiversity-manager",
+      "organisation": "Remus - part of Fexco Property Services",
+      "location": "England (multiple roles available)",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£38,000 - £42,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111669-green-infrastructure-biodiversity-manager"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-4432e10f8c4daad1",
+      "title": "Restoration Officer",
+      "url": "https://environmentjob.co.uk/jobs/111612-restoration-officer",
+      "organisation": "The Ecology Centre",
+      "location": "Kinghorn, Fife / Edinburgh",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£30,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecology. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecology"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111612-restoration-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-6469c43589132005",
+      "title": "Principal Consultant - Ecology",
+      "url": "https://environmentjob.co.uk/jobs/111553-principal-consultant-ecology",
+      "organisation": "Cura Terrae",
+      "location": "Glasgow or the role can operate across both our Edinburgh and Glasgow offices",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£47,000 - £57,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecology, Ecological, ecologist. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecology",
+        "Ecological",
+        "ecologist"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111553-principal-consultant-ecology"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-ee0fdc651976d294",
+      "title": "Senior Ecologist x2",
+      "url": "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2",
+      "organisation": "Elton Ecology",
+      "location": "Office-based or hybrid working, with offices in Castle Donington (East Midlands) and Birmingham (West Midlands)",
+      "country": "Not supplied",
+      "workplace": "Hybrid",
+      "funding": "Not supplied",
+      "compensation": "£47,500 - £55,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, Ecology. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "Ecology"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-79c371481c5e6419",
+      "title": "Landscape Management Officer",
+      "url": "https://environmentjob.co.uk/jobs/111523-landscape-management-officer",
+      "organisation": "Thame Town Council",
+      "location": "Thame, Oxfordshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£34,000 pro rata",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: biodiversity, nature recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "biodiversity",
+        "nature recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111523-landscape-management-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-fbad48f86a7bf215",
+      "title": "Agroecology Lead",
+      "url": "https://environmentjob.co.uk/jobs/111528-agroecology-lead",
+      "organisation": "Wild Oxfordshire",
+      "location": "Little Wittenham, Oxfordshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£41,172 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: ecology. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation, Pollination & beneficial insects.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation",
+        "Pollination & beneficial insects"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "ecology"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111528-agroecology-lead"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-aed2e32c580957be",
+      "title": "Project Delivery Officer",
+      "url": "https://environmentjob.co.uk/jobs/111516-project-delivery-officer",
+      "organisation": "Tyne Rivers Trust",
+      "location": "Corbridge, Northumberland, From",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£35,000 depending on experience",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: habitat restoration. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "habitat restoration"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111516-project-delivery-officer"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-0621b9fe1da81838",
+      "title": "Senior Environmental / Ecological Clerk of Works",
+      "url": "https://environmentjob.co.uk/jobs/111488-senior-environmental-ecological-clerk-of-works",
+      "organisation": "Redwing",
+      "location": "Across the Highlands and Islands, Scotland",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£35,000 - £45,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecological. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecological"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111488-senior-environmental-ecological-clerk-of-works"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-3095d149d319b0b7",
+      "title": "Fee Proposal Writer - Ecological Consultancy",
+      "url": "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy",
+      "organisation": "MKA Ecology",
+      "location": "Cambridge",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Competitive salary, dependent on relevant skills and experience",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecological, Ecology. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecological",
+        "Ecology"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-f1c4440039920b19",
+      "title": "Nature Recovery Residency 2027",
+      "url": "https://environmentjob.co.uk/volunteering/111813-nature-recovery-residency-2027",
+      "organisation": "Ambios",
+      "location": "Ashprington, Totnes, Devon",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Voluntary",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "volunteering",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · volunteering. Matched: Nature Recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · volunteering",
+      "sourceId": "environmentjob-volunteering",
+      "sourceUrl": "https://environmentjob.co.uk/volunteering",
+      "reviewStatus": "pending",
+      "lastChecked": null,
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Nature Recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/volunteering/111813-nature-recovery-residency-2027"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
     }
-  ]
+  ],
+  "publicationMode": "hybrid"
 }

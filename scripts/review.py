@@ -84,11 +84,20 @@ def markdown(value):
 
 def digest(queue, kind='pending'):
     items = entries(queue, kind)
-    lines = ['# Opportunity review', '',
-             'Check each original advert before approving. Confirm relevance, opportunity type, '
-             'pay or funding, eligibility and deadline; missing facts must remain explicit unknowns. '
-             'An automated link check is not an editorial review.', '',
-             f'Pending items in this view: {len(items)}', '']
+    automatic = queue.get('publicationMode') == 'automatic'
+    hybrid = queue.get('publicationMode') == 'hybrid'
+    description = ('Matching adverts publish automatically. These are optional checks for missing source observations, '
+                   'changed pages or unavailable links. They do not block publication. Use Report advert on the site '
+                   'to request removal of an irrelevant, closed or incorrect listing.' if automatic else
+                   'Direct relevance matches publish automatically. Unsure matches wait in the signed-in admin portal. '
+                   'Open the original advert and confirm that it is relevant and active, then Approve or Reject it. '
+                   'Missing salary, eligibility or closing-date information remains explicitly unknown. '
+                   'Other link/page checks below are optional maintenance.' if hybrid else
+                   'Check each original advert before approving. Confirm relevance, opportunity type, '
+                   'pay or funding, eligibility and deadline; missing facts must remain explicit unknowns. '
+                   'An automated link check is not an editorial review.')
+    lines = ['# Advert checks' if automatic or hybrid else '# Opportunity review', '', description, '',
+             f'Items in this view: {len(items)}', '']
     for item in items:
         lines += [f"## {markdown(item['kind'].title())}: {markdown(item.get('title') or item.get('id') or 'Untitled')}", '']
         url = item.get('url', '')
@@ -107,6 +116,7 @@ def digest(queue, kind='pending'):
                     value = json.dumps(value, ensure_ascii=False)
                 lines.append(f'- **{label}:** {markdown(value)}')
         lines += ['', '- [ ] Reviewed the original advert',
+                  '- [ ] Confirmed relevance and current availability' if hybrid else
                   '- [ ] Confirmed classification, funding, eligibility and deadline', '']
     return '\n'.join(lines).rstrip() + '\n'
 

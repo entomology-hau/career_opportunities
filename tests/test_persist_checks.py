@@ -27,6 +27,7 @@ class PersistChecksTests(unittest.TestCase):
             "site/data/health.json": {"lastRun": "old"},
             "data/review-queue.json": {"candidates": [], "excluded": []},
             "site/data/opportunities.json": {"opportunities": [{"id": "approved-original"}]},
+            "site/data/sources.json": {"sources": ["original"]},
         }.items():
             self.write(self.runner, filename, contents)
         self.git(self.runner, "add", ".")
@@ -54,6 +55,8 @@ class PersistChecksTests(unittest.TestCase):
         self.write(self.runner, "site/data/health.json", {"lastRun": "new"})
         self.write(self.runner, "data/review-queue.json", {
             "candidates": [{"url": "https://example.test/candidate"}], "excluded": []})
+        self.write(self.runner, "site/data/opportunities.json", {
+            "opportunities": [{"id": "approved-original"}, {"id": "collected-new"}]})
 
     def editorial_commit(self):
         self.write(self.editor, "site/data/opportunities.json", {
@@ -67,17 +70,33 @@ class PersistChecksTests(unittest.TestCase):
 
     def test_only_generated_files_are_pushed_and_staged_human_edits_survive(self):
         self.generated()
-        human = {"opportunities": [{"id": "local-human-edit"}]}
-        self.write(self.runner, "site/data/opportunities.json", human)
-        self.git(self.runner, "add", "site/data/opportunities.json")
+        human = {"sources": ["local-human-edit"]}
+        self.write(self.runner, "site/data/sources.json", human)
+        self.git(self.runner, "add", "site/data/sources.json")
         self.assertEqual(checks.persist(self.runner), {"stale": False, "saved": True})
         committed = self.git(self.runner, "diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD")
         self.assertEqual(set(committed.splitlines()), set(checks.GENERATED_FILES))
         self.assertEqual(self.git(self.runner, "diff", "--cached", "--name-only"),
-                         "site/data/opportunities.json")
-        self.assertEqual(json.loads((self.runner / "site/data/opportunities.json").read_text()), human)
+                         "site/data/sources.json")
+        self.assertEqual(json.loads((self.runner / "site/data/sources.json").read_text()), human)
+        published = json.loads(self.git(self.remote, "show", "main:site/data/opportunities.json"))
+        self.assertEqual([x["id"] for x in published["opportunities"]],
+                         ["approved-original", "collected-new"])
         self.assertEqual(self.git(self.remote, "rev-parse", "main"),
                          self.git(self.runner, "rev-parse", "HEAD"))
+
+    def test_staged_human_opportunity_changes_are_not_absorbed(self):
+        self.generated()
+        human = {"opportunities": [{"id": "local-human-approved"}]}
+        self.write(self.runner, "site/data/opportunities.json", human)
+        self.git(self.runner, "add", "site/data/opportunities.json")
+        with self.assertRaisesRegex(checks.PersistenceError, "already contain staged edits"):
+            checks.persist(self.runner)
+        self.assertEqual(self.git(self.runner, "rev-parse", "HEAD"), self.base)
+        self.assertEqual(self.git(self.remote, "rev-parse", "main"), self.base)
+        self.assertEqual(json.loads((self.runner / "site/data/opportunities.json").read_text()), human)
+        self.assertEqual(self.git(self.runner, "diff", "--cached", "--name-only"),
+                         "site/data/opportunities.json")
 
     def test_branch_moved_before_commit_skips_without_changing_checkout(self):
         self.generated()

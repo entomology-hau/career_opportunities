@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Save generated checks without overwriting a newer editorial commit.
+"""Save collected opportunities and checks without overwriting a newer human commit.
 
 On a branch race, report stale=true and let the newer workflow publish instead.
 The caller must skip artifact upload/deployment when stale is true. We deliberately
@@ -14,7 +14,11 @@ import subprocess
 import sys
 
 
-GENERATED_FILES = ("site/data/health.json", "data/review-queue.json")
+GENERATED_FILES = (
+    "site/data/health.json",
+    "data/review-queue.json",
+    "site/data/opportunities.json",
+)
 BOT_NAME = "github-actions[bot]"
 BOT_EMAIL = "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -58,11 +62,18 @@ def persist(repo, branch="main", remote="origin", attempts=3):
     if latest != base:
         return {"stale": True, "saved": False}
 
+    # The collector leaves its output unstaged. Do not absorb pre-existing staged
+    # human changes to these same files into an automatic publication commit.
+    staged = _git(repo, "diff", "--cached", "--name-only", "--",
+                  *GENERATED_FILES).stdout.strip()
+    if staged:
+        raise PersistenceError("Generated files already contain staged edits; commit "
+                               "or unstage those edits before automatic publication.")
     for filename in GENERATED_FILES:
         path = repo / filename
         if not path.is_file() or path.is_symlink():
             raise PersistenceError(f"Expected a generated regular file: {filename}")
-    # Inspect both staged and unstaged generated changes, leaving human files alone.
+    # Inspect generated changes, leaving unrelated human files alone.
     changed = _git(repo, "diff", "--quiet", "HEAD", "--", *GENERATED_FILES,
                    check=False)
     untracked = _git(repo, "ls-files", "--others", "--exclude-standard", "--",
@@ -75,7 +86,7 @@ def persist(repo, branch="main", remote="origin", attempts=3):
     _git(repo, "add", "--", *GENERATED_FILES)
     # --only prevents unrelated files already staged by a caller being committed.
     _git(repo, "-c", f"user.name={BOT_NAME}", "-c", f"user.email={BOT_EMAIL}",
-         "commit", "--only", "-m", "Check opportunity sources and update review queue",
+         "commit", "--only", "-m", "Update opportunities and source checks",
          "--", *GENERATED_FILES)
     generated_head = _git(repo, "rev-parse", "HEAD").stdout.strip()
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Discover minimal advert metadata; never publish or renew editorial reviews automatically."""
+"""Collect source-listed opportunities; automatic publication never invents a human review."""
 import argparse
 import hashlib
 import json
@@ -7,6 +7,7 @@ import re
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError
@@ -193,6 +194,42 @@ def deadline_hint(text):
     return {}
 
 
+def location_fields(location):
+    """Normalise an explicitly supplied place; never assume UK from the provider."""
+    fields = {'location': location.strip(' ,.')}
+    country_patterns = [
+        (r'\b(?:UK|United Kingdom|England|Scotland|Wales|Northern Ireland)\b', 'United Kingdom'),
+        (r'\b(?:USA|United States)\b', 'United States'),
+    ] + [(r'\b' + re.escape(country) + r'\b', country) for country in
+         ['Germany', 'Netherlands', 'Sweden', 'France', 'Switzerland', 'Austria', 'Belgium',
+          'Denmark', 'Norway', 'Australia', 'Canada', 'Ireland', 'Costa Rica', 'South Africa', 'New Zealand', 'Spain', 'Italy']]
+    for pattern, country in country_patterns:
+        if re.search(pattern, location, re.I):
+            fields['country'] = country
+            break
+    if re.search(r'\bhybrid\b', location, re.I):
+        fields['workplace'] = 'Hybrid'
+    elif re.search(r'\bremote\b', location, re.I):
+        fields['workplace'] = 'Remote'
+    return fields
+
+
+def feed_metadata(description, source):
+    """Read environmentjob's compact organisation/place/pay header, not advert prose."""
+    if source['id'] not in {'environmentjob', 'environmentjob-volunteering'}:
+        employer = source.get('employerName')
+        return {'organisation': employer} if employer else {}
+    marker = re.search(r'£|\b(?:Voluntary|Unpaid|Competitive salary)\b', description, re.I)
+    if not marker:
+        return {}
+    header = description[:marker.start()].strip(' ,.')
+    parts = header.split(', ', 1)
+    if len(parts) != 2 or not parts[0] or not parts[1]:
+        return {}
+    compensation = re.split(r'\.\s+(?=[A-Z])', description[marker.start():], maxsplit=1)[0].strip(' .')[:180]
+    return {'organisation': parts[0], 'compensation': compensation, **location_fields(parts[1])}
+
+
 class HeadingLinks:
     def __init__(self, base):
         self.base, self.links = base, []
@@ -216,7 +253,20 @@ class HeadingLinks:
                 continue
             container = next((n for n in ancestors(heading) if 'opportunity' in n.attrs.get('class', '').split()), heading)
             evidence = ' '.join(container.text().split())
-            self.links.append({'title': title, 'url': url, 'evidenceSnippet': evidence[:320], '_screenText': evidence, **deadline_hint(evidence)})
+            metadata = {}
+            article = next((n for n in container.nodes() if n.tag == 'article'), None)
+            if article:
+                organisation = next((n for n in article.nodes() if n.tag == 'a'), None)
+                if organisation:
+                    org = ' '.join(organisation.text().split())
+                    metadata['organisation'] = org
+                    detail = ' '.join(article.text().split())
+                    detail = detail[len(org):].strip() if detail.startswith(org) else detail
+                    place = re.match(r'in\s+(.+?)(?:\s+The deadline|\s+Closing date|$)', detail, re.I)
+                    if place:
+                        metadata.update(location_fields(place.group(1)))
+            self.links.append({'title': title, 'url': url, 'evidenceSnippet': evidence[:320], '_screenText': evidence,
+                               **metadata, **deadline_hint(evidence)})
 
 
 def rss_entries(text, base):
@@ -256,10 +306,14 @@ def screen(text, config):
 def suggested_type(title, source):
     if re.search(r'\bpost[ -]?doc', title, re.I):
         return 'job'
+    if re.search(r'\b(?:mobility grants?|writing opportunity|range of roles|research projects)\b', title, re.I):
+        return 'other'
+    if re.search(r'\bvolunteer(?:ing)?\b', title, re.I):
+        return 'volunteering'
     for pattern, kind in [(r'\bph\.?d\b|studentship', 'phd'), (r'\bmres\b', 'mres'), (r'\bintern', 'internship')]:
         if re.search(pattern, title, re.I):
             return kind
-    return source.get('defaultType')
+    return source.get('defaultType') or {'res-jobs': 'job', 'res-phds': 'phd'}.get(source['id'])
 
 
 def collect_entries(body, source):
@@ -286,8 +340,18 @@ def evaluate(entry, source, config):
         return None
     direct = any(re.search(p, text, re.I) for p in config.get('strongPatterns', []))
     candidate = {k: v for k, v in entry.items() if not k.startswith('_')}
+    terms = []
+    for pattern in matches:
+        for match in re.finditer(pattern, text, re.I):
+            value = match.group(0)
+            if value.casefold() not in {x.casefold() for x in terms}:
+                terms.append(value)
+    candidate['matchedTerms'] = terms[:20]
+    if source.get('mode') == 'rss':
+        candidate.update(feed_metadata(entry.get('_screenText', ''), source))
+        candidate['evidenceSnippet'] = 'Matched source terms: ' + ', '.join(terms[:20])
     candidate.update(source=source['name'], sourceId=source['id'], sourceUrl=source['url'], matchedPatterns=matches,
-                     reason='Confirm substantive relevance, advert type, funding, eligibility and dates at the original source.',
+                     reason='Source listing matched the configured subject scope; follow the original advert for current details.',
                      reviewStatus='pending', relevanceStrength='direct' if direct else 'needs-context')
     kind = suggested_type(entry['title'], source)
     if kind:
@@ -335,14 +399,19 @@ def content_signature(body):
 
 def refresh(data, config, queue, previous, client, now=None, discovery_only=False, fixture_dir=None):
     now = now or datetime.now(timezone.utc)
-    stamp, today = now.isoformat(), now.date().isoformat()
-    known = {canonical(u) for item in data['opportunities'] for u in [item['url'], *item.get('provenance', [])]}
-    excluded = {canonical(item['url']) for item in queue.get('excluded', [])}
+    stamp, today = now.isoformat(), now.astimezone(ZoneInfo('Europe/London')).date().isoformat()
+    def held(item):
+        return item.get('reviewStatus') == 'pending' or (
+            config.get('publication', {}).get('mode') == 'hybrid' and
+            item.get('reviewStatus') == 'automatic' and item.get('relevanceTier') == 'Related field')
+    known = {canonical(u) for item in data['opportunities'] if not held(item)
+             for u in [item['url'], *item.get('provenance', [])]}
+    excluded = {canonical(url) for item in queue.get('excluded', []) for url in [item['url'], *item.get('provenance', [])]}
     indexed = {canonical(item['url']): dict(item) for item in queue.get('candidates', []) if canonical(item['url']) not in known | excluded}
     public = {item['id']: item for item in data['opportunities']}
     tasks = {item.get('taskKey', item['id'] + ':' + item['kind']): dict(item) for item in queue.get('reviewTasks', [])
              if item.get('reviewStatus', 'pending') == 'pending' and item['id'] in public and public[item['id']].get('status') not in {'closed', 'withdrawn'}}
-    health = {'schemaVersion': 2, 'lastRun': stamp, 'sources': [], 'links': []}
+    health = {'schemaVersion': 3, 'lastRun': stamp, 'sources': [], 'links': [], '_listings': []}
     manifest = read(fixture_dir / 'manifest.json', {}) if fixture_dir else {}
     old_sources = {item['id']: item for item in previous.get('sources', [])}
     new_count = 0
@@ -364,13 +433,20 @@ def refresh(data, config, queue, previous, client, now=None, discovery_only=Fals
                     state['duplicateCount'] += 1
                     continue
                 seen.add(key)
-                if key in known:
-                    state['knownCount'] += 1
-                    continue
                 if key in excluded:
                     state['excludedCount'] += 1
                     continue
                 candidate = evaluate(entry, source, config['screening'])
+                # Keep this run's sightings for publication and source activity dates.
+                if candidate:
+                    candidate.update(firstSeen=indexed.get(key, {}).get('firstSeen', today), lastSeen=today)
+                    health['_listings'].append(candidate)
+                elif key in known:
+                    health['_listings'].append({**{k: v for k, v in entry.items() if not k.startswith('_')},
+                                               'source': source['name'], 'sourceId': source['id'], 'sourceUrl': source['url'], 'lastSeen': today})
+                if key in known:
+                    state['knownCount'] += 1
+                    continue
                 if not candidate:
                     state['filteredCount'] += 1
                     continue
@@ -411,6 +487,13 @@ def refresh(data, config, queue, previous, client, now=None, discovery_only=Fals
             state['lastSucceeded'] = old['lastSucceeded']
         if item.get('deadlineAt') and datetime.fromisoformat(item['deadlineAt']) <= now:
             state['status'] = 'past-deadline'
+            health['links'].append(state)
+            continue
+        if item.get('reviewStatus') in {'automatic', 'pending'}:
+            # Source presence is the evidence for these records, never a human review.
+            aliases = {canonical(u) for u in [item['url'], *item.get('provenance', [])]}
+            listed = any(canonical(x['url']) in aliases for x in health['_listings'])
+            state.update(status='source-listed' if listed else 'not-seen', lastSeen=item.get('lastSeen'))
             health['links'].append(state)
             continue
         age = (now.date() - datetime.fromisoformat(item['lastChecked']).date()).days
@@ -461,11 +544,20 @@ def main():
                 raise ValueError(f'Unsupported collector: {source["id"]}')
         print(json.dumps({'offline': True, 'enabledCollectors': sum(bool(x.get('enabled')) for x in config['sources']), 'writes': False}))
         return
-    queue, health = refresh(read(ROOT / 'site/data/opportunities.json'), config,
+    data = read(ROOT / 'site/data/opportunities.json')
+    queue, health = refresh(data, config,
                             read(ROOT / 'data/review-queue.json', {'candidates': [], 'excluded': []}),
                             read(ROOT / 'site/data/health.json', {}), PoliteClient(),
                             discovery_only=args.discovery_only or bool(args.fixture_dir), fixture_dir=args.fixture_dir)
+    from publish import publish_matches
+    from validate import validate
+    data, queue, health = publish_matches(data, queue, health, config)
+    queue['publicationMode'] = config.get('publication', {}).get('mode', 'manual')
+    errors = validate(data, config)
+    if errors:
+        raise ValueError('Collected data failed validation: ' + '; '.join(errors))
     if not args.fixture_dir:
+        write(ROOT / 'site/data/opportunities.json', data)
         write(ROOT / 'data/review-queue.json', queue)
         write(ROOT / 'site/data/health.json', health)
     print(health['summary'])
