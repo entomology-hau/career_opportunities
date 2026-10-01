@@ -1,26 +1,6 @@
 {
   "candidates": [
     {
-      "title": "GIS Officer",
-      "url": "https://environmentjob.co.uk/jobs/111628-gis-officer",
-      "evidenceSnippet": "NatureSpace Partnership, Home-based, £32,950 pa + company benefits. This is an exciting opportunity to join our growing team, helping to manage and maintain key biological and environmental geospatial data that underpins the science of what we do. The ideal candidate ...",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "matchedPatterns": [
-        "\\bGIS\\b"
-      ],
-      "reason": "Not listed in the latest collection pass. It will publish automatically if an enabled source lists it again.",
-      "reviewStatus": "not-current",
-      "relevanceStrength": "needs-context",
-      "suggestedType": "job",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
-      "discoveredVia": [
-        "environmentjob"
-      ]
-    },
-    {
       "title": "Postdoctoral Research Associate",
       "url": "https://www.jobs.ac.uk/job/DSW899/postdoctoral-research-associate",
       "source": "Royal Entomological Society",
@@ -79,6 +59,55 @@
       "reason": "Confirm whether this related-field opportunity is relevant before publication."
     },
     {
+      "title": "Fee Proposal Writer - Ecological Consultancy",
+      "url": "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy"
+      ],
+      "organisation": "MKA Ecology",
+      "location": "Cambridge",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "compensation": "Competitive salary, dependent on relevant skills and experience",
+      "funding": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "matchedTerms": [
+        "Ecological",
+        "Ecology"
+      ],
+      "matchedPatterns": [],
+      "suggestedType": "job",
+      "reviewStatus": "pending",
+      "relevanceStrength": "needs-context",
+      "reason": "Confirm whether this related-field opportunity is relevant before publication."
+    },
+    {
+      "title": "GIS Officer",
+      "url": "https://environmentjob.co.uk/jobs/111628-gis-officer",
+      "evidenceSnippet": "NatureSpace Partnership, Home-based, £32,950 pa + company benefits. This is an exciting opportunity to join our growing team, helping to manage and maintain key biological and environmental geospatial data that underpins the science of what we do. The ideal candidate ...",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "matchedPatterns": [
+        "\\bGIS\\b"
+      ],
+      "reason": "Not listed in the latest collection pass. It will publish automatically if an enabled source lists it again.",
+      "reviewStatus": "not-current",
+      "relevanceStrength": "needs-context",
+      "suggestedType": "job",
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "discoveredVia": [
+        "environmentjob"
+      ]
+    },
+    {
       "title": "Keeping it Wild Trainee x9",
       "url": "https://environmentjob.co.uk/jobs/111704-keeping-it-wild-trainee-x9",
       "source": "environmentjob · paid jobs",
@@ -99,35 +128,6 @@
       "careerLevel": "Not supplied",
       "matchedTerms": [
         "nature recovery"
-      ],
-      "matchedPatterns": [],
-      "suggestedType": "job",
-      "reviewStatus": "pending",
-      "relevanceStrength": "needs-context",
-      "reason": "Confirm whether this related-field opportunity is relevant before publication."
-    },
-    {
-      "title": "Senior Ecologist x2",
-      "url": "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2",
-      "source": "environmentjob · paid jobs",
-      "sourceId": "environmentjob",
-      "sourceUrl": "https://environmentjob.co.uk/",
-      "firstSeen": "2026-09-30",
-      "lastSeen": "2026-09-30",
-      "provenance": [
-        "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2"
-      ],
-      "organisation": "Elton Ecology",
-      "location": "Office-based or hybrid working, with offices in Castle Donington (East Midlands) and Birmingham (West Midlands)",
-      "country": "Not supplied",
-      "workplace": "Hybrid",
-      "compensation": "£47,500 - £55,000 pa",
-      "funding": "Not supplied",
-      "eligibility": "Check original advert for eligibility",
-      "careerLevel": "Not supplied",
-      "matchedTerms": [
-        "Ecologist",
-        "Ecology"
       ],
       "matchedPatterns": [],
       "suggestedType": "job",
@@ -164,26 +164,26 @@
       "reason": "Confirm whether this related-field opportunity is relevant before publication."
     },
     {
-      "title": "Fee Proposal Writer - Ecological Consultancy",
-      "url": "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy",
+      "title": "Senior Ecologist x2",
+      "url": "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2",
       "source": "environmentjob · paid jobs",
       "sourceId": "environmentjob",
       "sourceUrl": "https://environmentjob.co.uk/",
       "firstSeen": "2026-09-30",
       "lastSeen": "2026-09-30",
       "provenance": [
-        "https://environmentjob.co.uk/jobs/111421-fee-proposal-writer-ecological-consultancy"
+        "https://environmentjob.co.uk/jobs/111531-senior-ecologist-x2"
       ],
-      "organisation": "MKA Ecology",
-      "location": "Cambridge",
+      "organisation": "Elton Ecology",
+      "location": "Office-based or hybrid working, with offices in Castle Donington (East Midlands) and Birmingham (West Midlands)",
       "country": "Not supplied",
-      "workplace": "Workplace not supplied",
-      "compensation": "Competitive salary, dependent on relevant skills and experience",
+      "workplace": "Hybrid",
+      "compensation": "£47,500 - £55,000 pa",
       "funding": "Not supplied",
       "eligibility": "Check original advert for eligibility",
       "careerLevel": "Not supplied",
       "matchedTerms": [
-        "Ecological",
+        "Ecologist",
         "Ecology"
       ],
       "matchedPatterns": [],
@@ -1383,6 +1383,20 @@
     }
   ],
   "reviewTasks": [
+    {
+      "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
+      "id": "hutchinsons-horticultural-agronomist-eastanglia-2026",
+      "kind": "changed",
+      "title": "Horticultural Agronomist – Norfolk & Suffolk",
+      "url": "https://www.hutchinsons.co.uk/about-us/careers/horticultural-agronomist-norfolk-suffolk/",
+      "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
+      "reviewStatus": "pending",
+      "detectedAt": "2026-10-01T11:22:26.470549+00:00",
+      "lastSeen": "2026-10-01T11:22:26.470549+00:00",
+      "lastChecked": "2026-09-29",
+      "previousHash": "3724bdb06fee22dd0a19a4ac1685ad0e58da8e764c01d62404f5cbe8f2f94fa9",
+      "currentHash": "e6672e2e1d87d85bdecc80bd6fc5b1d313227a68a61cbf5a1a62629242507a2e"
+    },
     {
       "taskKey": "pepsico-agricultural-science-technician-2026:unreachable",
       "id": "pepsico-agricultural-science-technician-2026",
