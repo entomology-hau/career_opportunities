@@ -10,11 +10,11 @@
     "html_handling": "none",
     "run_worker_first": true
   },
-  "vars": {
-    "REPOSITORY": "entomology-hau/career_opportunities",
-    "BRANCH": "main",
+   "vars": {
     "ALLOWED_GITHUB_LOGINS": "entomology-hau",
+    "BRANCH": "main",
+    "GITHUB_CLIENT_ID": "Iv23liJPuPSTZcVYxYfu",
     "PUBLIC_SITE_URL": "https://entomology-hau.github.io/career_opportunities/",
-    "GITHUB_CLIENT_ID": "Iv23liJPuPSTZcVYxYfu"
+    "REPOSITORY": "entomology-hau/career_opportunities"
   }
 }
