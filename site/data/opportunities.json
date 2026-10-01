@@ -1938,11 +1938,11 @@
       "careerLevel": "Not supplied",
       "type": "other",
       "classificationInferred": true,
-      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
       "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
-      "source": "RES research opportunities",
-      "sourceId": "res-phds",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
@@ -3923,6 +3923,95 @@
       "status": "open-no-deadline",
       "provenance": [
         "https://environmentjob.co.uk/jobs/111881-landscape-connections-project-manager"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-d54b70f969ddd54d",
+      "title": "Strategic Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111880-strategic-ecologist",
+      "organisation": "EMEC Ecology (a subsidiary of Nottinghamshire Wildlife Trust)",
+      "location": "Nottingham",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£40,000 - £45,000 pa (dependent on experience)",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, Ecology, biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "Ecology",
+        "biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111880-strategic-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-d149c348cee4d812",
+      "title": "Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/111879-ecologist",
+      "organisation": "EMEC Ecology (a subsidiary of Nottinghamshire Wildlife Trust)",
+      "location": "Nottingham",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£30,000 - £40,000 pa (dependent on experience)",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, Ecology. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "Ecology"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111879-ecologist"
       ],
       "deadline": null,
       "deadlineAt": null,

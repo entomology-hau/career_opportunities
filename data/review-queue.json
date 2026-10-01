@@ -71,10 +71,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T12:10:37.238204+00:00",
-      "lastSeen": "2026-10-01T12:10:37.238204+00:00",
+      "lastSeen": "2026-10-01T13:38:03.295636+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "b9af2d86f8b6a85350be545d1bb06dd76360437619aeba24975bafe45371d2c2",
-      "currentHash": "272061f4e1c73d63716b7266d8ff69f49c7685918b0c80e6ea4628c30dc1f543"
+      "previousHash": "272061f4e1c73d63716b7266d8ff69f49c7685918b0c80e6ea4628c30dc1f543",
+      "currentHash": "f7da46cfec3192854991f0cd41029fdfcd278b81e33531e1c11321e8a2a5d09d"
     },
     {
       "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
