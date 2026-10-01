@@ -1,82 +1,59 @@
-# Search scope and relevance — 29 September 2026
+# Search scope and relevance
 
-The expanded board contains **22 opportunities: 19 UK and 3 international**, compared with 9 UK opportunities in the first version. It includes 12 paid roles, 6 PhDs, 1 internship and 3 volunteering schemes. The unpaid internship also appears in the volunteering filter. There is still no verified MRes advert to publish.
+Current policy: 1 October 2026. The board serves the Harper Adams postgraduate courses in Entomology, Integrated Pest Management and Biological Recording. Current direct and related-field source matches publish automatically, with per-card caveats. The admin approval setup is paused.
 
-## Which terms help?
+## What qualifies for inclusion?
 
-| Search terms | Assessment | Inclusion rule |
-|---|---|---|
-| Integrated pest management / IPM, crop protection, biological control, biocontrol | High priority: found a technical advisory role involving crop diagnosis, beneficial organisms and grower advice. | Require insect/crop/plant-health context; IPM alone is ambiguous. Commercial roles must show their sales and experience requirements. |
-| Plant health, plant pathology, biosecurity, protective microbes | High priority for the IPM course: found a forest pathology role and a plant–microbiome PhD. | Include pest, weed and disease management, with specific laboratory prerequisites visible. |
-| Biodiversity + graduate ecologist / assistant ecologist | Useful expansion: found graduate consultancy and applied-ecology schemes. | Require substantive survey, ecological assessment or analytical duties. Mark these as related fields when they focus on habitats or vertebrates. |
-| Biodiversity monitoring, biological recording, aquatic invertebrates, butterfly survey | Particularly useful for building demonstrable skills alongside study. | Distinguish volunteer recruitment from immediate fieldwork; display training and seasonal constraints. |
-| Agroecology, agroforestry, landscape ecology, wildlife connectivity | Useful research expansion: found an agricultural biodiversity PhD. | Explain where insect work is not guaranteed. Check funding eligibility in the full advert, not just the platform badge. |
-| Agronomy, horticultural advisor, crop trials, agricultural science technician | Relevant career routes using crop-management, experimental and data skills. | Check crop relevance and realistic entry requirements. Do not call an experienced agronomist post a graduate scheme. |
-| eDNA, metabarcoding, molecular biodiversity | Selectively useful for students with appropriate laboratory or bioinformatics interests. | State the biological focus and degree-equivalence requirements. Microbial biodiversity projects are peripheral, not core entomology. |
-| Sustainability, environment, conservation on their own | Too broad for inclusion without checking. | Exclude generic administration, fundraising, trusteeships and unrelated senior management. |
+A source entry must pass the configured subject screening and publication checks. Direct insect, IPM or biological-recording matches are included alongside broader ecology, biodiversity, agronomy and research opportunities that could interest these students. Broad relevance is explained rather than presented as proof of an ideal course fit.
 
-## Examples of the widened coverage
+Missing salary, funding, eligibility, country, opportunity type or closing date does not by itself block inclusion. The card identifies missing details and any inferred classifications. Known exclusions, withdrawals, past deadlines and stale records are filtered out. Existing human-reviewed records retain their genuine review dates and verified information; automated source sightings do not become human reviews.
 
-- [Horticulture Technical Sales Advisor](https://www.morepeople.co.uk/job/horticulture-technical-sales-advisor-sw21813-1789118466): directly applies IPM, biological control and pollination, with commercial expectations.
-- [Utrecht plant–microbiome–pathogen PhD](https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs/phd-position-on-predictive-plant-microbiome-pathogen-interactions): relevant disease-management and experimental route.
-- [PBA graduate/assistant ecologist](https://www.pba-ecology.co.uk/about-us/recruitment.aspx): survey, identification, GIS and analytical skills; professional experience differs between the two grades.
-- [Tetra Tech graduate ecologist](https://tetratech.referrals.selectminds.com/tetra-tech-europe/jobs/graduate-ecologist-56612): September 2027 start, useful for the incoming MSc cohort; principally habitat and protected-vertebrate work.
-- [Newcastle agricultural wildlife-connectivity PhD](https://www.findaphd.com/phds/project/phd-studentship-wildlife-connectivity-potential-of-tree-based-agricultural-systems-trops-lab-newcastle-university/?p198692=): strong biodiversity/agricultural landscape connection, with the international fee gap explicit.
-- [Riverfly monitoring](https://www.riverflies.org/become-a-monitor): practical aquatic-invertebrate identification with local training.
+A match does not guarantee graduate-level entry, funding eligibility, an insect component or current availability at the destination page. Readers should follow the original advert before applying. A current source listing is useful evidence, but a feed or directory can retain outdated entries.
 
-## Quality decisions
+## Search terms and interpretation
 
-Two trainee agronomist adverts initially appeared in search snapshots, but rechecking the employer's fresh index showed they were no longer listed. They were excluded. The currently advertised horticultural agronomist role was included instead, with its horticultural experience requirement clearly stated.
-
-The Wider Countryside Butterfly Survey allows enquiries/registration, but the main 2026 survey season has finished. Its card explicitly presents this as preparation for the next season. PhDs with home-fee-only support show the fee difference for international applicants. The molecular biodiversity PhD states the additional eligibility caveat.
-
-The “Relevance” filter separates direct connections to at least one of Entomology, IPM or Biological Recording from broader related fields. Species/habitat surveys and biodiversity data are core Biological Recording topics even without an insect focus. The separate “Course interest” filter identifies the relevant course or courses. Each card has a concise explanation of the useful skills or subject connection. This assessment does not promise that every MSc student will meet every person specification.
-
-## Keeping the searches useful
-
-Broader terms are in the keyword configuration, visible on the page, and included in focused Google and FindAPhD search links. Automatic discovery now covers the repaired RES jobs/PhD indices and the official environmentjob jobs/volunteering, Bath and Harper Adams RSS feeds. The other employer/provider cards support manual checks. Google and FindAPhD remain assisted searches, so the board does not claim exhaustive coverage.
-
-RSS screening checks both titles and short descriptions. Direct insect/IPM/recording matches are prioritised for review; broad ecology, biodiversity and GIS matches are marked as needing context. HR, fundraising, trusteeships, research administration and internal-only calls are excluded by title. A senior ecological role may still be relevant to a career pathway, so seniority is assessed and shown rather than silently treated as graduate eligibility.
-
-Review weekly, confirm on original adverts, and retain source and check dates. A current search result is not sufficient evidence of an open vacancy; old snapshots can persist.
-
-## Biological Recording addition — 30 September 2026
-
-The [Biological Recording course](https://www.harper-adams.ac.uk/courses/postgraduate/201243/biological-recording) widens the board to identification and recording across taxonomic groups, habitat surveys, monitoring and biodiversity information. All three course pages are linked in the banner.
-
-| Search group | Useful terms | Relevance check |
+| Search terms | Course connection | Reader caveat or screening rule |
 | --- | --- | --- |
-| Identification and records | biological recording; biological records; botanical identification; bryophytes; lichens; mycology; specimen digitisation; records centre; LERC | Include practical identification, curation, validation or biological information management. An insect keyword is not required. |
-| Species and habitats | habitat survey; UKHab; NVC; botanical survey; protected species; biodiversity net gain; BNG | Require genuine ecological survey or assessment duties. Check taxonomic skills, licences and seniority. |
-| Biodiversity information | biodiversity data; species distribution; QGIS; ecological data; iRecord; NBN Atlas; citizen science | Require biological context. Generic data processing, GIS and administrative record keeping are excluded. |
+| Entomology, insect biology, insect rearing, pollinators, invertebrates | Core Entomology; other courses where relevant | Check the taxonomic focus and required laboratory, field or husbandry experience. |
+| Integrated pest management / IPM, crop protection, biological control, biocontrol | Core IPM and often Entomology | Require crop, pest or biological context: IPM alone is ambiguous. Commercial roles may have sales or experience requirements. |
+| Plant health, plant pathology, biosecurity, protective microbes | IPM routes in pest, weed and disease management | Not every project involves insects; laboratory prerequisites and the biological focus matter. |
+| Agronomy, horticultural advice, crop trials, agricultural science technician | Crop-management, experimental and data skills | An experienced agronomist post is not automatically a graduate scheme. |
+| Biological recording, taxonomic identification, records centres, specimen digitisation | Core Biological Recording | Check the organism group, identification level and whether duties involve curation, validation or biological information. |
+| Habitat survey, UKHab, NVC, botanical survey, protected species, biodiversity net gain / BNG | Biological Recording and applied ecology | Taxonomic skills, licences, travel and professional experience may be required. |
+| Biodiversity data, ecological GIS, species distributions, iRecord, NBN Atlas, citizen science | Biological Recording and monitoring | Generic GIS or administrative record keeping without biological context is outside scope. |
+| Biodiversity, graduate/assistant ecologist, conservation, ecological assessment | Useful related-field opportunities; sometimes core Biological Recording | The role may focus on habitats or vertebrates. Confirm substantive ecological duties and entry requirements. |
+| Agroecology, agroforestry, landscape ecology, wildlife connectivity | IPM, ecological research and recording | Insect work is not guaranteed. Check field, analytical and funding requirements. |
+| eDNA, metabarcoding, molecular biodiversity | Specialist identification and analytical routes | The biological focus may be microbial or otherwise peripheral to entomology; prerequisites can be substantial. |
+| Sustainability, environment or conservation alone | Broad discovery signals | Exclude generic administration, fundraising, trusteeships, research administration and unrelated roles using title/context screening. |
 
-Thirteen of the 22 stored adverts have a Biological Recording connection; twelve are within their deadline on 30 September, following the NHM digitisation advert's closure. Course mapping is an editorial assessment of the existing summaries, not a new verification of the advert; original `lastChecked` dates are preserved.
+The eight subject groups and keyword rules are in `site/data/sources.json`, with their search scope shown on the website. Exact word matching avoids examples such as `bee` matching `been` or `tick` matching `ticket`. Titles and source descriptions provide screening evidence; source context, particularly the specialised RES indices, can also help identify relevant leads.
 
-Tetra Tech, PBA, United Utilities and the Newcastle landscape-survey PhD are now core Biological Recording routes. The microbial eDNA project remains a related field because of its specialist molecular focus and entry prerequisites. Crop-advice, insect-rearing and IPM decision-support roles are not automatically labelled Biological Recording.
+The **Relevance** filter distinguishes core connections from broader related fields. The **Course interest** filter identifies one or more courses. Automatic mappings are keyword-derived assessments, not verified eligibility decisions. A senior ecological post can show a relevant career route without being suitable for a student to apply for immediately.
 
-## Collection repair and review — 30 September 2026
+## Biological Recording scope
 
-The repaired collectors parsed 301 source entries in the final live run: RES jobs 24, RES PhDs 9, environmentjob jobs 189 and volunteering 44, Bath 31 and Harper Adams 4. All six collectors worked. The first discovery pass added 61 candidates to the existing queue. These are possible leads, not 61 approved opportunities; broad biodiversity matches still require relevance, eligibility and deadline checks.
+The [Biological Recording course](https://www.harper-adams.ac.uk/courses/postgraduate/201243/biological-recording) covers identification and recording across taxonomic groups, habitat surveys, monitoring and biodiversity information. An insect keyword is not required for a Biological Recording connection.
 
-Two were verified on their original employer/provider adverts and added: Crawley Borough Council's Biodiversity Project Officer and TCV's Biodiversity Action Projects Volunteer Officer. The council role requires prior professional ecological experience. The volunteering role requires no prior qualifications or experience, but its Scottish locations and substantial time commitment must work for the student. Both make a clear Biological Recording connection; the TCV projects also include pollinator habitats.
+Useful terms include botanical identification, bryophytes, lichens, mycology, biological records, records centres, LERC, UKHab, NVC, QGIS, biodiversity data and citizen science. Species/habitat surveys and biodiversity data can be core topics. Crop advice, insect rearing and IPM decision support are not automatically labelled Biological Recording.
 
-That review-led version stored 24 reviewed adverts, with 23 within their deadlines on 30 September, and 60 candidates awaiting review. Two assistant ecologist leads were held back because salary/deadline details conflicted or full employer eligibility details were unavailable.
+Volunteer monitoring schemes can help build practical identification and recording experience. A scheme accepting enquiries is different from immediate fieldwork: readers should check season dates, training, location, expenses and time commitment. The same care applies to internships, which must not be assumed to be paid.
 
-## Automatic publication and community reports — 30 September 2026
+## Collection coverage and its limits
 
-The inclusion policy is now relevance to the course suite plus a current source listing. Approval is no longer required. Source-supplied information is preserved; missing salary, eligibility and deadline data remains unspecified. Inferred opportunity/subject/course mappings are labelled. Previously reviewed records keep their genuine review dates.
+Enabled automatic discovery covers the RES jobs and PhD indices and official RSS feeds for environmentjob jobs, environmentjob volunteering, Bath jobs and Harper Adams jobs. Collectors check robots rules, use bounded requests and retain minimal discovery metadata. Descriptions can be used transiently for screening; full adverts are not republished.
 
-The fresh collection added 60 automatic records, resulting in 84 stored records and 83 currently visible by date/freshness rules. One earlier GIS lead was no longer present in the feed and was not promoted from the old queue. The six collectors all worked.
+Google jobs/search, FindAPhD, jobs.ac.uk and other provider links remain assisted searches, not comprehensive automated feeds. The board therefore cannot claim to contain all relevant opportunities. A successful collector can return no relevant matches, and a failed collector means incomplete coverage. Per-source health and collection dates make that visible.
 
-Each advert has a Report advert link. Users can flag irrelevant, closed or incorrect listings through a pre-filled GitHub issue. An authorized maintainer applies the remove-advert label to withdraw a listing and exclude its individual URLs from future collection. Reporting does not itself delete a listing, and reports require GitHub sign-in. This lets the board publish broadly and correct marginal matches afterwards.
+CIEEM remains a manual source because its terms require written permission for inclusion in an electronic retrieval service. Other useful starting points include [CIEEM vacancies](https://cieem.net/ecology-and-environmental-management-jobs/), [Field Studies Council volunteering](https://www.field-studies-council.org/jobs-at-field-studies-council/volunteering-with-field-studies-council/), the [NBN recording-scheme directory](https://nbn.org.uk/tools-and-resources/useful-websites/database-of-wildlife-surveys-and-recording-schemes/) and the [ALERC records-centre finder](https://www.alerc.org.uk/lerc-finder.html). The last two are directories, not vacancy feeds; check current opportunities with individual providers.
 
-Additional manual sources: [CIEEM vacancies](https://cieem.net/ecology-and-environmental-management-jobs/), [Field Studies Council volunteering](https://www.field-studies-council.org/jobs-at-field-studies-council/volunteering-with-field-studies-council/), [NBN recording-scheme directory](https://nbn.org.uk/tools-and-resources/useful-websites/database-of-wildlife-surveys-and-recording-schemes/) and [ALERC records-centre finder](https://www.alerc.org.uk/lerc-finder.html). The last two are directories, not vacancy feeds. Check individual providers and current participation before adding an advert.
+Potential extensions include university and research-institute careers pages, museums, Wildlife Trusts, Buglife, Butterfly Conservation, Rothamsted, UKCEH, CABI, Fera, NIAB, Forest Research, Koppert and Biobest. Each source needs an accessible, permitted and tested integration. Adding its address to a configuration file does not make an unsupported adapter work.
 
+## Caveats and community corrections
 
-## Signed-in review for unsure matches — 1 October 2026
+Cards should make uncertainty concrete: identify missing pay/funding, eligibility, location or deadline information, explain broad relevance and flag inferred classifications. These caveats help readers decide what to check; they do not substitute for the original advert.
 
-The current mode is hybrid: specific strong subject matches publish automatically; broad/context-only matches wait for an admin decision. This uses the existing `strongPatterns` and `contextPatterns`, rather than treating every ecology or biodiversity mention as a definite course fit. Missing pay, funding, eligibility, country, type or a closing date alone does not require approval.
+The card wording is specific to the advert, for example **“Check main advert for: salary, eligibility and closing date.”** Related automatic matches also ask readers to check relevance to their interests. An unspecified field means it was not established in the collected record; the original advert may contain it.
 
-The admin portal asks the reviewer to follow the original advert and confirm that it is relevant and active. Approval preserves the reviewed snapshot and records who decided and when. Rejection adds an exclusion. Existing genuine human reviews remain preserved; earlier automatic related-field records are held for this first review pass. Public reporting remains available after publication.
+Every card retains **Report advert**. A reader can submit a pre-filled GitHub issue for an irrelevant, closed or incorrect listing. A maintainer with repository authority can apply `remove-advert` to withdraw it and exclude its known URLs from future collection. Reports require GitHub sign-in, and submitting a report alone does not remove anything.
 
-The fresh collection on 1 October contains 29 visible adverts, including 7 direct automatic matches, and 54 pending relevance checks. All six collectors were reachable; existing original-advert link checks were not rerun. This first queue includes the earlier broad matches and is larger than the number expected from a typical daily increment.
+The workflow continues collecting and publishing without an approval gate. Its stored queue remains useful for discovery evidence, exclusions, optional checks and existing decision history. Old held candidates are not blindly treated as current; publication still depends on source evidence and expiry/freshness checks. The dormant admin implementation is retained for possible future use, with no public Admin link or login prerequisite in the current board.

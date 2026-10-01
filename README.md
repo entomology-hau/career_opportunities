@@ -4,38 +4,39 @@ A static opportunities board for the Harper Adams Applied Ecology postgraduate c
 
 ## What it is
 
-- Direct relevance matches publish automatically. Unsure matches wait for a signed-in admin decision; the 24 previously human-reviewed records are preserved. The supplied update migrates previously automatic related-field entries into the review queue rather than treating them as reviewed. The **1 October 2026** collection has **29 visible adverts (7 automatic)** and **54 pending relevance checks**, with all six collectors working. Existing destination-page checks were not rerun in this scan.
+- Direct subject matches and related-field source matches publish automatically. Each card identifies missing information and any uncertainty about relevance, so students can judge the match and check the original advert. Existing human-reviewed records retain their review provenance.
 - Light mode is the default, with explicit page and panel backgrounds. A dark-mode toggle saves the preference locally. Text colour/background pairs have been checked: minimum contrast 5.39:1 in light mode and 7.30:1 in dark mode; controls and focus indicators meet at least 3:1. This is a colour-pair check, not a full accessibility certification.
 - Filters for jobs, PhD, MRes, internships, volunteering and other opportunities; all three course interests; core/related relevance; eight subject areas; location; advert source; closing within 14 days. Unspecified locations remain discoverable in the default UK view and are clearly labelled.
 - Biological Recording scope includes botanical and other taxonomic identification, species/habitat surveys, records centres, biodiversity data, GIS and citizen science.
 - Pagination offers 10, 20, 30, 40 or 50 adverts per page (default 10), Previous/Next controls and result ranges. Changing any filter, sort or page size returns to page one.
 - Keyword search, closing-date/title/latest-source-date sorting and filter, page and page-size state in the URL.
 - Source-supplied details, collection dates and original advert links. Individual editorial dates remain on previously reviewed entries; automatic records do not claim a human review.
+- Dates on the public board use full month names, such as **4 October 2026**. Explicit closing times use the 24-hour clock, such as **12:00 UK time**. Date-only adverts do not acquire an invented closing time; ongoing and year-round opportunities retain their availability wording.
 - Past deadlines and records older than 30 days hidden at display time, even if the update workflow stops.
 - A daily GitHub Actions workflow for collection and publication, plus report-driven withdrawal.
-- A separate **Admin** page with GitHub sign-in, pending adverts, Approve/Reject controls and decision history. A small Cloudflare Worker handles authentication and saves queue decisions to GitHub.
+- No admin login or approval step is required for automatic publication. GitHub Pages and the collection workflow provide the active service.
 
-**This is a curated board with automatic discovery and assisted searches.** Six collectors cover the RES jobs and PhD indices, environmentjob jobs and volunteering RSS, Bath jobs RSS and Harper Adams jobs RSS. Each collector's success, failure or stale check is visible on the board. A working feed can legitimately return no relevant candidates. Google, FindAPhD, jobs.ac.uk and the remaining directories are assisted searches; coverage across all providers is not exhaustive.
+**This board uses curated search rules, automatic publication and assisted searches.** Enabled collectors cover the RES jobs and PhD indices, environmentjob jobs and volunteering RSS, Bath jobs RSS and Harper Adams jobs RSS. Each collector's success, failure or stale check is visible on the board. A working feed can legitimately return no relevant candidates. Google, FindAPhD, jobs.ac.uk and the remaining directories are assisted searches; coverage across all providers is not exhaustive.
 
 Collectors check robots rules, follow bounded redirects, respect delays and keep only minimal discovery metadata. The RSS descriptions are used transiently for screening; full adverts are not stored or republished. CIEEM stays manual because its terms require written permission for inclusion in an electronic retrieval service. Source-access notes and supported modes are in `site/data/sources.json`.
 
-Direct subject matches currently listed in enabled sources publish automatically. Context-only matches wait in `data/review-queue.json` for approval. These include broad ecology, biodiversity, GIS and generic specialist-source titles where the keyword evidence alone needs a closer relevance check. Missing eligibility, salary, deadline, country or type alone does not require approval. Type, subject and course mappings remain inferred and labelled. Full descriptions are used transiently for matching and are not republished.
+With `publication.mode` set to `automatic` in `site/data/sources.json`, qualifying direct and related-field matches from enabled sources publish on collection. Related matches can include broad ecology, biodiversity, GIS and specialist-source titles whose connection to a course needs checking. The next collection also reconsiders qualifying source matches held under the earlier approval mode. Exclusions, freshness limits and known closing dates still apply.
 
-Source sightings refresh `lastSeen`, while `lastChecked` records genuine editorial reviews, including an explicit inclusion decision in the admin page. Expired, withdrawn, pending and stale entries are hidden from the public board. Two previously excluded Imperial projects remain excluded because their bodies mention past interview/start dates.
+Missing pay or funding, eligibility, deadline, location or opportunity type does not by itself prevent publication. Cards list information that remains unspecified and explain uncertain relevance where applicable; inferred classifications remain labelled. A keyword match does not establish eligibility or guarantee that an advert is suitable. Follow the original advert for full details before applying. Full descriptions are used transiently for matching and are not republished.
 
-## Admin approvals
+For example, a card may say **“Check main advert for: salary, eligibility and closing date.”** Its field list depends on the information available. Related automatic matches also ask readers to check relevance to their interests.
 
-Open the board's **Admin** link and sign in with the configured GitHub account. For each unsure advert, follow the original link and confirm that it is relevant and active. Tick that confirmation and choose **Approve**, or choose **Reject** to exclude it. No JSON editing is needed after setup.
+Source sightings refresh `lastSeen`, while `lastChecked` records a genuine editorial review. Collection does not invent review dates or convert automatic matches into human-reviewed records. Known expired deadlines and withdrawn records are hidden; entries whose latest source sighting or editorial review is over 30 days old are also hidden at display time. Earlier explicit exclusions remain in place, including adverts whose bodies revealed past interview or start dates.
 
-Decisions save to the repository with the reviewer and date, then the normal Pages workflow applies them and publishes the update. The interface distinguishes a saved decision from a completed deployment. Decisions use the exact candidate you saw and the queue's current GitHub file SHA; a concurrent edit requires reloading rather than overwriting it. Rejections prevent rediscovery. Stale source sightings and known expired deadlines cannot be approved.
+## Admin setup is paused
 
-Follow [Admin_Setup.md](Admin_Setup.md) to register the repository-scoped GitHub App and deploy the supplied Cloudflare Worker. The public board remains on GitHub Pages. Admin credentials stay in Worker secrets and encrypted HttpOnly cookies; the frontend receives no GitHub token. The API checks the allowed username and repository write access. The repository remains public, so its advert metadata and decision audit are publicly readable; sign-in restricts actions, not the repository's visibility.
+The public **Admin** link has been removed. Admin frontend and backend files are retained for possible future use, but they are not part of the active publication process. [Admin_Setup.md](Admin_Setup.md) is a paused setup guide, not a prerequisite for using or updating the board. No GitHub App registration, Cloudflare deployment or admin secrets are needed for the current service.
 
-The Worker and Pages copies of the admin interface both need updating when those files change. The supplied configuration starts with an empty `site/admin-config.json` backend address and fails closed until setup is complete.
+The review queue remains useful for discovery records, exclusions and audit history. Optional editorial checks and report-driven withdrawals can improve the board after publication.
 
 ## Search and subject curation
 
-Each advert includes course-interest tags, a relevance tier and a brief “Relevance” assessment. On automatic entries these are keyword-derived connections; eligibility must be read in the original advert. Species/habitat surveys and biodiversity data can be core Biological Recording topics without insects. See `Search_Scope_and_Relevance.md` for the expanded scope.
+Each advert includes course-interest tags, a relevance tier and a brief “Relevance” assessment. On automatic entries these are keyword-derived connections; the card's caveats distinguish missing facts from uncertain relevance. Eligibility must be checked in the original advert. Species/habitat surveys and biodiversity data can be core Biological Recording topics without insects. See `Search_Scope_and_Relevance.md` for the expanded scope.
 
 The eight subject groups and terms are in `site/data/sources.json`, and visible in the board's “What do we look for?” section. They cover insect biology, IPM/crop protection, biological control, conservation, pollination, taxonomy/recording, vectors, and monitoring/environmental risk. Biological Recording searches include records centres, botanical identification, bryophytes, lichens, fungi, UKHab, NVC, biodiversity data, iRecord, QGIS and citizen science. Additional source cards link to CIEEM vacancies, Field Studies Council volunteering, the NBN scheme directory and ALERC centre finder; directories are clearly labelled and do not imply current vacancies.
 
@@ -45,7 +46,9 @@ The source list can be extended to direct university, research-institute, conser
 
 ## Upload and deployment
 
-For the separate `entomology-hau` GitHub account, follow `GitHub_Update_Instructions.md`. The archive contains the repository files, ready to replace their counterparts. Publishing still needs a successful run in that account; local verification does not confirm deployment.
+For the separate `entomology-hau` GitHub account, follow `GitHub_Update_Instructions.md`. The focused `Opportunities_Simplified_Update.zip` contains only changed code, configuration, documentation and tests. Replace the matching files in the existing repository, preserving their folders.
+
+The focused update deliberately excludes generated `site/data/opportunities.json`, `data/review-queue.json` and `site/data/health.json`, protecting newer listings, exclusions and checks already in the repository. Keep those existing files. The collection workflow uses the updated rules to generate the next publication. Publishing still needs a successful run in that account; local verification does not confirm deployment.
 
 The workflow runs daily at 05:17 UTC and on pushes/manual requests. Its checks digest appears in the run summary and a downloadable artifact. Generated data is validated before saving. If `main` changes during a run, the bounded persistence helper skips the stale deployment and preserves human changes. Both collection and removal workflows share a queue with up to 100 pending runs. Ubuntu 24.04 is pinned.
 
@@ -61,7 +64,7 @@ If the report changes after you add the label or `main` changes during withdrawa
 
 To restore a removed record deliberately, change its status back to open and remove its corresponding URL exclusions from `data/review-queue.json`, then commit both files. Removing the issue label alone does not restore it.
 
-The existing `scripts/review.py` remains available for optional checks and manually supplied records. Unsure relevance matches use the signed-in admin queue; clear matches remain automatic.
+The existing `scripts/review.py` remains available for optional checks and manually supplied records. Both direct and related-field source matches remain eligible for automatic publication; no signed-in admin queue is required.
 
 ## Local checks
 
@@ -69,14 +72,12 @@ The existing `scripts/review.py` remains available for optional checks and manua
 python scripts/validate.py
 python -m unittest discover -s tests -v
 node tests/test_board.cjs
-node tests/test_admin.cjs
-node --test admin-backend/test-worker.mjs
 python scripts/refresh.py --offline
 python scripts/refresh.py --discovery-only
 python scripts/refresh.py
 ```
 
-`--offline` validates configuration without requests or writes. `--discovery-only` collects direct matches, holds context matches and applies saved admin decisions without fetching existing destination pages, retaining earlier link-check timestamps. A normal refresh also checks individually reviewed advert links; automatic and pending records use feed/index sightings. Failed collectors produce visible health warnings and preserve prior records until their freshness/expiry limits. All three generated data files are saved together by the persistence helper.
+`--offline` validates configuration without requests or writes. `--discovery-only` collects and publishes qualifying direct and related-field source matches without fetching existing destination pages, retaining earlier link-check timestamps. A normal refresh also checks individually reviewed advert links; automatic records use feed/index sightings. Failed collectors produce visible health warnings and preserve prior records until their freshness/expiry limits. All three generated data files are saved together by the persistence helper.
 
 ## Sources and credits
 

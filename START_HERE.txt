@@ -1,0 +1,12 @@
+SIMPLIFIED AUTOMATIC PUBLICATION UPDATE — 1 October 2026
+
+1. Extract this ZIP.
+2. In entomology-hau/career_opportunities on GitHub, choose Add file > Upload files.
+3. Upload these extracted folders and documents at the repository root, preserving their paths, then commit to main.
+4. Wait for Check opportunities and publish Pages to finish successfully.
+
+This package updates code, configuration, tests and instructions only. It does not replace your live adverts, review queue or health data. The workflow will publish eligible held adverts using their recorded source dates and show per-card caveats. Existing exclusions, expired adverts and stale sightings remain protected. No further admin login or Cloudflare setup is needed.
+
+See GitHub_Update_Instructions.md for the browser walkthrough.
+
+Date presentation is also standardised: 4 October 2026, with stated times in the 24-hour clock. This package includes the earlier automatic-publication update.

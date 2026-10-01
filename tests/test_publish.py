@@ -214,13 +214,131 @@ class PublishTests(unittest.TestCase):
         self.assertEqual(validate(data, HYBRID, today=NOW.date()), [])
 
     def test_direct_duplicate_takes_precedence_over_context_regardless_of_source_order(self):
-        for observations in [(listing(), unsure()), (unsure(), listing())]:
-            with self.subTest(order=[item['relevanceStrength'] for item in observations]):
-                data, queue, result = run(current=health(*observations), config=HYBRID)
+        for config in [CONFIG, HYBRID]:
+            for observations in [(listing(), unsure()), (unsure(), listing())]:
+                with self.subTest(mode=config['publication']['mode'], order=[item['relevanceStrength'] for item in observations]):
+                    data, queue, result = run(current=health(*observations), config=config)
+                    self.assertEqual(len(data['opportunities']), 1)
+                    self.assertEqual(data['opportunities'][0]['reviewStatus'], 'automatic')
+                    self.assertEqual(data['opportunities'][0]['relevanceTier'], 'Core subject')
+                    self.assertEqual(data['opportunities'][0]['title'], listing()['title'])
+                    self.assertEqual(queue['candidates'], [])
+                    self.assertEqual(result['newPublished'], 1)
+
+    def test_automatic_migrates_fresh_held_records_and_candidates_without_renewing_dates(self):
+        seeded, _, _ = run(current=health(unsure()))
+        held = dict(seeded['opportunities'][0], reviewStatus='pending', firstSeen='2026-09-20', lastSeen='2026-09-27')
+        manual = dict(held, id='manual', url='https://employer.test/manual', provenance=[],
+                      reviewStatus='approved', lastChecked='2026-09-21', title='Reviewed title')
+        candidate = unsure(url='https://employer.test/queue-only', reviewStatus='pending', lastSeen='2026-09-29')
+        candidate.pop('firstSeen')
+        exclusion = {'url': 'https://employer.test/excluded', 'reason': 'Editorial exclusion'}
+        audit = {'id': 'old-decision', 'resolutionStatus': 'applied'}
+        inputs = ([held, manual], {'candidates': [candidate], 'excluded': [exclusion],
+                                 'decisions': [audit], 'audit': {'keep': True}})
+        originals = copy.deepcopy(inputs)
+        data, queue, result = run(records=inputs[0], queue=inputs[1])
+        self.assertEqual(inputs, originals)
+        migrated, reviewed, created = data['opportunities']
+        self.assertEqual((migrated['id'], migrated['firstSeen'], migrated['lastSeen']),
+                         (held['id'], '2026-09-20', '2026-09-27'))
+        self.assertEqual((created['firstSeen'], created['lastSeen']), ('2026-09-29', '2026-09-29'))
+        for record in [migrated, created]:
+            self.assertEqual(record['reviewStatus'], 'automatic')
+            self.assertIsNone(record['lastChecked'])
+            self.assertEqual(record['type'], 'other')
+            self.assertIsNone(record['deadline'])
+        self.assertEqual(reviewed, manual)
+        self.assertEqual(queue['candidates'], [])
+        self.assertEqual(queue['excluded'], [exclusion])
+        self.assertEqual(queue['decisions'], [audit])
+        self.assertEqual(queue['audit'], {'keep': True})
+        self.assertEqual((result['newPublished'], result['migratedPublished']), (2, 2))
+        self.assertEqual(validate(data, CONFIG, today=NOW.date()), [])
+        again, same_queue, repeated = run(records=data['opportunities'], queue=queue)
+        self.assertEqual(again, data)
+        self.assertEqual(same_queue, queue)
+        self.assertEqual(repeated['migratedPublished'], 0)
+
+    def test_automatic_migration_requires_fresh_valid_source_evidence_and_unexpired_deadline(self):
+        cases = [
+            unsure(lastSeen='2026-08-30', firstSeen='2026-08-01'),
+            unsure(lastSeen='2026-10-01'),
+            unsure(lastSeen=None),
+            unsure(sourceUrl='https:///missing-host'),
+            unsure(sourceId=''),
+            unsure(deadlineSuggestion='2026-09-29'),
+            unsure(relevanceStrength=None, matchedTerms=[], matchedPatterns=[]),
+        ]
+        for candidate in cases:
+            with self.subTest(candidate=candidate):
+                data, queue, result = run(queue={'candidates': [candidate], 'excluded': []})
+                self.assertEqual(data['opportunities'], [])
+                self.assertEqual(queue['candidates'], [candidate])
+                self.assertEqual(result['migratedPublished'], 0)
+        edge = unsure(firstSeen='2026-08-01', lastSeen='2026-08-31', deadlineSuggestion='2026-09-30')
+        data, _, result = run(queue={'candidates': [edge], 'excluded': []})
+        self.assertEqual(data['opportunities'][0]['lastSeen'], '2026-08-31')
+        self.assertEqual(result['activePublished'], 1)
+
+    def test_explicit_queue_state_blocks_both_candidate_and_matching_held_record_migration(self):
+        seeded, _, _ = run(current=health(unsure()))
+        held = dict(seeded['opportunities'][0], reviewStatus='pending')
+        for status in ['not-current', 'resolved', 'rejected']:
+            candidate = unsure(url='https://source.test/alias', provenance=[held['url']], reviewStatus=status)
+            for records in [[], [held]]:
+                with self.subTest(status=status, held=bool(records)):
+                    data, queue, result = run(records=records, queue={'candidates': [candidate], 'excluded': []})
+                    self.assertEqual(data['opportunities'], records)
+                    self.assertEqual(queue['candidates'], [candidate])
+                    self.assertEqual(result['migratedPublished'], 0)
+
+    def test_automatic_migration_does_not_revive_closed_withdrawn_excluded_or_expired_records(self):
+        seeded, _, _ = run(current=health(unsure()))
+        held = dict(seeded['opportunities'][0], reviewStatus='pending', lastSeen='2026-09-29')
+        cases = [(dict(held, status='closed'), []), (dict(held, status='withdrawn'), []),
+                 (dict(held, status='expired'), []),
+                 (dict(held, deadline='2026-09-29', deadlineAt='2026-09-30T00:00:00+01:00'), []),
+                 (held, [{'url': 'https://source.test/exclusion', 'provenance': [held['url']]}])]
+        for record, excluded in cases:
+            with self.subTest(record=record, excluded=excluded):
+                candidate = unsure(url='https://source.test/alias', provenance=[record['url']], reviewStatus='pending',
+                                   deadlineSuggestion='2026-10-05')
+                data, queue, result = run(records=[record], queue={'candidates': [candidate], 'excluded': excluded})
+                self.assertEqual(data['opportunities'], [record])
+                self.assertEqual(queue['excluded'], excluded)
+                self.assertEqual(result['migratedPublished'], 0)
+
+    def test_explicit_expired_status_is_not_refreshed_by_a_current_source_listing(self):
+        seeded, _, _ = run(current=health(listing()))
+        record = dict(seeded['opportunities'][0], status='expired', lastSeen='2026-09-29')
+        data, _, result = run(records=[record], current=health(listing(deadlineSuggestion='2026-10-05')))
+        self.assertEqual(data['opportunities'], [record])
+        self.assertEqual(result['activePublished'], 0)
+
+    def test_actual_source_sighting_can_refresh_a_previously_not_current_match(self):
+        old = unsure(reviewStatus='not-current', lastSeen='2026-09-20', firstSeen='2026-09-10')
+        data, queue, result = run(queue={'candidates': [old], 'excluded': []}, current=health(unsure()))
+        self.assertEqual(data['opportunities'][0]['reviewStatus'], 'automatic')
+        self.assertEqual(data['opportunities'][0]['lastSeen'], '2026-09-30')
+        self.assertEqual(data['opportunities'][0]['firstSeen'], '2026-09-10')
+        self.assertEqual(result['migratedPublished'], 0)
+        self.assertEqual(queue['candidates'], [])
+
+    def test_stored_duplicates_keep_direct_relevance_and_do_not_renew_approved_records(self):
+        direct = listing(firstSeen='2026-09-20', lastSeen='2026-09-27')
+        context = unsure(lastSeen='2026-09-29')
+        for candidates in [[direct, context], [context, direct]]:
+            with self.subTest(order=[item['relevanceStrength'] for item in candidates]):
+                data, _, result = run(queue={'candidates': candidates, 'excluded': []})
                 self.assertEqual(len(data['opportunities']), 1)
-                self.assertEqual(data['opportunities'][0]['reviewStatus'], 'automatic')
-                self.assertEqual(queue['candidates'], [])
-                self.assertEqual(result['newPublished'], 1)
+                self.assertEqual(data['opportunities'][0]['relevanceTier'], 'Core subject')
+                self.assertEqual(data['opportunities'][0]['lastSeen'], '2026-09-27')
+                self.assertEqual(result['migratedPublished'], 1)
+        approved = dict(data['opportunities'][0], reviewStatus='approved', lastChecked='2026-09-21')
+        data, _, result = run(records=[approved], queue={'candidates': [context], 'excluded': []})
+        self.assertEqual(data['opportunities'], [approved])
+        self.assertEqual(result['migratedPublished'], 0)
 
     def test_approval_uses_snapshot_despite_feed_refresh_and_is_idempotent(self):
         expected = unsure(title='Snapshot title', organisation='Snapshot organisation')

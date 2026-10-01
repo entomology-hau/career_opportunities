@@ -6,7 +6,7 @@
       "shortName": "RES opportunities",
       "url": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "description": "Specialist entomology jobs, placements and community opportunities, including some research degrees.",
-      "label": "Automatic matches + admin review · curated source index",
+      "label": "Automatic collection · curated source index",
       "mode": "res-headings",
       "enabled": true,
       "curatedIndex": true,
@@ -17,7 +17,7 @@
       "name": "RES research opportunities",
       "url": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
       "description": "Doctoral projects and other research opportunities. Check linked adverts for funding and current dates.",
-      "label": "Automatic matches + admin review · curated source index",
+      "label": "Automatic collection · curated source index",
       "mode": "res-headings",
       "enabled": true,
       "curatedIndex": true,
@@ -29,7 +29,7 @@
       "name": "environmentjob · paid jobs",
       "url": "https://environmentjob.co.uk/",
       "description": "Official RSS feed of environmental vacancies. Ecology, biological recording, biodiversity and field roles are screened for relevance before publication.",
-      "label": "Automatic matches + admin review · RSS feed",
+      "label": "Automatic collection · RSS feed",
       "mode": "rss",
       "enabled": true,
       "shortName": "environmentjob",
@@ -45,7 +45,7 @@
       "url": "https://environmentjob.co.uk/volunteering",
       "fetchUrl": "https://environmentjob.co.uk/volunteering.rss",
       "description": "Official volunteering feed. Screen wildlife surveys, recording, conservation placements and practical field experience; unrelated governance and fundraising calls are excluded.",
-      "label": "Automatic matches + admin review · RSS feed",
+      "label": "Automatic collection · RSS feed",
       "mode": "rss",
       "enabled": true,
       "defaultType": "volunteering",
@@ -59,7 +59,7 @@
       "url": "https://www.bath.ac.uk/jobs/",
       "fetchUrl": "https://www.bath.ac.uk/jobs/rss/rss.aspx",
       "description": "Official university vacancies feed covering research, studentships and technical roles. Broad university recruitment is screened for a substantive biological or ecological connection.",
-      "label": "Automatic matches + admin review · RSS feed",
+      "label": "Automatic collection · RSS feed",
       "mode": "rss",
       "enabled": true,
       "defaultType": "job",
@@ -74,7 +74,7 @@
       "url": "https://jobs.harper-adams.ac.uk/",
       "fetchUrl": "https://jobs.harper-adams.ac.uk/RSS/rss.aspx",
       "description": "Official Harper Adams vacancies and studentships. Relevant crop, insect, plant-health and ecological research adverts are matched; staff-only and general research-application calls are excluded.",
-      "label": "Automatic matches + admin review · RSS feed",
+      "label": "Automatic collection · RSS feed",
       "mode": "rss",
       "enabled": true,
       "defaultType": "job",
@@ -489,8 +489,8 @@
     "excludedTitleNotes": "Apply these patterns to titles only, before relevance scoring. They exclude non-subject HR/fundraising/governance posts, internal-only calls, research administration and generic degree-application notices. They intentionally retain research technicians, scientific project managers, public engagement, biological-recording and topic-specific self-funded projects for automatic subject matching."
   },
   "publication": {
-    "mode": "hybrid",
+    "mode": "automatic",
     "freshnessDays": 30,
-    "notes": "Direct relevance matches publish automatically. Unsure/context matches wait for an authorised decision in the signed-in admin portal. Missing pay, eligibility, country or closing date alone does not require approval."
+    "notes": "Subject-matched adverts publish automatically, including related-field matches. Cards flag inferred relevance and missing source information. Check the original advert for full details and current availability."
   }
 }

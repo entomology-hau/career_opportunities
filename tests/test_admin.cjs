@@ -79,7 +79,11 @@ async function main(){
   client.logic.state.history=[{title:'<img src=x>',action:'reject',actor:'<script>',commitUrl:'javascript:alert(1)'}];client.logic.adminRenderHistory();assert(!client.element('history-list').innerHTML.includes('<img'));assert(!client.element('history-list').innerHTML.includes('<script>'));assert(!client.element('history-list').innerHTML.includes('javascript:'));
   client=createClient(portal,'?authError=not-authorized&view=queue#main');assert.match(client.logic.adminOAuthMessage(),/not authorised/);assert.equal(client.replaced[0],'/admin.html?view=queue#main');
   client=createClient(portal,'?authError=%3Cscript%3E');assert(!client.logic.adminOAuthMessage().includes('<script>'));assert.equal(client.replaced[0],'/admin.html');
-  assert(!script.includes('review-queue.json'));assert(!script.includes('access_token'));assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root,'site/admin-config.json'),'utf8')),{apiBase:''});
+  assert(!script.includes('review-queue.json'));assert(!script.includes('access_token'));
+  // The retained portal may be unconfigured or already have a public Worker origin.
+  const deployedConfig=JSON.parse(fs.readFileSync(path.join(root,'site/admin-config.json'),'utf8'));
+  assert.equal(typeof deployedConfig.apiBase,'string');
+  assert.equal(client.logic.adminConfiguration(deployedConfig,pages).configured,deployedConfig.apiBase!=='');
   console.log('PASS: portal-only authenticated API access; safe setup/sign-in; CSRF and snapshot decisions; explicit approval confirmation; stale queue handling; queued publication; logout; safe rendering.');
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});

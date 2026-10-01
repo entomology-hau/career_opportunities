@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 from validate import MIN_ACTIVITY_DATE, TYPES, calendar_date, cutoff, valid_url
 
 LONDON = ZoneInfo('Europe/London')
+CLOSED_STATUSES = {'closed', 'withdrawn', 'expired'}
 GROUP_PATTERNS = {
     'Insect biology & behaviour': r'entomolog|insect|arthropod|arachnid|drosophila',
     'Crop protection & IPM': r'integrated pest|\bipm\b|crop|plant health|patholog|agronom|weed|nematolog|pest manage',
@@ -117,16 +118,18 @@ def expired(record, now):
         return True
 
 
-def automatic_record(listing, config, today, previous=None, pending=None):
+def automatic_record(listing, config, today, previous=None, pending=None, sighting=None):
     previous, pending = previous or {}, pending or {}
     url = canonical(listing['url'])
     subjects, courses, tags = classification(listing, config)
-    # A current listing is fresh evidence today, independently of feed publication dates.
+    # Stored migrations retain their actual source date; current listings are evidence today.
+    sighting = sighting or today.isoformat()
     first_seen = actual_date(previous.get('firstSeen'), today)
     if not first_seen:
         dates = [value for item in [listing, pending]
                  if (value := actual_date(item.get('firstSeen'), today))]
-        first_seen = min(dates, default=today.isoformat())
+        first_seen = min(dates, default=sighting)
+    first_seen = min(first_seen, sighting)
     deadline = source_deadline(listing, previous)
     source_name = text(listing.get('source'), 'Source not supplied')
     topic_text = ', '.join(tags) if tags != ['Source match'] else 'the source’s specialist opportunity listing'
@@ -150,7 +153,7 @@ def automatic_record(listing, config, today, previous=None, pending=None):
         'summary': f'Automatically collected from {source_name}. Matched: {topic_text}. See the original advert for full details.',
         'fitReason': f'Source terms connect this advert to {", ".join(subjects)}.',
         'source': source_name, 'sourceId': listing['sourceId'], 'sourceUrl': listing['sourceUrl'],
-        'reviewStatus': 'automatic', 'lastChecked': None, 'firstSeen': first_seen, 'lastSeen': today.isoformat(),
+        'reviewStatus': 'automatic', 'lastChecked': None, 'firstSeen': first_seen, 'lastSeen': sighting,
         'subjects': subjects, 'courses': courses, 'tags': tags,
         'relevanceTier': 'Core subject' if listing.get('relevanceStrength') == 'direct' else 'Related field',
         'status': 'open' if deadline['deadline'] else 'open-no-deadline',
@@ -164,7 +167,7 @@ def automatic_record(listing, config, today, previous=None, pending=None):
 
 
 def active(record, now, today):
-    if record.get('reviewStatus') not in {'approved', 'automatic'} or record.get('status') in {'closed', 'withdrawn'} or expired(record, now):
+    if record.get('reviewStatus') not in {'approved', 'automatic'} or record.get('status') in CLOSED_STATUSES or expired(record, now):
         return False
     value = actual_date(record.get('lastSeen') or record.get('lastChecked'), today)
     return bool(value and (today - calendar_date(value)).days <= 30)
@@ -184,11 +187,48 @@ def held_candidate(record):
     ] if key in record}
     candidate.update(matchedTerms=[term for term in record.get('tags', []) if term != 'Source match'],
                      matchedPatterns=[], suggestedType=record.get('type', 'other'),
-                     reviewStatus='pending', relevanceStrength='needs-context',
+                     reviewStatus='pending',
+                     relevanceStrength='direct' if record.get('relevanceTier') == 'Core subject' else 'needs-context',
                      reason='Confirm whether this related-field opportunity is relevant before publication.')
     if record.get('deadline'):
         candidate.update(deadlineSuggestion=record['deadline'], deadlineEvidence=record.get('dateBasis', 'Source date'))
     return candidate
+
+
+def migration_listings(records, candidates, current, now, today):
+    """Recover fresh held matches without pretending that storage is a new source sighting."""
+    candidate_keys = {key for item in candidates for key in aliases(item)}
+    blocked = {key for item in candidates if item.get('reviewStatus', 'pending') != 'pending'
+               or item.get('status') in CLOSED_STATUSES for key in aliases(item)}
+    current_keys = {key for item in current if valid_listing(item) for key in aliases(item)}
+    for record in records:
+        if aliases(record) & current_keys:
+            current_keys.update(aliases(record))
+    stored = list(candidates) + [held_candidate(record) for record in records
+                                if record.get('reviewStatus') == 'pending'
+                                and record.get('status') not in CLOSED_STATUSES
+                                and not aliases(record) & candidate_keys]
+    # For duplicate stored sightings, the most recent metadata is applied last.
+    stored.sort(key=lambda item: actual_date(item.get('lastSeen'), today) or '')
+    for candidate in stored:
+        keys = aliases(candidate)
+        if (not valid_listing(candidate) or candidate.get('reviewStatus', 'pending') != 'pending'
+                or keys & (blocked | current_keys)):
+            continue
+        if not (candidate.get('relevanceStrength') in {'direct', 'context', 'needs-context'}
+                or candidate.get('matchedTerms') or candidate.get('matchedPatterns')):
+            continue
+        sighting = actual_date(candidate.get('lastSeen'), today)
+        if not sighting or (today - calendar_date(sighting)).days > 30:
+            continue
+        previous = [record for record in records if aliases(record) & keys]
+        # Existing published records are not renewed or overwritten by old queue metadata.
+        if any(record.get('reviewStatus') != 'pending' or record.get('status') in CLOSED_STATUSES or expired(record, now)
+               for record in previous):
+            continue
+        if expired(source_deadline(candidate, previous[0] if len(previous) == 1 else None), now):
+            continue
+        yield candidate, sighting
 
 
 def consume_decisions(records, queue, config, now, today):
@@ -242,8 +282,8 @@ def consume_decisions(records, queue, config, now, today):
         if previous and previous.get('reviewStatus') == 'approved':
             resolve(False, 'An existing manually approved record is preserved.')
             continue
-        if previous and previous.get('status') in {'closed', 'withdrawn'}:
-            resolve(False, 'A closed or withdrawn record cannot be republished by this decision.')
+        if previous and previous.get('status') in CLOSED_STATUSES:
+            resolve(False, 'A closed, withdrawn or expired record cannot be republished by this decision.')
             continue
         audit = {name: decision[name] for name in ['id', 'action', 'decidedBy', 'decidedAt']}
         if action == 'reject':
@@ -288,7 +328,7 @@ def consume_decisions(records, queue, config, now, today):
 
 
 def publish_matches(data, queue, health, config, now=None):
-    """Return new state; only current collector evidence may create or refresh adverts."""
+    """Return new state from collector evidence or dated, still-fresh stored matches."""
     data, queue, health = copy.deepcopy(data), copy.deepcopy(queue), copy.deepcopy(health)
     listings = health.pop('_listings', [])
     mode = config.get('publication', {}).get('mode')
@@ -303,31 +343,33 @@ def publish_matches(data, queue, health, config, now=None):
     if mode == 'hybrid':
         for record in records:
             if (record.get('reviewStatus') == 'automatic' and record.get('relevanceTier') == 'Related field'
-                    and record.get('status') not in {'closed', 'withdrawn'}):
+                    and record.get('status') not in CLOSED_STATUSES):
                 record.update(reviewStatus='pending', lastChecked=None)
-            if record.get('reviewStatus') == 'pending' and record.get('status') not in {'closed', 'withdrawn'}:
+            if record.get('reviewStatus') == 'pending' and record.get('status') not in CLOSED_STATUSES:
                 if not any(aliases(record) & aliases(candidate) for candidate in queue['candidates']):
                     queue['candidates'].append(held_candidate(record))
     decisions = consume_decisions(records, queue, config, now, today)
     public_aliases = {alias: index for index, record in enumerate(records) for alias in aliases(record)}
     excluded = {alias for record in queue.get('excluded', []) for alias in aliases(record)}
     pending = {alias: record for record in queue.get('candidates', []) for alias in aliases(record)}
+    observations = [(listing, None) for listing in listings]
+    if mode == 'automatic':
+        observations += list(migration_listings(records, queue['candidates'], listings, now, today))
     direct_keys = set()
-    if mode == 'hybrid':
-        for listing in listings:
-            if valid_listing(listing) and listing.get('relevanceStrength') == 'direct':
-                keys = aliases(listing)
-                direct_keys.update(keys)
-                for key in keys:
-                    if key in public_aliases:
-                        direct_keys.update(aliases(records[public_aliases[key]]))
-    new_count, skipped = decisions['published'], 0
-    for listing in listings:
+    for listing, _ in observations:
+        if valid_listing(listing) and listing.get('relevanceStrength') == 'direct':
+            keys = aliases(listing)
+            direct_keys.update(keys)
+            for key in keys:
+                if key in public_aliases:
+                    direct_keys.update(aliases(records[public_aliases[key]]))
+    new_count, skipped, migrated = decisions['published'], 0, set()
+    for listing, sighting in observations:
         if not valid_listing(listing):
             skipped += 1
             continue
         keys = aliases(listing)
-        if mode == 'hybrid' and listing.get('relevanceStrength') != 'direct' and keys & direct_keys:
+        if listing.get('relevanceStrength') != 'direct' and keys & direct_keys:
             continue  # A weaker duplicate source must not override a current direct match.
         indexes = {public_aliases[key] for key in keys if key in public_aliases}
         if keys & excluded or len(indexes) > 1:
@@ -338,14 +380,16 @@ def publish_matches(data, queue, health, config, now=None):
         if previous and aliases(previous) & excluded:
             skipped += 1
             continue
-        if previous and previous.get('status') in {'closed', 'withdrawn'}:
+        if previous and previous.get('status') in CLOSED_STATUSES:
             skipped += 1
             continue
         if previous and previous.get('reviewStatus') == 'approved':
             previous['lastSeen'] = today.isoformat()
             continue
         previous_pending = next((pending[key] for key in keys if key in pending), {})
-        record = automatic_record(listing, config, today, previous, previous_pending)
+        if sighting and previous:
+            sighting = max(sighting, actual_date(previous.get('lastSeen'), today) or sighting)
+        record = automatic_record(listing, config, today, previous, previous_pending, sighting=sighting)
         if not record['subjects'] or not record['courses'] or expired(record, now):
             skipped += 1
             continue
@@ -372,10 +416,12 @@ def publish_matches(data, queue, health, config, now=None):
             if previous.get('reviewStatus') == 'pending':
                 new_count += 1
             records[index] = record
+        if sighting:
+            migrated.add(index)
         for alias in aliases(record):
             public_aliases[alias] = index
     known = {alias for record in records for alias in aliases(record)
-             if record.get('reviewStatus') in {'approved', 'automatic'} or record.get('status') in {'closed', 'withdrawn'}}
+             if record.get('reviewStatus') in {'approved', 'automatic'} or record.get('status') in CLOSED_STATUSES}
     queue['candidates'] = [record for record in queue.get('candidates', []) if not aliases(record) & (known | excluded)]
     data['publicationMode'] = mode
     queue['publicationMode'] = mode
@@ -386,7 +432,7 @@ def publish_matches(data, queue, health, config, now=None):
     needs_check = sum(item.get('status') == 'needs-check' for item in health.get('links', []))
     health.update(publicationMode=mode, newPublished=new_count, autoPublished=automatic_count,
                   activePublished=len(visible), pendingCandidates=len(queue['candidates']), publicationSkipped=skipped,
-                  decisionsApplied=decisions['applied'], decisionsIgnored=decisions['ignored'])
+                  decisionsApplied=decisions['applied'], decisionsIgnored=decisions['ignored'], migratedPublished=len(migrated))
     health['summary'] = (f'{good} of {total} collectors working; {new_count} new adverts; '
                          f'{len(visible)} adverts live ({automatic_count} automatically collected). ')
     if mode == 'hybrid':
