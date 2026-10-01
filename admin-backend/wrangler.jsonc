@@ -13,7 +13,7 @@
   "vars": {
     "REPOSITORY": "entomology-hau/career_opportunities",
     "BRANCH": "main",
-    "ALLOWED_GITHUB_LOGINS": "entomology-hau",
+    "ALLOWED_GITHUB_LOGINS": "entomology-hau", "benclunie",
     "PUBLIC_SITE_URL": "https://entomology-hau.github.io/career_opportunities/",
     "GITHUB_CLIENT_ID": ""
   }
