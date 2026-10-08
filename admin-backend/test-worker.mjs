@@ -56,6 +56,10 @@ function githubMock(t, options = {}) {
     calls.push({ url: request.url, method: request.method, headers: request.headers, body, redirect: init.redirect });
     const authenticated = request.headers.has('Authorization');
     if (authenticated) assert.equal(request.headers.get('Authorization'), `Bearer ${TOKEN}`);
+    if (options.respond) {
+      const response = await options.respond(request);
+      if (response !== undefined) return response;
+    }
     if (request.url === REPO_URL && request.method === 'GET') {
       return json(authenticated ? {
         full_name: options.fullName ?? REPOSITORY, permissions: { push: options.push ?? true },
@@ -212,7 +216,7 @@ test('OAuth callback verifies state and sends PKCE, repository restriction and t
 test('OAuth state mismatch or missing state cookie clears cookies without contacting GitHub', async t => {
   const env = environment(), mock = githubMock(t), login = await begin(env, mock.fetcher);
   const response = await callback(env, mock.fetcher, login, { state: 'attacker-state' });
-  assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=sign-in-failed`);
+  assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=state-mismatch`);
   assertCookiesCleared(response);
   const missing = await handle(new Request(`${ORIGIN}/auth/callback?code=stolen&state=anything`), env, mock.fetcher);
   assert.equal(missing.headers.get('Location'), `${ORIGIN}/admin.html?authError=expired`);
@@ -225,12 +229,88 @@ test('OAuth accepts only a usable GitHub App user bearer token', async t => {
     { access_token: 'ghp_personal-token', token_type: 'bearer' },
     { access_token: TOKEN, token_type: 'mac' },
     { access_token: TOKEN, token_type: 'bearer', expires_in: 30 },
-    { access_token: TOKEN, token_type: 'bearer', error: 'bad_verification_code' },
+    { access_token: TOKEN, token_type: 'bearer', expires_in: '7200' },
+    { access_token: TOKEN, token_type: 'bearer', expires_in: null },
+    {}, [], 'unexpected token response',
   ]) await t.test(JSON.stringify(tokenResponse), async sub => {
     const env = environment(), mock = githubMock(sub, { tokenResponse });
     const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));
-    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=sign-in-failed`);
+    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=token-invalid`);
     assertCookiesCleared(response);
+    assert.equal(mock.calls.filter(x => x.headers.has('Authorization')).length, 0,
+      'Invalid tokens are never used for authenticated requests');
+  });
+});
+
+test('missing code and provider cancellation are specific and stop before GitHub requests', async t => {
+  const env = environment(), mock = githubMock(t), login = await begin(env, mock.fetcher);
+  for (const [params, expected] of [
+    [{ code: '' }, 'code-missing'],
+    [{ code: 'x'.repeat(513) }, 'verification-code'],
+    [{ error: 'access_denied', error_description: 'Do not expose this description' }, 'cancelled'],
+    [{ error: 'unexpected', error_description: '<script>unsafe()</script>' }, 'github-unavailable'],
+  ]) {
+    const response = await callback(env, mock.fetcher, login, params);
+    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=${expected}`);
+    assertCookiesCleared(response);
+    assert.equal(await response.text(), '');
+  }
+  assert.deepEqual(mock.calls, []);
+});
+
+test('known token-exchange failures use fixed public codes and never expose provider content', async t => {
+  for (const [providerError, expected] of [
+    ['incorrect_client_credentials', 'client-credentials'],
+    ['redirect_uri_mismatch', 'callback-mismatch'],
+    ['bad_verification_code', 'verification-code'],
+    ['unverified_user_email', 'email-unverified'],
+    ['access_denied', 'cancelled'],
+    ['__proto__', 'github-unavailable'],
+    ['<script>location="https://evil.example/"</script>&token=secret', 'github-unavailable'],
+  ]) await t.test(providerError, async sub => {
+    const env = environment(), mock = githubMock(sub, { tokenResponse: {
+      access_token: TOKEN, token_type: 'bearer', error: providerError,
+      error_description: `${env.GITHUB_CLIENT_SECRET} ${env.SESSION_SECRET} raw-github-code`,
+    } });
+    const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));
+    assert.equal(response.status, 303);
+    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=${expected}`);
+    assertCookiesCleared(response);
+    assert.equal(await response.text(), '');
+    assert.equal(mock.calls.length, 2, 'One metadata lookup and one exchange; no retries or authenticated API calls');
+    const unauthenticated = await handle(new Request(`${ORIGIN}/api/session`, {
+      headers: { Cookie: `${SESSION_COOKIE}=${cookieValue(response, SESSION_COOKIE)}` },
+    }), env, mock.fetcher);
+    assert.equal(unauthenticated.status, 401, 'A failed callback cannot create a valid session');
+    assert.equal(mock.calls.length, 2);
+  });
+});
+
+test('GitHub network, HTTP and JSON failures remain fail-closed and distinguish explicit rate limits', async t => {
+  const exchangeURL = 'https://github.com/login/oauth/access_token';
+  const cases = [
+    { name: 'network failure before exchange', url: REPO_URL, response: () => { throw new Error('sensitive upstream error'); }, expected: 'github-unavailable' },
+    { name: 'token exchange network failure', url: exchangeURL, response: () => { throw new Error('sensitive token exchange error'); }, expected: 'github-unavailable' },
+    { name: 'HTTP error', url: exchangeURL, response: () => json({ message: 'sensitive upstream message' }, 503), expected: 'github-unavailable' },
+    { name: 'non-JSON exchange response', url: exchangeURL, response: () => new Response('<html>upstream secret</html>'), expected: 'github-unavailable' },
+    { name: 'null exchange payload', url: exchangeURL, response: () => json(null), expected: 'token-invalid' },
+    { name: 'provider error in HTTP 400', url: exchangeURL, response: () => json({ error: 'incorrect_client_credentials' }, 400), expected: 'client-credentials' },
+    { name: 'API non-JSON response', url: 'https://api.github.com/user', response: () => new Response('non-JSON'), expected: 'github-unavailable' },
+    { name: 'API HTTP error', url: 'https://api.github.com/user', response: () => json({}, 500), expected: 'github-unavailable' },
+    { name: 'API authorization denied', url: 'https://api.github.com/user', response: () => json({}, 403), expected: 'not-authorized' },
+    { name: 'API request limit', url: REPO_URL, response: () => new Response(null, { status: 403, headers: { 'X-RateLimit-Remaining': '0' } }), expected: 'github-rate-limited' },
+    { name: 'API HTTP 429', url: 'https://api.github.com/user', response: () => json({}, 429), expected: 'github-rate-limited' },
+    { name: 'exchange HTTP 429', url: exchangeURL, response: () => new Response(null, { status: 429 }), expected: 'github-rate-limited' },
+  ];
+  for (const { name, url, response: upstream, expected } of cases) await t.test(name, async sub => {
+    const env = environment(), mock = githubMock(sub, {
+      respond: request => request.url === url ? upstream() : undefined,
+    });
+    const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));
+    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=${expected}`);
+    assertCookiesCleared(response);
+    assert.equal(await response.text(), '');
+    assert.ok(mock.calls.filter(x => x.url === exchangeURL).length <= 1, 'Token exchange is never retried');
     assert.equal(mock.calls.filter(x => x.url.startsWith(QUEUE_URL)).length, 0);
   });
 });
@@ -440,3 +520,4 @@ test('only explicit public assets and safe configuration are served, without COR
   assert.deepEqual(await config.json(), { apiBase: ORIGIN, publicSiteUrl: env.PUBLIC_SITE_URL });
   assert.deepEqual(mock.calls, []);
 });
+

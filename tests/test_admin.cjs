@@ -77,7 +77,15 @@ async function main(){
   // Queue evidence and callback errors cannot inject markup or redirect the portal.
   client=createClient();client.authorise();const hostile=client.logic.adminCandidateCard({...candidate,title:'<img src=x onerror=alert(1)>',source:'<script>',reason:'<script>',evidenceSnippet:'<iframe>',url:'javascript:alert(1)'},0);assert(!hostile.includes('<img'));assert(!hostile.includes('<script>'));assert(!hostile.includes('<iframe>'));assert(!hostile.includes('href="javascript:'));
   client.logic.state.history=[{title:'<img src=x>',action:'reject',actor:'<script>',commitUrl:'javascript:alert(1)'}];client.logic.adminRenderHistory();assert(!client.element('history-list').innerHTML.includes('<img'));assert(!client.element('history-list').innerHTML.includes('<script>'));assert(!client.element('history-list').innerHTML.includes('javascript:'));
-  client=createClient(portal,'?authError=not-authorized&view=queue#main');assert.match(client.logic.adminOAuthMessage(),/not authorised/);assert.equal(client.replaced[0],'/admin.html?view=queue#main');
+  client=createClient(portal,'?authError=not-authorized&view=queue#main');assert.match(client.logic.adminOAuthMessage(),/Contents read and write/);assert.equal(client.replaced[0],'/admin.html?view=queue#main');
+  // Callback diagnostics explain the next action using fixed text; arbitrary input is never echoed.
+  for(const [code,expected] of Object.entries({'client-credentials':/GITHUB_CLIENT_SECRET/,'callback-mismatch':/https:\/\/hau-opportunities-admin\.entomology-hau\.workers\.dev\/auth\/callback/,'verification-code':/fresh sign-in/,'state-mismatch':/browser request/,'code-missing':/did not return a sign-in code/,'email-unverified':/primary email/,'token-invalid':/GitHub App session/,'github-unavailable':/Wait a minute/,'github-rate-limited':/Wait a few minutes/})){
+    client=createClient(portal,'?authError='+code);assert.match(client.logic.adminOAuthMessage(),expected);assert.equal(client.replaced[0],'/admin.html');assert.equal(client.logic.state.user,null);
+  }
+  for(const hostileCode of ['__proto__','constructor','toString','unknown-secret-value']){
+    client=createClient(portal,'?authError='+hostileCode);assert.equal(client.logic.adminOAuthMessage(),'Sign-in could not be completed. Please try again.');
+  }
+  client=createClient(portal,'?authError=client-credentials');client.setFetch(url=>url==='admin-config.json'?response(200,{apiBase:portal}):response(401,{}));await client.logic.initAdmin();assert.match(client.element('admin-alert').textContent,/GITHUB_CLIENT_SECRET/);assert.equal(client.element('admin-alert').innerHTML,'');assert.equal(client.element('admin-workspace').hidden,true);
   client=createClient(portal,'?authError=%3Cscript%3E');assert(!client.logic.adminOAuthMessage().includes('<script>'));assert.equal(client.replaced[0],'/admin.html');
   assert(!script.includes('review-queue.json'));assert(!script.includes('access_token'));
   // The retained portal may be unconfigured or already have a public Worker origin.
@@ -87,3 +95,4 @@ async function main(){
   console.log('PASS: portal-only authenticated API access; safe setup/sign-in; CSRF and snapshot decisions; explicit approval confirmation; stale queue handling; queued publication; logout; safe rendering.');
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});
+

@@ -52,7 +52,22 @@ function adminOAuthMessage(){
   const url=new URL(location.href),code=url.searchParams.get('authError');
   if(!code)return '';
   url.searchParams.delete('authError');try{history.replaceState(null,'',url.pathname+url.search+url.hash);}catch{}
-  return {'sign-in-failed':'GitHub sign-in could not be completed. Please try again.','not-authorized':'This GitHub account is not authorised to manage the board.','expired':'The sign-in request expired. Please try again.','cancelled':'GitHub sign-in was cancelled.'}[code]||'Sign-in could not be completed. Please try again.';
+  const messages={
+    'sign-in-failed':'GitHub sign-in could not be completed. Please try again.',
+    'client-credentials':'GitHub rejected the app credentials. Update the Cloudflare runtime GITHUB_CLIENT_SECRET with the client secret belonging to this GitHub App, then deploy and sign in again.',
+    'callback-mismatch':'GitHub rejected the callback address. Set the GitHub App callback URL to https://hau-opportunities-admin.entomology-hau.workers.dev/auth/callback, then sign in again.',
+    'verification-code':'GitHub could not accept this sign-in code. Close other sign-in tabs and start a fresh sign-in from this page.',
+    'state-mismatch':'This sign-in no longer matches the browser request. Close other sign-in tabs and start a fresh sign-in from this page.',
+    'code-missing':'GitHub did not return a sign-in code. Start a fresh sign-in from this page.',
+    'email-unverified':'Verify the primary email address on your GitHub account, then sign in again.',
+    'token-invalid':'GitHub did not return a usable GitHub App session. Check that this is a GitHub App with user authorisation configured, then sign in again.',
+    'github-unavailable':'The admin service could not complete its request to GitHub. Wait a minute, then start a fresh sign-in.',
+    'github-rate-limited':'GitHub temporarily limited requests from the admin service. Wait a few minutes, then sign in again.',
+    'not-authorized':'This GitHub account or app cannot manage the board. Choose entomology-hau and check that the GitHub App is installed on career_opportunities with Contents read and write permission.',
+    'expired':'The sign-in request expired or its browser cookie is missing. Start a fresh sign-in from this page.',
+    'cancelled':'GitHub sign-in was cancelled.'
+  };
+  return Object.hasOwn(messages,code)?messages[code]:'Sign-in could not be completed. Please try again.';
 }
 function adminMatches(candidate,query){
   const text=[candidate.title,candidate.source,candidate.organisation,candidate.location,candidate.reason,candidate.evidenceSnippet,candidate.relevanceStrength,...adminList(candidate.subjects),...adminList(candidate.matchedTerms),...adminList(candidate.searchKeywords)].join(' ').toLowerCase();
@@ -145,3 +160,4 @@ async function initAdmin(){
   }catch(error){adminSignedOut(error.status===401?'Sign in with an authorised GitHub account to review pending adverts.':adminErrorMessage(error));}
 }
 initAdmin();
+

@@ -168,7 +168,12 @@ assert.equal(element('collection-summary').textContent,freshSummary.text);
 assert.match(element('source-cards').innerHTML,/Assisted search/);assert(!element('source-cards').innerHTML.includes('<img'));
 assert.match(element('check-status').textContent,/Editorial review dates remain separate/);
 context.logic.setHealth({...freshHealth,summary:'4 candidates awaiting admin review.'});context.logic.renderHealth(now);assert(!element('check-status').textContent.includes('awaiting'));assert(!element('check-status').textContent.includes('admin review'));
-const publicPage=fs.readFileSync(path.join(root,'site/index.html'),'utf8');assert(!publicPage.includes('href="admin.html"'));assert(!/owner review|wait for review/i.test(publicPage));assert(publicPage.includes('Curated for the Applied Ecology postgraduate community. Follow each advert for full details, eligibility and how to apply. Double check the adverts origin for up-to-date details.'));
+const publicPage=fs.readFileSync(path.join(root,'site/index.html'),'utf8');
+const footer=publicPage.match(/<footer\b[^>]*>[\s\S]*?<\/footer>/i)?.[0]||'';
+assert.equal((publicPage.match(/href=["']admin\.html["']/g)||[]).length,1,'One admin link should be present');
+assert.match(footer,/<a\b[^>]*href="admin\.html"[^>]*>Admin sign-in<\/a>/,'Admin sign-in belongs in the footer');
+assert(!/href=["']admin\.html["']/.test(publicPage.replace(footer,'')),'Admin sign-in should stay out of the primary navigation');
+assert(!/owner review|wait for review/i.test(publicPage));assert(publicPage.includes('Curated for the Applied Ecology postgraduate community. Follow each advert for full details, eligibility and how to apply. Double check the adverts origin for up-to-date details.'));
 const reviewDate=lincoln.lastChecked;
 context.logic.setHealth({...freshHealth,links:[{id:lincoln.id,status:'reachable',contentChanged:true}]});
 assert.match(renderCard(lincoln,now),/Source page changed.*confirm the current details/);assert.equal(lincoln.lastChecked,reviewDate);
@@ -185,3 +190,4 @@ clickHandler();assert.equal(rootElement.dataset.theme,'light');assert.equal(save
 context.localStorage={getItem:()=>{throw Error('Storage disabled')},setItem:()=>{throw Error('Storage disabled')}};
 context.logic.initTheme();clickHandler();assert.equal(rootElement.dataset.theme,'dark');
 console.log('PASS: filters/dates; automatic and reviewed records; field-specific caveats and explicit missing parts; supplied-field preservation; report URLs; pagination; publication counts; safe rendering; separate source/editorial dates; themes.');
+

@@ -5,6 +5,17 @@ const SESSION_COOKIE = '__Host-hau_admin';
 const OAUTH_COOKIE = '__Host-hau_oauth';
 const SESSION_SECONDS = 3600;
 const OAUTH_SECONDS = 600;
+// Only these public codes may leave the callback. Never forward provider messages.
+const AUTH_ERROR_CODES = new Set(['expired', 'state-mismatch', 'code-missing', 'cancelled',
+  'client-credentials', 'callback-mismatch', 'verification-code', 'email-unverified',
+  'token-invalid', 'github-unavailable', 'github-rate-limited', 'not-authorized', 'sign-in-failed']);
+const GITHUB_OAUTH_ERRORS = Object.freeze({
+  incorrect_client_credentials: 'client-credentials',
+  redirect_uri_mismatch: 'callback-mismatch',
+  bad_verification_code: 'verification-code',
+  unverified_user_email: 'email-unverified',
+  access_denied: 'cancelled',
+});
 const encoder = new TextEncoder();
 const decoder = new TextDecoder();
 const SECURITY_HEADERS = {
@@ -17,6 +28,24 @@ const SECURITY_HEADERS = {
 
 export class HttpError extends Error {
   constructor(status, message) { super(message); this.status = status; }
+}
+
+class OAuthError extends Error {
+  constructor(code) { super('GitHub sign-in failed.'); this.code = code; }
+}
+
+function providerErrorCode(error) {
+  return typeof error === 'string' && Object.hasOwn(GITHUB_OAUTH_ERRORS, error)
+    ? GITHUB_OAUTH_ERRORS[error] : 'github-unavailable';
+}
+
+function loginFailure(origin, code) {
+  const safeCode = AUTH_ERROR_CODES.has(code) ? code : 'sign-in-failed';
+  return redirect(`${origin}/admin.html?authError=${safeCode}`, clearCookies());
+}
+
+function isRateLimited(response) {
+  return response.status === 429 || (response.status === 403 && response.headers.get('X-RateLimit-Remaining') === '0');
 }
 
 function reply(value, status = 200, extra = {}) {
@@ -135,6 +164,7 @@ async function github(env, token, path, method = 'GET', body, fetcher = fetch) {
     }, ...(body ? { body: JSON.stringify(body) } : {}), redirect: 'error', signal: AbortSignal.timeout(15000),
   });
   if (!response.ok) {
+    if (isRateLimited(response)) throw new HttpError(429, 'GitHub is rate limiting requests. Please try again later.');
     if ([409, 422].includes(response.status) && method === 'PUT') {
       throw new HttpError(409, 'The queue changed. Reload it before deciding.');
     }
@@ -291,11 +321,13 @@ async function completeLogin(request, env, origin, fetcher) {
   const config = configuration(env, origin), url = new URL(request.url);
   let state;
   try { state = await unseal(readCookie(request, OAUTH_COOKIE), env, origin, 'oauth'); }
-  catch { return redirect(`${origin}/admin.html?authError=expired`, clearCookies()); }
-  if (url.searchParams.get('state') !== state.state) return redirect(`${origin}/admin.html?authError=sign-in-failed`, clearCookies());
-  if (url.searchParams.has('error')) return redirect(`${origin}/admin.html?authError=cancelled`, clearCookies());
+  catch { return loginFailure(origin, 'expired'); }
+  if (url.searchParams.get('state') !== state.state) return loginFailure(origin, 'state-mismatch');
+  if (url.searchParams.has('error')) return loginFailure(origin, providerErrorCode(url.searchParams.get('error')));
   const code = url.searchParams.get('code');
-  if (!code || code.length > 512) return redirect(`${origin}/admin.html?authError=sign-in-failed`, clearCookies());
+  if (!code) return loginFailure(origin, 'code-missing');
+  if (code.length > 512) return loginFailure(origin, 'verification-code');
+  let creatingSession = false;
   try {
     // Public metadata identifies the configured repository before requesting a narrowed token.
     const repo = await github(env, null, `/repos/${config.repository}`, 'GET', undefined, fetcher);
@@ -305,18 +337,30 @@ async function completeLogin(request, env, origin, fetcher) {
       body: JSON.stringify({ client_id: env.GITHUB_CLIENT_ID, client_secret: env.GITHUB_CLIENT_SECRET,
         code, code_verifier: state.verifier, redirect_uri: `${origin}/auth/callback`, repository_id: repo.id }),
     });
+    if (isRateLimited(result)) throw new OAuthError('github-rate-limited');
     const token = await result.json();
-    if (!result.ok || token.error || typeof token.access_token !== 'string' || !token.access_token.startsWith('ghu_') ||
-        token.token_type !== 'bearer') throw new HttpError(401, 'Sign in failed.');
-    const user = await authorizeToken(token.access_token, env, origin, fetcher);
+    if (token && typeof token === 'object' && Object.hasOwn(token, 'error')) {
+      throw new OAuthError(providerErrorCode(token.error));
+    }
+    if (!result.ok) throw new OAuthError('github-unavailable');
+    if (!token || typeof token !== 'object' || Array.isArray(token) || typeof token.access_token !== 'string' ||
+        !token.access_token.startsWith('ghu_') || token.token_type !== 'bearer' ||
+        (token.expires_in !== undefined && !Number.isFinite(token.expires_in))) {
+      throw new OAuthError('token-invalid');
+    }
     const seconds = Math.min(SESSION_SECONDS, Number.isFinite(token.expires_in) ? Math.max(0, Math.floor(token.expires_in)) : SESSION_SECONDS);
-    if (seconds < 60) throw new HttpError(401, 'Sign in failed.');
+    if (seconds < 60) throw new OAuthError('token-invalid');
+    const user = await authorizeToken(token.access_token, env, origin, fetcher);
+    creatingSession = true;
     const now = Date.now();
     const value = await seal({ kind: 'session', token: token.access_token, login: user.login,
       csrf: randomValue(), iat: now, exp: now + seconds * 1000 }, env, origin, 'session');
     return redirect(`${origin}/admin.html`, [cookie(SESSION_COOKIE, value, seconds), cookie(OAUTH_COOKIE, '', 0)]);
   } catch (error) {
-    return redirect(`${origin}/admin.html?authError=${error instanceof HttpError && error.status === 403 ? 'not-authorized' : 'sign-in-failed'}`, clearCookies());
+    const code = error instanceof OAuthError ? error.code : error instanceof HttpError && error.status === 429
+      ? 'github-rate-limited' : error instanceof HttpError && error.status === 403 ? 'not-authorized'
+      : creatingSession ? 'sign-in-failed' : 'github-unavailable';
+    return loginFailure(origin, code);
   }
 }
 
@@ -381,3 +425,4 @@ export async function handle(request, env, fetcher = fetch) {
 }
 
 export default { fetch: (request, env) => handle(request, env) };
+
