@@ -105,6 +105,20 @@
       "currentHash": "57e1077beecbb193ac7112ab32588da0e138d34e816372eeb673fee39ff60ca5"
     },
     {
+      "taskKey": "kcl-fly-facility-technician-2026:changed",
+      "id": "kcl-fly-facility-technician-2026",
+      "kind": "changed",
+      "title": "Technician (Fly Facility + technical support across CDN)",
+      "url": "https://www.kcl.ac.uk/jobs/159585-technician-fly-facility-technical-support-across-cdn",
+      "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
+      "reviewStatus": "pending",
+      "detectedAt": "2026-10-08T10:09:10.688112+00:00",
+      "lastSeen": "2026-10-08T10:09:10.688112+00:00",
+      "lastChecked": "2026-09-29",
+      "previousHash": "fadf4145242003cdca93223e950be5129e10ab31aa9ea1cf759a88dfa6140092",
+      "currentHash": "fb619ba3dd1cec93d9a0eb9386243d6deea619aa2585d0550b2191d5d8ba3434"
+    },
+    {
       "taskKey": "pepsico-agricultural-science-technician-2026:unreachable",
       "id": "pepsico-agricultural-science-technician-2026",
       "kind": "unreachable",
