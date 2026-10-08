@@ -1,14 +1,14 @@
-# Admin login setup — paused
+# Admin login setup
 
-**Setup is paused as of 1 October 2026. No action in this guide is required for the current board.** Direct and related-field source matches publish automatically, with per-card relevance and missing-information caveats. The public Admin link is removed, and GitHub App or Cloudflare setup is not a publication requirement. Use [GitHub_Update_Instructions.md](GitHub_Update_Instructions.md) to upload `Opportunities_Simplified_Update.zip`.
+**Updated 8 October 2026.** The optional **Admin sign-in** link is in the public board's footer. Direct and related-field source matches continue to publish automatically, with per-card relevance and missing-information caveats. Admin sign-in is for maintainer decisions; it is not a requirement for automatic publication.
 
-The existing admin interface and backend code are retained for possible future use. Your previously created Worker and GitHub App are left in place; this update does not change those accounts. There is no need to finish installation, add secrets or run an admin login test now. Reports and maintainer-controlled removals continue through GitHub Issues.
+The Worker and GitHub App are already configured for this repository, and commits to `main` deploy through the existing Cloudflare connection. Use this guide to maintain or recreate that setup. Reports and maintainer-controlled removals also remain available through GitHub Issues.
 
-## Archived setup reference
+## Current configuration
 
-The instructions below describe the paused approval-mode implementation, not the active automatic-publication workflow. If that mode is resumed, first review the publication configuration, restore the intended admin navigation and test the whole flow. Completing credentials alone does not switch the board back to approval mode.
+Enabling sign-in does not switch the board into approval mode. Test sign-in and any intended admin decision separately from automatic publication.
 
-Recorded public configuration for `entomology-hau/career_opportunities`: Worker origin `https://hau-opportunities-admin.entomology-hau.workers.dev` and GitHub App Client ID `Iv23liJPuPSTZcVYxYfu`. Both are filled in the retained configuration files. Installation, runtime secrets and live sign-in/write testing were not confirmed before setup was paused.
+Public configuration for `entomology-hau/career_opportunities`: repository ID `1397618839`, Worker origin `https://hau-opportunities-admin.entomology-hau.workers.dev` and GitHub App Client ID `Iv23liJPuPSTZcVYxYfu`. These values are committed in the configuration files. The repository ID is public metadata, not the GitHub App ID or a secret.
 
 In the retained implementation, the public board stays on GitHub Pages and the separate admin interface uses a small Cloudflare Worker for GitHub sign-in and queue decisions. The Worker hosts that interface and its API together. Changes are committed to `data/review-queue.json`; the existing Pages workflow can apply saved decisions. The queue and audit are stored in a public repository, so sign-in restricts actions rather than making that metadata private.
 
@@ -16,7 +16,7 @@ You can complete the setup in your browser without installing software or having
 
 ## 1. Upload the project to GitHub
 
-For a future resumption, open [entomology-hau/career_opportunities](https://github.com/entomology-hau/career_opportunities) while signed in to the account that can update it. Confirm that the retained admin implementation is present. The current simplified-update ZIP intentionally contains only the automatic-publication changes, not a new admin deployment package.
+Open [entomology-hau/career_opportunities](https://github.com/entomology-hau/career_opportunities) while signed in to the account that can update it. The admin implementation is already present. If recreating the project, use its current repository files rather than an older update ZIP.
 
 Upload the contents of the extracted project folder, preserving its folders. Do not upload the ZIP itself or create an extra enclosing project folder. In particular, the repository must contain `admin-backend/wrangler.jsonc`, `admin-backend/worker.js`, and the neighbouring `site` folder. Keep the supplied scripts, data and publishing workflow files together too.
 
@@ -29,10 +29,13 @@ In GitHub, open `admin-backend/wrangler.jsonc`. Keep its Worker `name` as `hau-o
 | Variable | Value |
 | --- | --- |
 | `REPOSITORY` | `entomology-hau/career_opportunities` |
+| `REPOSITORY_ID` | `1397618839`, the verified numeric ID of this repository |
 | `BRANCH` | `main` |
 | `ALLOWED_GITHUB_LOGINS` | The exact GitHub username that will sign in; initially `entomology-hau` |
 | `PUBLIC_SITE_URL` | `https://entomology-hau.github.io/career_opportunities/` |
 | `GITHUB_CLIENT_ID` | `Iv23liJPuPSTZcVYxYfu`, already filled in the supplied file |
+
+`REPOSITORY_ID` is required. Keeping it in configuration removes the anonymous repository lookup that can fail when GitHub's unauthenticated rate limit is exhausted. The token request asks for access restricted to this ID, and the authenticated repository response must match both the ID and name and grant write permission. If deploying for a different repository, replace both repository settings with verified values; do not reuse this ID.
 
 If `entomology-hau` is an organisation, it cannot sign in: use your individual GitHub username, which must have write access to this repository. For multiple administrators, use a comma-separated list of their exact usernames. An allowlisted username alone does not grant repository access.
 
@@ -58,7 +61,7 @@ In the [Cloudflare dashboard](https://dash.cloudflare.com/):
 
 The Worker name must match `name` in `admin-backend/wrangler.jsonc`. If prompted, choose your Cloudflare account's `workers.dev` subdomain. Copy the deployed HTTPS origin, such as `https://hau-opportunities-admin.your-subdomain.workers.dev`, without a trailing slash or `/admin.html`. Use this exact origin below.
 
-The initial deployment should serve the admin interface, but **setup incomplete / HTTP 503** on sign-in or the API is expected until the credentials are configured. This walkthrough has not been tested against your Cloudflare account; check that the first build succeeds before continuing.
+For a new setup, the initial deployment should serve the admin interface, but **setup incomplete / HTTP 503** on sign-in or the API is expected until the required variables and runtime secrets are configured. Check that the first build succeeds before continuing.
 
 ## 3. Register a GitHub App
 
@@ -152,7 +155,8 @@ These match paths in repository push events, starting with the repository folder
 | --- | --- |
 | Cloudflare cannot find the Worker or assets | Root directory is `admin-backend`; the repository contains its `wrangler.jsonc` and the neighbouring `site` folder, without an extra enclosing folder. |
 | Cloudflare rejects the Worker name | Both the dashboard name and `name` in `wrangler.jsonc` are `hau-opportunities-admin`. |
-| Admin setup is incomplete, or API returns 503 | Initial setup: expected until credentials are added. Afterwards: Client ID is committed in the config and successfully deployed; both secrets are runtime Secrets and their change was deployed. |
+| Admin setup is incomplete, or API returns 503 | Confirm `REPOSITORY_ID` and Client ID are committed in the config and successfully deployed; both secrets must be runtime Secrets and their change deployed. |
+| Rate-limited anonymous repository lookup | This anonymous lookup was removed on 8 October 2026. Confirm the latest Worker deployment succeeded, then start a fresh sign-in. |
 | GitHub rejects the callback | The registered callback is the exact active Worker origin plus `/auth/callback`. |
 | Access denied | Correct GitHub account selected, its username allowlisted, app installed on this one repository, Contents read/write granted, and the account has repository write access. |
 | Session expired | Sign in again. The portal session lasts one hour; it does not retain refresh tokens. |
@@ -199,3 +203,4 @@ Deploying from a local copy uses that copy's configuration; keep its public sett
 - [Cloudflare deployment with Wrangler](https://developers.cloudflare.com/workers/get-started/guide/)
 - [Cloudflare Worker secrets](https://developers.cloudflare.com/workers/configuration/secrets/)
 - [Worker routing before static assets](https://developers.cloudflare.com/workers/static-assets/routing/worker-script/)
+

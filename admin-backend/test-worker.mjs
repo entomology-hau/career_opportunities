@@ -5,6 +5,7 @@ import { approvalAllowed, canonicalURL, fingerprint, handle, HttpError, saveDeci
 // Every request is injected: these tests must never contact GitHub or Cloudflare.
 const ORIGIN = 'https://admin.example.test';
 const REPOSITORY = 'entomology-hau/career_opportunities';
+const REPOSITORY_ID = 1397618839;
 const REPO_URL = `https://api.github.com/repos/${REPOSITORY}`;
 const QUEUE_URL = `${REPO_URL}/contents/data/review-queue.json`;
 const SHA = 'a'.repeat(40);
@@ -20,7 +21,7 @@ const day = (now = Date.now()) => new Intl.DateTimeFormat('en-CA', {
 
 function environment(overrides = {}) {
   return {
-    REPOSITORY, BRANCH: 'main', ALLOWED_GITHUB_LOGINS: 'owner, Second-Admin',
+    REPOSITORY, REPOSITORY_ID: String(REPOSITORY_ID), BRANCH: 'main', ALLOWED_GITHUB_LOGINS: 'owner, Second-Admin',
     GITHUB_CLIENT_ID: 'test-client-id', GITHUB_CLIENT_SECRET: 'client-secret-do-not-expose',
     SESSION_SECRET: 'session-secret-at-least-32-characters-do-not-expose',
     PUBLIC_SITE_URL: 'https://entomology-hau.github.io/career_opportunities/',
@@ -56,14 +57,15 @@ function githubMock(t, options = {}) {
     calls.push({ url: request.url, method: request.method, headers: request.headers, body, redirect: init.redirect });
     const authenticated = request.headers.has('Authorization');
     if (authenticated) assert.equal(request.headers.get('Authorization'), `Bearer ${TOKEN}`);
+    if (request.url.startsWith('https://api.github.com/')) assert.ok(authenticated, 'No anonymous GitHub API lookup');
     if (options.respond) {
       const response = await options.respond(request);
       if (response !== undefined) return response;
     }
     if (request.url === REPO_URL && request.method === 'GET') {
-      return json(authenticated ? {
+      return json({ id: Object.hasOwn(options, 'repoId') ? options.repoId : REPOSITORY_ID,
         full_name: options.fullName ?? REPOSITORY, permissions: { push: options.push ?? true },
-      } : { id: 123456, full_name: REPOSITORY });
+      });
     }
     if (request.url === 'https://github.com/login/oauth/access_token' && request.method === 'POST') {
       return json(options.tokenResponse ?? { access_token: TOKEN, token_type: 'bearer', expires_in: 7200 });
@@ -155,7 +157,7 @@ function isConflict(error) { return error instanceof HttpError && error.status =
 
 test('sign-in fails closed when configuration is absent or the origin is not HTTPS', async t => {
   const mock = githubMock(t);
-  for (const field of ['REPOSITORY', 'BRANCH', 'ALLOWED_GITHUB_LOGINS', 'GITHUB_CLIENT_ID', 'GITHUB_CLIENT_SECRET', 'SESSION_SECRET']) {
+  for (const field of ['REPOSITORY', 'REPOSITORY_ID', 'BRANCH', 'ALLOWED_GITHUB_LOGINS', 'GITHUB_CLIENT_ID', 'GITHUB_CLIENT_SECRET', 'SESSION_SECRET']) {
     const response = await handle(new Request(`${ORIGIN}/auth/login`), environment({ [field]: '' }), mock.fetcher);
     assert.equal(response.status, 503, field);
     assert.equal(response.headers.get('Location'), null);
@@ -163,6 +165,20 @@ test('sign-in fails closed when configuration is absent or the origin is not HTT
   }
   const response = await handle(new Request('http://admin.example.test/auth/login'), environment(), mock.fetcher);
   assert.equal(response.status, 503);
+  assert.deepEqual(mock.calls, []);
+});
+
+test('repository ID configuration accepts only positive safe integer numbers or decimal strings', async t => {
+  const mock = githubMock(t);
+  for (const repositoryId of [undefined, null, 0, -1, 1.5, NaN, true, {}, '0', '01', '1e6', ' 123', '123 ', '1.5', Number.MAX_SAFE_INTEGER + 1]) {
+    const response = await handle(new Request(`${ORIGIN}/auth/login`), environment({ REPOSITORY_ID: repositoryId }), mock.fetcher);
+    assert.equal(response.status, 503, String(repositoryId));
+    assert.equal(response.headers.get('Location'), null);
+  }
+  for (const repositoryId of [REPOSITORY_ID, String(REPOSITORY_ID)]) {
+    const response = await handle(new Request(`${ORIGIN}/auth/login`), environment({ REPOSITORY_ID: repositoryId }), mock.fetcher);
+    assert.equal(response.status, 303);
+  }
   assert.deepEqual(mock.calls, []);
 });
 
@@ -210,14 +226,14 @@ test('OAuth callback verifies state and sends PKCE, repository restriction and t
   assert.ok(session.csrf.length >= 32);
   assert.equal(session.exp - session.iat, 3600000);
   assert.deepEqual(mock.calls.map(x => [x.method, x.url]), [
-    ['GET', REPO_URL], ['POST', 'https://github.com/login/oauth/access_token'],
+    ['POST', 'https://github.com/login/oauth/access_token'],
     ['GET', 'https://api.github.com/user'], ['GET', REPO_URL],
   ]);
-  assert.equal(mock.calls[0].headers.has('Authorization'), false);
-  const exchange = mock.calls[1];
+  assert.ok(mock.calls.filter(x => x.url.startsWith('https://api.github.com/')).every(x => x.headers.has('Authorization')));
+  const exchange = mock.calls[0];
   assert.ok(mock.calls.every(x => x.redirect === 'manual'), 'Every GitHub call refuses automatic redirects');
   assert.deepEqual(exchange.body, { client_id: env.GITHUB_CLIENT_ID, client_secret: env.GITHUB_CLIENT_SECRET,
-    code: 'github-code', code_verifier: login.payload.verifier, redirect_uri: `${ORIGIN}/auth/callback`, repository_id: 123456 });
+    code: 'github-code', code_verifier: login.payload.verifier, redirect_uri: `${ORIGIN}/auth/callback`, repository_id: String(REPOSITORY_ID) });
   const api = await handle(new Request(`${ORIGIN}/api/session`, { headers: { Cookie: `${SESSION_COOKIE}=${encrypted}` } }), env, mock.fetcher);
   assert.equal(api.status, 200);
   const data = await api.json();
@@ -290,22 +306,22 @@ test('known token-exchange failures use fixed public codes and never expose prov
     assertAuthFailure(response, expected, 'token-response-200');
     assertCookiesCleared(response);
     assert.equal(await response.text(), '');
-    assert.equal(mock.calls.length, 2, 'One metadata lookup and one exchange; no retries or authenticated API calls');
+    assert.equal(mock.calls.length, 1, 'One exchange; no anonymous lookup, retries or authenticated API calls');
     const unauthenticated = await handle(new Request(`${ORIGIN}/api/session`, {
       headers: { Cookie: `${SESSION_COOKIE}=${cookieValue(response, SESSION_COOKIE)}` },
     }), env, mock.fetcher);
     assert.equal(unauthenticated.status, 401, 'A failed callback cannot create a valid session');
-    assert.equal(mock.calls.length, 2);
+    assert.equal(mock.calls.length, 1);
   });
 });
 
 test('GitHub network, HTTP and JSON failures remain fail-closed and distinguish explicit rate limits', async t => {
   const exchangeURL = 'https://github.com/login/oauth/access_token';
   const cases = [
-    { name: 'network failure before exchange', url: REPO_URL, response: () => { throw new Error('sensitive upstream error'); }, expected: 'github-unavailable', detail: 'repository-request' },
-    { name: 'repository HTTP 400', url: REPO_URL, response: () => json({ message: 'do not expose' }, 400), expected: 'github-unavailable', detail: 'repository-request-400' },
-    { name: 'repository non-JSON response', url: REPO_URL, response: () => new Response('<html>do not expose</html>'), expected: 'github-unavailable', detail: 'repository-response-200' },
-    { name: 'repository ID missing', url: REPO_URL, response: () => json({ authDetail: 'attacker-controlled&secret=abc' }), expected: 'github-unavailable', detail: 'repository-response' },
+    { name: 'repository network failure', url: REPO_URL, response: () => { throw new Error('sensitive upstream error'); }, expected: 'github-unavailable', detail: 'authorization-request' },
+    { name: 'repository HTTP 400', url: REPO_URL, response: () => json({ message: 'do not expose' }, 400), expected: 'github-unavailable', detail: 'authorization-request-400' },
+    { name: 'repository non-JSON response', url: REPO_URL, response: () => new Response('<html>do not expose</html>'), expected: 'github-unavailable', detail: 'authorization-request-200' },
+    { name: 'repository ID missing', url: REPO_URL, response: () => json({ authDetail: 'attacker-controlled&secret=abc' }), expected: 'not-authorized', detail: 'authorization-request' },
     { name: 'token exchange network failure', url: exchangeURL, response: () => { throw new Error('sensitive token exchange error'); }, expected: 'github-unavailable', detail: 'token-request' },
     { name: 'HTTP error', url: exchangeURL, response: () => json({ message: 'sensitive upstream message' }, 503), expected: 'github-unavailable', detail: 'token-response-503' },
     { name: 'non-JSON exchange response', url: exchangeURL, response: () => new Response('<html>upstream secret</html>'), expected: 'github-unavailable', detail: 'token-response-200' },
@@ -314,7 +330,7 @@ test('GitHub network, HTTP and JSON failures remain fail-closed and distinguish 
     { name: 'API non-JSON response', url: 'https://api.github.com/user', response: () => new Response('non-JSON'), expected: 'github-unavailable', detail: 'authorization-request-200' },
     { name: 'API HTTP error', url: 'https://api.github.com/user', response: () => json({}, 500), expected: 'github-unavailable', detail: 'authorization-request-500' },
     { name: 'API authorization denied', url: 'https://api.github.com/user', response: () => json({}, 403), expected: 'not-authorized', detail: 'authorization-request-403' },
-    { name: 'API request limit', url: REPO_URL, response: () => new Response(null, { status: 403, headers: { 'X-RateLimit-Remaining': '0' } }), expected: 'github-rate-limited', detail: 'repository-request-403' },
+    { name: 'API request limit', url: REPO_URL, response: () => new Response(null, { status: 403, headers: { 'X-RateLimit-Remaining': '0' } }), expected: 'github-rate-limited', detail: 'authorization-request-403' },
     { name: 'API HTTP 429', url: 'https://api.github.com/user', response: () => json({}, 429), expected: 'github-rate-limited', detail: 'authorization-request-429' },
     { name: 'exchange HTTP 429', url: exchangeURL, response: () => new Response(null, { status: 429 }), expected: 'github-rate-limited', detail: 'token-response-429' },
   ];
@@ -333,9 +349,9 @@ test('GitHub network, HTTP and JSON failures remain fail-closed and distinguish 
 
 test('redirect responses are refused without following the target, reading token bodies or creating a session', async t => {
   for (const [url, detail, callCount] of [
-    [REPO_URL, 'repository-request-302', 1],
-    ['https://github.com/login/oauth/access_token', 'token-response-302', 2],
-    ['https://api.github.com/user', 'authorization-request-302', 3],
+    [REPO_URL, 'authorization-request-302', 3],
+    ['https://github.com/login/oauth/access_token', 'token-response-302', 1],
+    ['https://api.github.com/user', 'authorization-request-302', 2],
   ]) await t.test(detail, async sub => {
     const env = environment();
     let bodyRead = false;
@@ -357,8 +373,8 @@ test('redirect responses are refused without following the target, reading token
   });
 });
 
-test('allowlist and repository write permission are enforced during callback and every API request', async t => {
-  for (const options of [{ login: 'intruder' }, { push: false }, { fullName: 'other/repo' }]) {
+test('allowlist, repository ID, full name and write permission are enforced during callback and every API request', async t => {
+  for (const options of [{ login: 'intruder' }, { push: false }, { fullName: 'other/repo' }, { repoId: REPOSITORY_ID + 1 }, { repoId: null }, { repoId: String(REPOSITORY_ID) }]) {
     await t.test(JSON.stringify(options), async sub => {
       const env = environment(), mock = githubMock(sub, options);
       const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));

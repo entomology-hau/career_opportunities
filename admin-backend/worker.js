@@ -118,7 +118,10 @@ export async function fingerprint(candidate) {
 }
 
 function configuration(env, origin) {
+  const repositoryId = Number(env.REPOSITORY_ID);
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(env.REPOSITORY || '') ||
+      !['string', 'number'].includes(typeof env.REPOSITORY_ID) || !/^[1-9]\d*$/.test(String(env.REPOSITORY_ID)) ||
+      !Number.isSafeInteger(repositoryId) || repositoryId <= 0 ||
       !/^[A-Za-z0-9._/-]+$/.test(env.BRANCH || '') || !env.ALLOWED_GITHUB_LOGINS ||
       !env.GITHUB_CLIENT_ID || !env.GITHUB_CLIENT_SECRET ||
       typeof env.SESSION_SECRET !== 'string' || env.SESSION_SECRET.length < 32 ||
@@ -129,7 +132,7 @@ function configuration(env, origin) {
   if (!admins.length || admins.some(x => !/^[a-z0-9-]+$/.test(x))) {
     throw new HttpError(503, 'Sign-in is not configured yet.');
   }
-  return { admins, repository: env.REPOSITORY, branch: env.BRANCH };
+  return { admins, repository: env.REPOSITORY, repositoryId, branch: env.BRANCH };
 }
 
 async function encryptionKey(env) {
@@ -200,7 +203,8 @@ async function authorizeToken(token, env, origin, fetcher) {
     throw new HttpError(403, 'This GitHub account is not an allowed admin.');
   }
   const repo = await github(env, token, `/repos/${config.repository}`, 'GET', undefined, fetcher);
-  if (String(repo.full_name || '').toLowerCase() !== config.repository.toLowerCase() || repo.permissions?.push !== true) {
+  if (repo.id !== config.repositoryId || String(repo.full_name || '').toLowerCase() !== config.repository.toLowerCase() ||
+      repo.permissions?.push !== true) {
     throw new HttpError(403, 'Repository write access is required.');
   }
   return { login: user.login, repository: config.repository };
@@ -343,17 +347,13 @@ async function completeLogin(request, env, origin, fetcher) {
   const code = url.searchParams.get('code');
   if (!code) return loginFailure(origin, 'code-missing');
   if (code.length > 512) return loginFailure(origin, 'verification-code');
-  let phase = 'repository-request';
+  let phase = 'token-request';
   try {
-    // Public metadata identifies the configured repository before requesting a narrowed token.
-    const repo = await github(env, null, `/repos/${config.repository}`, 'GET', undefined, fetcher);
-    phase = 'repository-response';
-    if (!repo || !Number.isSafeInteger(repo.id)) throw new HttpError(502, 'Repository metadata is unavailable.');
-    phase = 'token-request';
+    // The fixed repository ID narrows the token without an anonymous GitHub API lookup.
     const result = await fetcher('https://github.com/login/oauth/access_token', {
       method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/json' }, redirect: 'manual', signal: AbortSignal.timeout(15000),
       body: JSON.stringify({ client_id: env.GITHUB_CLIENT_ID, client_secret: env.GITHUB_CLIENT_SECRET,
-        code, code_verifier: state.verifier, redirect_uri: `${origin}/auth/callback`, repository_id: repo.id }),
+        code, code_verifier: state.verifier, redirect_uri: `${origin}/auth/callback`, repository_id: String(config.repositoryId) }),
     });
     phase = 'token-response';
     // Never follow redirects carrying credentials or accept their response bodies.
@@ -384,7 +384,6 @@ async function completeLogin(request, env, origin, fetcher) {
     const code = error instanceof OAuthError ? error.code : error instanceof HttpError && error.status === 429
       ? 'github-rate-limited' : error instanceof HttpError && error.status === 403 ? 'not-authorized'
       : phase === 'session-create' ? 'sign-in-failed' : 'github-unavailable';
-    if (phase === 'repository-request' && error instanceof HttpError && error.responseMalformed) phase = 'repository-response';
     const status = error instanceof HttpError || error instanceof OAuthError ? safeHTTPStatus(error.upstreamStatus) : undefined;
     return loginFailure(origin, code, `${phase}${status === undefined ? '' : `-${status}`}`);
   }
