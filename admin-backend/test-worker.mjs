@@ -215,7 +215,7 @@ test('OAuth callback verifies state and sends PKCE, repository restriction and t
   ]);
   assert.equal(mock.calls[0].headers.has('Authorization'), false);
   const exchange = mock.calls[1];
-  assert.equal(exchange.redirect, 'error');
+  assert.ok(mock.calls.every(x => x.redirect === 'manual'), 'Every GitHub call refuses automatic redirects');
   assert.deepEqual(exchange.body, { client_id: env.GITHUB_CLIENT_ID, client_secret: env.GITHUB_CLIENT_SECRET,
     code: 'github-code', code_verifier: login.payload.verifier, redirect_uri: `${ORIGIN}/auth/callback`, repository_id: 123456 });
   const api = await handle(new Request(`${ORIGIN}/api/session`, { headers: { Cookie: `${SESSION_COOKIE}=${encrypted}` } }), env, mock.fetcher);
@@ -328,6 +328,32 @@ test('GitHub network, HTTP and JSON failures remain fail-closed and distinguish 
     assert.equal(await response.text(), '');
     assert.ok(mock.calls.filter(x => x.url === exchangeURL).length <= 1, 'Token exchange is never retried');
     assert.equal(mock.calls.filter(x => x.url.startsWith(QUEUE_URL)).length, 0);
+  });
+});
+
+test('redirect responses are refused without following the target, reading token bodies or creating a session', async t => {
+  for (const [url, detail, callCount] of [
+    [REPO_URL, 'repository-request-302', 1],
+    ['https://github.com/login/oauth/access_token', 'token-response-302', 2],
+    ['https://api.github.com/user', 'authorization-request-302', 3],
+  ]) await t.test(detail, async sub => {
+    const env = environment();
+    let bodyRead = false;
+    const mock = githubMock(sub, { respond: request => {
+      if (request.url !== url) return undefined;
+      const response = new Response(JSON.stringify({ access_token: TOKEN, token_type: 'bearer', expires_in: 7200 }), {
+        status: 302, headers: { Location: 'https://attacker.example/collect' },
+      });
+      response.json = async () => { bodyRead = true; throw new Error('Redirect body must not be trusted'); };
+      return response;
+    } });
+    const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));
+    assertAuthFailure(response, 'github-unavailable', detail);
+    assertCookiesCleared(response);
+    assert.equal(bodyRead, false);
+    assert.equal(mock.calls.length, callCount);
+    assert.ok(mock.calls.every(x => x.redirect === 'manual'));
+    assert.ok(mock.calls.every(x => new URL(x.url).hostname !== 'attacker.example'));
   });
 });
 

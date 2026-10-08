@@ -166,12 +166,13 @@ export async function unseal(value, env, origin, purpose, now = Date.now()) {
 }
 
 async function github(env, token, path, method = 'GET', body, fetcher = fetch) {
+  // Workers supports manual redirects; every non-success response is rejected below.
   const response = await fetcher(`https://api.github.com${path}`, {
     method, headers: {
       Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2026-03-10',
       'User-Agent': 'hau-opportunities-admin', ...(token ? { Authorization: `Bearer ${token}` } : {}),
       ...(body ? { 'Content-Type': 'application/json' } : {}),
-    }, ...(body ? { body: JSON.stringify(body) } : {}), redirect: 'error', signal: AbortSignal.timeout(15000),
+    }, ...(body ? { body: JSON.stringify(body) } : {}), redirect: 'manual', signal: AbortSignal.timeout(15000),
   });
   if (!response.ok) {
     if (isRateLimited(response)) throw new HttpError(429, 'GitHub is rate limiting requests. Please try again later.', response.status);
@@ -350,11 +351,13 @@ async function completeLogin(request, env, origin, fetcher) {
     if (!repo || !Number.isSafeInteger(repo.id)) throw new HttpError(502, 'Repository metadata is unavailable.');
     phase = 'token-request';
     const result = await fetcher('https://github.com/login/oauth/access_token', {
-      method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/json' }, redirect: 'error', signal: AbortSignal.timeout(15000),
+      method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/json' }, redirect: 'manual', signal: AbortSignal.timeout(15000),
       body: JSON.stringify({ client_id: env.GITHUB_CLIENT_ID, client_secret: env.GITHUB_CLIENT_SECRET,
         code, code_verifier: state.verifier, redirect_uri: `${origin}/auth/callback`, repository_id: repo.id }),
     });
     phase = 'token-response';
+    // Never follow redirects carrying credentials or accept their response bodies.
+    if (result.status >= 300 && result.status < 400) throw new OAuthError('github-unavailable', result.status);
     if (isRateLimited(result)) throw new OAuthError('github-rate-limited', result.status);
     let token;
     try { token = await result.json(); }
