@@ -113,10 +113,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-08T10:09:10.688112+00:00",
-      "lastSeen": "2026-10-08T10:09:10.688112+00:00",
+      "lastSeen": "2026-10-08T12:04:48.571772+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "fadf4145242003cdca93223e950be5129e10ab31aa9ea1cf759a88dfa6140092",
-      "currentHash": "fb619ba3dd1cec93d9a0eb9386243d6deea619aa2585d0550b2191d5d8ba3434"
+      "previousHash": "fb619ba3dd1cec93d9a0eb9386243d6deea619aa2585d0550b2191d5d8ba3434",
+      "currentHash": "0eaeed78cea0cab62016bcfc1322d50eadf4d295d0151580608b3d99d0fee98b"
     },
     {
       "taskKey": "pepsico-agricultural-science-technician-2026:unreachable",

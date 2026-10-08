@@ -4362,6 +4362,92 @@
       "deadlineAt": null,
       "deadlineLabel": "Closing date not supplied",
       "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-c657865e0bcd911d",
+      "title": "Land Advisor - Wilder Wealden (Full-time)",
+      "url": "https://environmentjob.co.uk/jobs/111949-land-advisor-wilder-wealden-full-time",
+      "organisation": "Sussex Wildlife Trust",
+      "location": "Brighton, East Sussex",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£29,095 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Nature Recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Nature Recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111949-land-advisor-wilder-wealden-full-time"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-50b6ed1f92b77d0c",
+      "title": "Land Advisor - Wilder Wealden (Part-time)",
+      "url": "https://environmentjob.co.uk/jobs/111950-land-advisor-wilder-wealden-part-time",
+      "organisation": "Sussex Wildlife Trust",
+      "location": "Brighton, East Sussex",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£23,267 (£29,095 pro rata)",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Nature Recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Nature Recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/111950-land-advisor-wilder-wealden-part-time"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
     }
   ],
   "publicationMode": "automatic"
