@@ -107,6 +107,18 @@ function assertCookiesCleared(response) {
   }
 }
 
+function assertAuthFailure(response, code, detail) {
+  const location = new URL(response.headers.get('Location'));
+  assert.equal(location.origin + location.pathname, `${ORIGIN}/admin.html`);
+  assert.equal(location.searchParams.get('authError'), code);
+  assert.deepEqual([...location.searchParams.keys()].filter(x => x !== 'authDetail'), ['authError']);
+  if (location.searchParams.has('authDetail')) {
+    assert.match(location.searchParams.get('authDetail'),
+      /^(repository-request|repository-response|token-request|token-response|authorization-request|session-create)(-[1-5]\d{2})?$/);
+  }
+  if (detail !== undefined) assert.equal(location.searchParams.get('authDetail'), detail);
+}
+
 async function sessionCookie(env = environment(), overrides = {}) {
   const now = Date.now();
   const payload = { kind: 'session', token: TOKEN, login: 'owner', csrf: CSRF, iat: now, exp: now + 3600000, ...overrides };
@@ -235,7 +247,7 @@ test('OAuth accepts only a usable GitHub App user bearer token', async t => {
   ]) await t.test(JSON.stringify(tokenResponse), async sub => {
     const env = environment(), mock = githubMock(sub, { tokenResponse });
     const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));
-    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=token-invalid`);
+    assertAuthFailure(response, 'token-invalid', 'token-response-200');
     assertCookiesCleared(response);
     assert.equal(mock.calls.filter(x => x.headers.has('Authorization')).length, 0,
       'Invalid tokens are never used for authenticated requests');
@@ -248,10 +260,10 @@ test('missing code and provider cancellation are specific and stop before GitHub
     [{ code: '' }, 'code-missing'],
     [{ code: 'x'.repeat(513) }, 'verification-code'],
     [{ error: 'access_denied', error_description: 'Do not expose this description' }, 'cancelled'],
-    [{ error: 'unexpected', error_description: '<script>unsafe()</script>' }, 'github-unavailable'],
+    [{ error: 'unexpected', error_description: '<script>unsafe()</script>', authDetail: 'token-request-999&secret=do-not-expose' }, 'github-unavailable'],
   ]) {
     const response = await callback(env, mock.fetcher, login, params);
-    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=${expected}`);
+    assertAuthFailure(response, expected, null);
     assertCookiesCleared(response);
     assert.equal(await response.text(), '');
   }
@@ -271,10 +283,11 @@ test('known token-exchange failures use fixed public codes and never expose prov
     const env = environment(), mock = githubMock(sub, { tokenResponse: {
       access_token: TOKEN, token_type: 'bearer', error: providerError,
       error_description: `${env.GITHUB_CLIENT_SECRET} ${env.SESSION_SECRET} raw-github-code`,
+      authDetail: 'session-create-999&secret=do-not-expose', upstreamStatus: '200&secret=do-not-expose',
     } });
     const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));
     assert.equal(response.status, 303);
-    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=${expected}`);
+    assertAuthFailure(response, expected, 'token-response-200');
     assertCookiesCleared(response);
     assert.equal(await response.text(), '');
     assert.equal(mock.calls.length, 2, 'One metadata lookup and one exchange; no retries or authenticated API calls');
@@ -289,25 +302,28 @@ test('known token-exchange failures use fixed public codes and never expose prov
 test('GitHub network, HTTP and JSON failures remain fail-closed and distinguish explicit rate limits', async t => {
   const exchangeURL = 'https://github.com/login/oauth/access_token';
   const cases = [
-    { name: 'network failure before exchange', url: REPO_URL, response: () => { throw new Error('sensitive upstream error'); }, expected: 'github-unavailable' },
-    { name: 'token exchange network failure', url: exchangeURL, response: () => { throw new Error('sensitive token exchange error'); }, expected: 'github-unavailable' },
-    { name: 'HTTP error', url: exchangeURL, response: () => json({ message: 'sensitive upstream message' }, 503), expected: 'github-unavailable' },
-    { name: 'non-JSON exchange response', url: exchangeURL, response: () => new Response('<html>upstream secret</html>'), expected: 'github-unavailable' },
-    { name: 'null exchange payload', url: exchangeURL, response: () => json(null), expected: 'token-invalid' },
-    { name: 'provider error in HTTP 400', url: exchangeURL, response: () => json({ error: 'incorrect_client_credentials' }, 400), expected: 'client-credentials' },
-    { name: 'API non-JSON response', url: 'https://api.github.com/user', response: () => new Response('non-JSON'), expected: 'github-unavailable' },
-    { name: 'API HTTP error', url: 'https://api.github.com/user', response: () => json({}, 500), expected: 'github-unavailable' },
-    { name: 'API authorization denied', url: 'https://api.github.com/user', response: () => json({}, 403), expected: 'not-authorized' },
-    { name: 'API request limit', url: REPO_URL, response: () => new Response(null, { status: 403, headers: { 'X-RateLimit-Remaining': '0' } }), expected: 'github-rate-limited' },
-    { name: 'API HTTP 429', url: 'https://api.github.com/user', response: () => json({}, 429), expected: 'github-rate-limited' },
-    { name: 'exchange HTTP 429', url: exchangeURL, response: () => new Response(null, { status: 429 }), expected: 'github-rate-limited' },
+    { name: 'network failure before exchange', url: REPO_URL, response: () => { throw new Error('sensitive upstream error'); }, expected: 'github-unavailable', detail: 'repository-request' },
+    { name: 'repository HTTP 400', url: REPO_URL, response: () => json({ message: 'do not expose' }, 400), expected: 'github-unavailable', detail: 'repository-request-400' },
+    { name: 'repository non-JSON response', url: REPO_URL, response: () => new Response('<html>do not expose</html>'), expected: 'github-unavailable', detail: 'repository-response-200' },
+    { name: 'repository ID missing', url: REPO_URL, response: () => json({ authDetail: 'attacker-controlled&secret=abc' }), expected: 'github-unavailable', detail: 'repository-response' },
+    { name: 'token exchange network failure', url: exchangeURL, response: () => { throw new Error('sensitive token exchange error'); }, expected: 'github-unavailable', detail: 'token-request' },
+    { name: 'HTTP error', url: exchangeURL, response: () => json({ message: 'sensitive upstream message' }, 503), expected: 'github-unavailable', detail: 'token-response-503' },
+    { name: 'non-JSON exchange response', url: exchangeURL, response: () => new Response('<html>upstream secret</html>'), expected: 'github-unavailable', detail: 'token-response-200' },
+    { name: 'null exchange payload', url: exchangeURL, response: () => json(null), expected: 'token-invalid', detail: 'token-response-200' },
+    { name: 'provider error in HTTP 400', url: exchangeURL, response: () => json({ error: 'incorrect_client_credentials' }, 400), expected: 'client-credentials', detail: 'token-response-400' },
+    { name: 'API non-JSON response', url: 'https://api.github.com/user', response: () => new Response('non-JSON'), expected: 'github-unavailable', detail: 'authorization-request-200' },
+    { name: 'API HTTP error', url: 'https://api.github.com/user', response: () => json({}, 500), expected: 'github-unavailable', detail: 'authorization-request-500' },
+    { name: 'API authorization denied', url: 'https://api.github.com/user', response: () => json({}, 403), expected: 'not-authorized', detail: 'authorization-request-403' },
+    { name: 'API request limit', url: REPO_URL, response: () => new Response(null, { status: 403, headers: { 'X-RateLimit-Remaining': '0' } }), expected: 'github-rate-limited', detail: 'repository-request-403' },
+    { name: 'API HTTP 429', url: 'https://api.github.com/user', response: () => json({}, 429), expected: 'github-rate-limited', detail: 'authorization-request-429' },
+    { name: 'exchange HTTP 429', url: exchangeURL, response: () => new Response(null, { status: 429 }), expected: 'github-rate-limited', detail: 'token-response-429' },
   ];
-  for (const { name, url, response: upstream, expected } of cases) await t.test(name, async sub => {
+  for (const { name, url, response: upstream, expected, detail } of cases) await t.test(name, async sub => {
     const env = environment(), mock = githubMock(sub, {
       respond: request => request.url === url ? upstream() : undefined,
     });
     const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));
-    assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=${expected}`);
+    assertAuthFailure(response, expected, detail);
     assertCookiesCleared(response);
     assert.equal(await response.text(), '');
     assert.ok(mock.calls.filter(x => x.url === exchangeURL).length <= 1, 'Token exchange is never retried');
@@ -320,7 +336,7 @@ test('allowlist and repository write permission are enforced during callback and
     await t.test(JSON.stringify(options), async sub => {
       const env = environment(), mock = githubMock(sub, options);
       const response = await callback(env, mock.fetcher, await begin(env, mock.fetcher));
-      assert.equal(response.headers.get('Location'), `${ORIGIN}/admin.html?authError=not-authorized`);
+      assertAuthFailure(response, 'not-authorized', 'authorization-request');
       assertCookiesCleared(response);
       const denied = await handle(new Request(`${ORIGIN}/api/queue`, { headers: { Cookie: await sessionCookie(env) } }), env, mock.fetcher);
       assert.equal(denied.status, 403);

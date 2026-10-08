@@ -27,11 +27,19 @@ const SECURITY_HEADERS = {
 };
 
 export class HttpError extends Error {
-  constructor(status, message) { super(message); this.status = status; }
+  constructor(status, message, upstreamStatus) {
+    super(message); this.status = status; this.upstreamStatus = safeHTTPStatus(upstreamStatus);
+  }
 }
 
 class OAuthError extends Error {
-  constructor(code) { super('GitHub sign-in failed.'); this.code = code; }
+  constructor(code, upstreamStatus) {
+    super('GitHub sign-in failed.'); this.code = code; this.upstreamStatus = safeHTTPStatus(upstreamStatus);
+  }
+}
+
+function safeHTTPStatus(status) {
+  return Number.isInteger(status) && status >= 100 && status <= 599 ? status : undefined;
 }
 
 function providerErrorCode(error) {
@@ -39,9 +47,11 @@ function providerErrorCode(error) {
     ? GITHUB_OAUTH_ERRORS[error] : 'github-unavailable';
 }
 
-function loginFailure(origin, code) {
+function loginFailure(origin, code, detail = '') {
   const safeCode = AUTH_ERROR_CODES.has(code) ? code : 'sign-in-failed';
-  return redirect(`${origin}/admin.html?authError=${safeCode}`, clearCookies());
+  const safeDetail = /^(repository-request|repository-response|token-request|token-response|authorization-request|session-create)(-[1-5]\d{2})?$/.test(detail)
+    ? `&authDetail=${detail}` : '';
+  return redirect(`${origin}/admin.html?authError=${safeCode}${safeDetail}`, clearCookies());
 }
 
 function isRateLimited(response) {
@@ -164,17 +174,22 @@ async function github(env, token, path, method = 'GET', body, fetcher = fetch) {
     }, ...(body ? { body: JSON.stringify(body) } : {}), redirect: 'error', signal: AbortSignal.timeout(15000),
   });
   if (!response.ok) {
-    if (isRateLimited(response)) throw new HttpError(429, 'GitHub is rate limiting requests. Please try again later.');
+    if (isRateLimited(response)) throw new HttpError(429, 'GitHub is rate limiting requests. Please try again later.', response.status);
     if ([409, 422].includes(response.status) && method === 'PUT') {
-      throw new HttpError(409, 'The queue changed. Reload it before deciding.');
+      throw new HttpError(409, 'The queue changed. Reload it before deciding.', response.status);
     }
-    if (response.status === 401) throw new HttpError(401, 'Sign in to continue.');
+    if (response.status === 401) throw new HttpError(401, 'Sign in to continue.', response.status);
     if (response.status === 403 || response.status === 404) {
-      throw new HttpError(403, 'This account or GitHub App cannot access the repository.');
+      throw new HttpError(403, 'This account or GitHub App cannot access the repository.', response.status);
     }
-    throw new HttpError(502, 'GitHub is unavailable. Nothing was saved; try again later.');
+    throw new HttpError(502, 'GitHub is unavailable. Nothing was saved; try again later.', response.status);
   }
-  return response.json();
+  try { return await response.json(); }
+  catch {
+    const error = new HttpError(502, 'GitHub returned an unreadable response. Please try again later.', response.status);
+    error.responseMalformed = true;
+    throw error;
+  }
 }
 
 async function authorizeToken(token, env, origin, fetcher) {
@@ -327,31 +342,37 @@ async function completeLogin(request, env, origin, fetcher) {
   const code = url.searchParams.get('code');
   if (!code) return loginFailure(origin, 'code-missing');
   if (code.length > 512) return loginFailure(origin, 'verification-code');
-  let creatingSession = false;
+  let phase = 'repository-request';
   try {
     // Public metadata identifies the configured repository before requesting a narrowed token.
     const repo = await github(env, null, `/repos/${config.repository}`, 'GET', undefined, fetcher);
-    if (!Number.isSafeInteger(repo.id)) throw new HttpError(502, 'Repository metadata is unavailable.');
+    phase = 'repository-response';
+    if (!repo || !Number.isSafeInteger(repo.id)) throw new HttpError(502, 'Repository metadata is unavailable.');
+    phase = 'token-request';
     const result = await fetcher('https://github.com/login/oauth/access_token', {
       method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/json' }, redirect: 'error', signal: AbortSignal.timeout(15000),
       body: JSON.stringify({ client_id: env.GITHUB_CLIENT_ID, client_secret: env.GITHUB_CLIENT_SECRET,
         code, code_verifier: state.verifier, redirect_uri: `${origin}/auth/callback`, repository_id: repo.id }),
     });
-    if (isRateLimited(result)) throw new OAuthError('github-rate-limited');
-    const token = await result.json();
+    phase = 'token-response';
+    if (isRateLimited(result)) throw new OAuthError('github-rate-limited', result.status);
+    let token;
+    try { token = await result.json(); }
+    catch { throw new OAuthError('github-unavailable', result.status); }
     if (token && typeof token === 'object' && Object.hasOwn(token, 'error')) {
-      throw new OAuthError(providerErrorCode(token.error));
+      throw new OAuthError(providerErrorCode(token.error), result.status);
     }
-    if (!result.ok) throw new OAuthError('github-unavailable');
+    if (!result.ok) throw new OAuthError('github-unavailable', result.status);
     if (!token || typeof token !== 'object' || Array.isArray(token) || typeof token.access_token !== 'string' ||
         !token.access_token.startsWith('ghu_') || token.token_type !== 'bearer' ||
         (token.expires_in !== undefined && !Number.isFinite(token.expires_in))) {
-      throw new OAuthError('token-invalid');
+      throw new OAuthError('token-invalid', result.status);
     }
     const seconds = Math.min(SESSION_SECONDS, Number.isFinite(token.expires_in) ? Math.max(0, Math.floor(token.expires_in)) : SESSION_SECONDS);
-    if (seconds < 60) throw new OAuthError('token-invalid');
+    if (seconds < 60) throw new OAuthError('token-invalid', result.status);
+    phase = 'authorization-request';
     const user = await authorizeToken(token.access_token, env, origin, fetcher);
-    creatingSession = true;
+    phase = 'session-create';
     const now = Date.now();
     const value = await seal({ kind: 'session', token: token.access_token, login: user.login,
       csrf: randomValue(), iat: now, exp: now + seconds * 1000 }, env, origin, 'session');
@@ -359,8 +380,10 @@ async function completeLogin(request, env, origin, fetcher) {
   } catch (error) {
     const code = error instanceof OAuthError ? error.code : error instanceof HttpError && error.status === 429
       ? 'github-rate-limited' : error instanceof HttpError && error.status === 403 ? 'not-authorized'
-      : creatingSession ? 'sign-in-failed' : 'github-unavailable';
-    return loginFailure(origin, code);
+      : phase === 'session-create' ? 'sign-in-failed' : 'github-unavailable';
+    if (phase === 'repository-request' && error instanceof HttpError && error.responseMalformed) phase = 'repository-response';
+    const status = error instanceof HttpError || error instanceof OAuthError ? safeHTTPStatus(error.upstreamStatus) : undefined;
+    return loginFailure(origin, code, `${phase}${status === undefined ? '' : `-${status}`}`);
   }
 }
 

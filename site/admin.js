@@ -49,9 +49,9 @@ function adminSignedOut(message='Sign in with an authorised GitHub account to re
   adminElement('queue-cards').innerHTML='';adminElement('history-list').innerHTML='';
 }
 function adminOAuthMessage(){
-  const url=new URL(location.href),code=url.searchParams.get('authError');
+  const url=new URL(location.href),code=url.searchParams.get('authError'),detail=url.searchParams.get('authDetail');
   if(!code)return '';
-  url.searchParams.delete('authError');try{history.replaceState(null,'',url.pathname+url.search+url.hash);}catch{}
+  url.searchParams.delete('authError');url.searchParams.delete('authDetail');try{history.replaceState(null,'',url.pathname+url.search+url.hash);}catch{}
   const messages={
     'sign-in-failed':'GitHub sign-in could not be completed. Please try again.',
     'client-credentials':'GitHub rejected the app credentials. Update the Cloudflare runtime GITHUB_CLIENT_SECRET with the client secret belonging to this GitHub App, then deploy and sign in again.',
@@ -67,7 +67,10 @@ function adminOAuthMessage(){
     'expired':'The sign-in request expired or its browser cookie is missing. Start a fresh sign-in from this page.',
     'cancelled':'GitHub sign-in was cancelled.'
   };
-  return Object.hasOwn(messages,code)?messages[code]:'Sign-in could not be completed. Please try again.';
+  const message=Object.hasOwn(messages,code)?messages[code]:'Sign-in could not be completed. Please try again.';
+  const phases={'repository-request':'repository lookup','repository-response':'repository response','token-request':'sign-in exchange','token-response':'sign-in response','authorization-request':'account and repository access check','session-create':'browser session creation'};
+  const diagnostic=typeof detail==='string'?detail.match(/^(repository-request|repository-response|token-request|token-response|authorization-request|session-create)(?:-([1-5][0-9]{2}))?$/):null;
+  return message+(diagnostic?` Diagnostic: ${phases[diagnostic[1]]}${diagnostic[2]?` (HTTP ${diagnostic[2]})`:''}.`:'');
 }
 function adminMatches(candidate,query){
   const text=[candidate.title,candidate.source,candidate.organisation,candidate.location,candidate.reason,candidate.evidenceSnippet,candidate.relevanceStrength,...adminList(candidate.subjects),...adminList(candidate.matchedTerms),...adminList(candidate.searchKeywords)].join(' ').toLowerCase();

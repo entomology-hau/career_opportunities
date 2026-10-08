@@ -85,6 +85,10 @@ async function main(){
   for(const hostileCode of ['__proto__','constructor','toString','unknown-secret-value']){
     client=createClient(portal,'?authError='+hostileCode);assert.equal(client.logic.adminOAuthMessage(),'Sign-in could not be completed. Please try again.');
   }
+  client=createClient(portal,'?authError=github-unavailable&authDetail=repository-request-400&view=queue');assert.match(client.logic.adminOAuthMessage(),/Diagnostic: repository lookup \(HTTP 400\)/);assert.equal(client.replaced[0],'/admin.html?view=queue');
+  for(const detail of ['token-response-secret-value','<script>','repository-request-999','__proto__']){
+    client=createClient(portal,'?authError=github-unavailable&authDetail='+encodeURIComponent(detail));const message=client.logic.adminOAuthMessage();assert(!message.includes('Diagnostic:'));assert(!message.includes(detail));assert.equal(client.replaced[0],'/admin.html');
+  }
   client=createClient(portal,'?authError=client-credentials');client.setFetch(url=>url==='admin-config.json'?response(200,{apiBase:portal}):response(401,{}));await client.logic.initAdmin();assert.match(client.element('admin-alert').textContent,/GITHUB_CLIENT_SECRET/);assert.equal(client.element('admin-alert').innerHTML,'');assert.equal(client.element('admin-workspace').hidden,true);
   client=createClient(portal,'?authError=%3Cscript%3E');assert(!client.logic.adminOAuthMessage().includes('<script>'));assert.equal(client.replaced[0],'/admin.html');
   assert(!script.includes('review-queue.json'));assert(!script.includes('access_token'));
