@@ -2,7 +2,7 @@
 const ADMIN_REPOSITORY='entomology-hau/career_opportunities';
 const ADMIN_TYPES={job:'Paid job',phd:'PhD',mres:'MRes',internship:'Internship',volunteering:'Volunteering',other:'Other opportunity'};
 const ADMIN_COURSES={entomology:'Entomology',ipm:'Integrated Pest Management','biological-recording':'Biological Recording'};
-const adminState={apiBase:'',portal:false,user:null,csrfToken:'',queueSha:'',candidates:[],history:[],confirmed:new Set(),busy:false,reloadRequired:false};
+const adminState={apiBase:'',portal:false,user:null,csrfToken:'',queueSha:'',candidates:[],history:[],confirmed:new Set(),busy:false,reloadRequired:false,decisionFeedback:null};
 const adminElement=id=>document.getElementById(id);
 const adminEscape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const adminSafeURL=value=>{try{const u=new URL(value);return /^https?:$/.test(u.protocol)?u.href:'#';}catch{return '#';}};
@@ -22,7 +22,7 @@ function adminCommitURL(value){
 function adminSessionValid(value){return typeof value?.user?.login==='string'&&value.user.login.trim()!==''&&value.repository===ADMIN_REPOSITORY&&typeof value.csrfToken==='string'&&value.csrfToken.length>=16;}
 function adminCandidateValid(value){return value&&typeof value==='object'&&typeof value.title==='string'&&typeof value.url==='string'&&adminSafeURL(value.url)!=='#'&&typeof value.fingerprint==='string'&&/^[a-f0-9]{64}$/i.test(value.fingerprint);}
 function adminQueueValid(value){return Array.isArray(value?.candidates)&&value.candidates.every(adminCandidateValid)&&typeof value.queueSha==='string'&&/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i.test(value.queueSha)&&(value.history===undefined||Array.isArray(value.history));}
-class AdminRequestError extends Error{constructor(status,detail=''){super('Admin request failed');this.status=status;this.detail=typeof detail==='string'?detail.replace(/[\u0000-\u001f\u007f]/g,' ').trim().slice(0,240):'';}}
+class AdminRequestError extends Error{constructor(status,detail='',code=''){super('Admin request failed');this.status=status;this.code=code==='approval-blocked'?code:'';this.detail=typeof detail==='string'?detail.replace(/[\u0000-\u001f\u007f]/g,' ').trim().slice(0,240):'';}}
 async function adminRequest(path,options={}){
   if(!adminState.portal||adminState.apiBase!==location.origin||!['/api/session','/api/queue','/api/decisions','/auth/logout'].includes(path))throw new AdminRequestError(0);
   const method=options.method||'GET',headers={Accept:'application/json'};
@@ -31,17 +31,19 @@ async function adminRequest(path,options={}){
     headers['Content-Type']='application/json';headers['X-CSRF-Token']=adminState.csrfToken;
   }
   const response=await fetch(adminState.apiBase+path,{method,headers,credentials:'same-origin',mode:'same-origin',redirect:'error',cache:'no-store',...(method==='POST'?{body:JSON.stringify(options.body||{})}:{})});
-  if(!response.ok){let detail='';try{const error=await response.json();if(typeof error?.error==='string')detail=error.error;}catch{}throw new AdminRequestError(response.status,detail);}
+  if(!response.ok){let detail='',code='';try{const error=await response.json();if(typeof error?.error==='string')detail=error.error;if(error?.code==='approval-blocked')code=error.code;}catch{}throw new AdminRequestError(response.status,detail,code);}
   if(path==='/auth/logout'&&response.status===204)return {};
   try{return await response.json();}catch{throw new AdminRequestError(502);}
 }
-function adminNotice(message,kind='warning',commitUrl=''){
+function adminReveal(element){if(!element)return;element.setAttribute('tabindex','-1');element.focus?.({preventScroll:true});element.scrollIntoView?.({block:'nearest'});}
+function adminNotice(message,kind='warning',commitUrl='',reveal=false){
   const box=adminElement('admin-alert');box.hidden=!message;box.className='admin-alert '+kind;box.textContent=message;
   const commit=adminCommitURL(commitUrl);
   if(message&&commit!=='#'){const link=document.createElement('a');link.href=commit;link.target='_blank';link.rel='noopener noreferrer';link.textContent='View saved commit';box.appendChild(link);}
+  if(message&&reveal)adminReveal(box);
 }
 function adminSignedOut(message='Sign in with an authorised GitHub account to review pending adverts.'){
-  adminState.user=null;adminState.csrfToken='';adminState.queueSha='';adminState.candidates=[];adminState.history=[];adminState.confirmed.clear();adminState.reloadRequired=false;
+  adminState.user=null;adminState.csrfToken='';adminState.queueSha='';adminState.candidates=[];adminState.history=[];adminState.confirmed.clear();adminState.reloadRequired=false;adminState.decisionFeedback=null;
   adminElement('admin-workspace').hidden=true;adminElement('signed-out').hidden=false;adminElement('sign-in-copy').textContent=message;
   adminElement('signed-in-user').textContent='';adminElement('admin-repository').textContent='';
   adminElement('sign-in-link').hidden=!adminState.apiBase;
@@ -80,8 +82,10 @@ function adminCandidateCard(candidate,index){
   const type=ADMIN_TYPES[candidate.suggestedType||candidate.type]||'Not supplied';
   const metadata=[['Organisation',candidate.organisation],['Location',candidate.location],['Suggested type',type],['Match',candidate.relevanceStrength==='direct'?'Direct keyword match':candidate.relevanceStrength==='needs-context'?'Context check needed':candidate.relevanceStrength],['Matched terms',adminList(candidate.matchedTerms).join(' · ')],['Course interest',adminList(candidate.courses).map(c=>ADMIN_COURSES[c]||c).join(' · ')],['Subject',adminList(candidate.subjects).join(' · ')],['First collected',adminDate(candidate.firstSeen)],['Last listed',adminDate(candidate.lastSeen)],['Deadline hint',candidate.deadlineSuggestion||candidate.deadlineLabel]].filter(entry=>entry[1]);
   const disabled=adminState.busy||adminState.reloadRequired||!adminState.queueSha;
-  const checked=adminState.confirmed.has(candidate.url);
-  return `<article class="queue-card" data-index="${index}"><h3><a href="${adminEscape(adminSafeURL(candidate.url))}" target="_blank" rel="noopener noreferrer">${adminEscape(candidate.title)}</a></h3><p class="queue-source">${adminEscape(candidate.source||'Source not supplied')}</p>${candidate.reason?`<p class="queue-reason"><strong>Relevance check:</strong> ${adminEscape(candidate.reason)}</p>`:''}${candidate.evidenceSnippet?`<p class="queue-evidence">${adminEscape(candidate.evidenceSnippet)}</p>`:''}<dl class="queue-metadata">${metadata.map(([label,value])=>`<dt>${adminEscape(label)}</dt><dd>${adminEscape(value)}</dd>`).join('')}</dl><p class="queue-review-note">Source details and suggested classifications may be incomplete. Follow the original advert before deciding.</p><label class="decision-confirm" for="confirm-${index}"><input id="confirm-${index}" type="checkbox" data-confirm="${index}" ${checked?'checked':''} ${disabled?'disabled':''}>I have checked the original advert and consider this opportunity relevant and currently active.</label><div class="queue-actions"><a href="${adminEscape(adminSafeURL(candidate.url))}" target="_blank" rel="noopener noreferrer">View original advert</a><button type="button" class="admin-primary" data-action="approve" data-index="${index}" ${disabled||!checked?'disabled':''}>Approve</button><button type="button" class="reject-button" data-action="reject" data-index="${index}" ${disabled?'disabled':''}>Reject</button></div></article>`;
+  const blocked=typeof candidate.approvalBlockedReason==='string'?candidate.approvalBlockedReason:'';
+  const checked=!blocked&&adminState.confirmed.has(candidate.url);
+  const feedback=adminState.decisionFeedback?.url===candidate.url?adminState.decisionFeedback:null;
+  return `<article class="queue-card" data-index="${index}"><h3><a href="${adminEscape(adminSafeURL(candidate.url))}" target="_blank" rel="noopener noreferrer">${adminEscape(candidate.title)}</a></h3><p class="queue-source">${adminEscape(candidate.source||'Source not supplied')}</p>${candidate.reason?`<p class="queue-reason"><strong>Relevance check:</strong> ${adminEscape(candidate.reason)}</p>`:''}${candidate.evidenceSnippet?`<p class="queue-evidence">${adminEscape(candidate.evidenceSnippet)}</p>`:''}<dl class="queue-metadata">${metadata.map(([label,value])=>`<dt>${adminEscape(label)}</dt><dd>${adminEscape(value)}</dd>`).join('')}</dl><p class="queue-review-note">Source details and suggested classifications may be incomplete. Follow the original advert before deciding.</p><label class="decision-confirm" for="confirm-${index}"><input id="confirm-${index}" type="checkbox" data-confirm="${index}" ${checked?'checked':''} ${disabled||blocked?'disabled':''}>I have checked the original advert and consider this opportunity relevant and currently active.</label>${blocked?`<p class="approval-blocked"><strong>Approval unavailable:</strong> ${adminEscape(blocked)} You can reject this advert to remove it from the queue.</p>`:''}<div class="queue-actions"><a href="${adminEscape(adminSafeURL(candidate.url))}" target="_blank" rel="noopener noreferrer">View original advert</a><button type="button" class="admin-primary" data-action="approve" data-index="${index}" ${disabled||blocked||!checked?'disabled':''}>Approve</button><button type="button" class="reject-button" data-action="reject" data-index="${index}" ${disabled?'disabled':''}>Reject</button></div><div class="queue-feedback ${adminEscape(feedback?.kind||'')}" data-feedback="${index}" role="status" aria-live="polite" ${feedback?'':'hidden'}>${adminEscape(feedback?.message||'')}${feedback&&adminState.reloadRequired?'<button type="button" class="admin-secondary" data-reload>Reload queue</button>':''}</div></article>`;
 }
 function adminRenderQueue(){
   const query=adminElement('queue-search').value.trim(),visible=adminState.candidates.map((candidate,index)=>({candidate,index})).filter(({candidate})=>adminMatches(candidate,query));
@@ -96,40 +100,44 @@ function adminRenderHistory(){
 }
 function adminErrorMessage(error){
   if(error.status===401)return 'Your session has expired. Sign in to continue.';
-  if(error.status===403)return 'This account cannot make decisions. Sign in with an authorised account.';
+  if(error.status===403)return error.detail||'GitHub did not allow this decision. Check that the GitHub App is installed on career_opportunities with Contents read and write permission, then sign in again.';
   if(error.status===409)return error.detail||'The queue changed before your decision was saved. Reload the queue and check the advert again.';
   if(error.status===503)return error.detail||'Admin sign-in is not configured yet.';
   return 'The admin service could not complete this request. Please try again.';
 }
-function adminHandleError(error){
+function adminHandleError(error,reveal=false){
   if([401,403].includes(error.status))adminSignedOut(adminErrorMessage(error));
-  else adminNotice(adminErrorMessage(error));
+  adminNotice(adminErrorMessage(error),'warning','',reveal);
 }
 async function adminLoadQueue(options={}){
   if(!adminState.user||adminState.busy)return;
   adminState.busy=true;adminRenderQueue();
   try{
     const queue=await adminRequest('/api/queue');if(!adminQueueValid(queue))throw new AdminRequestError(502);
-    adminState.candidates=queue.candidates;adminState.queueSha=queue.queueSha;adminState.history=queue.history||[];adminState.confirmed.clear();adminState.reloadRequired=false;
+    adminState.candidates=queue.candidates;adminState.queueSha=queue.queueSha;adminState.history=queue.history||[];adminState.confirmed.clear();adminState.reloadRequired=false;adminState.decisionFeedback=null;
     adminRenderHistory();
-  }catch(error){adminState.queueSha='';adminState.reloadRequired=true;if(options.afterSave){if([401,403].includes(error.status))adminSignedOut(adminErrorMessage(error));adminNotice(`Your decision was saved to GitHub; the site update is queued. ${[401,403].includes(error.status)?'Sign in again before making another decision.':'The queue could not reload. Reload it before making another decision.'}`,'warning',options.commitUrl);}else adminHandleError(error);}
+  }catch(error){adminState.queueSha='';adminState.reloadRequired=true;if(options.afterSave){if([401,403].includes(error.status))adminSignedOut(adminErrorMessage(error));adminNotice(`Your decision was saved to GitHub; the site update is queued. ${[401,403].includes(error.status)?'Sign in again before making another decision.':'The queue could not reload. Reload it before making another decision.'}`,'warning',options.commitUrl);}else adminHandleError(error,options.reveal===true);}
   finally{adminState.busy=false;if(adminState.user)adminRenderQueue();}
 }
 async function adminDecide(action,index){
   const candidate=adminState.candidates[index];
-  if(!adminState.user||adminState.busy||adminState.reloadRequired||!adminState.queueSha||!candidate||!['approve','reject'].includes(action)||(action==='approve'&&!adminState.confirmed.has(candidate.url)))return false;
-  adminState.busy=true;adminRenderQueue();adminNotice('Saving decision…','');
+  if(!adminState.user||adminState.busy||adminState.reloadRequired||!adminState.queueSha||!candidate||!['approve','reject'].includes(action)||(action==='approve'&&(candidate.approvalBlockedReason||!adminState.confirmed.has(candidate.url))))return false;
+  adminState.busy=true;adminState.decisionFeedback={url:candidate.url,message:'Saving decision…',kind:'saving'};adminRenderQueue();adminNotice('');
   let saved=false,savedCommit='';
   try{
     const result=await adminRequest('/api/decisions',{method:'POST',body:{action,advertUrl:candidate.url,fingerprint:candidate.fingerprint,queueSha:adminState.queueSha}});
     if(result.saved!==true||result.publication!=='queued')throw new AdminRequestError(502);
-    saved=true;savedCommit=result.commitUrl;adminState.candidates=adminState.candidates.filter(item=>item.url!==candidate.url);adminState.confirmed.delete(candidate.url);adminState.queueSha='';
+    saved=true;savedCommit=result.commitUrl;adminState.candidates=adminState.candidates.filter(item=>item.url!==candidate.url);adminState.confirmed.delete(candidate.url);adminState.queueSha='';adminState.decisionFeedback=null;
     adminNotice(`${action==='approve'?'Approved':'Rejected'}: ${candidate.title}. Saved to GitHub; the site update is queued.`,'success',result.commitUrl);
   }catch(error){
-    if(error.status===409){adminState.queueSha='';adminState.reloadRequired=true;adminState.confirmed.clear();}
-    adminHandleError(error);
+    if(error.status===409&&error.code==='approval-blocked'){
+      candidate.approvalBlockedReason=error.detail||'This advert is not currently eligible for approval.';adminState.confirmed.delete(candidate.url);
+    }else if(error.status===409){adminState.queueSha='';adminState.reloadRequired=true;adminState.confirmed.clear();}
+    if([401,403].includes(error.status))adminHandleError(error,true);
+    else{adminNotice(adminErrorMessage(error));adminState.decisionFeedback={url:candidate.url,message:`Decision not saved. ${adminErrorMessage(error)}`,kind:'warning'};}
   }finally{adminState.busy=false;if(adminState.user)adminRenderQueue();}
-  if(saved&&adminState.user)await adminLoadQueue({afterSave:true,commitUrl:savedCommit});
+  if(saved&&adminState.user){await adminLoadQueue({afterSave:true,commitUrl:savedCommit});adminReveal(adminElement('admin-alert'));}
+  else if(adminState.user)adminReveal(adminElement('queue-cards').querySelector(`[data-feedback="${index}"]`));
   return saved;
 }
 async function adminLogout(){
@@ -147,10 +155,11 @@ function adminInitTheme(){
 async function initAdmin(){
   adminInitTheme();const oauthMessage=adminOAuthMessage();if(oauthMessage)adminNotice(oauthMessage);
   adminElement('queue-search').addEventListener('input',adminRenderQueue);
-  adminElement('reload-queue').addEventListener('click',()=>{adminNotice('');adminLoadQueue();});
+  const reload=()=>{adminNotice('');adminLoadQueue({reveal:true});};
+  adminElement('reload-queue').addEventListener('click',reload);
   adminElement('sign-out').addEventListener('click',adminLogout);
-  adminElement('queue-cards').addEventListener('change',event=>{const input=event.target.closest('[data-confirm]');if(!input||adminState.busy)return;const candidate=adminState.candidates[Number(input.dataset.confirm)];if(!candidate)return;if(input.checked)adminState.confirmed.add(candidate.url);else adminState.confirmed.delete(candidate.url);const button=adminElement('queue-cards').querySelector(`[data-action="approve"][data-index="${Number(input.dataset.confirm)}"]`);if(button)button.disabled=!input.checked||adminState.reloadRequired||!adminState.queueSha;});
-  adminElement('queue-cards').addEventListener('click',event=>{const button=event.target.closest('button[data-action]');if(button&&!button.disabled)adminDecide(button.dataset.action,Number(button.dataset.index));});
+  adminElement('queue-cards').addEventListener('change',event=>{const input=event.target.closest('[data-confirm]');if(!input||adminState.busy)return;const candidate=adminState.candidates[Number(input.dataset.confirm)];if(!candidate||candidate.approvalBlockedReason)return;if(input.checked)adminState.confirmed.add(candidate.url);else adminState.confirmed.delete(candidate.url);const button=adminElement('queue-cards').querySelector(`[data-action="approve"][data-index="${Number(input.dataset.confirm)}"]`);if(button)button.disabled=!input.checked||Boolean(candidate.approvalBlockedReason)||adminState.reloadRequired||!adminState.queueSha;});
+  adminElement('queue-cards').addEventListener('click',event=>{if(event.target.closest('button[data-reload]')){reload();return;}const button=event.target.closest('button[data-action]');if(button&&!button.disabled)adminDecide(button.dataset.action,Number(button.dataset.index));});
   try{
     const response=await fetch('admin-config.json',{credentials:'same-origin',mode:'same-origin',redirect:'error',cache:'no-store'});if(!response.ok)throw Error('Config unavailable');
     const config=adminConfiguration(await response.json(),location.origin);adminState.apiBase=config.apiBase;adminState.portal=config.portal;

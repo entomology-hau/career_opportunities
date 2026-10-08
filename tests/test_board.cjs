@@ -115,12 +115,37 @@ assert.equal(context.logic.paginate(sequence,1,7).pageSize,10);
 const empty=context.logic.paginate([],9,10);assert.equal(empty.page,1);assert.equal(empty.start,0);assert.equal(empty.end,0);
 // Exercise the actual render/filter/URL wiring with a small DOM stub.
 const elements={};
-const element=id=>elements[id]||=({value:'',checked:false,hidden:false,disabled:false,innerHTML:'',textContent:'',options:[],classList:{toggle(){}},focus(){},scrollIntoView(){}});
+const element=id=>elements[id]||=({value:'',checked:false,hidden:false,disabled:false,innerHTML:'',textContent:'',options:[],attributes:{},setAttribute(name,value){this.attributes[name]=value;},classList:{toggle(){}},focus(){},scrollIntoView(){}});
 context.document={getElementById:element,querySelectorAll:()=>[]};
 context.Date=class extends Date{static now(){return now;}};
 let savedURL='';context.history={replaceState:(_state,_title,url)=>{savedURL=url}};
 context.location={pathname:'/board/',search:'',hash:''};
-element('location').value='all';element('sort').value='deadline';element('page-size').value='10';
+element('location').value='uk';element('sort').value='deadline';element('page-size').value='10';
+// The tab badge follows the matching results, while its description retains the full active total.
+const countItems=[
+  ...Array.from({length:12},(_,i)=>({...automatic,id:`count-uk-${i}`,title:i===0?'Specialist survey role':`UK field role ${i}`,country:'United Kingdom',location:'Shropshire'})),
+  ...Array.from({length:3},(_,i)=>({...automatic,id:`count-overseas-${i}`,title:`Overseas role ${i}`,country:'France',location:'Paris'})),
+  {...automatic,id:'count-closed',status:'closed'},
+  {...automatic,id:'count-expired',deadlineAt:'2026-09-28T12:00:00Z'}
+];
+context.logic.setData({opportunities:countItems});context.logic.restore();context.logic.render();
+assert.equal(element('location').value,'uk');assert.equal(element('total-count').textContent,12);
+assert.match(element('result-count').textContent,/Showing 1–10 of 12 opportunities in the UK/);
+assert.equal(element('total-count').title,'12 matching opportunities of 15 total');
+assert.equal(element('total-count').attributes['aria-label'],element('total-count').title);
+context.logic.changePage(1);assert.equal(element('total-count').textContent,12);
+assert.match(element('result-count').textContent,/Showing 11–12 of 12 opportunities/);
+element('location').value='all';context.logic.filtersChanged();assert.equal(element('total-count').textContent,15);
+assert.match(element('result-count').textContent,/^Showing 1–10 of 15 opportunities$/);
+assert.equal(element('total-count').title,'15 matching opportunities of 15 total');
+element('search').value='specialist';context.logic.filtersChanged();assert.equal(element('total-count').textContent,1);
+assert.equal(element('result-count').textContent,'Showing 1–1 of 1 opportunity');
+assert.equal(element('total-count').attributes['aria-label'],'1 matching opportunity of 15 total');
+assert.equal(element('pagination').hidden,true);
+element('search').value='no-such-opportunity';context.logic.filtersChanged();assert.equal(element('total-count').textContent,0);
+assert.equal(element('result-count').textContent,'0 opportunities');
+assert.equal(element('total-count').title,'0 matching opportunities of 15 total');
+element('search').value='';
 context.logic.setData({opportunities:allItems});context.logic.setPage(2);context.logic.render();
 assert.equal((element('cards').innerHTML.match(/<article /g)||[]).length,10);
 assert.equal(element('page-info').textContent,'Page 2 of 3');assert(savedURL.includes('page=2'));

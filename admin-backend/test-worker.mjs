@@ -427,10 +427,39 @@ test('queue response omits excluded, already decided and resolved candidates, wi
   assert.equal(response.status, 200);
   const result = await response.json();
   assert.equal(result.queueSha, SHA);
-  assert.deepEqual(result.candidates, [{ ...pending, fingerprint: await fingerprint(pending) }]);
+  assert.deepEqual(result.candidates, [{ ...pending, fingerprint: await fingerprint(pending), approvalBlockedReason: '' }]);
   assert.equal(result.history[0].resolutionStatus, 'queued');
   assert.equal('expectedCandidate' in result.history[0], false);
   assert.deepEqual(mock.writes(), []);
+});
+
+test('queue reports approval eligibility using the source fingerprint without modifying the stored candidate', async t => {
+  const active = candidate(), expired = candidate({ url: 'https://jobs.example.test/expired', deadlineSuggestion: day(Date.now() - 86400000) });
+  const env = environment(), mock = githubMock(t, { queue: queue([active, expired]) });
+  const response = await handle(new Request(`${ORIGIN}/api/queue`, { headers: { Cookie: await sessionCookie(env) } }), env, mock.fetcher);
+  assert.equal(response.status, 200);
+  const result = await response.json();
+  assert.equal(result.candidates[0].approvalBlockedReason, '');
+  assert.equal(result.candidates[1].approvalBlockedReason, 'This advert has passed its known closing date.');
+  for (let i = 0; i < result.candidates.length; i++) {
+    assert.equal(result.candidates[i].fingerprint, await fingerprint(mock.data.candidates[i]));
+    assert.equal(Object.hasOwn(mock.data.candidates[i], 'approvalBlockedReason'), false);
+  }
+  assert.deepEqual(mock.writes(), []);
+});
+
+test('expired approval returns the approval-blocked code and still permits rejection of the same unchanged advert', async t => {
+  const expired = candidate({ deadlineSuggestion: day(Date.now() - 86400000) });
+  const env = environment(), mock = githubMock(t, { queue: queue([expired]) });
+  const input = await decisionBody(expired);
+  const blocked = await handle(await mutation(env, input), env, mock.fetcher);
+  assert.equal(blocked.status, 409);
+  assert.deepEqual(await blocked.json(), { error: 'This advert has passed its known closing date.', code: 'approval-blocked' });
+  assert.deepEqual(mock.writes(), []);
+  const rejected = await handle(await mutation(env, { ...input, action: 'reject' }), env, mock.fetcher);
+  assert.equal(rejected.status, 200);
+  assert.equal((await rejected.json()).saved, true);
+  assert.equal(mock.writes().length, 1);
 });
 
 test('changed content SHA, changed fingerprint or ambiguous/decided advert never triggers a PUT', async t => {
@@ -446,6 +475,7 @@ test('changed content SHA, changed fingerprint or ambiguous/decided advert never
     const env = environment(), mock = githubMock(sub, options);
     const response = await handle(await mutation(env, await decisionBody(original)), env, mock.fetcher);
     assert.equal(response.status, 409);
+    assert.equal(Object.hasOwn(await response.json(), 'code'), false, 'Snapshot conflicts must still require a reload');
     assert.deepEqual(mock.writes(), []);
   });
 });
@@ -524,6 +554,7 @@ test('a concurrent GitHub Contents API conflict is reported without retrying or 
   const env = environment(), mock = githubMock(t, { putStatus: 409, putResponse: { message: 'SHA does not match' } });
   const response = await handle(await mutation(env, await decisionBody(mock.data.candidates[0])), env, mock.fetcher);
   assert.equal(response.status, 409);
+  assert.equal(Object.hasOwn(await response.json(), 'code'), false);
   assert.equal(mock.writes().length, 1);
   assert.equal(mock.writes()[0].body.sha, SHA);
 });

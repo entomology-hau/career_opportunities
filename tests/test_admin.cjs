@@ -10,7 +10,7 @@ const queue={candidates:[candidate],queueSha,history:[]};
 const response=(status,data)=>({status,ok:status>=200&&status<300,json:async()=>data});
 function createClient(origin=portal,query=''){
   const elements={},requests=[],storage=[],replaced=[];
-  const element=id=>elements[id]||=({id,hidden:false,value:'',disabled:false,textContent:'',innerHTML:'',className:'',children:[],handlers:{},addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(name,value){this[name]=value;},appendChild(child){this.children.push(child);},querySelector(){return null;}});
+  const element=id=>elements[id]||=({id,hidden:false,value:'',disabled:false,textContent:'',innerHTML:'',className:'',children:[],handlers:{},addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(name,value){this[name]=value;},focus(){this.focused=true;},scrollIntoView(){this.revealed=true;},appendChild(child){this.children.push(child);},querySelector(){return null;}});
   element('admin-workspace').hidden=true;const boardLinks=[{},{}],meta={content:''};
   const context={console,URL,URLSearchParams,Intl,Date,Set,location:{origin,href:origin+'/admin.html'+query},history:{replaceState(_state,_title,url){replaced.push(url);}},localStorage:{getItem(){return null;},setItem(key,value){storage.push({key,value});}},document:{documentElement:{dataset:{}},getElementById:element,querySelector:()=>meta,querySelectorAll:()=>boardLinks,createElement:tag=>({tagName:tag})}};
   context.fetch=async(url,options)=>{requests.push({url,options});throw Error('Unexpected network request');};
@@ -65,6 +65,34 @@ async function main(){
   client=createClient();client.setFetch(url=>url==='admin-config.json'?response(200,{apiBase:portal}):response(503,{error:'GitHub sign-in is temporarily unavailable.'}));await client.logic.initAdmin();assert.equal(client.element('sign-in-copy').textContent,'GitHub sign-in is temporarily unavailable.');assert.equal(client.element('admin-workspace').hidden,true);
   client=createClient();client.authorise();client.setFetch(()=>response(409,{error:'x'.repeat(500)}));await assert.rejects(client.logic.adminRequest('/api/queue'),error=>error.detail.length===240);
   client=createClient();client.authorise();client.setFetch(()=>response(409,{error:{unsafe:'object'}}));await assert.rejects(client.logic.adminRequest('/api/queue'),error=>error.detail==='');
+
+  // Eligibility blocks disable approval only. The explicit server code does not invalidate the queue snapshot.
+  client=createClient();client.authorise();client.logic.state.candidates=[{...candidate,approvalBlockedReason:'This advert has passed its known closing date.'}];client.logic.adminRenderQueue();
+  assert.match(client.element('queue-cards').innerHTML,/Approval unavailable/);assert.match(client.element('queue-cards').innerHTML,/data-confirm="0"[^>]*disabled/);assert.match(client.element('queue-cards').innerHTML,/data-action="approve" data-index="0" disabled/);assert(!/data-action="reject" data-index="0" disabled/.test(client.element('queue-cards').innerHTML));
+  client.logic.state.confirmed.add(candidate.url);assert.equal(await client.logic.adminDecide('approve',0),false);assert.equal(client.requests.length,0);
+  client.logic.state.candidates=[{...candidate}];client.setFetch(()=>response(409,{error:'This advert has passed its known closing date.',code:'approval-blocked'}));assert.equal(await client.logic.adminDecide('approve',0),false);
+  assert.equal(client.logic.state.queueSha,queueSha);assert.equal(client.logic.state.reloadRequired,false);assert.equal(client.logic.state.confirmed.size,0);assert.match(client.element('queue-cards').innerHTML,/Decision not saved/);assert(!/data-action="reject" data-index="0" disabled/.test(client.element('queue-cards').innerHTML));
+
+  // Exercise the registered checkbox and button handlers, including saving feedback and rejecting a blocked approval.
+  client=createClient();client.setFetch(url=>url==='admin-config.json'?response(200,{apiBase:portal}):url.endsWith('/api/session')?response(200,session):response(200,{...queue,candidates:[{...candidate}]}));await client.logic.initAdmin();
+  const cardContainer=client.element('queue-cards'),approveButton={dataset:{action:'approve',index:'0'},disabled:true},feedbackElement=client.element('card-feedback');
+  cardContainer.querySelector=selector=>selector.includes('data-feedback')?feedbackElement:approveButton;
+  const changeChecked=checked=>{const input={dataset:{confirm:'0'},checked,closest(){return this;}};cardContainer.handlers.change({target:input});};
+  const clickAction=action=>{const button=action==='approve'?approveButton:{dataset:{action,index:'0'},disabled:false};cardContainer.handlers.click({target:{closest(selector){return selector==='button[data-action]'?button:null;}}});};
+  const finishAction=async()=>{for(let i=0;i<10&&client.logic.state.busy;i++)await new Promise(resolve=>setImmediate(resolve));assert.equal(client.logic.state.busy,false);};
+  changeChecked(true);assert.equal(approveButton.disabled,false);assert(client.logic.state.confirmed.has(candidate.url));
+  let finishSave;client.setFetch(()=>new Promise(resolve=>{finishSave=resolve;}));clickAction('approve');
+  assert.equal(client.logic.state.busy,true);assert.match(cardContainer.innerHTML,/Saving decision…/);assert.equal(client.requests.filter(call=>call.options.method==='POST').length,1);
+  finishSave(response(409,{error:'This advert has passed its known closing date.',code:'approval-blocked'}));await finishAction();
+  assert.equal(client.logic.state.queueSha,queueSha);assert.equal(client.logic.state.reloadRequired,false);assert(feedbackElement.focused&&feedbackElement.revealed);assert.match(cardContainer.innerHTML,/Decision not saved/);assert(!/data-action="reject" data-index="0" disabled/.test(cardContainer.innerHTML));
+  client.setFetch(url=>url.endsWith('/api/decisions')?response(200,{saved:true,publication:'queued',commitUrl:'https://github.com/entomology-hau/career_opportunities/commit/'+newSha}):response(200,{candidates:[],queueSha:newSha,history:[{action:'reject',title:candidate.title,resolutionStatus:'queued'}]}));clickAction('reject');await finishAction();
+  assert.equal(client.logic.state.candidates.length,0);assert.match(client.element('history-list').innerHTML,/Reject decision/);assert.match(client.element('admin-alert').textContent,/Rejected:/);assert(client.element('admin-alert').focused&&client.element('admin-alert').revealed);
+
+  // A true snapshot conflict presents a local reload action and keeps all decisions disabled until reloaded.
+  client.logic.state.candidates=[{...candidate}];client.logic.state.queueSha=queueSha;client.logic.adminRenderQueue();client.setFetch(()=>response(409,{error:'The queue changed. Reload it before deciding.'}));clickAction('reject');await finishAction();
+  assert.equal(client.logic.state.reloadRequired,true);assert.match(cardContainer.innerHTML,/data-reload/);assert.match(cardContainer.innerHTML,/data-action="reject" data-index="0" disabled/);
+  client.setFetch(()=>response(200,{...queue,candidates:[{...candidate}]}));cardContainer.handlers.click({target:{closest(selector){return selector==='button[data-reload]'?{}:null;}}});await finishAction();assert.equal(client.logic.state.reloadRequired,false);
+  client.setFetch(()=>response(403,{error:'GitHub write access is unavailable.'}));clickAction('reject');await finishAction();assert.equal(client.logic.state.user,null);assert.equal(client.element('admin-alert').textContent,'GitHub write access is unavailable.');assert(client.element('admin-alert').focused&&client.element('admin-alert').revealed);
 
   // A saved mutation is still reported as saved if the following reload fails.
   client=createClient();client.authorise();client.setFetch(url=>url.endsWith('/api/decisions')?response(200,{saved:true,publication:'queued'}):response(500,{}));assert.equal(await client.logic.adminDecide('reject',0),true);assert.match(client.element('admin-alert').textContent,/decision was saved to GitHub/);assert.match(client.element('admin-alert').textContent,/queue could not reload/);assert.equal(client.logic.state.queueSha,'');

@@ -149,7 +149,8 @@ function render(){
   $('cards').innerHTML=page.items.map(x=>renderCard(x,now)).join('');$('empty').hidden=filtered.length>0;
   $('result-count').textContent=`${filtered.length?`Showing ${page.start}–${page.end} of `:''}${filtered.length} ${filtered.length===1?'opportunity':'opportunities'}${state.location==='uk'?' in the UK or with location unspecified':state.location==='international'?' outside the UK':state.location==='remote'?' with remote or hybrid work':''}`;
   $('pagination').hidden=page.pages<=1;$('previous-page').disabled=currentPage===1;$('next-page').disabled=currentPage===page.pages;$('page-info').textContent=`Page ${currentPage} of ${page.pages}`;
-  $('total-count').textContent=all.length;
+  const countDescription=`${filtered.length} matching ${filtered.length===1?'opportunity':'opportunities'} of ${all.length} total`;
+  $('total-count').textContent=filtered.length;$('total-count').title=countDescription;$('total-count').setAttribute('aria-label',countDescription);
   for(const [type]of Object.entries(TYPES)){$('count-'+type).textContent=all.filter(x=>locationMatch(x,state.location)&&[x.type,...(x.secondaryTypes||[])].includes(type)).length;}
   const lastReview=database.opportunities.filter(x=>x.reviewStatus==='approved').map(x=>x.lastChecked).filter(validDate).sort().at(-1),lastCollection=database.opportunities.map(x=>x.lastSeen).filter(validDate).sort().at(-1);
   $('freshness').textContent=lastCollection?`Most recent collection: ${dateText(lastCollection)}.${lastReview?` Latest editorial review: ${dateText(lastReview)}.`:''} Check the original advert before applying.`:lastReview?`Most recent editorial review: ${dateText(lastReview)}. ${ageDays(lastReview,now)>7?'Some listings may need rechecking.':'Check the advert before applying.'}`:'No collection dates are available yet. Check the original adverts for current details.';

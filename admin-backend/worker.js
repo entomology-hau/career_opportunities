@@ -32,6 +32,10 @@ export class HttpError extends Error {
   }
 }
 
+class ApprovalBlockedError extends HttpError {
+  constructor(message) { super(409, message); this.code = 'approval-blocked'; }
+}
+
 class OAuthError extends Error {
   constructor(code, upstreamStatus) {
     super('GitHub sign-in failed.'); this.code = code; this.upstreamStatus = safeHTTPStatus(upstreamStatus);
@@ -250,21 +254,21 @@ export function approvalAllowed(candidate, now = Date.now()) {
   const sighting = new Date(`${date}T00:00:00Z`);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '') || !Number.isFinite(sighting.getTime()) || sighting.toISOString().slice(0, 10) !== date ||
       date > today || Date.parse(`${today}T00:00:00Z`) - Date.parse(`${date}T00:00:00Z`) > 30 * 86400000) {
-    throw new HttpError(409, 'This advert has no recent source sighting. Refresh collection before approving.');
+    throw new ApprovalBlockedError('This advert has no recent source sighting. Refresh collection before approving.');
   }
   if (candidate.deadlineAt) {
     if (!Number.isFinite(Date.parse(candidate.deadlineAt)) || Date.parse(candidate.deadlineAt) <= now) {
-      throw new HttpError(409, 'This advert has passed its known closing time.');
+      throw new ApprovalBlockedError('This advert has passed its known closing time.');
     }
   } else if (candidate.deadlineSuggestion || candidate.deadline) {
     const closing = candidate.deadlineSuggestion || candidate.deadline;
     const parsed = new Date(`${closing}T00:00:00Z`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(closing) || !Number.isFinite(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== closing) {
-      throw new HttpError(409, 'This advert has an invalid closing date; correct it before approving.');
+      throw new ApprovalBlockedError('This advert has an invalid closing date; correct it before approving.');
     }
-    if (closing < today) throw new HttpError(409, 'This advert has passed its known closing date.');
+    if (closing < today) throw new ApprovalBlockedError('This advert has passed its known closing date.');
   }
-  if (['closed', 'withdrawn'].includes(candidate.status)) throw new HttpError(409, 'This advert is closed or withdrawn.');
+  if (['closed', 'withdrawn'].includes(candidate.status)) throw new ApprovalBlockedError('This advert is closed or withdrawn.');
 }
 
 async function loadQueue(env, token, fetcher) {
@@ -418,9 +422,15 @@ export async function handle(request, env, fetcher = fetch) {
         csrfToken: value.csrf, publicSiteUrl: env.PUBLIC_SITE_URL });
       if (route === 'GET /api/queue') {
         const { queue, sha } = await loadQueue(env, value.token, fetcher);
-        const candidates = await Promise.all(pendingCandidates(queue).map(async candidate => ({
-          ...candidate, fingerprint: await fingerprint(candidate),
-        })));
+        const candidates = await Promise.all(pendingCandidates(queue).map(async candidate => {
+          let approvalBlockedReason = '';
+          try { approvalAllowed(candidate); }
+          catch (error) {
+            if (!(error instanceof ApprovalBlockedError)) throw error;
+            approvalBlockedReason = error.message;
+          }
+          return { ...candidate, fingerprint: await fingerprint(candidate), approvalBlockedReason };
+        }));
         const history = queue.decisions.slice(-100).reverse().map(x => ({ id: x.id, advertUrl: x.advertUrl,
           title: x.expectedCandidate?.title, action: x.action, decidedBy: x.decidedBy, decidedAt: x.decidedAt,
           resolutionStatus: x.resolutionStatus || 'queued', resolutionReason: x.resolutionReason }));
@@ -444,7 +454,8 @@ export async function handle(request, env, fetcher = fetch) {
     }
     throw new HttpError(404, 'Not found.');
   } catch (error) {
-    return reply({ error: error instanceof HttpError ? error.message : 'The admin service is unavailable. Please try again later.' },
+    return reply({ error: error instanceof HttpError ? error.message : 'The admin service is unavailable. Please try again later.',
+      ...(error instanceof ApprovalBlockedError ? { code: 'approval-blocked' } : {}) },
       error instanceof HttpError ? error.status : 503);
   }
 }
