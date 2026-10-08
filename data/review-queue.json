@@ -71,10 +71,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T12:10:37.238204+00:00",
-      "lastSeen": "2026-10-08T08:46:38.778915+00:00",
+      "lastSeen": "2026-10-08T09:33:53.628348+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "9eb44ac24a414445dabbcf86ec72041adff3cd663e4f4ed8c1adbce09a712474",
-      "currentHash": "b60737f5676b3a7cd6f7d5e74524318b7ca36e3fd321440d8b72941fe0887d10"
+      "previousHash": "b60737f5676b3a7cd6f7d5e74524318b7ca36e3fd321440d8b72941fe0887d10",
+      "currentHash": "e431d2bc29f3933468b938ef955b603415af579b606b7d7bbbaa40bb07091220"
     },
     {
       "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
@@ -89,6 +89,20 @@
       "lastChecked": "2026-09-29",
       "previousHash": "b353b4e6c9bf8e448da0b0ee1d6c1822872f4f0eae24c32d20787ec8f020a14c",
       "currentHash": "1ffa04fd7fae9fda9c5e462f835c45ad57a98bb2e1c6941fdb8de14746a5b6e4"
+    },
+    {
+      "taskKey": "lincoln-pest-networks-2026:changed",
+      "id": "lincoln-pest-networks-2026",
+      "kind": "changed",
+      "title": "Optimal pest detection networks for robust management decisions",
+      "url": "https://www.findaphd.com/phds/project/optimal-pest-detection-networks-for-robust-management-decisions/?p198653=",
+      "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
+      "reviewStatus": "pending",
+      "detectedAt": "2026-10-08T09:33:53.628348+00:00",
+      "lastSeen": "2026-10-08T09:33:53.628348+00:00",
+      "lastChecked": "2026-09-29",
+      "previousHash": "97516d928fe34a77c69cc6a9fbd7b64eb8a7c411f047d17a9230d8dc6a6b07db",
+      "currentHash": "57e1077beecbb193ac7112ab32588da0e138d34e816372eeb673fee39ff60ca5"
     },
     {
       "taskKey": "pepsico-agricultural-science-technician-2026:unreachable",
