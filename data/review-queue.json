@@ -71,10 +71,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T12:10:37.238204+00:00",
-      "lastSeen": "2026-10-07T11:49:46.996195+00:00",
+      "lastSeen": "2026-10-08T08:46:38.778915+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "45bc14e76e897377cf7f087a48fbfc3ad5657f18ee8f3afac4b46dd2e2928282",
-      "currentHash": "9eb44ac24a414445dabbcf86ec72041adff3cd663e4f4ed8c1adbce09a712474"
+      "previousHash": "9eb44ac24a414445dabbcf86ec72041adff3cd663e4f4ed8c1adbce09a712474",
+      "currentHash": "b60737f5676b3a7cd6f7d5e74524318b7ca36e3fd321440d8b72941fe0887d10"
     },
     {
       "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
@@ -85,10 +85,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-07T11:49:46.996195+00:00",
+      "lastSeen": "2026-10-08T08:46:38.778915+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "3724bdb06fee22dd0a19a4ac1685ad0e58da8e764c01d62404f5cbe8f2f94fa9",
-      "currentHash": "b353b4e6c9bf8e448da0b0ee1d6c1822872f4f0eae24c32d20787ec8f020a14c"
+      "previousHash": "b353b4e6c9bf8e448da0b0ee1d6c1822872f4f0eae24c32d20787ec8f020a14c",
+      "currentHash": "1ffa04fd7fae9fda9c5e462f835c45ad57a98bb2e1c6941fdb8de14746a5b6e4"
     },
     {
       "taskKey": "pepsico-agricultural-science-technician-2026:unreachable",
