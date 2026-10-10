@@ -71,10 +71,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T12:10:37.238204+00:00",
-      "lastSeen": "2026-10-08T09:33:53.628348+00:00",
+      "lastSeen": "2026-10-10T11:13:07.656050+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "b60737f5676b3a7cd6f7d5e74524318b7ca36e3fd321440d8b72941fe0887d10",
-      "currentHash": "e431d2bc29f3933468b938ef955b603415af579b606b7d7bbbaa40bb07091220"
+      "previousHash": "e431d2bc29f3933468b938ef955b603415af579b606b7d7bbbaa40bb07091220",
+      "currentHash": "1f4ea4219f2d33308428fa48796f3186160344ac0a53ad0cac03e42d8cb3cabf"
     },
     {
       "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
@@ -85,10 +85,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-09T11:56:36.732787+00:00",
+      "lastSeen": "2026-10-10T11:13:07.656050+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "1ffa04fd7fae9fda9c5e462f835c45ad57a98bb2e1c6941fdb8de14746a5b6e4",
-      "currentHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5"
+      "previousHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5",
+      "currentHash": "7723c8e2b0e445d88617b0c28e38a9d4e82ae36c35cef92e4e19d5656ba4bb7a"
     },
     {
       "taskKey": "lincoln-pest-networks-2026:changed",
