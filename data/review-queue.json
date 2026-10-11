@@ -85,10 +85,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-10T11:13:07.656050+00:00",
+      "lastSeen": "2026-10-11T11:26:36.966210+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5",
-      "currentHash": "7723c8e2b0e445d88617b0c28e38a9d4e82ae36c35cef92e4e19d5656ba4bb7a"
+      "previousHash": "7723c8e2b0e445d88617b0c28e38a9d4e82ae36c35cef92e4e19d5656ba4bb7a",
+      "currentHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5"
     },
     {
       "taskKey": "lincoln-pest-networks-2026:changed",
