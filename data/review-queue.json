@@ -63,6 +63,20 @@
   ],
   "reviewTasks": [
     {
+      "taskKey": "tcv-biodiversity-action-volunteer-officer-2026:changed",
+      "id": "tcv-biodiversity-action-volunteer-officer-2026",
+      "kind": "changed",
+      "title": "Biodiversity Action Projects Volunteer Officer",
+      "url": "https://www2.tcv.org.uk/cgi-bin/volunteer/key_vol_vacancy?id=381",
+      "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
+      "reviewStatus": "pending",
+      "detectedAt": "2026-10-12T13:13:55.457514+00:00",
+      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
+      "lastChecked": "2026-09-30",
+      "previousHash": "95fe710836d2e39eed1c953c31cabb372a8f93078656ba3a2a916b91769835d2",
+      "currentHash": "3f2083ba8eea46c28e8e05f5c620008c0a5b3e3af4324577fae11a87546aeb71"
+    },
+    {
       "taskKey": "united-utilities-graduate-ecologist-2027:changed",
       "id": "united-utilities-graduate-ecologist-2027",
       "kind": "changed",
@@ -71,10 +85,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T12:10:37.238204+00:00",
-      "lastSeen": "2026-10-10T11:13:07.656050+00:00",
+      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "e431d2bc29f3933468b938ef955b603415af579b606b7d7bbbaa40bb07091220",
-      "currentHash": "1f4ea4219f2d33308428fa48796f3186160344ac0a53ad0cac03e42d8cb3cabf"
+      "previousHash": "1f4ea4219f2d33308428fa48796f3186160344ac0a53ad0cac03e42d8cb3cabf",
+      "currentHash": "907d884e812012de6606659ad4c3ec98d80b96ef462902654fcacfaa741a4e5a"
     },
     {
       "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
@@ -85,10 +99,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-11T11:26:36.966210+00:00",
+      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "7723c8e2b0e445d88617b0c28e38a9d4e82ae36c35cef92e4e19d5656ba4bb7a",
-      "currentHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5"
+      "previousHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5",
+      "currentHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7"
     },
     {
       "taskKey": "lincoln-pest-networks-2026:changed",
@@ -140,9 +154,9 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-09-30T15:41:29.445176+00:00",
+      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
       "lastChecked": "2026-09-29",
-      "evidence": "HTTP Error 403: Forbidden"
+      "evidence": "robots.txt unavailable; skipped conservatively"
     },
     {
       "taskKey": "united-utilities-graduate-ecologist-2027:unreachable",
@@ -166,9 +180,9 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-09-30T15:41:29.445176+00:00",
+      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
       "lastChecked": "2026-09-29",
-      "evidence": "HTTP Error 403: Forbidden"
+      "evidence": "robots.txt unavailable; skipped conservatively"
     },
     {
       "taskKey": "hutton-peatlands-pollinators-2026:unreachable",
@@ -179,9 +193,9 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-09-30T15:41:29.445176+00:00",
+      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
       "lastChecked": "2026-09-29",
-      "evidence": "HTTP Error 403: Forbidden"
+      "evidence": "robots.txt unavailable; skipped conservatively"
     },
     {
       "taskKey": "newcastle-agroforestry-wildlife-connectivity-2026:unreachable",
@@ -192,9 +206,9 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-09-30T15:41:29.445176+00:00",
+      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
       "lastChecked": "2026-09-29",
-      "evidence": "HTTP Error 403: Forbidden"
+      "evidence": "robots.txt unavailable; skipped conservatively"
     }
   ],
   "publicationMode": "automatic"
