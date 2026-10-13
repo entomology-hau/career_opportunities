@@ -85,10 +85,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T12:10:37.238204+00:00",
-      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
+      "lastSeen": "2026-10-13T12:45:29.663293+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "1f4ea4219f2d33308428fa48796f3186160344ac0a53ad0cac03e42d8cb3cabf",
-      "currentHash": "907d884e812012de6606659ad4c3ec98d80b96ef462902654fcacfaa741a4e5a"
+      "previousHash": "907d884e812012de6606659ad4c3ec98d80b96ef462902654fcacfaa741a4e5a",
+      "currentHash": "88dfe08a1c9b545a99c507cc177891412fd3692774aec63beed683071e709aed"
     },
     {
       "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
@@ -99,10 +99,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
+      "lastSeen": "2026-10-13T12:45:29.663293+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5",
-      "currentHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7"
+      "previousHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7",
+      "currentHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5"
     },
     {
       "taskKey": "lincoln-pest-networks-2026:changed",
@@ -141,9 +141,9 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-09-30T15:41:29.445176+00:00",
+      "lastSeen": "2026-10-13T12:45:29.663293+00:00",
       "lastChecked": "2026-09-29",
-      "evidence": "robots.txt unavailable; skipped conservatively"
+      "evidence": "HTTP Error 404: Not Found"
     },
     {
       "taskKey": "crg-mountain-lakes-edna-2027:unreachable",
