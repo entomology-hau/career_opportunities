@@ -54,7 +54,7 @@
         "entomology",
         "ipm"
       ],
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "hutton-peatlands-pollinators-2026",
@@ -107,7 +107,7 @@
         "entomology",
         "biological-recording"
       ],
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "leeds-black-soldier-fly-b12-2026",
@@ -365,7 +365,7 @@
         "entomology",
         "biological-recording"
       ],
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "monteverde-insect-internship",
@@ -420,7 +420,7 @@
       "courses": [
         "entomology"
       ],
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "beewalk-volunteer",
@@ -1221,7 +1221,7 @@
       "courses": [
         "biological-recording"
       ],
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "tcv-biodiversity-action-volunteer-officer-2026",
@@ -1497,19 +1497,19 @@
     },
     {
       "id": "auto-c45ef2bc3a7b821f",
-      "title": "Limestone Grassland Landscape Officer",
+      "title": "Marsh Mallow Moth Project Officer",
       "url": "https://butterflyconservation.livevacancies.co.uk/",
       "organisation": "Butterfly Conservation",
-      "location": "Hybrid working, office-based in Derrygonnelly, Co. Fermanagh. Occasional travel across Northern Ireland and cross-border",
+      "location": "Home based within East Kent or East Sussex, with travel required to sites within the Romney Marsh & Rye region, England, UK",
       "country": "United Kingdom",
-      "workplace": "Hybrid",
+      "workplace": "Workplace not supplied",
       "funding": "Not supplied",
       "compensation": "Not supplied",
       "eligibility": "Check original advert for eligibility",
       "careerLevel": "Not supplied",
       "type": "job",
       "classificationInferred": true,
-      "summary": "Automatically collected from Royal Entomological Society. Matched: Butterfly. See the original advert for full details.",
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Butterfly, Moth. See the original advert for full details.",
       "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
@@ -1517,7 +1517,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1525,18 +1525,19 @@
         "entomology"
       ],
       "tags": [
-        "Butterfly"
+        "Butterfly",
+        "Moth"
       ],
       "relevanceTier": "Core subject",
       "status": "open",
       "provenance": [
         "https://butterflyconservation.livevacancies.co.uk/"
       ],
-      "deadline": "2026-10-12",
-      "deadlineAt": "2026-10-13T00:00:00+01:00",
+      "deadline": "2026-11-06",
+      "deadlineAt": "2026-11-07T00:00:00+00:00",
       "deadlineTimezone": "Europe/London",
-      "deadlineLabel": "2026-10-12 · source date; confirm closing time",
-      "dateBasis": "deadline is 12/10/26"
+      "deadlineLabel": "2026-11-06 · source date; confirm closing time",
+      "dateBasis": "deadline is 06/11/26"
     },
     {
       "id": "auto-45f0d9085cff5d27",
@@ -1604,7 +1605,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1647,7 +1648,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1689,7 +1690,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1731,7 +1732,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -1773,7 +1774,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1815,7 +1816,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1857,7 +1858,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1899,7 +1900,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-29",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour",
         "Ecology & conservation"
@@ -1946,7 +1947,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1988,7 +1989,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -2030,7 +2031,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Monitoring & environmental risk"
       ],
@@ -2073,7 +2074,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -2116,7 +2117,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -2159,7 +2160,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -2202,7 +2203,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -2245,7 +2246,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -2289,7 +2290,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -2332,7 +2333,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -2463,7 +2464,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -2507,7 +2508,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -2593,7 +2594,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -2636,7 +2637,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -2681,7 +2682,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -2725,7 +2726,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3120,7 +3121,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3207,7 +3208,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3338,7 +3339,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3383,7 +3384,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3472,7 +3473,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3647,7 +3648,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3865,7 +3866,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3908,7 +3909,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3951,7 +3952,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -3996,7 +3997,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4040,7 +4041,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-03",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4083,7 +4084,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4126,7 +4127,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -4169,7 +4170,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4212,7 +4213,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4255,7 +4256,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4298,7 +4299,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4341,7 +4342,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4385,7 +4386,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4428,7 +4429,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4470,7 +4471,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4514,7 +4515,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4557,7 +4558,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4601,7 +4602,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4644,7 +4645,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -4661,6 +4662,306 @@
       "status": "open-no-deadline",
       "provenance": [
         "https://environmentjob.co.uk/jobs/111983-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-702048fa071c9069",
+      "title": "Postdoctoral Research Fellow (Neurobiology and Behaviour)",
+      "url": "https://www.jobs.ac.uk/job/DTE166/postdoctoral-research-fellow-neurobiology-and-behaviour",
+      "organisation": "University of Sussex",
+      "location": "Falmer, Brighton, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DTE166/postdoctoral-research-fellow-neurobiology-and-behaviour"
+      ],
+      "deadline": "2026-11-01",
+      "deadlineAt": "2026-11-02T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-11-01 · source date; confirm closing time",
+      "dateBasis": "deadline is 01/11/26"
+    },
+    {
+      "id": "auto-e93b2feb84ebf958",
+      "title": "Postdoctoral Research Fellow (Molecular Cell Biology)",
+      "url": "https://www.jobs.ac.uk/job/DTE169/postdoctoral-research-fellow-molecular-cell-biology",
+      "organisation": "University of Sussex",
+      "location": "Falmer, Brighton, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DTE169/postdoctoral-research-fellow-molecular-cell-biology"
+      ],
+      "deadline": "2026-11-01",
+      "deadlineAt": "2026-11-02T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-11-01 · source date; confirm closing time",
+      "dateBasis": "deadline is 01/11/26"
+    },
+    {
+      "id": "auto-57894adc3dd2a620",
+      "title": "Postdoctoral Research Associate",
+      "url": "https://www.jobs.ac.uk/job/DTF547/postdoctoral-research-associate",
+      "organisation": "University of Edinburgh",
+      "location": "Edinburgh, Scotland, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DTF547/postdoctoral-research-associate"
+      ],
+      "deadline": "2026-11-13",
+      "deadlineAt": "2026-11-14T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-11-13 · source date; confirm closing time",
+      "dateBasis": "deadline is 13/11/26"
+    },
+    {
+      "id": "auto-78f28cf171fa4074",
+      "title": "GENETICIST",
+      "url": "https://www.betabugs.uk/careers",
+      "organisation": "Beta Bugs",
+      "location": "Roslin, Scotland, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://www.betabugs.uk/careers"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-d54a6f85bf146829",
+      "title": "Nature Recovery Works Supervisor",
+      "url": "https://environmentjob.co.uk/jobs/112015-nature-recovery-works-supervisor",
+      "organisation": "Forestry England",
+      "location": "Pickering, North Yorkshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£30,105 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Nature Recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Nature Recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/112015-nature-recovery-works-supervisor"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-031e45b33a8e9215",
+      "title": "Local Nature Recovery Assistant",
+      "url": "https://environmentjob.co.uk/jobs/112013-local-nature-recovery-assistant",
+      "organisation": "Gloucestershire County Council",
+      "location": "Gloucester",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£31,015 - £33,673 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Nature Recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Nature Recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/112013-local-nature-recovery-assistant"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-20591b7a502314b3",
+      "title": "Senior Policy Analyst (Nature Recovery)",
+      "url": "https://environmentjob.co.uk/jobs/112006-senior-policy-analyst-nature-recovery",
+      "organisation": "Environmental Standards Scotland",
+      "location": "Edinburgh",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£49,401 - £59,152 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Nature Recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Nature Recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/112006-senior-policy-analyst-nature-recovery"
       ],
       "deadline": null,
       "deadlineAt": null,

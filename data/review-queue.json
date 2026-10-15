@@ -71,10 +71,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-12T13:13:55.457514+00:00",
-      "lastSeen": "2026-10-12T13:13:55.457514+00:00",
+      "lastSeen": "2026-10-15T09:59:59.878098+00:00",
       "lastChecked": "2026-09-30",
-      "previousHash": "95fe710836d2e39eed1c953c31cabb372a8f93078656ba3a2a916b91769835d2",
-      "currentHash": "3f2083ba8eea46c28e8e05f5c620008c0a5b3e3af4324577fae11a87546aeb71"
+      "previousHash": "3f2083ba8eea46c28e8e05f5c620008c0a5b3e3af4324577fae11a87546aeb71",
+      "currentHash": "3376fb05c46e9db5e544f932d0b03e35f5c08e0f1de29a7972457a22e00df299"
     },
     {
       "taskKey": "united-utilities-graduate-ecologist-2027:changed",
@@ -85,10 +85,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T12:10:37.238204+00:00",
-      "lastSeen": "2026-10-14T10:16:58.108166+00:00",
+      "lastSeen": "2026-10-15T09:59:59.878098+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "88dfe08a1c9b545a99c507cc177891412fd3692774aec63beed683071e709aed",
-      "currentHash": "ae4d7e17866ba0a77cf5f9ccc29874e8656468c9118b31014cbb4b9d1c745279"
+      "previousHash": "ae4d7e17866ba0a77cf5f9ccc29874e8656468c9118b31014cbb4b9d1c745279",
+      "currentHash": "f41d18317f3f8580b4f36e5b8d87f542672231b0d2108571af8357266e310de8"
     },
     {
       "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
@@ -99,10 +99,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-14T10:16:58.108166+00:00",
+      "lastSeen": "2026-10-15T09:59:59.878098+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "d522acb57c31aae33105c2c778cb712c7486b91d9de4cd6aa7db68cc4d694be5",
-      "currentHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7"
+      "previousHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7",
+      "currentHash": "85fd4a8e81f889a553b76854311099670091cbb7187bdedd2090585242dd00b4"
     },
     {
       "taskKey": "lincoln-pest-networks-2026:changed",
@@ -127,10 +127,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-14T10:16:58.108166+00:00",
-      "lastSeen": "2026-10-14T10:16:58.108166+00:00",
+      "lastSeen": "2026-10-15T09:59:59.878098+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "b542d2a719884ba43cf299157f54dd5ba58100f87b667107bc7dd2ddd3f006bc",
-      "currentHash": "1053ac3fb0ffbafc5fc15af01fb3f1b11275f3ce333553a69334b8ba4e12e2d4"
+      "previousHash": "1053ac3fb0ffbafc5fc15af01fb3f1b11275f3ce333553a69334b8ba4e12e2d4",
+      "currentHash": "6a0bc457d24c124894e9e9a81f62c7ba852a02b1333762dea35812cfb71acb1d"
     },
     {
       "taskKey": "kcl-fly-facility-technician-2026:changed",
@@ -155,7 +155,7 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-10-14T10:16:58.108166+00:00",
+      "lastSeen": "2026-10-15T09:59:59.878098+00:00",
       "lastChecked": "2026-09-29",
       "evidence": "HTTP Error 404: Not Found"
     },
