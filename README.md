@@ -88,3 +88,8 @@ python scripts/refresh.py
 - [GitHub Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 - [GitHub scheduled workflow guidance](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 - [Google job-posting documentation](https://developers.google.com/search/docs/appearance/structured-data/job-posting): Google's Indexing API is for publisher notifications, not retrieving Google job results.
+
+
+## Entomology student hub
+
+The undergraduate and postgraduate landing page is at [career_opportunities/hub/](https://entomology-hau.github.io/career_opportunities/hub/). It links the opportunity board, UK and global news, research, and practical tools. News and research refresh through the existing daily Pages workflow. See [HUB_MAINTENANCE.md](HUB_MAINTENANCE.md) for sources, editorial highlights and maintenance.

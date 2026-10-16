@@ -16,6 +16,7 @@ import sys
 
 GENERATED_FILES = (
     "site/data/health.json",
+    "site/hub/data/feed.json",
     "data/review-queue.json",
     "site/data/opportunities.json",
 )
@@ -86,7 +87,7 @@ def persist(repo, branch="main", remote="origin", attempts=3):
     _git(repo, "add", "--", *GENERATED_FILES)
     # --only prevents unrelated files already staged by a caller being committed.
     _git(repo, "-c", f"user.name={BOT_NAME}", "-c", f"user.email={BOT_EMAIL}",
-         "commit", "--only", "-m", "Update opportunities and source checks",
+         "commit", "--only", "-m", "Update opportunities, hub highlights and source checks",
          "--", *GENERATED_FILES)
     generated_head = _git(repo, "rev-parse", "HEAD").stdout.strip()
 

@@ -25,6 +25,7 @@ class PersistChecksTests(unittest.TestCase):
         self.identity(self.runner)
         for filename, contents in {
             "site/data/health.json": {"lastRun": "old"},
+            "site/hub/data/feed.json": {"items": [], "updatedAt": "old"},
             "data/review-queue.json": {"candidates": [], "excluded": []},
             "site/data/opportunities.json": {"opportunities": [{"id": "approved-original"}]},
             "site/data/sources.json": {"sources": ["original"]},
@@ -52,6 +53,7 @@ class PersistChecksTests(unittest.TestCase):
         path.write_text(json.dumps(value) + "\n")
 
     def generated(self):
+        self.write(self.runner, "site/hub/data/feed.json", {"items": [{"id": "new-highlight"}], "updatedAt": "new"})
         self.write(self.runner, "site/data/health.json", {"lastRun": "new"})
         self.write(self.runner, "data/review-queue.json", {
             "candidates": [{"url": "https://example.test/candidate"}], "excluded": []})
