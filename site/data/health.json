@@ -1,16 +1,16 @@
 {
   "schemaVersion": 3,
-  "lastRun": "2026-10-15T09:59:59.878098+00:00",
+  "lastRun": "2026-10-16T09:53:50.733290+00:00",
   "sources": [
     {
       "id": "res-jobs",
       "status": "ok",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "entriesFound": 19,
-      "candidatesFound": 4,
-      "newCandidates": 4,
-      "knownCount": 15,
+      "candidatesFound": 0,
+      "newCandidates": 0,
+      "knownCount": 19,
       "excludedCount": 0,
       "filteredCount": 0,
       "pendingSeen": 0,
@@ -20,8 +20,8 @@
     {
       "id": "res-phds",
       "status": "ok",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "entriesFound": 11,
       "candidatesFound": 0,
       "newCandidates": 0,
@@ -35,14 +35,14 @@
     {
       "id": "environmentjob",
       "status": "ok",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
-      "entriesFound": 174,
-      "candidatesFound": 3,
-      "newCandidates": 3,
-      "knownCount": 32,
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
+      "entriesFound": 181,
+      "candidatesFound": 1,
+      "newCandidates": 1,
+      "knownCount": 33,
       "excludedCount": 0,
-      "filteredCount": 139,
+      "filteredCount": 147,
       "pendingSeen": 0,
       "duplicateCount": 0,
       "pastDeadlineCount": 0
@@ -50,14 +50,14 @@
     {
       "id": "environmentjob-volunteering",
       "status": "ok",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
-      "entriesFound": 37,
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
+      "entriesFound": 36,
       "candidatesFound": 0,
       "newCandidates": 0,
       "knownCount": 1,
       "excludedCount": 0,
-      "filteredCount": 36,
+      "filteredCount": 35,
       "pendingSeen": 0,
       "duplicateCount": 0,
       "pastDeadlineCount": 0
@@ -65,14 +65,14 @@
     {
       "id": "bath-jobs",
       "status": "ok",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
-      "entriesFound": 38,
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
+      "entriesFound": 41,
       "candidatesFound": 0,
       "newCandidates": 0,
       "knownCount": 0,
       "excludedCount": 0,
-      "filteredCount": 38,
+      "filteredCount": 41,
       "pendingSeen": 0,
       "duplicateCount": 0,
       "pastDeadlineCount": 0
@@ -80,14 +80,14 @@
     {
       "id": "harper-adams-jobs",
       "status": "ok",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
-      "entriesFound": 13,
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
+      "entriesFound": 14,
       "candidatesFound": 0,
       "newCandidates": 0,
       "knownCount": 0,
       "excludedCount": 0,
-      "filteredCount": 13,
+      "filteredCount": 14,
       "pendingSeen": 0,
       "duplicateCount": 0,
       "pastDeadlineCount": 0
@@ -96,8 +96,8 @@
   "links": [
     {
       "id": "lincoln-pest-networks-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "57e1077beecbb193ac7112ab32588da0e138d34e816372eeb673fee39ff60ca5",
       "hashMethod": "advert-content-v1",
@@ -105,8 +105,8 @@
     },
     {
       "id": "hutton-peatlands-pollinators-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "598d1c88346fada03268ff3211b585ff457d646c3fc87fe1c7f86333251569fc",
       "hashMethod": "advert-content-v1",
@@ -114,40 +114,40 @@
     },
     {
       "id": "leeds-black-soldier-fly-b12-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "lastSucceeded": "2026-09-30T15:41:29.445176+00:00",
       "status": "past-deadline"
     },
     {
       "id": "nhm-dissco-digitiser-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "past-deadline"
     },
     {
       "id": "rspb-woodland-scientist-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "lastSucceeded": "2026-10-07T11:49:46.996195+00:00",
       "status": "past-deadline"
     },
     {
       "id": "butterfly-grassland-officer-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "lastSucceeded": "2026-10-11T11:26:36.966210+00:00",
       "status": "past-deadline"
     },
     {
       "id": "wildfish-smartrivers-analysts",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
-      "contentHash": "6a0bc457d24c124894e9e9a81f62c7ba852a02b1333762dea35812cfb71acb1d",
+      "contentHash": "c05f2560148b210373149f5bdc61cbd49c8551700d1746835cee5412946b7dc4",
       "hashMethod": "advert-content-v1",
       "contentChanged": true
     },
     {
       "id": "monteverde-insect-internship",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "51ef1d26ecc73b7a55d081cb6b3e496dc5c53ab60eeacf2e97ab7a9eed075bd0",
       "hashMethod": "advert-content-v1",
@@ -155,8 +155,8 @@
     },
     {
       "id": "beewalk-volunteer",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "a8aa9f081776b2d4c2cf50723d1b3ceeaa42ee1ca777283709079cc5c9ddb1c5",
       "hashMethod": "advert-content-v1",
@@ -164,14 +164,14 @@
     },
     {
       "id": "kcl-fly-facility-technician-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "lastSucceeded": "2026-10-09T11:56:36.732787+00:00",
       "status": "past-deadline"
     },
     {
       "id": "morepeople-horticulture-ipm-advisor-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "7dbfe9b01e5cc66b4d28c16ae0cd98982edd0f1141590a9ccb79701366de3e22",
       "hashMethod": "advert-content-v1",
@@ -179,8 +179,8 @@
     },
     {
       "id": "forest-research-scientist-pathology-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "6ed657deb3da93f17f6625da6eb69e3c8244845133bbdd62cc258d7c3bfad8ab",
       "hashMethod": "advert-content-v1",
@@ -188,21 +188,21 @@
     },
     {
       "id": "utrecht-plant-microbiome-pathogen-phd-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "lastSucceeded": "2026-10-01T13:46:45.904015+00:00",
       "status": "past-deadline"
     },
     {
       "id": "pepsico-agricultural-science-technician-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "lastSucceeded": "2026-10-12T13:13:55.457514+00:00",
       "status": "needs-check",
       "message": "HTTP Error 404: Not Found"
     },
     {
       "id": "hutchinsons-horticultural-agronomist-eastanglia-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "85fd4a8e81f889a553b76854311099670091cbb7187bdedd2090585242dd00b4",
       "hashMethod": "advert-content-v1",
@@ -210,8 +210,8 @@
     },
     {
       "id": "tetra-tech-graduate-ecologist-2027",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "5864bed3162a9cfce76cc34dc39c7e557b6f485e94dbc8a0dad85efabaa0a85d",
       "hashMethod": "advert-content-v1",
@@ -219,32 +219,29 @@
     },
     {
       "id": "pba-graduate-assistant-ecologist-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "lastSucceeded": "2026-10-04T11:08:39.574590+00:00",
       "status": "past-deadline"
     },
     {
       "id": "united-utilities-graduate-ecologist-2027",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
-      "contentHash": "f41d18317f3f8580b4f36e5b8d87f542672231b0d2108571af8357266e310de8",
+      "contentHash": "c260e2a4d614660d72446ebe9bada51149ddc59db72c2c44b72bd3bf6139ed8d",
       "hashMethod": "advert-content-v1",
       "contentChanged": true
     },
     {
       "id": "newcastle-agroforestry-wildlife-connectivity-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
-      "status": "reachable",
-      "contentHash": "63ccb25eff857fb336800cec0c91f6c3d0ca582cade3e5306c485029f64b4f2d",
-      "hashMethod": "advert-content-v1",
-      "contentChanged": false
+      "status": "past-deadline"
     },
     {
       "id": "riverfly-volunteer-monitor",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "86faddf6f095c1c73f83646ef99e9e43404c0363ec613210d892e504fbbe1b75",
       "hashMethod": "advert-content-v1",
@@ -252,8 +249,8 @@
     },
     {
       "id": "ukbms-wider-countryside-volunteer",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "3a3f03ab79f2c10a5a498ec3b50b528985099f583c3b99161820013d92408f28",
       "hashMethod": "advert-content-v1",
@@ -261,8 +258,8 @@
     },
     {
       "id": "crg-mountain-lakes-edna-2027",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "f1317eb6005cebf48fc76fb000d61a844069c069b19749bcb809c96ab9b4b008",
       "hashMethod": "advert-content-v1",
@@ -270,8 +267,8 @@
     },
     {
       "id": "crawley-biodiversity-project-officer-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "f95c498e6288321974ca89dd2f2074d3ff23c6488f5714b27758fe00833337de",
       "hashMethod": "advert-content-v1",
@@ -279,8 +276,8 @@
     },
     {
       "id": "tcv-biodiversity-action-volunteer-officer-2026",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "lastSucceeded": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "lastSucceeded": "2026-10-16T09:53:50.733290+00:00",
       "status": "reachable",
       "contentHash": "3376fb05c46e9db5e544f932d0b03e35f5c08e0f1de29a7972457a22e00df299",
       "hashMethod": "advert-content-v1",
@@ -288,476 +285,519 @@
     },
     {
       "id": "auto-af00fba2cc6366e1",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "past-deadline"
     },
     {
       "id": "auto-ab2061fe4b166d33",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "past-deadline"
     },
     {
       "id": "auto-5d484c858e860ae9",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "past-deadline"
     },
     {
       "id": "auto-cfd6398fe5e8f964",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "past-deadline"
     },
     {
       "id": "auto-7497bd6caba1eaec",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "past-deadline"
     },
     {
       "id": "auto-c45ef2bc3a7b821f",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "status": "past-deadline"
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "source-listed",
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-45f0d9085cff5d27",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "past-deadline"
     },
     {
       "id": "auto-4c4362f625192c91",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-ae59e5a47a3dec39",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-de0b36c30e5b4fdf",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-698e693c1aa142df",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-c301f84724048ee6",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-ee49850318f47ddb",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-07c934db44e41e1e",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-76fb56123c94dcff",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-4f462e94e59d94a8",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-e2b1dadc49bc44ce",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-a4c707510c96f651",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-19cca34163f0bbfa",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-3b8db7f756be2822",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-804f6a91d0ccb9a5",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-eae43b8a4db04775",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-3088327000d231de",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-bfb78ffc9e4e4d2e",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-27ab91049794c0d7",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-bda14cb7f1459aae",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-10"
     },
     {
       "id": "auto-109db1332ea500d9",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-10"
     },
     {
       "id": "auto-22ff1e382ae6568f",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-260ef119e15084b5",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-1e4e5735d2f3b028",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-05"
     },
     {
       "id": "auto-349fe5ad7e065e37",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-11dd4cac5fd433cb",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "not-seen",
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-0f06704498393152",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-792b39f22908dc83",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-6bcc821e68430fef",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-11"
     },
     {
       "id": "auto-89a7447e2593b8cf",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-11"
     },
     {
       "id": "auto-6fcee0fec1386d5e",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-08"
     },
     {
       "id": "auto-920d5bae47a84e4b",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-04"
     },
     {
       "id": "auto-cc0e977db076dae6",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-09-30"
     },
     {
       "id": "auto-5a0174e4c64ad6d8",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-09-30"
     },
     {
       "id": "auto-43af88a1a9e00281",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-04"
     },
     {
       "id": "auto-cf447bb153e970a5",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-08"
     },
     {
       "id": "auto-d68bf33ac0b30aa7",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-c88713b29c216c72",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-05"
     },
     {
       "id": "auto-ddfc45530724f47a",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-3799263ebacf0135",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-04"
     },
     {
       "id": "auto-78776635f5627062",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-06"
     },
     {
       "id": "auto-94ece175dc72df58",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-9dcfb0328cbcdc2a",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
-      "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "not-seen",
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-dedf3ad21364e98a",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-13"
     },
     {
       "id": "auto-475e6a2105390355",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-4432e10f8c4daad1",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-06"
     },
     {
       "id": "auto-6469c43589132005",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-13"
     },
     {
       "id": "auto-ee0fdc651976d294",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-09-30"
     },
     {
       "id": "auto-79c371481c5e6419",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-fbad48f86a7bf215",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-11"
     },
     {
       "id": "auto-aed2e32c580957be",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-09-30"
     },
     {
       "id": "auto-0621b9fe1da81838",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-10-01"
     },
     {
       "id": "auto-3095d149d319b0b7",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "not-seen",
       "lastSeen": "2026-09-30"
     },
     {
       "id": "auto-f1c4440039920b19",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-c4c8f46a44e02f78",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-d54b70f969ddd54d",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-d149c348cee4d812",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-00ed49596fd3f0c1",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-3fbb45d8ed024949",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-fca1d1eeac9994f0",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-542c7f49c3851ba1",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-7315054344631b73",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-399a567f7a901376",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-add80956be5d7eea",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-74056473bc90fc8d",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-c657865e0bcd911d",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-50b6ed1f92b77d0c",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-90a0f4664afc9068",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-46c8e518f3a0e664",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-e4bde5db132416ff",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-84b5f57aaa8b98a1",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
     },
     {
       "id": "auto-2dfb54c965a9060d",
-      "lastAttempt": "2026-10-15T09:59:59.878098+00:00",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
       "status": "source-listed",
-      "lastSeen": "2026-10-14"
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "auto-702048fa071c9069",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "source-listed",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "auto-e93b2feb84ebf958",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "source-listed",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "auto-57894adc3dd2a620",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "source-listed",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "auto-78f28cf171fa4074",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "source-listed",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "auto-d54a6f85bf146829",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "source-listed",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "auto-031e45b33a8e9215",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "source-listed",
+      "lastSeen": "2026-10-15"
+    },
+    {
+      "id": "auto-20591b7a502314b3",
+      "lastAttempt": "2026-10-16T09:53:50.733290+00:00",
+      "status": "source-listed",
+      "lastSeen": "2026-10-15"
     }
   ],
   "discoveryStatus": "ok",
-  "newCandidates": 7,
+  "newCandidates": 1,
   "pendingCandidates": 2,
   "reviewTasks": 12,
   "manualSources": 14,
   "linkChecksSkipped": false,
-  "summary": "6 of 6 collectors working; 7 new adverts; 96 adverts live (79 automatically collected). 1 advert links need checking.",
+  "summary": "6 of 6 collectors working; 1 new adverts; 96 adverts live (80 automatically collected). 1 advert links need checking.",
   "publicationMode": "automatic",
-  "newPublished": 7,
-  "autoPublished": 79,
+  "newPublished": 1,
+  "autoPublished": 80,
   "activePublished": 96,
   "publicationSkipped": 0,
   "decisionsApplied": 0,
