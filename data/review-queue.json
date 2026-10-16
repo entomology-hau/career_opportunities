@@ -127,10 +127,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-14T10:16:58.108166+00:00",
-      "lastSeen": "2026-10-16T09:53:50.733290+00:00",
+      "lastSeen": "2026-10-16T15:15:23.795304+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "6a0bc457d24c124894e9e9a81f62c7ba852a02b1333762dea35812cfb71acb1d",
-      "currentHash": "c05f2560148b210373149f5bdc61cbd49c8551700d1746835cee5412946b7dc4"
+      "previousHash": "c05f2560148b210373149f5bdc61cbd49c8551700d1746835cee5412946b7dc4",
+      "currentHash": "34e0a44971c7dc43e02e9b6263e4eca28d870db246314a6a82ecdf0a0f47648e"
     },
     {
       "taskKey": "kcl-fly-facility-technician-2026:changed",
@@ -155,7 +155,7 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-10-16T09:53:50.733290+00:00",
+      "lastSeen": "2026-10-16T15:15:23.795304+00:00",
       "lastChecked": "2026-09-29",
       "evidence": "HTTP Error 404: Not Found"
     },
