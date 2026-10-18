@@ -99,10 +99,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-17T09:26:38.899723+00:00",
+      "lastSeen": "2026-10-18T09:40:43.854151+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "85fd4a8e81f889a553b76854311099670091cbb7187bdedd2090585242dd00b4",
-      "currentHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7"
+      "previousHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7",
+      "currentHash": "3724bdb06fee22dd0a19a4ac1685ad0e58da8e764c01d62404f5cbe8f2f94fa9"
     },
     {
       "taskKey": "lincoln-pest-networks-2026:changed",
@@ -127,10 +127,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-14T10:16:58.108166+00:00",
-      "lastSeen": "2026-10-17T09:26:38.899723+00:00",
+      "lastSeen": "2026-10-18T09:40:43.854151+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "34e0a44971c7dc43e02e9b6263e4eca28d870db246314a6a82ecdf0a0f47648e",
-      "currentHash": "c5c7425d4e68c1b3751152c09769f9090305cbcbd8876a52e36b737b9cb4aeb4"
+      "previousHash": "c5c7425d4e68c1b3751152c09769f9090305cbcbd8876a52e36b737b9cb4aeb4",
+      "currentHash": "bf731c4b8745cd71d933037b6276a48e47a9edcee94cb6f524e71945bfb744a9"
     },
     {
       "taskKey": "kcl-fly-facility-technician-2026:changed",
@@ -155,7 +155,7 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-10-17T09:26:38.899723+00:00",
+      "lastSeen": "2026-10-18T09:40:43.854151+00:00",
       "lastChecked": "2026-09-29",
       "evidence": "HTTP Error 404: Not Found"
     },
