@@ -85,10 +85,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T12:10:37.238204+00:00",
-      "lastSeen": "2026-10-16T09:53:50.733290+00:00",
+      "lastSeen": "2026-10-19T10:50:27.166338+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "f41d18317f3f8580b4f36e5b8d87f542672231b0d2108571af8357266e310de8",
-      "currentHash": "c260e2a4d614660d72446ebe9bada51149ddc59db72c2c44b72bd3bf6139ed8d"
+      "previousHash": "c260e2a4d614660d72446ebe9bada51149ddc59db72c2c44b72bd3bf6139ed8d",
+      "currentHash": "d0e3d29f1d3b78f733a4d6a78fcad12f13ca7ea413634e68d885c808d381ae76"
     },
     {
       "taskKey": "hutchinsons-horticultural-agronomist-eastanglia-2026:changed",
@@ -99,10 +99,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-18T09:40:43.854151+00:00",
+      "lastSeen": "2026-10-19T10:50:27.166338+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7",
-      "currentHash": "3724bdb06fee22dd0a19a4ac1685ad0e58da8e764c01d62404f5cbe8f2f94fa9"
+      "previousHash": "3724bdb06fee22dd0a19a4ac1685ad0e58da8e764c01d62404f5cbe8f2f94fa9",
+      "currentHash": "ee6dd9fcd5846df50996dc3bccdc776e046abd8a73118d4bae5f9e9f96cbd654"
     },
     {
       "taskKey": "lincoln-pest-networks-2026:changed",
@@ -127,10 +127,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-14T10:16:58.108166+00:00",
-      "lastSeen": "2026-10-18T09:40:43.854151+00:00",
+      "lastSeen": "2026-10-19T10:50:27.166338+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "c5c7425d4e68c1b3751152c09769f9090305cbcbd8876a52e36b737b9cb4aeb4",
-      "currentHash": "bf731c4b8745cd71d933037b6276a48e47a9edcee94cb6f524e71945bfb744a9"
+      "previousHash": "bf731c4b8745cd71d933037b6276a48e47a9edcee94cb6f524e71945bfb744a9",
+      "currentHash": "22759d87469546a83bcf4479cf841dec8196dbfdadfc14f990b880fff2eae4fe"
     },
     {
       "taskKey": "kcl-fly-facility-technician-2026:changed",
@@ -155,7 +155,7 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-10-18T09:40:43.854151+00:00",
+      "lastSeen": "2026-10-19T10:50:27.166338+00:00",
       "lastChecked": "2026-09-29",
       "evidence": "HTTP Error 404: Not Found"
     },

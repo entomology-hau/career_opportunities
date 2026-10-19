@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-10-18T09:41:52Z",
-  "lastSuccessfulUpdate": "2026-10-18T09:41:52Z",
+  "updatedAt": "2026-10-19T10:51:32Z",
+  "lastSuccessfulUpdate": "2026-10-19T10:51:32Z",
   "items": [
+    {
+      "id": "auto-e131dcdb8be4a472",
+      "kind": "news",
+      "title": "Open Access Week 2026",
+      "url": "https://www.royensoc.co.uk/news/open-access-week-2026",
+      "source": "Royal Entomological Society",
+      "sourceId": "royal-entomological-society",
+      "published": "2026-10-19",
+      "areas": [
+        "Insect biology & behaviour"
+      ],
+      "region": "global",
+      "curated": false,
+      "summary": "",
+      "why": "",
+      "tagMethod": "automatic-keywords",
+      "contentChecksVersion": 1
+    },
     {
       "id": "auto-b2c5d9e1eafa02b6",
       "kind": "news",
@@ -2228,24 +2246,6 @@
       "doi": "10.1111/imb.70061"
     },
     {
-      "id": "auto-3b07e31b75e34f4c",
-      "kind": "news",
-      "title": "RES Welcomes New Bronze Level Organisational Member: University of Reading",
-      "url": "https://www.royensoc.co.uk/news/res-welcomes-new-bronze-level-organisational-member-university-of-reading",
-      "source": "Royal Entomological Society",
-      "sourceId": "royal-entomological-society",
-      "published": "2026-08-17",
-      "areas": [
-        "Insect biology & behaviour"
-      ],
-      "region": "global",
-      "curated": false,
-      "summary": "",
-      "why": "",
-      "tagMethod": "automatic-keywords",
-      "contentChecksVersion": 1
-    },
-    {
       "id": "auto-6970408a19e4eb94",
       "kind": "research",
       "title": "Butterflies in urban India: Diversity, conservation actions and future prospects",
@@ -2542,8 +2542,8 @@
       "url": "https://entomologytoday.org/feed/",
       "homepage": "https://entomologytoday.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 9
     },
     {
@@ -2552,8 +2552,8 @@
       "url": "https://www.royensoc.co.uk/feed/",
       "homepage": "https://www.royensoc.co.uk/",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 10
     },
     {
@@ -2562,8 +2562,8 @@
       "url": "https://www.buglife.org.uk/news/feed/",
       "homepage": "https://www.buglife.org.uk/news/",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 6
     },
     {
@@ -2572,8 +2572,8 @@
       "url": "https://blog.cabi.org/feed/",
       "homepage": "https://blog.cabi.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 1
     },
     {
@@ -2582,8 +2582,8 @@
       "url": "https://blog.plantwise.org/feed/",
       "homepage": "https://blog.plantwise.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 1
     },
     {
@@ -2592,8 +2592,8 @@
       "url": "https://api.crossref.org/journals/1365-2311/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652311",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 35
     },
     {
@@ -2602,8 +2602,8 @@
       "url": "https://api.crossref.org/journals/1461-9563/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/14619563",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 27
     },
     {
@@ -2612,8 +2612,8 @@
       "url": "https://api.crossref.org/journals/1752-4598/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/17524598",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 35
     },
     {
@@ -2622,8 +2622,8 @@
       "url": "https://api.crossref.org/journals/1365-3032/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13653032",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 16
     },
     {
@@ -2632,8 +2632,8 @@
       "url": "https://api.crossref.org/journals/1365-3113/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13653113",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 14
     },
     {
@@ -2641,10 +2641,11 @@
       "name": "Medical and Veterinary Entomology",
       "url": "https://api.crossref.org/journals/1365-2915/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652915",
-      "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
+      "status": "cached",
+      "lastAttempt": "2026-10-19T10:51:32Z",
       "lastSuccess": "2026-10-18T09:41:52Z",
-      "count": 33
+      "count": 22,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "insect-molecular-biology",
@@ -2652,9 +2653,9 @@
       "url": "https://api.crossref.org/journals/1365-2583/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652583",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
-      "count": 18
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
+      "count": 17
     },
     {
       "id": "biological-control",
@@ -2662,8 +2663,8 @@
       "url": "https://api.crossref.org/journals/1049-9644/works",
       "homepage": "https://www.sciencedirect.com/journal/biological-control",
       "status": "ok",
-      "lastAttempt": "2026-10-18T09:41:52Z",
-      "lastSuccess": "2026-10-18T09:41:52Z",
+      "lastAttempt": "2026-10-19T10:51:32Z",
+      "lastSuccess": "2026-10-19T10:51:32Z",
       "count": 0
     }
   ]
