@@ -94,3 +94,11 @@ Requests use eight-second socket timeouts, at most two attempts, a 3 MB response
 ## Sensible next additions
 
 A staff-maintained events calendar, student project showcase and practical learning resources can extend the hub without turning the automatically gathered feeds into unreviewed advice. An external source can be added to `sources.json` after checking its feed/API, publication-date fields, scope and public reuse terms.
+
+## Hub views and HAU information
+
+The hub loads `../styles.css` to share the opportunities board's masthead, logo treatment, typography and colour tokens. `site/hub/hub.css` contains hub-specific layouts. Main navigation switches between highlights, HAU courses and research groups, the practical toolkit, and sources. Links such as `hub/?section=courses` open a view directly; fragment links can reveal a target in another view.
+
+The course and staff overview in `site/hub/index.html` was checked on 20 October 2026 against the linked official HAU course, group and staff pages. Staff affiliation and ordering follow the [postgraduate induction presentation](https://benclunie.github.io/hau-pg-induction/): group leads above teams, Joe Roberts first within Applied, and Jack Bamber within Ecology, Evolution and Conservation. This is a research-affiliation overview rather than a line-management chart. Review the official pages when staff or course details change.
+
+The careers section adapts the portfolio guidance in `Graduate_Outcomes_2026-27.pptx`: applied science, ecology and conservation, research, and communication. It publishes no individual graduate records or employment-rate claims.
