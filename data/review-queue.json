@@ -127,10 +127,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-14T10:16:58.108166+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "7a8c4ef09269b11013f00471c6722190ab60231680dfb8c97dcb404af3789f02",
-      "currentHash": "1e8b9f07091af4eee219150e0aa9f5d1f646a18885c9da25a75724728fbbdc3a"
+      "previousHash": "1e8b9f07091af4eee219150e0aa9f5d1f646a18885c9da25a75724728fbbdc3a",
+      "currentHash": "03876281ec112eae8bd572173143c534eedc4b829ac99d856441be5222f16207"
     },
     {
       "taskKey": "kcl-fly-facility-technician-2026:changed",
@@ -169,7 +169,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -182,7 +182,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -195,7 +195,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -208,7 +208,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -221,7 +221,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -234,7 +234,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -247,7 +247,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -260,7 +260,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -273,7 +273,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -286,7 +286,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -299,7 +299,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -312,7 +312,7 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "reviewAgeDays": 21
     },
@@ -325,7 +325,7 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "evidence": "HTTP Error 404: Not Found"
     },
@@ -364,7 +364,7 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-10-20T12:30:30.474424+00:00",
+      "lastSeen": "2026-10-20T13:17:51.574479+00:00",
       "lastChecked": "2026-09-29",
       "evidence": "HTTP Error 404: Not Found"
     },

@@ -1541,10 +1541,10 @@
     },
     {
       "id": "auto-45f0d9085cff5d27",
-      "title": "Senior Digital Learning Officer",
+      "title": "Conservation Projects Manager (South East England) Maternity Cover",
       "url": "https://www.bumblebeeconservation.org/what-we-do/vacancies",
       "organisation": "Bumblebee Conservation Trust",
-      "location": "Home based in UK",
+      "location": "London, Kent or East Sussex, England, UK",
       "country": "United Kingdom",
       "workplace": "Workplace not supplied",
       "funding": "Not supplied",
@@ -1554,15 +1554,16 @@
       "type": "job",
       "classificationInferred": true,
       "summary": "Automatically collected from Royal Entomological Society. Matched: Bumblebee. See the original advert for full details.",
-      "fitReason": "Source terms connect this advert to Pollination & beneficial insects.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation, Pollination & beneficial insects.",
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-20",
       "subjects": [
+        "Ecology & conservation",
         "Pollination & beneficial insects"
       ],
       "courses": [
@@ -1577,11 +1578,11 @@
       "provenance": [
         "https://www.bumblebeeconservation.org/what-we-do/vacancies"
       ],
-      "deadline": "2026-10-12",
-      "deadlineAt": "2026-10-13T00:00:00+01:00",
+      "deadline": "2026-10-26",
+      "deadlineAt": "2026-10-27T00:00:00+00:00",
       "deadlineTimezone": "Europe/London",
-      "deadlineLabel": "2026-10-12 · source date; confirm closing time",
-      "dateBasis": "deadline is 12/10/26"
+      "deadlineLabel": "2026-10-26 · source date; confirm closing time",
+      "dateBasis": "deadline is 26/10/26"
     },
     {
       "id": "auto-4c4362f625192c91",
@@ -5273,6 +5274,264 @@
       "status": "open-no-deadline",
       "provenance": [
         "https://environmentjob.co.uk/jobs/112061-senior-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-6e355abfa51f4d35",
+      "title": "Research Assistant (93159)",
+      "url": "https://app.vacancy-filler.co.uk/salescrm/Careers/CareersPage.aspx?e=LMo8nnTwYNZIQ61oSGU8kkJSz5LEWh5W4Je0gU62xzaJkOAXRjiQhOlMFy7CNAJ_Rik2cAD3ZD4&iframe=True&iframe=false",
+      "organisation": "Liverpool School of Tropical Medicine",
+      "location": "Liverpool, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://app.vacancy-filler.co.uk/salescrm/Careers/CareersPage.aspx?e=LMo8nnTwYNZIQ61oSGU8kkJSz5LEWh5W4Je0gU62xzaJkOAXRjiQhOlMFy7CNAJ_Rik2cAD3ZD4&iframe=True&iframe=false"
+      ],
+      "deadline": "2026-10-27",
+      "deadlineAt": "2026-10-28T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-27 · source date; confirm closing time",
+      "dateBasis": "deadline is 27/10/26"
+    },
+    {
+      "id": "auto-f067c5ab434dd474",
+      "title": "Medical Entomologist",
+      "url": "https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=dXNlcnNlYXJjaGNvbnRleHQ9MjE1ODM2NTA1JnNlYXJjaHNvcnQ9c2NvcmUmb3duZXJ0eXBlPWZhaXImcGFnZWNsYXNzPUpvYnMmb3duZXI9NTA3MDAwMCZzZWFyY2hwYWdlPTEmam9ibGlzdF92aWV3X3ZhYz0yMDE3NDk4JnBhZ2VhY3Rpb249dmlld3ZhY2J5am9ibGlzdCZyZXFzaWc9MTc5MjQ4NzQ5Ny0xNDM2OGIxNTQwOTU0ZDM1MTU1MDk0NzA2ZDYzNDVhYTJkZDFkMjE3",
+      "organisation": "UK Health Security Agency",
+      "location": "Porton Down, Salisbury, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Entomologist. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour, Vectors & veterinary entomology.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "subjects": [
+        "Insect biology & behaviour",
+        "Vectors & veterinary entomology"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Entomologist"
+      ],
+      "relevanceTier": "Core subject",
+      "status": "open",
+      "provenance": [
+        "https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=dXNlcnNlYXJjaGNvbnRleHQ9MjE1ODM2NTA1JnNlYXJjaHNvcnQ9c2NvcmUmb3duZXJ0eXBlPWZhaXImcGFnZWNsYXNzPUpvYnMmb3duZXI9NTA3MDAwMCZzZWFyY2hwYWdlPTEmam9ibGlzdF92aWV3X3ZhYz0yMDE3NDk4JnBhZ2VhY3Rpb249dmlld3ZhY2J5am9ibGlzdCZyZXFzaWc9MTc5MjQ4NzQ5Ny0xNDM2OGIxNTQwOTU0ZDM1MTU1MDk0NzA2ZDYzNDVhYTJkZDFkMjE3"
+      ],
+      "deadline": "2026-10-28",
+      "deadlineAt": "2026-10-29T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-10-28 · source date; confirm closing time",
+      "dateBasis": "deadline is 28/10/26"
+    },
+    {
+      "id": "auto-b88c23c1d3a069a4",
+      "title": "Technical Officer",
+      "url": "https://app.vacancy-filler.co.uk/salescrm/Careers/CareersPage.aspx?e=LMo8nnTwYNYmdRdP56rh7LxNSjIQhnpr-HZhWN41Ll4SExXdS7LOAbudpfqzwu-VelRN2oObaUE&iframe=True&iframe=false",
+      "organisation": "Liverpool School of Tropical Medicine",
+      "location": "Liverpool, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://app.vacancy-filler.co.uk/salescrm/Careers/CareersPage.aspx?e=LMo8nnTwYNYmdRdP56rh7LxNSjIQhnpr-HZhWN41Ll4SExXdS7LOAbudpfqzwu-VelRN2oObaUE&iframe=True&iframe=false"
+      ],
+      "deadline": "2026-11-05",
+      "deadlineAt": "2026-11-06T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-11-05 · source date; confirm closing time",
+      "dateBasis": "deadline is 05/11/26"
+    },
+    {
+      "id": "auto-823759ed91f6d133",
+      "title": "Post Doctoral Research Associate (93158)",
+      "url": "https://app.vacancy-filler.co.uk/salescrm/Careers/CareersPage.aspx?e=LMo8nnTwYNYTc96Aq_4GkD1gt6gXfIZk0UhzJXf8KBdPGKuTaiXRTLj56NXfpNXiHA5aFFu-rQU&iframe=True&iframe=false",
+      "organisation": "Liverpool School of Tropical Medicine",
+      "location": "Liverpool, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://app.vacancy-filler.co.uk/salescrm/Careers/CareersPage.aspx?e=LMo8nnTwYNYTc96Aq_4GkD1gt6gXfIZk0UhzJXf8KBdPGKuTaiXRTLj56NXfpNXiHA5aFFu-rQU&iframe=True&iframe=false"
+      ],
+      "deadline": "2026-11-10",
+      "deadlineAt": "2026-11-11T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-11-10 · source date; confirm closing time",
+      "dateBasis": "deadline is 10/11/26"
+    },
+    {
+      "id": "auto-131c2ec6e42b0beb",
+      "title": "Research Technician",
+      "url": "https://www.jobs.ac.uk/job/DTI381/research-technician",
+      "organisation": "University of Oxford",
+      "location": "Oxford, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Monitoring & environmental risk.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "subjects": [
+        "Monitoring & environmental risk"
+      ],
+      "courses": [
+        "biological-recording"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://www.jobs.ac.uk/job/DTI381/research-technician"
+      ],
+      "deadline": "2026-11-16",
+      "deadlineAt": "2026-11-17T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2026-11-16 · source date; confirm closing time",
+      "dateBasis": "deadline is 16/11/26"
+    },
+    {
+      "id": "auto-8b6a5db6352052d4",
+      "title": "Technician",
+      "url": "https://flyttr.bamboohr.com/careers/225",
+      "organisation": "Flyttr",
+      "location": "Abingdon, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://flyttr.bamboohr.com/careers/225"
       ],
       "deadline": null,
       "deadlineAt": null,

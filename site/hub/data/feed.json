@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-20T12:31:26Z",
-  "lastSuccessfulUpdate": "2026-10-20T12:31:26Z",
+  "updatedAt": "2026-10-20T13:18:55Z",
+  "lastSuccessfulUpdate": "2026-10-20T13:18:55Z",
   "items": [
     {
       "id": "auto-e131dcdb8be4a472",
@@ -2542,8 +2542,8 @@
       "url": "https://entomologytoday.org/feed/",
       "homepage": "https://entomologytoday.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 9
     },
     {
@@ -2552,8 +2552,8 @@
       "url": "https://www.royensoc.co.uk/feed/",
       "homepage": "https://www.royensoc.co.uk/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 10
     },
     {
@@ -2562,8 +2562,8 @@
       "url": "https://www.buglife.org.uk/news/feed/",
       "homepage": "https://www.buglife.org.uk/news/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 6
     },
     {
@@ -2572,8 +2572,8 @@
       "url": "https://blog.cabi.org/feed/",
       "homepage": "https://blog.cabi.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 1
     },
     {
@@ -2582,8 +2582,8 @@
       "url": "https://blog.plantwise.org/feed/",
       "homepage": "https://blog.plantwise.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 1
     },
     {
@@ -2592,8 +2592,8 @@
       "url": "https://api.crossref.org/journals/1365-2311/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652311",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 35
     },
     {
@@ -2602,7 +2602,7 @@
       "url": "https://api.crossref.org/journals/1461-9563/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/14619563",
       "status": "cached",
-      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
       "lastSuccess": "2026-10-20T10:09:02Z",
       "count": 15,
       "error": "HTTPError: HTTP Error 429: Too Many Requests"
@@ -2613,8 +2613,8 @@
       "url": "https://api.crossref.org/journals/1752-4598/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/17524598",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 35
     },
     {
@@ -2623,8 +2623,8 @@
       "url": "https://api.crossref.org/journals/1365-3032/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13653032",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 16
     },
     {
@@ -2632,22 +2632,20 @@
       "name": "Systematic Entomology",
       "url": "https://api.crossref.org/journals/1365-3113/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13653113",
-      "status": "cached",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
-      "count": 6,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "status": "ok",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
+      "count": 14
     },
     {
       "id": "medical-veterinary-entomology",
       "name": "Medical and Veterinary Entomology",
       "url": "https://api.crossref.org/journals/1365-2915/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652915",
-      "status": "cached",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
-      "count": 22,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "status": "ok",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
+      "count": 33
     },
     {
       "id": "insect-molecular-biology",
@@ -2655,7 +2653,7 @@
       "url": "https://api.crossref.org/journals/1365-2583/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652583",
       "status": "cached",
-      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
       "lastSuccess": "2026-10-20T10:09:02Z",
       "count": 8,
       "error": "HTTPError: HTTP Error 429: Too Many Requests"
@@ -2666,8 +2664,8 @@
       "url": "https://api.crossref.org/journals/1049-9644/works",
       "homepage": "https://www.sciencedirect.com/journal/biological-control",
       "status": "ok",
-      "lastAttempt": "2026-10-20T12:31:26Z",
-      "lastSuccess": "2026-10-20T12:31:26Z",
+      "lastAttempt": "2026-10-20T13:18:55Z",
+      "lastSuccess": "2026-10-20T13:18:55Z",
       "count": 0
     }
   ]
