@@ -1,4 +1,7 @@
-// A GitHub App signs in the owner; only the review queue can be changed here.
+import { handleResearch } from './research.js';
+export { ResearchLibrary } from './research.js';
+
+// A GitHub App signs in the owner for review decisions and the research toolkit.
 // GitHub credentials are encrypted in HttpOnly cookies, never returned to JavaScript.
 const QUEUE_PATH = 'data/review-queue.json';
 const SESSION_COOKIE = '__Host-hau_admin';
@@ -330,14 +333,15 @@ export async function saveDecision(request, env, value, fetcher = fetch, now = D
     publication: 'queued' };
 }
 
-async function beginLogin(env, origin) {
+async function beginLogin(env, origin, returnTo) {
   configuration(env, origin);
   const now = Date.now(), state = randomValue(), verifier = randomValue();
   const challenge = base64url(new Uint8Array(await crypto.subtle.digest('SHA-256', encoder.encode(verifier))));
   const url = new URL('https://github.com/login/oauth/authorize');
   url.search = new URLSearchParams({ client_id: env.GITHUB_CLIENT_ID, redirect_uri: `${origin}/auth/callback`,
     state, code_challenge: challenge, code_challenge_method: 'S256', allow_signup: 'false', prompt: 'select_account' });
-  const payload = await seal({ kind: 'oauth', state, verifier, iat: now, exp: now + OAUTH_SECONDS * 1000 }, env, origin, 'oauth');
+  const destination = returnTo === '/research-admin.html' ? returnTo : '/admin.html';
+  const payload = await seal({ kind: 'oauth', state, verifier, returnTo: destination, iat: now, exp: now + OAUTH_SECONDS * 1000 }, env, origin, 'oauth');
   return redirect(url.href, [cookie(OAUTH_COOKIE, payload, OAUTH_SECONDS)]);
 }
 
@@ -383,7 +387,8 @@ async function completeLogin(request, env, origin, fetcher) {
     const now = Date.now();
     const value = await seal({ kind: 'session', token: token.access_token, login: user.login,
       csrf: randomValue(), iat: now, exp: now + seconds * 1000 }, env, origin, 'session');
-    return redirect(`${origin}/admin.html`, [cookie(SESSION_COOKIE, value, seconds), cookie(OAUTH_COOKIE, '', 0)]);
+    const destination = state.returnTo === '/research-admin.html' ? state.returnTo : '/admin.html';
+    return redirect(`${origin}${destination}`, [cookie(SESSION_COOKIE, value, seconds), cookie(OAUTH_COOKIE, '', 0)]);
   } catch (error) {
     const code = error instanceof OAuthError ? error.code : error instanceof HttpError && error.status === 429
       ? 'github-rate-limited' : error instanceof HttpError && error.status === 403 ? 'not-authorized'
@@ -399,7 +404,7 @@ export async function handle(request, env, fetcher = fetch) {
     if (url.pathname === '/admin-config.json' && request.method === 'GET') {
       return reply({ apiBase: origin, publicSiteUrl: env.PUBLIC_SITE_URL });
     }
-    if (url.pathname === '/auth/login' && request.method === 'GET') return await beginLogin(env, origin);
+    if (url.pathname === '/auth/login' && request.method === 'GET') return await beginLogin(env, origin, url.searchParams.get('returnTo'));
     if (url.pathname === '/auth/callback' && request.method === 'GET') return await completeLogin(request, env, origin, fetcher);
     if (url.pathname === '/auth/logout' && request.method === 'POST') {
       requireSameOrigin(request, origin);
@@ -409,6 +414,16 @@ export async function handle(request, env, fetcher = fetch) {
       const response = reply({ signedOut: true });
       for (const expired of clearCookies()) response.headers.append('Set-Cookie', expired);
       return response;
+    }
+    if (url.pathname.startsWith('/research-api/')) {
+      let admin;
+      if (url.pathname.startsWith('/research-api/admin/')) {
+        if (request.method !== 'GET') requireSameOrigin(request, origin);
+        const value = await session(request, env, origin, fetcher);
+        if (request.method !== 'GET') csrf(request, value);
+        admin = { login: value.login };
+      }
+      return await handleResearch(request, env, { admin });
     }
     if (url.pathname.startsWith('/api/') || url.pathname === '/auth/logout') {
       const route = `${request.method} ${url.pathname}`;
@@ -438,14 +453,14 @@ export async function handle(request, env, fetcher = fetch) {
       }
       if (route === 'POST /api/decisions') return reply(await saveDecision(request, env, value, fetcher));
     }
-    if (request.method === 'GET' && ['/', '/admin.html'].includes(url.pathname)) {
-      const asset = new URL('/admin.html', origin);
+    if (request.method === 'GET' && ['/', '/admin.html', '/research.html', '/research-admin.html'].includes(url.pathname)) {
+      const asset = new URL(url.pathname === '/' ? '/admin.html' : url.pathname, origin);
       const response = await env.ASSETS.fetch(new Request(asset));
       const headers = new Headers(response.headers);
       for (const [key, value] of Object.entries(SECURITY_HEADERS)) headers.set(key, value);
       return new Response(response.body, { status: response.status, headers });
     }
-    if (request.method === 'GET' && (/^\/(admin\.js|admin\.css|styles\.css)$/.test(url.pathname) ||
+    if (request.method === 'GET' && (/^\/(admin\.js|admin\.css|styles\.css|research\.js|research\.css|research-admin\.js)$/.test(url.pathname) ||
         /^\/assets\/(harper-adams-logo\.png|montserrat-(400|500|600|700)\.woff2)$/.test(url.pathname))) {
       const response = await env.ASSETS.fetch(request);
       const headers = new Headers(response.headers);

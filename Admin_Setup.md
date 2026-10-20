@@ -143,6 +143,7 @@ After the setup works, open **Cloudflare → your Worker → Settings → Build 
 ```text
 admin-backend/*
 site/admin*
+site/research*
 site/styles.css
 site/assets/*
 ```
@@ -204,3 +205,7 @@ Deploying from a local copy uses that copy's configuration; keep its public sett
 - [Cloudflare Worker secrets](https://developers.cloudflare.com/workers/configuration/secrets/)
 - [Worker routing before static assets](https://developers.cloudflare.com/workers/static-assets/routing/worker-script/)
 
+
+## Research toolkit
+
+The same Worker now also hosts the private student Research toolkit and its admin controls. See [Research_Toolkit_Setup.md](Research_Toolkit_Setup.md) for first use, approved email usernames, annual password renewal and document uploads. The research email list and files use private Durable Object storage rather than GitHub.

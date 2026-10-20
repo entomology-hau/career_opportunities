@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-GB" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manage the research toolkit | HAU Entomology</title>
+  <meta name="description" content="Research documents for the Harper Adams entomology community.">
+  <meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="research.css?v=20261020b">
+  <script defer src="research.js?v=20261020b"></script>
+  <script defer src="research-admin.js?v=20261020b"></script>
+</head>
+<body data-research-page="admin">
+  <a class="skip" href="#research-main">Skip to manage the research toolkit</a>
+  <header class="masthead"><div class="masthead-inner">
+    <div class="identity"><a class="logo-link" href="https://www.harper-adams.ac.uk/"><img class="hau-logo" src="assets/harper-adams-logo.png" alt="Harper Adams University" width="773" height="252"></a><span class="university">ENTOMOLOGY RESEARCH COMMUNITY</span></div>
+    <nav class="course-links" aria-label="Harper Adams study and research"><a href="https://entomology-hau.github.io/career_opportunities/hub/?section=courses#courses-undergraduate">Undergraduate study</a><a href="https://entomology-hau.github.io/career_opportunities/hub/?section=courses#courses-postgraduate">Postgraduate study</a><a href="https://entomology-hau.github.io/career_opportunities/hub/?section=courses#research-groups-heading">Research</a></nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a8 8 0 0 1-11-11 9 9 0 1 0 11 11Z"/></svg><span>Dark mode</span></button>
+  </div></header>
+  <main id="research-main" class="research-main" tabindex="-1">
+    <nav class="research-breadcrumb" aria-label="Research navigation"><a href="https://entomology-hau.github.io/career_opportunities/hub/?section=research">Back to the entomology hub</a><a href="research.html">Student toolkit</a></nav>
+    <section class="research-intro"><p class="eyebrow">TOOLKIT ADMINISTRATION</p><h1>Manage the research toolkit</h1><p>Manage access, renew the annual password and maintain the research document collection.</p></section>
+    <div id="research-status" class="research-status" role="status" aria-live="polite">Checking sign-in availability…</div>
+    <section id="portal-link-panel" class="research-panel" hidden><h2>Open the research portal</h2><p>Use the secure portal to sign in and access the toolkit.</p><a id="portal-link" class="research-primary">Continue to the portal</a></section>
+    <section id="admin-signin" class="research-panel signin-panel" hidden aria-labelledby="admin-signin-title"><h2 id="admin-signin-title">Administrator sign-in</h2><p>Sign in with the authorised GitHub account used to manage the opportunities board.</p><a href="/auth/login?returnTo=%2Fresearch-admin.html" class="research-primary">Sign in with GitHub</a></section>
+    <section id="research-admin-workspace" hidden aria-labelledby="admin-workspace-title">
+      <div class="research-account"><div><strong id="research-admin-user"></strong><span>Research toolkit administrator</span></div><button id="admin-signout" class="research-secondary" type="button">Sign out</button></div>
+      <h2 id="admin-workspace-title" class="sr-only">Toolkit administration</h2>
+      <div class="research-admin-grid">
+        <section class="research-panel" aria-labelledby="access-title"><h2 id="access-title">Approved email addresses</h2><p>Add the email addresses students will use as their usernames. Removing an address ends its access immediately.</p><form id="add-user-form"><label for="approved-email">Email address</label><div class="research-inline"><input id="approved-email" name="email" type="email" maxlength="254" autocomplete="off" required><button class="research-primary" type="submit">Add email</button></div></form><p id="user-count" class="research-small"></p><ul id="approved-users" class="research-user-list"></ul><p class="research-small">An email address is a username here; the shared password does not verify ownership of the address.</p></section>
+        <section class="research-panel" aria-labelledby="password-title"><h2 id="password-title">Annual toolkit password</h2><p id="password-state">Loading password status…</p><form id="password-form"><label for="new-password">New shared password</label><input id="new-password" name="password" type="password" autocomplete="new-password" minlength="16" maxlength="256" required aria-describedby="password-guidance"><p id="password-guidance" class="research-hint">Use at least 16 characters. Share it separately with approved researchers.</p><label for="confirm-password">Confirm password</label><input id="confirm-password" type="password" autocomplete="new-password" minlength="16" maxlength="256" required><label for="password-expiry">Valid until</label><input id="password-expiry" name="expiresAt" type="date" required><p class="research-small">Renew at least annually. Saving a new password signs out all researchers. Access pauses when the password expires.</p><button class="research-primary" type="submit">Save shared password</button></form></section>
+      </div>
+      <section class="research-panel research-upload" aria-labelledby="upload-title"><h2 id="upload-title">Add a document</h2><p>Upload the approved version for students to download.</p><form id="document-upload-form"><div class="research-form-grid"><div><label for="document-title">Document title</label><input id="document-title" name="title" maxlength="160" required></div><div><label for="upload-category">Document type</label><select id="upload-category" name="category" required><option value="risk-assessment">Risk assessment</option><option value="protocol">Protocol</option><option value="sop">Standard operating procedure (SOP)</option></select></div><div class="research-full"><label for="document-description">Brief description</label><textarea id="document-description" name="description" rows="3" maxlength="2000"></textarea></div><div><label for="document-version">Version</label><input id="document-version" name="version" maxlength="40" placeholder="e.g. 1.0"></div><div><label for="document-review">Review date <span class="research-optional">(optional)</span></label><input id="document-review" name="reviewDate" type="date"></div><div class="research-full"><label for="document-file">File</label><input id="document-file" name="file" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.txt,.csv" required aria-describedby="file-guidance"><p id="file-guidance" class="research-hint">PDF, Word, Excel, text or CSV. Maximum 10 MB per file. Documents are available only after sign-in.</p></div></div><button class="research-primary" type="submit">Upload document</button></form></section>
+      <section class="research-document-management" aria-labelledby="manage-documents-title"><div class="research-toolbar"><div><h2 id="manage-documents-title">Published documents</h2><p id="storage-status" class="research-small"></p></div><button id="admin-reload" class="research-secondary" type="button">Refresh toolkit</button></div><div id="admin-document-list" class="research-documents"></div><p id="admin-document-empty" class="research-panel" hidden>No documents have been uploaded yet.</p></section>
+    </section>
+    <noscript><p class="research-status">Enable JavaScript to sign in and use the toolkit. The <a href="https://entomology-hau.github.io/career_opportunities/hub/">public entomology hub</a> remains available.</p></noscript>
+  </main>
+  <footer><strong>Entomology at Harper Adams</strong><p>Use current documents and agree project-specific arrangements with your supervisor before starting work.</p><a href="https://entomology-hau.github.io/career_opportunities/hub/">Entomology hub</a></footer>
+</body>
+</html>

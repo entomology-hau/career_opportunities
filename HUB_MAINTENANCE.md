@@ -102,3 +102,7 @@ The hub loads `../styles.css` to share the opportunities board's masthead, logo 
 The course and staff overview in `site/hub/index.html` was checked on 20 October 2026 against the linked official HAU course, group and staff pages. Staff affiliation and ordering follow the [postgraduate induction presentation](https://benclunie.github.io/hau-pg-induction/): group leads above teams, Joe Roberts first within Applied, and Jack Bamber within Ecology, Evolution and Conservation. This is a research-affiliation overview rather than a line-management chart. Review the official pages when staff or course details change.
 
 The careers section adapts the portfolio guidance in `Graduate_Outcomes_2026-27.pptx`: applied science, ecology and conservation, research, and communication. It publishes no individual graduate records or employment-rate claims.
+
+## Research toolkit
+
+The public header has matching Undergraduate study, Postgraduate study and Research links on the hub and opportunities board. The `research` hub view links to the protected student portal, separate from the public Practical toolkit. Private access and document management are covered in [Research_Toolkit_Setup.md](Research_Toolkit_Setup.md). Keep email usernames, shared passwords and restricted documents out of the public hub files.

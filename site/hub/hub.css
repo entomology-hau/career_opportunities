@@ -317,3 +317,13 @@
 @media(max-width:720px){.course-grid{grid-template-columns:1fr}}
 
 .hub-tab:focus-visible{outline-offset:-3px}
+
+/* The research toolkit links to the protected document library. */
+.research-resource-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.research-access{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:24px;padding:24px;background:var(--soft);border:1px solid var(--line);border-radius:6px}
+.research-access h3{font-size:1.2rem;margin:0 0 10px}
+.research-access p{max-width:720px;margin:8px 0;color:var(--muted);line-height:1.65}
+.research-access .research-access-note{font-size:.875rem}
+.research-access .primary-button{flex:0 0 auto;display:inline-block;text-decoration:none;text-align:center}
+.research-admin-link{margin:18px 0 0;font-size:.8rem}
+@media(max-width:900px){.research-resource-grid{grid-template-columns:1fr}.research-access{align-items:flex-start;flex-direction:column;gap:16px}}

@@ -29,6 +29,8 @@ jobs:
           python scripts/validate.py --normalise
           python -m unittest discover -s tests -v
           node tests/test_board.cjs
+          node tests/test_admin.cjs
+          node --test admin-backend/test-worker.mjs admin-backend/test-research.mjs admin-backend/test-research-integration.mjs
       - name: Discover candidates and check existing links
         run: python scripts/refresh.py
       - name: Refresh entomology news and research highlights

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research toolkit | HAU Entomology</title>
+  <meta name="description" content="Research documents for the Harper Adams entomology community.">
+  <meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="research.css?v=20261020b">
+  <script defer src="research.js?v=20261020b"></script>
+</head>
+<body data-research-page="student">
+  <a class="skip" href="#research-main">Skip to research toolkit</a>
+  <header class="masthead"><div class="masthead-inner">
+    <div class="identity"><a class="logo-link" href="https://www.harper-adams.ac.uk/"><img class="hau-logo" src="assets/harper-adams-logo.png" alt="Harper Adams University" width="773" height="252"></a><span class="university">ENTOMOLOGY RESEARCH COMMUNITY</span></div>
+    <nav class="course-links" aria-label="Harper Adams study and research"><a href="https://entomology-hau.github.io/career_opportunities/hub/?section=courses#courses-undergraduate">Undergraduate study</a><a href="https://entomology-hau.github.io/career_opportunities/hub/?section=courses#courses-postgraduate">Postgraduate study</a><a href="https://entomology-hau.github.io/career_opportunities/hub/?section=courses#research-groups-heading">Research</a></nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a8 8 0 0 1-11-11 9 9 0 1 0 11 11Z"/></svg><span>Dark mode</span></button>
+  </div></header>
+  <main id="research-main" class="research-main" tabindex="-1">
+    <nav class="research-breadcrumb" aria-label="Research navigation"><a href="https://entomology-hau.github.io/career_opportunities/hub/?section=research">Back to the entomology hub</a><a href="research-admin.html">Manage toolkit</a></nav>
+    <section class="research-intro"><p class="eyebrow">FOR MRP &amp; PHD RESEARCHERS</p><h1>Research toolkit</h1><p>Risk assessments, protocols and standard operating procedures for entomology research at Harper Adams.</p></section>
+    <div id="research-status" class="research-status" role="status" aria-live="polite">Checking sign-in availability…</div>
+    <section id="portal-link-panel" class="research-panel" hidden><h2>Open the research portal</h2><p>Use the secure portal to sign in and access the toolkit.</p><a id="portal-link" class="research-primary">Continue to the portal</a></section>
+    <section id="research-signin" class="research-panel signin-panel" hidden aria-labelledby="signin-title">
+      <h2 id="signin-title">Researcher sign-in</h2><p>Use your approved email address and the current shared toolkit password supplied by the research team.</p>
+      <form id="research-login-form">
+        <label for="research-email">Email address</label><input id="research-email" name="email" type="email" autocomplete="username" maxlength="254" required>
+        <label for="research-password">Toolkit password</label><input id="research-password" name="password" type="password" autocomplete="current-password" maxlength="256" required>
+        <button class="research-primary" type="submit">Sign in</button>
+      </form><p class="research-small">Need access or this year’s password? Contact your supervisor or the toolkit administrator.</p>
+    </section>
+    <section id="research-workspace" hidden aria-labelledby="documents-heading">
+      <div class="research-account"><div><strong id="research-user"></strong><span id="research-expiry"></span></div><button id="research-signout" class="research-secondary" type="button">Sign out</button></div>
+      <div class="research-toolbar"><div><h2 id="documents-heading" tabindex="-1">Your research documents</h2><p>Find the current guidance for your research activity.</p></div><button id="research-reload" class="research-secondary" type="button">Refresh documents</button></div>
+      <div class="research-filters"><div><label for="document-search">Search documents</label><input id="document-search" type="search" placeholder="Title, method or keyword…" autocomplete="off"></div><div><label for="document-category">Document type</label><select id="document-category"><option value="">All documents</option><option value="risk-assessment">Risk assessments</option><option value="protocol">Protocols</option><option value="sop">SOPs</option></select></div></div>
+      <p id="document-count" class="research-small" role="status" aria-live="polite"></p><div id="document-list" class="research-documents"></div>
+      <div id="document-empty" class="research-panel research-empty" hidden><h3>No documents yet</h3><p>The research team will add documents here when they are ready.</p></div>
+    </section>
+    <noscript><p class="research-status">Enable JavaScript to sign in and use the toolkit. The <a href="https://entomology-hau.github.io/career_opportunities/hub/">public entomology hub</a> remains available.</p></noscript>
+  </main>
+  <footer><strong>Entomology at Harper Adams</strong><p>Use current documents and agree project-specific arrangements with your supervisor before starting work.</p><a href="https://entomology-hau.github.io/career_opportunities/hub/">Entomology hub</a></footer>
+</body>
+</html>

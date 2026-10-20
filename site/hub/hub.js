@@ -7,7 +7,7 @@ const validDate = value => typeof value==='string' && /^\d{4}-\d{2}-\d{2}(?:T.*)
 const dateText = value => validDate(value)?new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'Europe/London'}).format(new Date(value.length===10?value+'T12:00:00Z':value)):'Date unavailable';
 const validItem = item => item && typeof item.id==='string' && typeof item.title==='string' && safeURL(item.url) && ['news','research'].includes(item.kind) && validDate(item.published) && item.published.slice(0,10)<=new Date().toISOString().slice(0,10) && Array.isArray(item.areas);
 let database=null,kind='all',currentPage=1,saved=new Map(),sourceConfig=[],activeSection='highlights';
-const SECTIONS=['highlights','courses','learn','sources'];
+const SECTIONS=['highlights','courses','research','learn','sources'];
 function initTheme(){
   let theme='light';try{theme=localStorage.getItem('entomology-theme')==='dark'?'dark':'light';}catch{}
   function apply(value){document.documentElement.dataset.theme=value;const dark=value==='dark';$('theme-toggle').setAttribute('aria-pressed',String(dark));$('theme-toggle').setAttribute('aria-label',`Switch to ${dark?'light':'dark'} mode`);$('theme-label').textContent=dark?'Light mode':'Dark mode';document.querySelector('meta[name="theme-color"]').content=dark?'#253750':'#eaf1fa';}
