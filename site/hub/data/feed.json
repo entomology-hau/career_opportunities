@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-20T10:09:02Z",
-  "lastSuccessfulUpdate": "2026-10-20T10:09:02Z",
+  "updatedAt": "2026-10-20T12:31:26Z",
+  "lastSuccessfulUpdate": "2026-10-20T12:31:26Z",
   "items": [
     {
       "id": "auto-e131dcdb8be4a472",
@@ -154,6 +154,24 @@
       "source": "Royal Entomological Society",
       "sourceId": "royal-entomological-society",
       "published": "2026-10-13",
+      "areas": [
+        "Insect biology & behaviour"
+      ],
+      "region": "global",
+      "curated": false,
+      "summary": "",
+      "why": "",
+      "tagMethod": "automatic-keywords",
+      "contentChecksVersion": 1
+    },
+    {
+      "id": "auto-9808d48e8c7a59ee",
+      "kind": "news",
+      "title": "Policy and Public Affairs News – Q3 2026",
+      "url": "https://www.royensoc.co.uk/news/policy-news-q3-2026",
+      "source": "Royal Entomological Society",
+      "sourceId": "royal-entomological-society",
+      "published": "2026-10-12",
       "areas": [
         "Insect biology & behaviour"
       ],
@@ -2190,24 +2208,6 @@
       "doi": "10.1111/mve.70108"
     },
     {
-      "id": "auto-fa63aed4d32a388a",
-      "kind": "news",
-      "title": "RES leads landmark research project, funded by Natural England and The Crown Estate",
-      "url": "https://www.royensoc.co.uk/news/res-leads-landmark-research-project-funded-by-natural-england-and-the-crown-estate",
-      "source": "Royal Entomological Society",
-      "sourceId": "royal-entomological-society",
-      "published": "2026-08-18",
-      "areas": [
-        "Insect biology & behaviour"
-      ],
-      "region": "uk",
-      "curated": false,
-      "summary": "",
-      "why": "",
-      "tagMethod": "automatic-keywords",
-      "contentChecksVersion": 1
-    },
-    {
       "id": "auto-a8c9d8af08f4e3c5",
       "kind": "research",
       "title": "Maternal factors from a parasitoid wasp mediate hyperparasitoid attraction to parasitized caterpillars",
@@ -2542,8 +2542,8 @@
       "url": "https://entomologytoday.org/feed/",
       "homepage": "https://entomologytoday.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
       "count": 9
     },
     {
@@ -2551,11 +2551,10 @@
       "name": "Royal Entomological Society",
       "url": "https://www.royensoc.co.uk/feed/",
       "homepage": "https://www.royensoc.co.uk/",
-      "status": "cached",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-19T10:51:32Z",
-      "count": 9,
-      "error": "TimeoutError: The read operation timed out"
+      "status": "ok",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
+      "count": 10
     },
     {
       "id": "buglife",
@@ -2563,8 +2562,8 @@
       "url": "https://www.buglife.org.uk/news/feed/",
       "homepage": "https://www.buglife.org.uk/news/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
       "count": 6
     },
     {
@@ -2573,8 +2572,8 @@
       "url": "https://blog.cabi.org/feed/",
       "homepage": "https://blog.cabi.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
       "count": 1
     },
     {
@@ -2583,8 +2582,8 @@
       "url": "https://blog.plantwise.org/feed/",
       "homepage": "https://blog.plantwise.org/",
       "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
       "count": 1
     },
     {
@@ -2593,8 +2592,8 @@
       "url": "https://api.crossref.org/journals/1365-2311/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652311",
       "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
       "count": 35
     },
     {
@@ -2602,21 +2601,21 @@
       "name": "Agricultural and Forest Entomology",
       "url": "https://api.crossref.org/journals/1461-9563/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/14619563",
-      "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
+      "status": "cached",
+      "lastAttempt": "2026-10-20T12:31:26Z",
       "lastSuccess": "2026-10-20T10:09:02Z",
-      "count": 26
+      "count": 15,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "insect-conservation-diversity",
       "name": "Insect Conservation and Diversity",
       "url": "https://api.crossref.org/journals/1752-4598/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/17524598",
-      "status": "cached",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-19T10:51:32Z",
-      "count": 20,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "status": "ok",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
+      "count": 35
     },
     {
       "id": "physiological-entomology",
@@ -2624,8 +2623,8 @@
       "url": "https://api.crossref.org/journals/1365-3032/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13653032",
       "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
       "count": 16
     },
     {
@@ -2633,30 +2632,33 @@
       "name": "Systematic Entomology",
       "url": "https://api.crossref.org/journals/1365-3113/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13653113",
-      "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
+      "status": "cached",
+      "lastAttempt": "2026-10-20T12:31:26Z",
       "lastSuccess": "2026-10-20T10:09:02Z",
-      "count": 14
+      "count": 6,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "medical-veterinary-entomology",
       "name": "Medical and Veterinary Entomology",
       "url": "https://api.crossref.org/journals/1365-2915/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652915",
-      "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
+      "status": "cached",
+      "lastAttempt": "2026-10-20T12:31:26Z",
       "lastSuccess": "2026-10-20T10:09:02Z",
-      "count": 33
+      "count": 22,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "insect-molecular-biology",
       "name": "Insect Molecular Biology",
       "url": "https://api.crossref.org/journals/1365-2583/works",
       "homepage": "https://resjournals.onlinelibrary.wiley.com/journal/13652583",
-      "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
+      "status": "cached",
+      "lastAttempt": "2026-10-20T12:31:26Z",
       "lastSuccess": "2026-10-20T10:09:02Z",
-      "count": 17
+      "count": 8,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "biological-control",
@@ -2664,8 +2666,8 @@
       "url": "https://api.crossref.org/journals/1049-9644/works",
       "homepage": "https://www.sciencedirect.com/journal/biological-control",
       "status": "ok",
-      "lastAttempt": "2026-10-20T10:09:02Z",
-      "lastSuccess": "2026-10-20T10:09:02Z",
+      "lastAttempt": "2026-10-20T12:31:26Z",
+      "lastSuccess": "2026-10-20T12:31:26Z",
       "count": 0
     }
   ]
