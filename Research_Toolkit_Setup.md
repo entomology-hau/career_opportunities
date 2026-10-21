@@ -1,6 +1,6 @@
 # Research toolkit administration
 
-The [Research toolkit](https://hau-opportunities-admin.entomology-hau.workers.dev/research.html) provides private risk assessments, protocols and SOPs for HAU MRP and PhD students. The public [hub tab](https://entomology-hau.github.io/career_opportunities/hub/?section=research) links to it.
+The [Research toolkit](https://hau-opportunities-admin.entomology-hau.workers.dev/research.html) provides private risk assessments, protocols and SOPs for HAU MRP and PhD students. The public [hub tab](https://entomology-hau.github.io/entohub/?section=research) links to it.
 
 ## First use
 

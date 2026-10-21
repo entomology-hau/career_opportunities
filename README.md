@@ -92,4 +92,4 @@ python scripts/refresh.py
 
 ## Entomology student hub
 
-The undergraduate and postgraduate landing page is at [career_opportunities/hub/](https://entomology-hau.github.io/career_opportunities/hub/). It links the opportunity board, UK and global news, research, and practical tools. News and research refresh through the existing daily Pages workflow. See [HUB_MAINTENANCE.md](HUB_MAINTENANCE.md) for sources, editorial highlights and maintenance.
+The undergraduate and postgraduate landing page is now [entohub](https://entomology-hau.github.io/entohub/), maintained in the separate [entomology-hau/entohub repository](https://github.com/entomology-hau/entohub). Its own daily workflow refreshes news and research. The former `career_opportunities/hub/` address redirects there while preserving tab queries and section fragments. This repository continues to run the opportunities board and existing private research-toolkit service. See [HUB_MAINTENANCE.md](HUB_MAINTENANCE.md) for the migration note.

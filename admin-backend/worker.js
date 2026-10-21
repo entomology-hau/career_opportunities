@@ -461,7 +461,7 @@ export async function handle(request, env, fetcher = fetch) {
       return new Response(response.body, { status: response.status, headers });
     }
     if (request.method === 'GET' && (/^\/(admin\.js|admin\.css|styles\.css|research\.js|research\.css|research-admin\.js)$/.test(url.pathname) ||
-        /^\/assets\/(harper-adams-logo\.png|montserrat-(400|500|600|700)\.woff2)$/.test(url.pathname))) {
+        /^\/assets\/(harper-adams-logo\.png|ento-logo-white\.png|montserrat-(400|500|600|700)\.woff2)$/.test(url.pathname))) {
       const response = await env.ASSETS.fetch(request);
       const headers = new Headers(response.headers);
       for (const [key, value] of Object.entries(SECURITY_HEADERS)) headers.set(key, value);

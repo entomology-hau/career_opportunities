@@ -1,5 +1,13 @@
 # Entomology hub maintenance
 
+## Hub moved — 21 October 2026
+
+The active hub is now [entohub](https://entomology-hau.github.io/entohub/), maintained in the separate [entomology-hau/entohub repository](https://github.com/entomology-hau/entohub). Its own workflow collects news and research and publishes that site. Edit hub content, styles and feed sources in the new repository.
+
+This repository continues to host the opportunities board and the existing research-toolkit service. The former `career_opportunities/hub/` address redirects to `entohub`, preserving tab queries and section fragments. The opportunities workflow no longer refreshes the hub feed. Private research documents, access settings and the admin service remain in their existing location.
+
+The notes below describe the retained pre-migration files and collector. They are historical reference, not the active publishing instructions; see the new repository for current hub maintenance.
+
 The student landing page is `site/hub/`. Its two feeds combine authored highlights with dated news and journal metadata. The opportunities board remains independent.
 
 ## Daily collection

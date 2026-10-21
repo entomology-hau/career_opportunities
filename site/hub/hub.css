@@ -191,7 +191,7 @@
 .pathway a {font-size:.875rem;font-weight:600}
 
 /* Student tools and sources reuse the same panel, link and text treatment. */
-.tool-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px}
+.tool-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
 .tool-card {
   padding:24px;border:1px solid var(--line);border-radius:6px;
   background:var(--panel);color:var(--ink);text-decoration:none;
@@ -327,3 +327,11 @@
 .research-access .primary-button{flex:0 0 auto;display:inline-block;text-decoration:none;text-align:center}
 .research-admin-link{margin:18px 0 0;font-size:.8rem}
 @media(max-width:900px){.research-resource-grid{grid-template-columns:1fr}.research-access{align-items:flex-start;flex-direction:column;gap:16px}}
+
+/* A single welcome introduces every tab; the research toolkit closes navigation. */
+#main-content>.intro{display:block}
+#main-content>.intro>.intro-copy,#main-content>.intro .intro-copy{max-width:850px}
+.research-eda{padding:22px 24px;margin-top:24px;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.research-eda h3{font-size:1.2rem;margin:0 0 10px}
+.research-eda p{color:var(--muted);font-size:.875rem;line-height:1.65;margin:0 0 12px}
+.research-eda a{font-size:.875rem;font-weight:600}

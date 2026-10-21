@@ -110,3 +110,12 @@ footer{background:var(--soft);color:var(--muted);border-top:1px solid var(--line
 }
 @media(max-width:380px){.card-top{flex-wrap:wrap}.deadline{text-align:left}.pagination{gap:12px}}
 @media(prefers-reduced-motion:no-preference){button,a{transition:background-color .15s,color .15s}html{scroll-behavior:smooth}}
+
+/* Paired university and entomology marks; original supplied artwork. */
+.brand-logos{display:flex;align-items:center;gap:20px;min-width:0}
+.brand-logos .logo-link{padding:8px 0;flex:0 1 auto}
+.brand-separator{display:block;align-self:center;width:1px;height:74px;background:rgba(255,255,255,.55);flex:0 0 1px}
+.ento-logo-link{display:block;flex:0 0 auto;border-radius:4px;padding:4px}
+.ento-logo{display:block;width:102px;height:auto;max-width:100%}
+@media(max-width:720px){.brand-logos{gap:12px}.brand-logos .hau-logo{width:180px}.brand-separator{height:60px}.ento-logo{width:80px}.masthead-inner{grid-template-columns:minmax(0,1fr) auto}}
+@media(max-width:480px){.masthead-inner{display:flex;flex-wrap:wrap}.identity{width:100%}.brand-logos{gap:14px}.brand-logos .hau-logo{width:194px}.ento-logo{width:86px}.course-links{order:2;flex:1 1 100%}.theme-toggle{order:3}.university{letter-spacing:.015em}}

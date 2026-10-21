@@ -1,4 +1,4 @@
-name: Check opportunities and hub, then publish Pages
+name: Check opportunities, then publish Pages
 on:
   push:
     branches: [main]
@@ -33,8 +33,6 @@ jobs:
           node --test admin-backend/test-worker.mjs admin-backend/test-research.mjs admin-backend/test-research-integration.mjs
       - name: Discover candidates and check existing links
         run: python scripts/refresh.py
-      - name: Refresh entomology news and research highlights
-        run: python scripts/refresh_hub.py
       - name: Create review digest
         run: |
           python scripts/review.py digest --output review-digest.md
