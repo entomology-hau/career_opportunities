@@ -99,10 +99,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-01T11:22:26.470549+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "338e1d3f91001ffb295a781716d61707fa9800f6bf946d12b71b34b5f201c3c7",
-      "currentHash": "b353b4e6c9bf8e448da0b0ee1d6c1822872f4f0eae24c32d20787ec8f020a14c"
+      "previousHash": "b353b4e6c9bf8e448da0b0ee1d6c1822872f4f0eae24c32d20787ec8f020a14c",
+      "currentHash": "7723c8e2b0e445d88617b0c28e38a9d4e82ae36c35cef92e4e19d5656ba4bb7a"
     },
     {
       "taskKey": "lincoln-pest-networks-2026:changed",
@@ -127,10 +127,10 @@
       "reason": "Visible advert content changed; check relevance, eligibility, deadline and whether it remains open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-14T10:16:58.108166+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "previousHash": "3794a13a0e0bf69df18e3bf17863d5b4b9e6608a2845dbc029f6676d73453dfd",
-      "currentHash": "89cb084d9e1133ee414bc3c921037d95d2ca4d1e7086ecc5643583cfe2ed0053"
+      "previousHash": "89cb084d9e1133ee414bc3c921037d95d2ca4d1e7086ecc5643583cfe2ed0053",
+      "currentHash": "83931972048aa42a446a8440a6d37726b2b33f7c30d6833b827530b39e692b3c"
     },
     {
       "taskKey": "kcl-fly-facility-technician-2026:changed",
@@ -169,9 +169,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "beewalk-volunteer:stale",
@@ -182,9 +182,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "tcv-biodiversity-action-volunteer-officer-2026:stale",
@@ -195,9 +195,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-21T09:15:39.461514+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-30",
-      "reviewAgeDays": 23
+      "reviewAgeDays": 24
     },
     {
       "taskKey": "crg-mountain-lakes-edna-2027:stale",
@@ -208,9 +208,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "tetra-tech-graduate-ecologist-2027:stale",
@@ -221,9 +221,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "united-utilities-graduate-ecologist-2027:stale",
@@ -247,9 +247,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "morepeople-horticulture-ipm-advisor-2026:stale",
@@ -260,9 +260,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "monteverde-insect-internship:stale",
@@ -273,9 +273,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "hutton-peatlands-pollinators-2026:stale",
@@ -299,9 +299,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "wildfish-smartrivers-analysts:stale",
@@ -312,9 +312,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "ukbms-wider-countryside-volunteer:stale",
@@ -325,9 +325,9 @@
       "reason": "Editorial review is at least 21 days old; confirm that the advert is still open.",
       "reviewStatus": "pending",
       "detectedAt": "2026-10-20T10:07:45.757492+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
-      "reviewAgeDays": 24
+      "reviewAgeDays": 25
     },
     {
       "taskKey": "pepsico-agricultural-science-technician-2026:unreachable",
@@ -338,7 +338,7 @@
       "reason": "The automated link check could not reach this advert. Check it manually before updating its status.",
       "reviewStatus": "pending",
       "detectedAt": "2026-09-30T15:41:29.445176+00:00",
-      "lastSeen": "2026-10-23T10:09:12.767238+00:00",
+      "lastSeen": "2026-10-24T09:35:45.984674+00:00",
       "lastChecked": "2026-09-29",
       "evidence": "HTTP Error 404: Not Found"
     },
