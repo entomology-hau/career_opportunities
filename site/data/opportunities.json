@@ -420,7 +420,7 @@
       "courses": [
         "entomology"
       ],
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "beewalk-volunteer",
@@ -1733,7 +1733,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -1775,7 +1775,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1817,7 +1817,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1859,7 +1859,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1901,7 +1901,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-29",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour",
         "Ecology & conservation"
@@ -1940,15 +1940,15 @@
       "careerLevel": "Not supplied",
       "type": "other",
       "classificationInferred": true,
-      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "summary": "Automatically collected from Royal Entomological Society. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
       "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
-      "source": "RES research opportunities",
-      "sourceId": "res-phds",
-      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "source": "Royal Entomological Society",
+      "sourceId": "res-jobs",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1990,7 +1990,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4777,7 +4777,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4820,7 +4820,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4991,7 +4991,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation",
         "Monitoring & environmental risk"
@@ -5081,7 +5081,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5169,7 +5169,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5215,7 +5215,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5258,7 +5258,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5475,7 +5475,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Monitoring & environmental risk"
       ],
@@ -6564,7 +6564,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6607,7 +6607,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6652,7 +6652,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6697,7 +6697,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6740,7 +6740,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6785,7 +6785,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -7092,7 +7092,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8261,7 +8261,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8304,7 +8304,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Monitoring & environmental risk"
       ],
@@ -8346,7 +8346,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8389,7 +8389,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8432,7 +8432,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8475,7 +8475,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8564,7 +8564,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8609,7 +8609,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8654,7 +8654,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8697,7 +8697,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9131,7 +9131,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9174,7 +9174,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9217,7 +9217,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9260,7 +9260,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9346,7 +9346,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -9388,7 +9388,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9432,7 +9432,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9475,7 +9475,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9520,7 +9520,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9563,7 +9563,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9606,7 +9606,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9649,7 +9649,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9692,7 +9692,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9778,7 +9778,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9821,7 +9821,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9864,7 +9864,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9907,7 +9907,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9950,7 +9950,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10641,7 +10641,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-10",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -10684,7 +10684,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-10",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -10700,6 +10700,137 @@
       "status": "open-no-deadline",
       "provenance": [
         "https://environmentjob.co.uk/jobs/112280-conservation-officer-wrexham-stepping-stones-project-swyddog-cadwraeth-prosiect-cerrig-sarn-wrecsam"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-0672a38803e28f2b",
+      "title": "Interim Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/112301-interim-ecologist",
+      "organisation": "Norfolk Wildlife Trust",
+      "location": "Norwich, Norfolk",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£32,611 FTE",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, ecological, biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "ecological",
+        "biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/112301-interim-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-b589def2e4b9244a",
+      "title": "Principal Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/112297-principal-ecologist",
+      "organisation": "Ecosurv Ltd",
+      "location": "Great Ayton, North Yorkshire (hybrid working)",
+      "country": "Not supplied",
+      "workplace": "Hybrid",
+      "funding": "Not supplied",
+      "compensation": "£50,000 - £55,000 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/112297-principal-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
+    },
+    {
+      "id": "auto-43c60b724084011c",
+      "title": "General Manager",
+      "url": "https://environmentjob.co.uk/jobs/112288-general-manager",
+      "organisation": "National Allotment Society",
+      "location": "Corby, Northamptonshire",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£42,707 - £52,970 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: biodiversity. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "biodiversity"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/112288-general-manager"
       ],
       "deadline": null,
       "deadlineAt": null,
