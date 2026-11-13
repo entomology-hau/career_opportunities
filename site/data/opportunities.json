@@ -420,7 +420,7 @@
       "courses": [
         "entomology"
       ],
-      "lastSeen": "2026-11-12"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "beewalk-volunteer",
@@ -1541,10 +1541,10 @@
     },
     {
       "id": "auto-45f0d9085cff5d27",
-      "title": "Conservation Projects Manager (South East England) Maternity Cover",
+      "title": "Skills for Bees: North-West Wales Project Officer",
       "url": "https://www.bumblebeeconservation.org/what-we-do/vacancies",
       "organisation": "Bumblebee Conservation Trust",
-      "location": "London, Kent or East Sussex, England, UK",
+      "location": "Home based within the North West Wales project area, UK",
       "country": "United Kingdom",
       "workplace": "Workplace not supplied",
       "funding": "Not supplied",
@@ -1553,17 +1553,16 @@
       "careerLevel": "Not supplied",
       "type": "job",
       "classificationInferred": true,
-      "summary": "Automatically collected from Royal Entomological Society. Matched: Bumblebee. See the original advert for full details.",
-      "fitReason": "Source terms connect this advert to Ecology & conservation, Pollination & beneficial insects.",
+      "summary": "Automatically collected from Royal Entomological Society. Matched: Bees, Bumblebee. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Pollination & beneficial insects.",
       "source": "Royal Entomological Society",
       "sourceId": "res-jobs",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/job-opportunities/",
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-13",
       "subjects": [
-        "Ecology & conservation",
         "Pollination & beneficial insects"
       ],
       "courses": [
@@ -1571,6 +1570,7 @@
         "entomology"
       ],
       "tags": [
+        "Bees",
         "Bumblebee"
       ],
       "relevanceTier": "Core subject",
@@ -1578,11 +1578,11 @@
       "provenance": [
         "https://www.bumblebeeconservation.org/what-we-do/vacancies"
       ],
-      "deadline": "2026-10-26",
-      "deadlineAt": "2026-10-27T00:00:00+00:00",
+      "deadline": "2026-11-23",
+      "deadlineAt": "2026-11-24T00:00:00+00:00",
       "deadlineTimezone": "Europe/London",
-      "deadlineLabel": "2026-10-26 · source date; confirm closing time",
-      "dateBasis": "deadline is 26/10/26"
+      "deadlineLabel": "2026-11-23 · source date; confirm closing time",
+      "dateBasis": "deadline is 23/11/26"
     },
     {
       "id": "auto-4c4362f625192c91",
@@ -1733,7 +1733,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -1775,7 +1775,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1817,7 +1817,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1859,7 +1859,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1901,7 +1901,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-29",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour",
         "Ecology & conservation"
@@ -1948,7 +1948,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -1990,7 +1990,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -2118,7 +2118,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -2161,7 +2161,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -2204,7 +2204,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-09-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4128,7 +4128,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -4777,7 +4777,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4820,7 +4820,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -4991,7 +4991,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation",
         "Monitoring & environmental risk"
@@ -5081,7 +5081,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5169,7 +5169,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5215,7 +5215,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5258,7 +5258,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5475,7 +5475,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Monitoring & environmental risk"
       ],
@@ -5560,7 +5560,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Pollination & beneficial insects"
       ],
@@ -5604,7 +5604,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Pollination & beneficial insects"
       ],
@@ -5648,7 +5648,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -5734,7 +5734,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -5777,7 +5777,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -5820,7 +5820,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -5863,7 +5863,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -5906,7 +5906,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -5950,7 +5950,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -5993,7 +5993,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -6036,7 +6036,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -6079,7 +6079,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Biological control"
       ],
@@ -6123,7 +6123,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -6166,7 +6166,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -6209,7 +6209,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6254,7 +6254,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour",
         "Taxonomy & biodiversity recording"
@@ -6299,7 +6299,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -6342,7 +6342,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Pollination & beneficial insects"
       ],
@@ -6387,7 +6387,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6431,7 +6431,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6564,7 +6564,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6607,7 +6607,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6652,7 +6652,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6697,7 +6697,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6740,7 +6740,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -6785,7 +6785,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -7092,7 +7092,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7135,7 +7135,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7178,7 +7178,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7221,7 +7221,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7264,7 +7264,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7307,7 +7307,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7350,7 +7350,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Pollination & beneficial insects"
       ],
@@ -7394,7 +7394,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7417,7 +7417,7 @@
     },
     {
       "id": "auto-264d960112f996f0",
-      "title": "Behaviour before abundance: decoding the behavioural states that forecast aphid population change",
+      "title": "Who chooses the mummy’s microclimate? Parasitoid control of aphid behaviour under heat and drought",
       "url": "https://warwick.ac.uk/fac/cross_fac/mibtp/phd/supervisors/jroberts",
       "organisation": "Harper Adams University",
       "location": "Newport, Shropshire, England, UK",
@@ -7429,25 +7429,26 @@
       "careerLevel": "Not supplied",
       "type": "phd",
       "classificationInferred": true,
-      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
-      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "summary": "Automatically collected from RES research opportunities. Matched: Parasitoid. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Biological control.",
       "source": "RES research opportunities",
       "sourceId": "res-phds",
       "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
-        "Insect biology & behaviour"
+        "Biological control"
       ],
       "courses": [
-        "entomology"
+        "entomology",
+        "ipm"
       ],
       "tags": [
-        "Source match"
+        "Parasitoid"
       ],
-      "relevanceTier": "Related field",
+      "relevanceTier": "Core subject",
       "status": "open",
       "provenance": [
         "https://warwick.ac.uk/fac/cross_fac/mibtp/phd/supervisors/jroberts"
@@ -7480,7 +7481,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour",
         "Biological control"
@@ -7525,7 +7526,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Vectors & veterinary entomology"
       ],
@@ -7568,7 +7569,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7591,7 +7592,7 @@
     },
     {
       "id": "auto-1e81eccc97fd3502",
-      "title": "CENTA 2027-B34 Extreme climatic events in a warming world: understanding limits to resilience in freshwater ecosystems",
+      "title": "UKRI BBSRCNEEDL DLA: Engineering Endophytic Symbionts for Programmable RNAi-Based Control of Coffee Berry Borer",
       "url": "https://www.findaphd.com/phds/project/ukri-bbsrcneedl-dla-engineering-endophytic-symbionts-for-programmable-rnai-based-control-of-coffee-berry-borer?p200750=",
       "organisation": "Newcastle University",
       "location": "Newcastle, England, UK",
@@ -7611,7 +7612,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7654,7 +7655,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7697,7 +7698,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7740,7 +7741,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7783,7 +7784,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Pollination & beneficial insects"
       ],
@@ -7827,7 +7828,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7870,7 +7871,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7913,7 +7914,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Vectors & veterinary entomology"
       ],
@@ -7956,7 +7957,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -7999,7 +8000,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8042,7 +8043,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8085,7 +8086,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8128,7 +8129,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8172,7 +8173,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour",
         "Pollination & beneficial insects"
@@ -8218,7 +8219,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8261,7 +8262,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8304,7 +8305,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Monitoring & environmental risk"
       ],
@@ -8346,7 +8347,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8389,7 +8390,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8432,7 +8433,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8475,7 +8476,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8564,7 +8565,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8609,7 +8610,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -8654,7 +8655,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8697,7 +8698,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8740,7 +8741,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8783,7 +8784,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Pollination & beneficial insects"
       ],
@@ -8827,7 +8828,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -8871,7 +8872,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Pollination & beneficial insects"
       ],
@@ -8915,7 +8916,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -8958,7 +8959,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9003,7 +9004,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9046,7 +9047,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9089,7 +9090,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9131,7 +9132,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9174,7 +9175,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9217,7 +9218,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9260,7 +9261,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9346,7 +9347,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -9388,7 +9389,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9475,7 +9476,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9520,7 +9521,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9563,7 +9564,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9606,7 +9607,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9649,7 +9650,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9692,7 +9693,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9735,7 +9736,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9778,7 +9779,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -9821,7 +9822,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9864,7 +9865,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9907,7 +9908,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9950,7 +9951,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -9992,7 +9993,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10035,7 +10036,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10078,7 +10079,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10121,7 +10122,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10164,7 +10165,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10207,7 +10208,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10250,7 +10251,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10293,7 +10294,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10336,7 +10337,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10379,7 +10380,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10422,7 +10423,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Pollination & beneficial insects"
       ],
@@ -10466,7 +10467,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10509,7 +10510,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Vectors & veterinary entomology"
       ],
@@ -10552,7 +10553,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation",
         "Pollination & beneficial insects"
@@ -10598,7 +10599,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Insect biology & behaviour"
       ],
@@ -10641,7 +10642,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-10",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Crop protection & IPM"
       ],
@@ -10684,7 +10685,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-10",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -10728,7 +10729,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-11",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -10773,7 +10774,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-11",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -10816,7 +10817,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-11",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation"
       ],
@@ -10859,7 +10860,7 @@
       "reviewStatus": "automatic",
       "lastChecked": null,
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "subjects": [
         "Ecology & conservation",
         "Pollination & beneficial insects"
@@ -10881,6 +10882,94 @@
       "deadlineTimezone": "Europe/London",
       "deadlineLabel": "2026-11-18 · source date; confirm closing time",
       "dateBasis": "Closing Date: 18 Nov 2026"
+    },
+    {
+      "id": "auto-f8e5796b52d9ea68",
+      "title": "How do ants build responsive nests? From local construction rules to environmental plasticity",
+      "url": "https://gw4plusdltp.ac.uk/university-of-bristol/how-do-ants-build-responsive-nests-from-local-construction-rules-to-environmental-plasticity",
+      "organisation": "University of Bristol",
+      "location": "Bristol, England, UK",
+      "country": "United Kingdom",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "Not supplied",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "phd",
+      "classificationInferred": true,
+      "summary": "Automatically collected from RES research opportunities. Matched: the source’s specialist opportunity listing. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Insect biology & behaviour.",
+      "source": "RES research opportunities",
+      "sourceId": "res-phds",
+      "sourceUrl": "https://www.royensoc.co.uk/membership-and-community/careers-and-opportunities/phd-opportunities/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "subjects": [
+        "Insect biology & behaviour"
+      ],
+      "courses": [
+        "entomology"
+      ],
+      "tags": [
+        "Source match"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open",
+      "provenance": [
+        "https://gw4plusdltp.ac.uk/university-of-bristol/how-do-ants-build-responsive-nests-from-local-construction-rules-to-environmental-plasticity"
+      ],
+      "deadline": "2027-01-07",
+      "deadlineAt": "2027-01-08T00:00:00+00:00",
+      "deadlineTimezone": "Europe/London",
+      "deadlineLabel": "2027-01-07 · source date; confirm closing time",
+      "dateBasis": "deadline is 07/01/27"
+    },
+    {
+      "id": "auto-e3bbb767762627de",
+      "title": "Senior Ecologist",
+      "url": "https://environmentjob.co.uk/jobs/112316-senior-ecologist",
+      "organisation": "London Wildlife Trust",
+      "location": "London and home working",
+      "country": "Not supplied",
+      "workplace": "Workplace not supplied",
+      "funding": "Not supplied",
+      "compensation": "£39,326 pa",
+      "eligibility": "Check original advert for eligibility",
+      "careerLevel": "Not supplied",
+      "type": "job",
+      "classificationInferred": true,
+      "summary": "Automatically collected from environmentjob · paid jobs. Matched: Ecologist, ecological, nature recovery. See the original advert for full details.",
+      "fitReason": "Source terms connect this advert to Ecology & conservation.",
+      "source": "environmentjob · paid jobs",
+      "sourceId": "environmentjob",
+      "sourceUrl": "https://environmentjob.co.uk/",
+      "reviewStatus": "automatic",
+      "lastChecked": null,
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "subjects": [
+        "Ecology & conservation"
+      ],
+      "courses": [
+        "biological-recording",
+        "entomology"
+      ],
+      "tags": [
+        "Ecologist",
+        "ecological",
+        "nature recovery"
+      ],
+      "relevanceTier": "Related field",
+      "status": "open-no-deadline",
+      "provenance": [
+        "https://environmentjob.co.uk/jobs/112316-senior-ecologist"
+      ],
+      "deadline": null,
+      "deadlineAt": null,
+      "deadlineLabel": "Closing date not supplied",
+      "dateBasis": "No closing date supplied by the source listing."
     }
   ],
   "publicationMode": "automatic"
