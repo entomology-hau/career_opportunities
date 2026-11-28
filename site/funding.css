@@ -1,0 +1,43 @@
+.funding-intro-note{max-width:290px;color:var(--muted);font-size:.875rem;border-left:3px solid var(--accent);padding-left:20px}
+.funding-jump-links,.funding-links{display:flex;flex-wrap:wrap;gap:10px 24px;font-size:.875rem;font-weight:600}
+.funding-jump-links{padding:24px 0}
+.funding-start{padding:24px 28px;background:var(--soft);border:1px solid var(--line);border-radius:6px}
+.funding-start h2,.funding-section h2{margin:0 0 12px;color:var(--heading);font-size:1.5rem;letter-spacing:-.025em}
+.funding-start p{max-width:950px;margin:0 0 14px}
+.funding-checked{color:var(--muted);font-size:.75rem}
+.funding-start .funding-checked{margin:16px 0 0}
+.funding-section{padding:36px 0;scroll-margin-top:20px}
+.funding-section+.funding-section{border-top:1px solid var(--line)}
+.funding-section-heading>p{max-width:850px;color:var(--muted);margin:0 0 22px}
+.funding-directory-list{margin:0;padding:0;list-style:none;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.funding-directory-list>li{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:24px;padding:23px 26px}
+.funding-directory-list>li+li{border-top:1px solid var(--line)}
+.funding-directory-list h3,.funding-round h3{margin:0 0 8px;color:var(--heading);font-size:1.1rem;line-height:1.4}
+.funding-directory-list p{margin:0;color:var(--muted);font-size:.9rem;max-width:780px}
+.funding-directory-action{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:8px;font-size:.875rem}
+.funding-directory-action>span{font-size:.75rem;color:var(--muted)}
+.funding-round-list{display:grid;gap:18px}
+.funding-round{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:24px 26px;scroll-margin-top:20px}
+.funding-round-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.funding-purpose{margin:0 0 5px;font-size:.75rem;color:var(--muted)}
+.funding-value{margin:0;text-align:right;color:var(--heading);font-weight:600;flex-shrink:0;font-size:1.1rem}
+.funding-value>span{display:block;font-size:.75rem;font-weight:400;color:var(--muted);margin-top:3px}
+.funding-status{display:inline-block;margin:8px 0 0;padding:5px 9px;background:var(--badge-bg);color:var(--badge-text);border-radius:4px;font-size:.8rem;font-weight:500}
+.funding-round>p:not(.funding-status){max-width:960px;font-size:.9rem}
+.funding-round dl{display:grid;grid-template-columns:170px minmax(0,1fr);gap:9px 20px;font-size:.875rem;margin:16px 0 20px}
+.funding-round dt{font-weight:600;color:var(--heading)}
+.funding-round dd{margin:0;color:var(--muted)}
+.funding-round-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:14px}
+.funding-round-footer>a{font-size:.875rem;font-weight:600}
+.funding-round-footer>span{font-size:.75rem;color:var(--muted)}
+.funding-prepare ul{padding-left:22px;max-width:950px}
+.funding-prepare li{padding-left:6px;margin-bottom:10px}
+@media(max-width:720px){
+  .funding-intro-note{max-width:none;margin:20px 0 0}
+  .funding-start,.funding-round{padding:20px}
+  .funding-directory-list>li{grid-template-columns:1fr;gap:14px;padding:20px}
+  .funding-round-heading{flex-direction:column;gap:7px}
+  .funding-value{text-align:left}
+  .funding-round dl{grid-template-columns:1fr;gap:5px}
+  .funding-round dd+dt{margin-top:7px}
+}

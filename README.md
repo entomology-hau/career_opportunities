@@ -66,6 +66,14 @@ To restore a removed record deliberately, change its status back to open and rem
 
 The existing `scripts/review.py` remains available for optional checks and manually supplied records. Both direct and related-field source matches remain eligible for automatic publication; no signed-in admin queue is required.
 
+## Postgraduate funding
+
+`site/funding.html` is an editorial directory linked from the opportunities navigation. It keeps standing funding routes and named bursary schemes available between rounds. Provider links, eligible costs, application windows and verification dates are maintained in the page. These entries are independent of the advert collector and its 30-day freshness rule.
+
+Update a scheme only after checking its provider. Change the year, value, eligibility, status and checked date together. Use `data-opens-at` and `data-closes-at` only for confirmed times with UTC offsets, or `data-closes-on` for a confirmed date-only deadline. Remove old date attributes when the next round is unconfirmed. `site/funding.js` updates the label after a listed deadline passes and retains the scheme for future planning. It does not infer next year's dates. The same theme preference is used across the board and funding page.
+
+Run `node --test tests/test_funding.cjs` after date-handling changes. Editorial updates should also check provider links and the mobile layout.
+
 ## Local checks
 
 ```sh
